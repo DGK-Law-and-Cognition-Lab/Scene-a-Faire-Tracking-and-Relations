@@ -1,0 +1,35 @@
+# OS and editor
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Never commit secrets or deployment config
+.env
+*.key
+config.json
+
+# Participant data and anything that identifies participants
+Data/
+data/
+**/Study1_raw/
+**/Study2_raw/
+**/*_SESSION_*.csv
+**/Study1_deidentified_data.zip
+**/Study1_deid_key.csv
+Analysis/v4_rebuild/11_study1_coding/
+Analysis/v4_rebuild/11c_study1_deidentified/
+
+# Large or regenerated intermediates (reproduced by the notebook)
+*.npy
+*.parquet
+Analysis/v4_rebuild/18_studies2to5_design/partD_unrelated_pairs.csv
+Analysis/v4_rebuild/18_studies2to5_design/_old_names*/
+
+# Knit reports and caches
+Analysis/**/*.html
+Analysis/**/*_files/
+Docs/Memorandum/build/reference_default.docx

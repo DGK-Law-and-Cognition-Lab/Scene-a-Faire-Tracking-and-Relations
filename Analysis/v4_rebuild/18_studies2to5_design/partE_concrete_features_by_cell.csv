@@ -1,0 +1,25 @@
+genre,cell,character_type,setting,object,event
+Comedy,HH,72,29,78,61
+Comedy,HL,91,61,53,82
+Comedy,LH,133,46,131,88
+Comedy,LL,103,51,61,58
+Crime,HH,67,27,48,38
+Crime,HL,36,16,15,27
+Crime,LH,48,21,34,44
+Crime,LL,59,30,38,34
+Fantasy,HH,32,28,21,15
+Fantasy,HL,25,20,15,20
+Fantasy,LH,26,18,47,9
+Fantasy,LL,40,21,20,26
+Horror,HH,34,38,43,20
+Horror,HL,39,22,17,32
+Horror,LH,37,24,63,28
+Horror,LL,44,20,30,46
+Science Fiction,HH,23,25,37,30
+Science Fiction,HL,28,19,16,18
+Science Fiction,LH,29,17,44,20
+Science Fiction,LL,36,23,27,25
+Western,HH,23,13,14,7
+Western,HL,11,8,2,3
+Western,LH,19,8,9,4
+Western,LL,13,4,13,17

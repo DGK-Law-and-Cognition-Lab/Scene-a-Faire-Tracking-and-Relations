@@ -1,0 +1,94 @@
+---
+title: "Design inputs for Studies 2 to 5, taken from Study 1"
+author: "David Kamper, Mira Patel and Keith Holyoak"
+date: "`r format(Sys.time(), '%B %d, %Y, %H:%M')`"
+params:
+  mode: real
+  workers: 2
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, comment = "")
+options(width = 160)
+```
+
+This file prepares three inputs for the design memo of Studies 2 to 5 (`Docs/Memorandum/`; the memo of November 17, 2026 called them Experiments 3A to 3D). Nothing here is a new test of Study 1. It describes the Study 1 data item by item and reads the variance components of the registered ratings model, so that the predictions and power analyses of the later studies rest on observed quantities.
+
+1. **Item means.** For each of the 336 rated items (48 stratified items and 8 foils in each of six genres), the mean expectedness rating over the usable participants who were given that genre.
+2. **Listing rates.** For each story feature in a genre's generation analysis set, the share of that genre's usable participants who listed it.
+3. **Variance components.** The standard deviations of the participant, item and residual terms of the registered ratings model (H2), read from the fit cache.
+
+**How it runs.** As in `study1_exploratory_category_utility.Rmd`, the file does not copy the registered code. It reads `../study1_analysis/study1_analysis.Rmd` and runs its setup, data and fitting chunks unchanged, so the exclusions, the coding decision and the analysis tables are the registered ones. Outputs go to `Analysis/v4_rebuild/18_studies2to5_design/`.
+
+```{r registered-code}
+if (!exists("params", envir = globalenv(), inherits = FALSE)) assign("params", params, envir = globalenv())
+S1 <- normalizePath(file.path("..", "study1_analysis"))
+lines <- readLines(file.path(S1, "study1_analysis.Rmd"))
+opens <- grep("^```\\{r ", lines)
+labels <- sub("^```\\{r ([^,} ]+).*$", "\\1", lines[opens])
+chunk <- function(label) {
+  i <- opens[labels == label]; stopifnot(length(i) == 1)
+  close <- which(lines == "```" & seq_along(lines) > i)[1]
+  lines[(i + 1):(close - 1)]
+}
+run <- function(code) eval(parse(text = code), envir = globalenv())
+old <- setwd(S1)                                     # the registered chunks resolve paths from their own folder
+for (lab in c("packages", "materials", "decision", "sessions", "tables", "fitting", "cache")) run(chunk(lab))
+setwd(old)
+stopifnot(MODE == "real")
+OUT3 <- file.path(AN, "v4_rebuild", "18_studies2to5_design")
+dir.create(OUT3, recursive = TRUE, showWarnings = FALSE)
+cat("usable participants:", nrow(usable), "| rating rows:", nrow(R_all), "| production rows:", nrow(G), "\n")
+```
+
+# Item means for the rated items
+
+```{r item-means}
+im <- do.call(rbind, lapply(split(R_all, R_all$item_id), function(d)
+  data.frame(item_id = d$item_id[1], genre = d$genre[1], key = d$key[1], display_text = d$display_text[1],
+             cell_code = if (d$is_foil[1]) "FOIL" else d$cell_code[1], n_raters = nrow(d),
+             mean_rating = mean(d$rating), sd_rating = sd(d$rating), stringsAsFactors = FALSE)))
+im$se_rating <- im$sd_rating / sqrt(im$n_raters)
+write.csv(im, file.path(OUT3, "study1_item_means.csv"), row.names = FALSE)
+cat("items:", nrow(im), "| raters per item:", paste(range(im$n_raters), collapse = " to "), "\n")
+cells <- do.call(rbind, lapply(split(im, im$cell_code), function(d)
+  data.frame(cell = d$cell_code[1], n_items = nrow(d), mean_of_item_means = mean(d$mean_rating), sd_between_items = sd(d$mean_rating))))
+kable(cells, digits = 2, row.names = FALSE, caption = "Mean of the item means in each cell, and how much item means differ within a cell")
+```
+
+# Listing rates for every story feature in the generation analysis set
+
+```{r listing-rates}
+lr <- aggregate(produced ~ genre + key, G, function(x) c(n = length(x), share = mean(x)))
+lr <- data.frame(genre = lr$genre, key = lr$key, n_participants = lr$produced[, "n"], share_listing = lr$produced[, "share"])
+write.csv(lr, file.path(OUT3, "study1_listing_rates.csv"), row.names = FALSE)
+cat("story features:", nrow(lr), "| listed by at least one participant:", sum(lr$share_listing > 0), "\n")
+```
+
+# Variance components of the registered ratings model
+
+The registered model is `rating ~ P + D + P:D + Lg10CD + genre` with participant and item random effects (Section 6.3). It is read from the fit cache; the file stops if the cache does not hold it, because refitting here could not be told apart from the registered fit.
+
+```{r variance-components}
+R1 <- prep(R48)
+h2 <- fit_reduced("rating ~ P + D + P:D + lg + genre", c("P", "D"), R1, "lmer")
+stopifnot(CACHE_STATS$read >= 1, CACHE_STATS$fitted == 0)
+vc <- as.data.frame(VarCorr(h2$model))
+vc <- vc[is.na(vc$var2), c("grp", "var1", "sdcor")]
+names(vc) <- c("group", "term", "sd")
+fx <- as.data.frame(summary(h2$model)$coefficients)[c("(Intercept)", "P", "D", "P:D", "lg"), c("Estimate", "Std. Error")]
+fx$term <- rownames(fx); names(fx) <- c("estimate", "se", "term")
+write.csv(vc, file.path(OUT3, "study1_h2_variance_components.csv"), row.names = FALSE)
+write.csv(fx[, c("term", "estimate", "se")], file.path(OUT3, "study1_h2_fixed_effects.csv"), row.names = FALSE)
+cat(h2$formula, "\n")
+kable(vc, digits = 3, row.names = FALSE, caption = "Standard deviations of the random terms (rating points)")
+kable(fx[, c("term", "estimate", "se")], digits = 3, row.names = FALSE, caption = "Fixed effects (rating points)")
+```
+
+```{r session-info}
+sessionInfo()
+```

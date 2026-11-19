@@ -1,0 +1,222 @@
+NOTEBOOK 18 — CORPUS INPUTS FOR THE STUDY 3 DESIGN
+45,958 films; 237,516 story-feature cells in 17 genres
+
+A. WITHIN-GENRE SPEARMAN CORRELATIONS AMONG STORY FEATURES, mean over 17 genres (min, max)
+  share~distinctiveness      0.959  (0.886, 0.989)
+  share~cue validity         0.960  (0.887, 0.990)
+  power~increment            0.960  (0.887, 0.990)
+  share~prevalence           0.260  (0.041, 0.401)
+  power~distinctiveness      0.862  (0.810, 0.886)
+  share of story-feature cells in which the genre lowers the feature's rate (p < b): 0.416
+
+A. THE WORKED EXAMPLE (Westerns; 1,362 films)
+      feature  Westerns with it  all films with it  prevalence p  rate outside b  cue validity  increment p-P(F)  genre strength  share due to genre  copying ratio 1/p  bits
+       outlaw               195                289         0.143           0.002         0.675             0.137           0.141               0.985              6.985 2.804
+       saloon               150                226         0.110           0.002         0.664             0.105           0.109               0.985              9.080 3.183
+      sheriff               248                697         0.182           0.010         0.356             0.167           0.174               0.945              5.492 2.457
+   stagecoach                96                111         0.070           0.000         0.865             0.068           0.070               0.995             14.187 3.827
+  wagon train                45                 51         0.033           0.000         0.882             0.032           0.033               0.996             30.267 4.920
+bounty hunter                26                 76         0.019           0.001         0.342             0.017           0.018               0.941             52.385 5.711
+       father               288              11207         0.211           0.245         0.026            -0.032           0.000               0.000              4.729 2.242
+       lawyer                27               1172         0.020           0.026         0.023            -0.006           0.000               0.000             50.444 5.657
+        chair                10                656         0.007           0.014         0.015            -0.007           0.000               0.000            136.200 7.090
+
+B. THE STUDY 1 RATED ITEMS BY CELL (H = top third of the genre, L = bottom third; prevalence first, distinctiveness second)
+           items  median_prevalence_pct  median_copy_ratio  median_bits  median_cue_validity_pct  median_share_due_to_genre  mean_study1_rating
+cell_code                                                                                                                                      
+HH            72                   3.18              31.34         4.97                    31.73                       0.77                5.65
+HL            72                   3.26              30.51         4.93                     6.21                       0.00                4.38
+LH            72                   0.75             130.33         7.03                    35.32                       0.78                5.17
+LL            72                   0.77             129.12         7.00                     5.88                       0.00                3.95
+FOIL          48                   0.10             824.48         9.68                     1.53                       0.00                2.79
+
+B. SPEARMAN CORRELATIONS ACROSS THE 288 STRATIFIED ITEMS (each variable centered within genre)
+                       Study 1 rating  copying weight (bits)  prevalence pct  distinctiveness pct  share due to genre  increment
+Study 1 rating                   1.00                  -0.23            0.21                 0.60                0.56       0.54
+copying weight (bits)           -0.23                   1.00           -0.97                -0.03                0.03      -0.11
+prevalence pct                   0.21                  -0.97            1.00                 0.03               -0.01       0.15
+distinctiveness pct              0.60                  -0.03            0.03                 1.00                0.90       0.79
+share due to genre               0.56                   0.03           -0.01                 0.90                1.00       0.83
+increment                        0.54                  -0.11            0.15                 0.79                0.83       1.00
+
+B. MEDIAN PREVALENCE (%) AND COPYING WEIGHT (bits) BY GENRE AND CELL
+                 prev                     bits                  
+cell_code          HH     HL    LH    LL    HH    HL    LH    LL
+genre                                                           
+Comedy           1.04   0.91  0.19  0.18  6.58  6.78  9.04  9.12
+Crime            1.52   2.58  0.40  0.41  6.04  5.27  7.92  7.89
+Fantasy          3.56   3.73  0.89  1.05  4.81  4.74  6.79  6.55
+Horror           2.95   2.54  0.64  0.54  5.08  5.29  7.26  7.51
+Science Fiction  3.90   3.61  0.93  0.93  4.69  4.79  6.73  6.72
+Western          5.10  11.09  1.69  1.54  4.29  3.19  5.86  5.99
+
+C. WHAT TWO UNRELATED FILMS OF A GENRE SHARE (20,000 random pairs per genre; closest match for 300 films per genre)
+genre                                         Western  Horror  Science Fiction   Crime  Fantasy   Comedy
+films                                          1362.0  4363.0           2590.0  5564.0   2429.0  14724.0
+features per summary (median)                    39.0    58.0             69.0    44.0     70.0     37.0
+shared features: median                           2.0     3.0              3.0     2.0      3.0      1.0
+mean                                              3.5     4.6              5.0     3.6      4.9      2.3
+95th pct                                         11.0    16.0             16.0    13.0     16.0      8.0
+99th pct                                         19.0    24.0             23.0    20.0     23.0     14.0
+shared bits: median                               5.9     6.8              8.6     5.8      8.6      4.2
+bits 95th                                        33.9    46.8             46.4    39.7     46.1     29.4
+bits 99th                                        59.7    72.1             69.9    63.9     70.8     50.3
+closest other film: shared features (median)     14.5    16.0             23.0    17.0     23.0     13.0
+closest other film: bits (median)                50.2    57.2             79.7    63.4     77.5     58.5
+
+C. TELLING SAME-TITLE PAIRS FROM RANDOM PAIRS OF THE GENRE (AUC; 3,204 same-title pairs at least three years apart; 17 genres with 20 or more)
+                 same-title pairs  shared features  weighted by copying weight  weighted by distinctiveness  shared features, length-adjusted  copying weight, length-adjusted  distinctiveness, length-adjusted
+genre                                                                                                                                                                                                           
+Action                        234            0.693                       0.711                        0.703                             0.729                            0.745                             0.741
+Adventure                     198            0.797                       0.828                        0.816                             0.855                            0.874                             0.864
+Animation                      25            0.763                       0.778                        0.815                             0.842                            0.841                             0.874
+Comedy                        370            0.669                       0.682                        0.674                             0.714                            0.722                             0.716
+Crime                         158            0.668                       0.683                        0.684                             0.700                            0.711                             0.715
+Drama                        1124            0.675                       0.689                        0.675                             0.709                            0.722                             0.706
+Family                         85            0.915                       0.936                        0.933                             0.951                            0.963                             0.962
+Fantasy                        86            0.815                       0.850                        0.846                             0.879                            0.900                             0.887
+History                        43            0.872                       0.896                        0.887                             0.907                            0.924                             0.911
+Horror                        192            0.743                       0.771                        0.760                             0.778                            0.808                             0.796
+Music                          44            0.723                       0.732                        0.732                             0.758                            0.764                             0.766
+Mystery                        80            0.691                       0.717                        0.688                             0.751                            0.772                             0.731
+Romance                       248            0.688                       0.691                        0.696                             0.738                            0.730                             0.736
+Science Fiction                71            0.760                       0.807                        0.792                             0.830                            0.865                             0.840
+Thriller                      295            0.638                       0.664                        0.641                             0.680                            0.708                             0.681
+War                            32            0.817                       0.837                        0.832                             0.862                            0.865                             0.846
+Western                        27            0.639                       0.665                        0.678                             0.726                            0.739                             0.726
+Mean over genres, weighted by the number of same-title pairs: shared features 0.701; weighted by copying weight 0.719; weighted by distinctiveness 0.709; shared features, length-adjusted 0.743; copying weight, length-adjusted 0.757; distinctiveness, length-adjusted 0.746
+
+D. CANDIDATE PAIRS OF CONCRETE STORY FEATURES (each in 20 or more of the genre's films)
+                 implied pairs  unrelated pairs
+genre                                          
+Western                    220             4464
+Horror                    1081            31868
+Science Fiction            601            22664
+Crime                      739            30956
+Fantasy                    529            17748
+Comedy                    1476            62536
+
+D. WESTERN: implied pairs (the second given the first)
+       first second  n_first  n_second  joint_count_g  p_second  p_second_given_first  ratio
+ confederate    war       26       189             20     0.139                 0.769  5.543
+       range  horse       21       299             14     0.220                 0.667  3.037
+     foreman  ranch       41       241             27     0.177                 0.659  3.722
+  engagement father       20       288             13     0.211                 0.650  3.074
+       rebel    war       25       189             16     0.139                 0.640  4.612
+      dollar    gun       36       263             23     0.193                 0.639  3.309
+     gunshot    gun       33       263             21     0.193                 0.636  3.296
+bank robbery   gang       29       274             18     0.201                 0.621  3.085
+
+D. HORROR: implied pairs (the second given the first)
+      first second  n_first  n_second  joint_count_g  p_second  p_second_given_first  ratio
+parking lot    car       20       835             18     0.191                 0.900  4.703
+ windshield    car       35       835             31     0.191                 0.886  4.628
+   mainland island       25       237             21     0.054                 0.840 15.464
+  principal school       37       361             31     0.083                 0.838 10.126
+transfusion  blood       22       711             18     0.163                 0.818  5.021
+        pen   room       25      1076             20     0.247                 0.800  3.244
+    doorway   door       42       720             33     0.165                 0.786  4.761
+    highway    car       59       835             45     0.191                 0.763  3.985
+
+D. CRIME: implied pairs (the second given the first)
+                  first second  n_first  n_second  joint_count_g  p_second  p_second_given_first  ratio
+                  attic  house       21      1244             19     0.224                 0.905  4.047
+circumstantial evidence murder       21      1411             19     0.254                 0.905  3.568
+          fellow inmate prison       20       765             17     0.137                 0.850  6.182
+                  wheel    car       45      1153             37     0.207                 0.822  3.968
+              foul play  death       21      1474             17     0.265                 0.810  3.056
+                  trunk    car      102      1153             82     0.207                 0.804  3.879
+               backyard  house       25      1244             20     0.224                 0.800  3.578
+             windshield    car       28      1153             22     0.207                 0.786  3.792
+
+D. SCIENCE FICTION: implied pairs (the second given the first)
+      first second  n_first  n_second  joint_count_g  p_second  p_second_given_first  ratio
+  spacesuit  earth       20       716             18     0.276                 0.900  3.256
+      comet  earth       29       716             25     0.276                 0.862  3.118
+   starship   ship       29       443             25     0.171                 0.862  5.040
+    martian  earth       27       716             23     0.276                 0.852  3.081
+ mothership   ship       20       443             17     0.171                 0.850  4.970
+  astronaut  earth       79       716             67     0.276                 0.848  3.068
+townspeople   town       34       287             28     0.111                 0.824  7.432
+       hull   ship       28       443             23     0.171                 0.821  4.802
+
+D. MATCHED SETS FOR STUDY 3 (an implied pair and an unrelated pair that share the second feature)
+                 implied pairs  with a matched unrelated partner  distinct second features
+genre                                                                                     
+Western                    220                               165                        41
+Horror                    1081                               743                        73
+Science Fiction            601                               489                        62
+Crime                      739                               515                        66
+Fantasy                    529                               335                        59
+Comedy                    1476                               866                        70
+          genre shared second feature         first (implied)  P(second | first) first (unrelated)  P(second | first), unrelated  P(second)
+        Western                   war             confederate               0.77            banker                          0.16       0.14
+        Western                 horse                   range               0.67       new sheriff                          0.23       0.22
+        Western                 ranch                 foreman               0.66              lady                          0.18       0.18
+        Western                father              engagement               0.65            change                          0.21       0.21
+         Horror                   car             parking lot               0.90          recorder                          0.22       0.19
+         Horror                school               principal               0.84             wheel                          0.10       0.08
+         Horror                 blood             transfusion               0.82        engagement                          0.17       0.16
+         Horror                  room                     pen               0.80               cab                          0.26       0.25
+Science Fiction                 earth               spacesuit               0.90             arena                          0.30       0.28
+Science Fiction                  ship                starship               0.86          attacker                          0.21       0.17
+Science Fiction                  town             townspeople               0.82               cat                          0.12       0.11
+Science Fiction                planet               homeworld               0.81           surgery                          0.15       0.17
+          Crime                murder circumstantial evidence               0.90               pig                          0.23       0.25
+          Crime                 house                   attic               0.90          airplane                          0.27       0.22
+          Crime                prison           fellow inmate               0.85         pregnancy                          0.17       0.14
+          Crime                   car                   wheel               0.82           theatre                          0.22       0.21
+        Fantasy               village                villager               0.76               cat                          0.09       0.09
+        Fantasy                  town             townspeople               0.70     investigation                          0.14       0.12
+        Fantasy                 house                   attic               0.69             mayor                          0.19       0.20
+        Fantasy                 earth               spaceship               0.69               rat                          0.14       0.14
+         Comedy                school              headmaster               0.87         aftermath                          0.10       0.10
+         Comedy                  town             townspeople               0.79            addict                          0.10       0.11
+         Comedy                 house                    lawn               0.77           panther                          0.19       0.21
+         Comedy                  girl                  clique               0.76       petty thief                          0.21       0.19
+
+E. CONCRETE STORY FEATURES IN THE STUDY 1 POOL, BY GENRE AND CELL (nouns and noun phrases)
+element_taxonomy      character_type  setting  object  event
+genre           cell                                        
+Comedy          HH                72       29      78     61
+                HL                91       61      53     82
+                LH               133       46     131     88
+                LL               103       51      61     58
+Crime           HH                67       27      48     38
+                HL                36       16      15     27
+                LH                48       21      34     44
+                LL                59       30      38     34
+Fantasy         HH                32       28      21     15
+                HL                25       20      15     20
+                LH                26       18      47      9
+                LL                40       21      20     26
+Horror          HH                34       38      43     20
+                HL                39       22      17     32
+                LH                37       24      63     28
+                LL                44       20      30     46
+Science Fiction HH                23       25      37     30
+                HL                28       19      16     18
+                LH                29       17      44     20
+                LL                36       23      27     25
+Western         HH                23       13      14      7
+                HL                11        8       2      3
+                LH                19        8       9      4
+                LL                13        4      13     17
+
+E. WESTERN: up to ten features per cell and kind, most frequent first
+  HH character_type  gang, sheriff, outlaw, posse, cowboy, bandit, marshal, rancher, townspeople, tribe
+  HH setting         town, ranch, land, saloon, jail, territory, bank, camp, desert, fort
+  HH object          horse, gun, train, gold, cattle, stagecoach, wagon, trail, rifle, bullet
+  HH event           robbery, gunfight, showdown, shootout, ambush, civil war, raid
+  HL character_type  father, wife, daughter, girl, husband, officer, mother, agent, doctor, guard
+  HL setting         home, city, house, room, office, street, country, village
+  HL object          car, eye
+  HL event           death, party, return
+  LH character_type  cattleman, colonel, bull, gang member, ranch hand, baron, bounty hunter, confederate, trader, prospector
+  LH setting         region, wilderness, barn, frontier, settlement, winter, range, creek
+  LH object          badge, ammunition, bounty, boot, arrow, carriage, whiskey, gold shipment, revolver
+  LH event           holdup, stampede, feud, fistfight
+  LL character_type  lady, singer, young woman, lawyer, parent, rival, trio, spirit, guest, neighbor
+  LL setting         field, bridge, shelter, ring
+  LL object          book, sign, wall, evidence, bed, clothe, newspaper, table, note, ship
+  LL event           accident, dream, funeral, threat, birth, injury, struggle, change, suicide, flashback

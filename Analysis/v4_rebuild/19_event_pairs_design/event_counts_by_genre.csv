@@ -1,0 +1,7 @@
+genre,films_in_genre,events_at_least_10,object_events_at_least_10,events_at_least_15,object_events_at_least_15,events_at_least_20,object_events_at_least_20,earlier_count_at_20,reproduced
+Western,1362,160,154,64,63,32,32,32,True
+Horror,4363,1471,1242,719,624,444,391,444,True
+Crime,5564,1547,1385,827,751,509,471,509,True
+Science Fiction,2590,541,488,230,215,124,120,124,True
+Comedy,14724,4251,3626,2384,2069,1504,1340,1504,True
+Fantasy,2429,509,472,209,197,104,101,104,True

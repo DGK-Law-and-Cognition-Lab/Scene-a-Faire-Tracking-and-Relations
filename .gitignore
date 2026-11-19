@@ -26,8 +26,7 @@ Analysis/v4_rebuild/11c_study1_deidentified/
 # Large or regenerated intermediates (reproduced by the notebook)
 *.npy
 *.parquet
-Analysis/v4_rebuild/18_studies2to5_design/partD_unrelated_pairs.csv
-Analysis/v4_rebuild/18_studies2to5_design/_old_names*/
+Analysis/v4_rebuild/18_tracking_studies_design/partD_unrelated_pairs.csv
 
 # Knit reports and caches
 Analysis/**/*.html

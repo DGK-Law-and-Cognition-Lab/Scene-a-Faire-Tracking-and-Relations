@@ -1,4 +1,4 @@
-/* SAF_STUDY2: where did a shared story feature come from? (page styles shared with Study 1) */
+/* SAF_TRACK1 (tracking paper, Study 1): where did a shared story feature come from? (page styles shared with the law review study) */
 :root{--primary:#2c3e50;--accent:#3498db;--bg:#f8f9fa;--card:#fff;--border:#dee2e6;--text:#212529;--muted:#6c757d;--error:#dc3545;--success:#16a34a}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Georgia','Times New Roman',serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh}
@@ -113,12 +113,12 @@ textarea{min-height:120px}
 .spr-display{font-family:'Courier New',Courier,monospace;font-size:1.4rem;color:var(--primary);min-height:80px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:8px;padding:30px 24px;background:var(--card);margin:20px 40px;line-height:1.8;text-align:center;letter-spacing:.02em;user-select:none;-webkit-user-select:none}
 
 /* ------------------------------------------
-   MOUSE-TRACKING STAGE (Study 2, TRACK condition)
+   MOUSE-TRACKING STAGE (the tracked genre)
    The stage covers the whole window while trials run. Every trial starts at the
    Start button (bottom center) and ends with a click on one of the two boxes.
    ------------------------------------------ */
 #mtStage{position:fixed;inset:0;background:#2b2b2b;color:#f1f1f1;z-index:5000;user-select:none;-webkit-user-select:none;overflow:hidden;font-family:'Helvetica Neue',Arial,sans-serif}
-.mt-box{position:absolute;top:20px;width:260px;height:100px;border:3px solid #9aa4b2;border-radius:10px;background:#3a3f47;display:flex;align-items:center;justify-content:center;text-align:center;font-size:1.5rem;font-weight:bold;cursor:pointer;padding:6px}
+.mt-box{position:absolute;top:20px;width:260px;height:100px;line-height:1.2;border:3px solid #9aa4b2;border-radius:10px;background:#3a3f47;display:flex;align-items:center;justify-content:center;text-align:center;font-size:1.5rem;font-weight:bold;cursor:pointer;padding:6px}
 .mt-box.left{left:20px}
 .mt-box.right{right:20px}
 .mt-box:hover{border-color:#e6edf5}
@@ -126,7 +126,7 @@ textarea{min-height:120px}
 .mt-start:hover{background:#2f86c4}
 .mt-stim{position:absolute;left:0;right:0;top:42%;text-align:center;font-size:2.2rem;font-weight:bold;letter-spacing:.02em;pointer-events:none}
 .mt-msg{position:absolute;left:0;right:0;top:58%;text-align:center;font-size:1.15rem;color:#ffd166;pointer-events:none}
-.mt-panel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(640px,86vw);background:#f8f9fa;color:#212529;border-radius:10px;padding:28px 32px;text-align:left;font-family:'Georgia','Times New Roman',serif;line-height:1.6}
+.mt-panel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(680px,88vw);max-height:94vh;overflow-y:auto;background:#f8f9fa;color:#212529;border-radius:10px;padding:28px 32px;text-align:left;font-family:'Georgia','Times New Roman',serif;line-height:1.6}
 .mt-panel h2{color:#2c3e50;margin-bottom:12px}
 .mt-panel p{margin-bottom:10px}
 .mt-panel .btn{margin-top:12px}
@@ -134,7 +134,7 @@ textarea{min-height:120px}
 .mt-context{position:absolute;left:0;right:0;top:32%;text-align:center;font-size:1.15rem;color:#c3ccd8;pointer-events:none}
 
 /* ------------------------------------------
-   STUDY 2 RATING AND FREQUENCY PAGES
+   RATING AND FREQUENCY PAGES
    ------------------------------------------ */
 .rate-lead{font-size:.92rem;color:var(--muted);margin-bottom:2px}
 .freq-row{display:flex;align-items:center;justify-content:space-between;gap:16px;background:#fff;border:1px solid var(--border);border-radius:8px;padding:12px 18px;margin-bottom:10px;transition:border-color .15s,box-shadow .15s}

@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-# Builder for notebooks/18_studies2to5_design.ipynb
+# Builder for notebooks/18_tracking_studies_design.ipynb
 # Run:  python3 notebooks/_build_18.py      (from the Analysis folder)
 import nbformat as nbf
 
-OUTPATH = 'notebooks/18_studies2to5_design.ipynb'
+OUTPATH = 'notebooks/18_tracking_studies_design.ipynb'
 nb = nbf.v4.new_notebook()
 cells = []
 def md(s):   cells.append(nbf.v4.new_markdown_cell(s.strip("\n")))
 def code(s): cells.append(nbf.v4.new_code_cell(s.strip("\n")))
 
 md(r"""
-# Notebook 18 — Corpus inputs for the design of Studies 2 to 5
+# Notebook 18 — Corpus inputs for the design of the tracking studies
 
-Added November 17, 2026, for the design memo of Studies 2 to 5 (`Docs/Memorandum/`). The memo first called them Experiments 3A to 3D of a Study 3; they were renumbered on November 18, 2026, so 3A is Study 2, 3B is Study 3, 3C is Study 4 and 3D is Study 5. Counting only: no language model is called and nothing upstream changes. Outputs go to `v4_rebuild/18_studies2to5_design/`. The Study 1 item means it reads are written by `Analysis/studies2to5_design/design_inputs_from_study1.Rmd`; knit that file first.
+Added November 17, 2026, for the design memo of the four studies of the tracking paper (`Docs/Memorandum/`). The memo first called them Experiments 3A to 3D of a Study 3; on November 18, 2026 they became Studies 2 to 5, and on November 19 they became Studies 1 to 4 of the tracking paper, so 3A is Study 1, 3B is Study 2, 3C is Study 3 and 3D is Study 4. The completed listing-and-rating study reported in the law review article is called the law review study. Counting only: no language model is called and nothing upstream changes. Outputs go to `v4_rebuild/18_tracking_studies_design/`. The law review study's item means it reads are written by `Analysis/tracking_studies_design/design_inputs_from_law_review_study.Rmd`; knit that file first.
 
-**The model behind Studies 2 to 5.** A story feature F can be in a disputed work D of genre g for three reasons: any film might have it (background), films of the genre tend to have it (the genre), or D's makers took it from an earlier work W (copying). Write p = P(F | g) for prevalence and b = P(F | not g) for the feature's rate outside the genre. If background and genre act independently, the genre's own strength q satisfies p = b + q − bq. Three questions then have three different answers.
+**The model behind Studies 1 to 4.** A story feature F can be in a disputed work D of genre g for three reasons: any film might have it (background), films of the genre tend to have it (the genre), or D's makers took it from an earlier work W (copying). Write p = P(F | g) for prevalence and b = P(F | not g) for the feature's rate outside the genre. If background and genre act independently, the genre's own strength q satisfies p = b + q − bq. Three questions then have three different answers.
 
 1. *Is the shared feature evidence of copying?* If a copier reproduces the feature and an independent author includes it with probability p, sharing it multiplies the odds of copying by 1 ÷ p. The weight of the evidence is −log p, the feature's surprisal in the genre. It depends on prevalence alone.
 2. *How much does the genre add?* The absolute increase is p − b (incremental category validity; with all films as the baseline, p − P(F)). As a strength it is q = (p − b) ÷ (1 − b), Cheng's causal power and Pearl's probability of sufficiency.
@@ -22,7 +22,7 @@ Added November 17, 2026, for the design memo of Studies 2 to 5 (`Docs/Memorandum
 
 All three are built from the same excess p − b. They differ in what they divide by.
 
-**What this notebook counts.** (A) the three quantities for every story feature and genre, and the check that they order features as stated; (B) the Study 1 rated items with these quantities and their Study 1 mean ratings, which shows where the accounts of lay judgment disagree; (C) how much two unrelated films of a genre share by chance, and whether weighting shared features by surprisal picks out films that share a title (a rough stand-in for remakes and adaptations); (D) pairs of features in which one nearly implies the other, for the experiment on packages; (E) how many concrete features each genre has in each cell, for building synopses.
+**What this notebook counts.** (A) the three quantities for every story feature and genre, and the check that they order features as stated; (B) the law review study's rated items with these quantities and their mean ratings in that study, which shows where the accounts of lay judgment disagree; (C) how much two unrelated films of a genre share by chance, and whether weighting shared features by surprisal picks out films that share a title (a rough stand-in for remakes and adaptations); (D) pairs of features in which one nearly implies the other, for the experiment on packages; (E) how many concrete features each genre has in each cell, for building synopses.
 """)
 
 code(r"""
@@ -51,7 +51,7 @@ _CANDS = [
 ]
 V4 = next((c for c in _CANDS if c.exists()), None)
 assert V4 is not None, 'Could not locate v4_rebuild; set V4 manually.'
-OUT = V4 / '18_studies2to5_design'
+OUT = V4 / '18_tracking_studies_design'
 (OUT / 'figures').mkdir(parents=True, exist_ok=True)
 TMP = Path(tempfile.mkdtemp())
 def read_parquet(p, **kw):
@@ -99,7 +99,7 @@ d['share_genre'] = (d['excess'] / d['p']).clip(lower=0)               # probabil
 d['surprisal_bits'] = -np.log2(d['p'])                                # weight of a shared feature as evidence of copying
 d['lr_copy'] = 1 / d['p']
 nar = d[d['is_narrative_element']].copy()
-out('NOTEBOOK 18 — CORPUS INPUTS FOR THE STUDY 3 DESIGN')
+out('NOTEBOOK 18 — CORPUS INPUTS FOR THE DESIGN OF THE TRACKING STUDIES')
 out(f'{N:,} films; {len(nar):,} story-feature cells in {nar.genre.nunique()} genres')
 """)
 
@@ -132,15 +132,15 @@ out(tab.round(3).to_string(index=False))
 """)
 
 md(r"""
-## Part B. The Study 1 items under each account
+## Part B. The law review study's items under each account
 
-Study 1 rated 48 items per genre, twelve in each cell of high or low prevalence crossed with high or low distinctiveness, for how expected each is in a typical film of the genre. The table gives, for each cell, the typical prevalence and what it implies for copying (the ratio 1 ÷ p and its weight in bits), the typical share due to the genre, and the Study 1 mean rating. The figure shows every rated item.
+The law review study rated 48 items per genre, twelve in each cell of high or low prevalence crossed with high or low distinctiveness, for how expected each is in a typical film of the genre. The table gives, for each cell, the typical prevalence and what it implies for copying (the ratio 1 ÷ p and its weight in bits), the typical share due to the genre, and the mean rating in the law review study. The figure shows every rated item.
 
-What to look for. If people judge copying as the model says, judged evidence of copying should fall with prevalence and ignore distinctiveness: the two low-prevalence cells should be alike and both above the two high-prevalence cells. If people judge copying by how expected the feature feels, the order is the Study 1 ratings turned upside down: characteristic features, common or rare, are discounted most.
+What to look for. If people judge copying as the model says, judged evidence of copying should fall with prevalence and ignore distinctiveness: the two low-prevalence cells should be alike and both above the two high-prevalence cells. If people judge copying by how expected the feature feels, the order is the law review study's ratings turned upside down: characteristic features, common or rare, are discounted most.
 """)
 code(r"""
 stim = pd.read_csv(V4 / '10_human_study_stimuli' / 'stimuli_long.csv')
-im = pd.read_csv(OUT / 'study1_item_means.csv')
+im = pd.read_csv(OUT / 'law_review_study_item_means.csv')
 stim = stim.merge(im[['item_id', 'n_raters', 'mean_rating', 'se_rating']], on='item_id', how='left', validate='one_to_one')
 assert stim['mean_rating'].notna().all()
 Ng = d.drop_duplicates('genre').set_index('genre')['N_g']
@@ -154,20 +154,20 @@ stim['icv'] = stim['p'] - stim['n_f'] / N
 stim['share_genre'] = ((stim['p'] - stim['b']) / stim['p']).clip(lower=0)
 stim['p_smoothed'] = (stim['n_in_genre'] + 0.5) / (stim['N_g'] + 1)        # foils can have no film in the target genre
 stim['surprisal_bits'] = -np.log2(stim['p_smoothed'])
-stim.to_csv(OUT / 'partB_study1_items_with_quantities.csv', index=False)
+stim.to_csv(OUT / 'partB_law_review_study_items_with_quantities.csv', index=False)
 order = ['HH', 'HL', 'LH', 'LL', 'FOIL']
 cellt = stim.groupby('cell_code').agg(items=('item_id', 'size'), median_prevalence_pct=('p', lambda x: 100 * x.median()),
                                       median_copy_ratio=('p_smoothed', lambda x: (1 / x).median()), median_bits=('surprisal_bits', 'median'),
                                       median_cue_validity_pct=('cue', lambda x: 100 * x.median()), median_share_due_to_genre=('share_genre', 'median'),
-                                      mean_study1_rating=('mean_rating', 'mean')).loc[order]
+                                      mean_law_review_study_rating=('mean_rating', 'mean')).loc[order]
 cellt.to_csv(OUT / 'partB_cells.csv')
-out(''); out('B. THE STUDY 1 RATED ITEMS BY CELL (H = top third of the genre, L = bottom third; prevalence first, distinctiveness second)')
+out(''); out('B. THE LAW REVIEW STUDY RATED ITEMS BY CELL (H = top third of the genre, L = bottom third; prevalence first, distinctiveness second)')
 out(cellt.round(2).to_string())
 s48 = stim[~stim['is_foil']].copy()
 for c in ['mean_rating', 'surprisal_bits', 'distinctiveness_pct', 'prevalence_pct', 'share_genre', 'icv']:
     s48[c + '_c'] = s48[c] - s48.groupby('genre')[c].transform('mean')            # centered within genre
 cor = s48[[c + '_c' for c in ['mean_rating', 'surprisal_bits', 'prevalence_pct', 'distinctiveness_pct', 'share_genre', 'icv']]].corr(method='spearman')
-cor.index = cor.columns = ['Study 1 rating', 'copying weight (bits)', 'prevalence pct', 'distinctiveness pct', 'share due to genre', 'increment']
+cor.index = cor.columns = ['law review study rating', 'copying weight (bits)', 'prevalence pct', 'distinctiveness pct', 'share due to genre', 'increment']
 cor.to_csv(OUT / 'partB_item_correlations.csv')
 out(''); out('B. SPEARMAN CORRELATIONS ACROSS THE 288 STRATIFIED ITEMS (each variable centered within genre)')
 out(cor.round(2).to_string())
@@ -186,14 +186,14 @@ for ax, g in zip(axes.ravel(), SIX):
     ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f'{v:g}'))
 axes[0, 0].legend(fontsize=8, loc='lower right')
 fig.supxlabel("Prevalence: % of the genre's films with the feature (log scale; each panel has its own range)")
-fig.supylabel('Study 1: how expected in a typical film\nof the genre (1 to 7, item means)')
-save(fig, 'study1_items_expected_by_prevalence')
+fig.supylabel('Law review study: how expected in a typical film\nof the genre (1 to 7, item means)')
+save(fig, 'law_review_study_items_expected_by_prevalence')
 """)
 
 md(r"""
 ## Part C. How much do two unrelated films of a genre share?
 
-A claim that shared features show copying needs a baseline: what two films of the genre share when neither was taken from the other. For each of the six Study 1 genres, 20,000 pairs of different films are drawn at random from the genre's films. For each pair the notebook counts the story features both summaries contain and adds up their copying weights (−log₂ of each shared feature's prevalence in the genre, with one half added to the counts). It also takes 300 films per genre and finds, for each, the other film of the genre that shares the most: a plaintiff who searches a whole genre for the closest match finds far more than a random pair shares.
+A claim that shared features show copying needs a baseline: what two films of the genre share when neither was taken from the other. For each of the six genres of the law review study, 20,000 pairs of different films are drawn at random from the genre's films. For each pair the notebook counts the story features both summaries contain and adds up their copying weights (−log₂ of each shared feature's prevalence in the genre, with one half added to the counts). It also takes 300 films per genre and finds, for each, the other film of the genre that shares the most: a plaintiff who searches a whole genre for the closest match finds far more than a random pair shares.
 
 The counts depend on how long the summaries are, and a plot summary is not the film. These numbers size the design; they are not evidence about any dispute.
 """)
@@ -350,7 +350,7 @@ unrelated[['genre'] + show].to_csv(OUT / 'partD_unrelated_pairs.csv', index=Fals
 md(r"""
 ### Matched sets
 
-The power simulations show that Study 3 is limited by how much pairs differ from one another, so the design matches each implied pair to an unrelated pair that shares its second feature and whose first feature is about as common (within a factor of 1.5 in the genre's films). The count below is the number of implied pairs for which at least one such partner exists, and the number of distinct second features they cover.
+The power simulations show that Study 2 is limited by how much pairs differ from one another, so the design matches each implied pair to an unrelated pair that shares its second feature and whose first feature is about as common (within a factor of 1.5 in the genre's films). The count below is the number of implied pairs for which at least one such partner exists, and the number of distinct second features they cover.
 """)
 code(r"""
 rows = []; examples = []
@@ -363,7 +363,7 @@ for g in SIX:
     examples.append(m.sort_values('p_second_given_first', ascending=False).drop_duplicates('second').head(4).assign(genre=g))
 matched = pd.DataFrame(rows).set_index('genre')
 matched.to_csv(OUT / 'partD_matched_sets.csv')
-out(''); out('D. MATCHED SETS FOR STUDY 3 (an implied pair and an unrelated pair that share the second feature)')
+out(''); out('D. MATCHED SETS FOR STUDY 2 (an implied pair and an unrelated pair that share the second feature)')
 out(matched.to_string())
 exm = pd.concat(examples)[['genre', 'second', 'first', 'p_second_given_first', 'first_u', 'p_second_given_first_u', 'p_second']]
 exm.columns = ['genre', 'shared second feature', 'first (implied)', 'P(second | first)', 'first (unrelated)', 'P(second | first), unrelated', 'P(second)']
@@ -374,7 +374,7 @@ out(exm.round(2).to_string(index=False))
 md(r"""
 ## Part E. Concrete story features available for synopses
 
-The synopsis experiments need, for each genre and each of the four cells, story features that can be written into a plot: kinds of characters, settings, objects and events, as nouns or noun phrases. The count is over the Study 1 eligible pool (story features in at least 20 of the genre's films, reviewed exclusions removed), with the cells defined as in Study 1 (top and bottom thirds of the genre on each measure).
+The synopsis experiments need, for each genre and each of the four cells, story features that can be written into a plot: kinds of characters, settings, objects and events, as nouns or noun phrases. The count is over the law review study's eligible pool (story features in at least 20 of the genre's films, reviewed exclusions removed), with the cells defined as in the law review study (top and bottom thirds of the genre on each measure).
 """)
 code(r"""
 pool = pd.read_csv(V4 / '10_human_study_stimuli' / 'eligible_pool_predictors.csv')
@@ -383,7 +383,7 @@ pool['cell'] = pool['prev_tercile'].str[0].str.upper() + pool['dist_tercile'].st
 pc = pool[pool['cell'].isin(['HH', 'HL', 'LH', 'LL']) & pool['element_taxonomy'].isin(['character_type', 'setting', 'object', 'event'])]
 feas = pc.groupby(['genre', 'cell', 'element_taxonomy']).size().unstack(fill_value=0).reindex(columns=['character_type', 'setting', 'object', 'event'])
 feas.to_csv(OUT / 'partE_concrete_features_by_cell.csv')
-out(''); out('E. CONCRETE STORY FEATURES IN THE STUDY 1 POOL, BY GENRE AND CELL (nouns and noun phrases)')
+out(''); out('E. CONCRETE STORY FEATURES IN THE LAW REVIEW STUDY POOL, BY GENRE AND CELL (nouns and noun phrases)')
 out(feas.to_string())
 wst = pc[pc.genre == 'Western'].sort_values(['cell', 'element_taxonomy', 'film_count'], ascending=[True, True, False])
 wl = wst.groupby(['cell', 'element_taxonomy'])['element'].apply(lambda x: ', '.join(list(x)[:10])).unstack().reindex(columns=['character_type', 'setting', 'object', 'event'])
@@ -395,7 +395,7 @@ for cell_, r in wl.iterrows():
 
 md("## Outputs")
 code(r"""
-(OUT / 'studies2to5_corpus_inputs_report.txt').write_text('\n'.join(report) + '\n')
+(OUT / 'corpus_inputs_report.txt').write_text('\n'.join(report) + '\n')
 print(sorted(p.name for p in OUT.rglob('*') if p.is_file()))
 """)
 

@@ -1,0 +1,231 @@
+NOTEBOOK 19. EVENTS AS THE SECOND MEMBER OF A PAIR (counting only)
+45,958 films; 18,724 events (counts identical to Notebook 13); 11,989 nouns in the scored table, 7,662 kept as story features
+Noun film counts recounted from the Notebook 02 index equal the Notebook 03 film counts in 100.00% of 158,857 (noun, genre) cells
+
+PART 1. SPLIT-HALF STABILITY (one random half split, seed 20260219, as in Notebook 14; raw Spearman between halves, mean over genres with 30+ cells)
+Notebook 14's band figures for story features are reproduced to three decimals on the same split.
+
+All genres, by band of films of the genre with the feature (prevalence r, distinctiveness r)
+  5 to 19      events                 0.033 / 0.430   story features         0.222 / 0.521   nouns kept as story fe 0.253 / 0.516
+  20 to 99     events                 0.487 / 0.769   story features         0.757 / 0.803   nouns kept as story fe 0.760 / 0.818
+  100 or more  events                 0.776 / 0.879   story features         0.938 / 0.934   nouns kept as story fe 0.911 / 0.943
+  cells: 5 to 19: 66,850, 73,532, 35,303; 20 to 99: 8,936, 32,058, 19,338; 100 or more: 434, 10,917, 6,074
+
+All genres, by floor of films of the genre with the feature (prevalence r, distinctiveness r)
+  at least 5   events                 0.270 / 0.459   story features         0.776 / 0.604   nouns kept as story fe 0.810 / 0.629
+  at least 10  events                 0.419 / 0.669   story features         0.845 / 0.742   nouns kept as story fe 0.848 / 0.757
+  at least 20  events                 0.545 / 0.775   story features         0.885 / 0.827   nouns kept as story fe 0.875 / 0.842
+  cells: at least 5: 76,310, 116,507, 60,715; at least 10: 28,449, 71,314, 40,433; at least 20: 9,460, 42,975, 25,412
+
+Six study genres, floors (events | nouns kept as story features): n cells, prevalence r, distinctiveness r
+  Western          5+: ev 564 0.19/0.73 | nn 1278 0.73/0.76;  10+: ev 160 0.28/0.88 | nn 741 0.78/0.87;  20+: ev 32 0.78/0.98 | nn 390 0.83/0.94
+  Horror           5+: ev 4202 0.33/0.59 | nn 3477 0.83/0.74;  10+: ev 1471 0.46/0.79 | nn 2271 0.87/0.86;  20+: ev 444 0.61/0.89 | nn 1393 0.90/0.92
+  Crime            5+: ev 4512 0.33/0.43 | nn 3530 0.83/0.60;  10+: ev 1547 0.53/0.65 | nn 2344 0.87/0.75;  20+: ev 509 0.69/0.80 | nn 1457 0.90/0.85
+  Science Fiction  5+: ev 1951 0.15/0.63 | nn 2904 0.79/0.75;  10+: ev 541 0.26/0.82 | nn 1856 0.82/0.86;  20+: ev 124 0.36/0.86 | nn 1080 0.85/0.91
+  Comedy           5+: ev 10861 0.42/0.21 | nn 5914 0.87/0.51;  10+: ev 4251 0.54/0.47 | nn 4227 0.90/0.68;  20+: ev 1504 0.63/0.59 | nn 2813 0.92/0.79
+  Fantasy          5+: ev 1874 0.17/0.55 | nn 2863 0.77/0.65;  10+: ev 509 0.26/0.73 | nn 1772 0.81/0.77;  20+: ev 104 0.48/0.79 | nn 1017 0.86/0.87
+
+PART 2. EVENTS PER GENRE (all kinds; in brackets, the kinds with an object noun)
+  Western           1,362 films   10+:   160 (154)   15+:    64 (63)   20+:    32 (32)   earlier 20+: 32 reproduced
+  Horror            4,363 films   10+: 1,471 (1,242)   15+:   719 (624)   20+:   444 (391)   earlier 20+: 444 reproduced
+  Crime             5,564 films   10+: 1,547 (1,385)   15+:   827 (751)   20+:   509 (471)   earlier 20+: 509 reproduced
+  Science Fiction   2,590 films   10+:   541 (488)   15+:   230 (215)   20+:   124 (120)   earlier 20+: 124 reproduced
+  Comedy           14,724 films   10+: 4,251 (3,626)   15+: 2,384 (2,069)   20+: 1,504 (1,340)   earlier 20+: 1,504 reproduced
+  Fantasy           2,429 films   10+:   509 (472)   15+:   209 (197)   20+:   104 (101)   earlier 20+: 104 reproduced
+
+PART 3. LINKING EVENTS TO NOUNS
+  verb_object        9,380 events; linked to a noun in the scored table 95.8%; to a noun kept as a story feature 66.7%
+  verb_prep_object   6,064 events; linked to a noun in the scored table 95.3%; to a noun kept as a story feature 63.1%
+  both kinds        15,444 events; linked 95.6%; to a story feature 65.3%
+  all 18,724 events (subject-verb events are not linked by design): linked 78.9%
+  object events weighted by their (genre, event) cells with 10+ films in the six genres: linked 96.3%, to a story feature 64.4%
+  most frequent unlinked object nouns: way (148), end (84), people (53), thing (46), case (45), point (39), part (30), number (23), other (22), fact (20), character (20), lot (16)
+  most frequent linked nouns NOT kept as story features by the Notebook 03b classifier: man (185), life (182), time (173), friend (138), order (130), woman (115), money (110), child (96), day (93), help (84), plan (81), body (77), hand (69), place (68), head (67)
+
+PART 3. QUALIFYING PAIRS (noun in 20+ films of the genre, event in 10+), 7,038 rows over the six genres
+  event films that also have the noun: 92.4% of pairs are a full subset; 98.3% of all event films (pooled); median share per pair 1.000; pairs below 80%: 104
+
+Pairs per genre (nouns kept as story features; in brackets with all nouns), by the event floor
+  Western          event 10+: 95 (146)   event 15+: 41 (61)   event 20+: 18 (30)
+  Horror           event 10+: 835 (1,187)   event 15+: 413 (598)   event 20+: 249 (376)
+  Crime            event 10+: 905 (1,329)   event 15+: 481 (720)   event 20+: 292 (455)
+  Science Fiction  event 10+: 301 (467)   event 15+: 130 (207)   event 20+: 66 (114)
+  Comedy           event 10+: 2,284 (3,456)   event 15+: 1,314 (1,981)   event 20+: 840 (1,284)
+  Fantasy          event 10+: 292 (453)   event 15+: 105 (187)   event 20+: 57 (97)
+
+P(E | O, g) among qualifying pairs, event 10+ (story-feature nouns): quartiles; median bits the event adds
+  Western             95 pairs,   59 nouns   Q1 0.065   median 0.108   Q3 0.217   median bits added 3.15
+  Horror             835 pairs,  306 nouns   Q1 0.026   median 0.054   Q3 0.105   median bits added 4.20
+  Crime              905 pairs,  314 nouns   Q1 0.023   median 0.046   Q3 0.100   median bits added 4.42
+  Science Fiction    301 pairs,  158 nouns   Q1 0.041   median 0.071   Q3 0.130   median bits added 3.82
+  Comedy           2,284 pairs,  691 nouns   Q1 0.015   median 0.035   Q3 0.085   median bits added 4.78
+  Fantasy            292 pairs,  154 nouns   Q1 0.044   median 0.081   Q3 0.159   median bits added 3.63
+
+Nouns with at least one common and one rare event (story-feature nouns; in brackets with all nouns)
+  split: common above 0.15, rare below 0.05
+    Western          event 10+: 0 (1)   event 15+: 0 (0)   event 20+: 0 (0)
+    Horror           event 10+: 11 (14)   event 15+: 8 (10)   event 20+: 4 (6)
+    Crime            event 10+: 18 (24)   event 15+: 11 (13)   event 20+: 5 (6)
+    Science Fiction  event 10+: 3 (4)   event 15+: 2 (2)   event 20+: 1 (1)
+    Comedy           event 10+: 26 (38)   event 15+: 18 (28)   event 20+: 10 (18)
+    Fantasy          event 10+: 2 (3)   event 15+: 2 (2)   event 20+: 2 (2)
+  split: common above 0.10, rare below 0.05
+    Western          event 10+: 3 (4)   event 15+: 0 (0)   event 20+: 0 (0)
+    Horror           event 10+: 19 (29)   event 15+: 12 (17)   event 20+: 5 (10)
+    Crime            event 10+: 29 (42)   event 15+: 17 (22)   event 20+: 7 (9)
+    Science Fiction  event 10+: 7 (11)   event 15+: 4 (6)   event 20+: 2 (4)
+    Comedy           event 10+: 63 (91)   event 15+: 39 (59)   event 20+: 24 (41)
+    Fantasy          event 10+: 3 (5)   event 15+: 2 (3)   event 20+: 2 (2)
+  split: common above 0.20, rare below 0.05
+    Western          event 10+: 0 (0)   event 15+: 0 (0)   event 20+: 0 (0)
+    Horror           event 10+: 5 (8)   event 15+: 2 (4)   event 20+: 1 (3)
+    Crime            event 10+: 9 (13)   event 15+: 5 (7)   event 20+: 3 (4)
+    Science Fiction  event 10+: 3 (4)   event 15+: 2 (2)   event 20+: 1 (1)
+    Comedy           event 10+: 10 (13)   event 15+: 9 (12)   event 20+: 4 (7)
+    Fantasy          event 10+: 2 (3)   event 15+: 2 (2)   event 20+: 2 (2)
+  split: common above 0.15, rare below 0.02
+    Western          event 10+: 0 (0)   event 15+: 0 (0)   event 20+: 0 (0)
+    Horror           event 10+: 3 (5)   event 15+: 0 (1)   event 20+: 0 (1)
+    Crime            event 10+: 2 (4)   event 15+: 0 (0)   event 20+: 0 (0)
+    Science Fiction  event 10+: 0 (0)   event 15+: 0 (0)   event 20+: 0 (0)
+    Comedy           event 10+: 10 (18)   event 15+: 3 (7)   event 20+: 1 (4)
+    Fantasy          event 10+: 2 (2)   event 15+: 0 (0)   event 20+: 0 (0)
+
+CLEAREST PAIRS (noun ; event : n(O), n(E), n(E and O), P(E | O, g), bits added)
+  Western
+    stagecoach   ; rob stagecoach           n(O)    96  n(E)   18  both   17  P(E|O) 0.177  +2.42 bits
+    cattle       ; rustle cattle            n(O)   124  n(E)   13  both   13  P(E|O) 0.105  +3.25 bits
+    herd         ; drive herd               n(O)    63  n(E)   11  both   11  P(E|O) 0.175  +2.52 bits
+    ranch        ; ride to ranch            n(O)   241  n(E)   11  both   11  P(E|O) 0.046  +4.45 bits
+    posse        ; form posse               n(O)   136  n(E)   19  both   19  P(E|O) 0.140  +2.84 bits
+    town         ; ride into town           n(O)   568  n(E)   53  both   53  P(E|O) 0.093  +3.42 bits
+    cattle       ; steal cattle             n(O)   124  n(E)   18  both   18  P(E|O) 0.145  +2.78 bits
+    town         ; clean up town            n(O)   568  n(E)   11  both   11  P(E|O) 0.019  +5.69 bits
+    sheriff      ; shoot sheriff            n(O)   248  n(E)   11  both   11  P(E|O) 0.044  +4.49 bits
+    ranch        ; buy ranch                n(O)   241  n(E)   12  both   12  P(E|O) 0.050  +4.33 bits
+    horse        ; steal horse              n(O)   299  n(E)   41  both   41  P(E|O) 0.137  +2.87 bits
+    train        ; join train               n(O)   173  n(E)   11  both   11  P(E|O) 0.064  +3.98 bits
+    horse        ; mount horse              n(O)   299  n(E)   10  both   10  P(E|O) 0.033  +4.90 bits
+    train        ; rob train                n(O)   173  n(E)   16  both   16  P(E|O) 0.092  +3.43 bits
+    sheriff      ; kill sheriff             n(O)   248  n(E)   14  both   14  P(E|O) 0.056  +4.15 bits
+  Horror
+    werewolf     ; turn into werewolf       n(O)   107  n(E)   18  both   18  P(E|O) 0.168  +2.57 bits
+    heart        ; drive through heart      n(O)   265  n(E)   11  both   11  P(E|O) 0.042  +4.59 bits
+    creature     ; stop creature            n(O)   514  n(E)   10  both   10  P(E|O) 0.019  +5.68 bits
+    vampire      ; turn into vampire        n(O)   258  n(E)   59  both   59  P(E|O) 0.229  +2.13 bits
+    stake        ; drive stake              n(O)    81  n(E)   17  both   17  P(E|O) 0.210  +2.25 bits
+    vampire      ; destroy vampire          n(O)   258  n(E)   14  both   14  P(E|O) 0.054  +4.20 bits
+    zombie       ; transform into zombie    n(O)   222  n(E)   14  both   14  P(E|O) 0.063  +3.99 bits
+    zombie       ; kill zombie              n(O)   222  n(E)   28  both   28  P(E|O) 0.126  +2.99 bits
+    blood        ; feed on blood            n(O)   711  n(E)   13  both   13  P(E|O) 0.018  +5.77 bits
+    werewolf     ; kill werewolf            n(O)   107  n(E)   12  both   12  P(E|O) 0.112  +3.16 bits
+    blood        ; drain of blood           n(O)   711  n(E)   24  both   24  P(E|O) 0.034  +4.89 bits
+    gasoline     ; douse with gasoline      n(O)    62  n(E)   11  both   11  P(E|O) 0.177  +2.49 bits
+    exorcism     ; perform exorcism         n(O)    56  n(E)   24  both   24  P(E|O) 0.429  +1.22 bits
+    demon        ; transform into demon     n(O)   210  n(E)   15  both   15  P(E|O) 0.071  +3.81 bits
+    eye          ; stab in eye              n(O)   494  n(E)   23  both   23  P(E|O) 0.047  +4.42 bits
+  Crime
+    mobster      ; kill mobster             n(O)   150  n(E)   10  both   10  P(E|O) 0.067  +3.91 bits
+    robbery      ; carry out robbery        n(O)   512  n(E)   14  both   14  P(E|O) 0.027  +5.19 bits
+    heist        ; plan heist               n(O)   195  n(E)   30  both   30  P(E|O) 0.154  +2.70 bits
+    accomplice   ; kill accomplice          n(O)   189  n(E)   10  both   10  P(E|O) 0.053  +4.24 bits
+    shootout     ; wound in shootout        n(O)   191  n(E)   10  both   10  P(E|O) 0.052  +4.26 bits
+    heist        ; pull off heist           n(O)   195  n(E)   20  both   20  P(E|O) 0.103  +3.29 bits
+    investigation ; lead investigation       n(O)   539  n(E)   16  both   16  P(E|O) 0.030  +5.07 bits
+    wire         ; wear wire                n(O)    75  n(E)   20  both   20  P(E|O) 0.267  +1.91 bits
+    home         ; attack in home           n(O)   945  n(E)   10  both   10  P(E|O) 0.011  +6.56 bits
+    fingerprint  ; find fingerprint         n(O)    61  n(E)   14  both   14  P(E|O) 0.230  +2.12 bits
+    drug         ; steal drug               n(O)   361  n(E)   20  both   20  P(E|O) 0.055  +4.17 bits
+    shootout     ; engage in shootout       n(O)   191  n(E)   10  both   10  P(E|O) 0.052  +4.26 bits
+    evidence     ; incriminate evidence     n(O)   609  n(E)   15  both   15  P(E|O) 0.025  +5.34 bits
+    robbery      ; involve in robbery       n(O)   512  n(E)   11  both   11  P(E|O) 0.021  +5.54 bits
+    warehouse    ; take to warehouse        n(O)   146  n(E)   15  both   15  P(E|O) 0.103  +3.28 bits
+  Science Fiction
+    planet       ; return to planet         n(O)   452  n(E)   20  both   20  P(E|O) 0.044  +4.50 bits
+    alien        ; kill alien               n(O)   308  n(E)   13  both   13  P(E|O) 0.042  +4.57 bits
+    ship         ; pilot ship               n(O)   443  n(E)   11  both   11  P(E|O) 0.025  +5.33 bits
+    planet       ; leave planet             n(O)   452  n(E)   20  both   20  P(E|O) 0.044  +4.50 bits
+    alien        ; find alien               n(O)   308  n(E)   12  both   12  P(E|O) 0.039  +4.68 bits
+    invasion     ; stop invasion            n(O)    88  n(E)   11  both   11  P(E|O) 0.125  +3.00 bits
+    ship         ; send ship                n(O)   443  n(E)   20  both   20  P(E|O) 0.045  +4.47 bits
+    scientist    ; kill scientist           n(O)   473  n(E)   11  both   11  P(E|O) 0.023  +5.43 bits
+    robot        ; destroy robot            n(O)   191  n(E)   14  both   14  P(E|O) 0.073  +3.77 bits
+    device       ; activate device          n(O)   282  n(E)   16  both   16  P(E|O) 0.057  +4.14 bits
+    facility     ; destroy facility         n(O)   170  n(E)   19  both   19  P(E|O) 0.112  +3.16 bits
+    creature     ; kill creature            n(O)   395  n(E)   31  both   31  P(E|O) 0.078  +3.67 bits
+    destruction  ; escape destruction       n(O)   194  n(E)   13  both   13  P(E|O) 0.067  +3.90 bits
+    robot        ; build robot              n(O)   191  n(E)   11  both   11  P(E|O) 0.058  +4.12 bits
+    humanity     ; save humanity            n(O)   182  n(E)   12  both   12  P(E|O) 0.066  +3.92 bits
+  Comedy
+    wedding      ; call off wedding         n(O)   858  n(E)   10  both   10  P(E|O) 0.012  +6.42 bits
+    millionaire  ; marry millionaire        n(O)   152  n(E)   14  both   13  P(E|O) 0.086  +3.44 bits
+    makeover     ; give makeover            n(O)    67  n(E)   28  both   28  P(E|O) 0.418  +1.26 bits
+    wedding      ; arrive at wedding        n(O)   858  n(E)   11  both   11  P(E|O) 0.013  +6.29 bits
+    aisle        ; walk down aisle          n(O)    34  n(E)   14  both   14  P(E|O) 0.412  +1.28 bits
+    ball         ; get ball                 n(O)   429  n(E)   14  both   14  P(E|O) 0.033  +4.94 bits
+    artist       ; hire artist              n(O)   392  n(E)   10  both    9  P(E|O) 0.023  +5.29 bits
+    date         ; take out on date         n(O)   851  n(E)   10  both   10  P(E|O) 0.012  +6.41 bits
+    manager      ; promote to manager       n(O)   601  n(E)   10  both   10  P(E|O) 0.017  +5.91 bits
+    date         ; set up on date           n(O)   851  n(E)   17  both   17  P(E|O) 0.020  +5.65 bits
+    promotion    ; get promotion            n(O)   145  n(E)   28  both   28  P(E|O) 0.193  +2.37 bits
+    idol         ; meet idol                n(O)   107  n(E)   12  both   12  P(E|O) 0.112  +3.16 bits
+    mayor        ; run for mayor            n(O)   171  n(E)   12  both   12  P(E|O) 0.070  +3.83 bits
+    prom         ; go to prom               n(O)    65  n(E)   19  both   19  P(E|O) 0.292  +1.77 bits
+    stage        ; join on stage            n(O)   462  n(E)   16  both   16  P(E|O) 0.035  +4.85 bits
+  Fantasy
+    dragon       ; kill dragon              n(O)   106  n(E)   12  both   12  P(E|O) 0.113  +3.14 bits
+    spell        ; break spell              n(O)   162  n(E)   41  both   41  P(E|O) 0.253  +1.98 bits
+    army         ; destroy army             n(O)   239  n(E)   10  both   10  P(E|O) 0.042  +4.58 bits
+    power        ; combine power            n(O)   578  n(E)   12  both   12  P(E|O) 0.021  +5.59 bits
+    spell        ; cast spell               n(O)   162  n(E)   39  both   39  P(E|O) 0.241  +2.05 bits
+    magic        ; use magic                n(O)   203  n(E)   74  both   74  P(E|O) 0.365  +1.46 bits
+    power        ; discover power           n(O)   578  n(E)   11  both   11  P(E|O) 0.019  +5.72 bits
+    human        ; turn into human          n(O)   236  n(E)   14  both   14  P(E|O) 0.059  +4.08 bits
+    lair         ; take to lair             n(O)    86  n(E)   10  both   10  P(E|O) 0.116  +3.10 bits
+    princess     ; rescue princess          n(O)   155  n(E)   10  both   10  P(E|O) 0.065  +3.95 bits
+    ring         ; use ring                 n(O)   111  n(E)   10  both   10  P(E|O) 0.090  +3.47 bits
+    wish         ; use wish                 n(O)   162  n(E)   11  both   11  P(E|O) 0.068  +3.88 bits
+    army         ; raise army               n(O)   239  n(E)   17  both   17  P(E|O) 0.071  +3.81 bits
+    castle       ; return to castle         n(O)   204  n(E)   19  both   19  P(E|O) 0.093  +3.42 bits
+    curse        ; lift curse               n(O)   108  n(E)   15  both   15  P(E|O) 0.139  +2.85 bits
+
+SAME NOUN, COMMON AND RARE EVENT (common above 0.15, rare below 0.05; event 10+ films; filters as above)
+  Western: 0 nouns shown
+  Horror: 9 nouns shown
+    ghost        n(O)   440   common: see ghost                71/440 = 0.161   rare: encounter ghost         17/440 = 0.039
+    door         n(O)   720   common: open door               165/720 = 0.229   rare: close door              26/720 = 0.036
+    fire         n(O)   522   common: set on fire             101/522 = 0.193   rare: start fire              25/522 = 0.048
+    power        n(O)   478   common: use power                90/478 = 0.188   rare: give power              15/478 = 0.031
+    hospital     n(O)   601   common: take to hospital         96/601 = 0.160   rare: leave hospital          21/601 = 0.035
+    suicide      n(O)   408   common: commit suicide          290/408 = 0.711   rare: attempt suicide         19/408 = 0.047
+    revenge      n(O)   414   common: take revenge             75/414 = 0.181   rare: want revenge            17/414 = 0.041
+    police       n(O)   779   common: call police             117/779 = 0.150   rare: go to police            27/779 = 0.035
+    truth        n(O)   270   common: tell truth               57/270 = 0.211   rare: know truth              13/270 = 0.048
+  Crime: 10 nouns shown
+    gunpoint     n(O)   208   common: hold at gunpoint         89/208 = 0.428   rare: take at gunpoint        10/208 = 0.048
+    prison       n(O)   765   common: release from prison     120/765 = 0.157   rare: escape from prison      36/765 = 0.047
+    hostage      n(O)   342   common: take hostage            111/342 = 0.325   rare: take as hostage         17/342 = 0.050
+    bank         n(O)   324   common: rob bank                104/324 = 0.321   rare: go to bank              14/324 = 0.043
+    deal         n(O)   415   common: make deal                78/415 = 0.188   rare: strike deal             18/415 = 0.043
+    chase        n(O)   328   common: give chase               62/328 = 0.189   rare: lead to chase           10/328 = 0.030
+    escape       n(O)   301   common: make escape              54/301 = 0.179   rare: attempt escape          10/301 = 0.033
+    revenge      n(O)   544   common: take revenge            109/544 = 0.200   rare: want revenge            24/544 = 0.044
+    identity     n(O)   382   common: reveal identity          67/382 = 0.175   rare: learn identity          18/382 = 0.047
+    suicide      n(O)   434   common: commit suicide          284/434 = 0.654   rare: look like suicide       20/434 = 0.046
+  Science Fiction: 2 nouns shown
+    power        n(O)   487   common: use power               103/487 = 0.211   rare: give power              23/487 = 0.047
+    love         n(O)   296   common: fall in love            124/296 = 0.419   rare: confess love            11/296 = 0.037
+  Comedy: 10 nouns shown
+    ticket       n(O)   344   common: buy ticket               57/344 = 0.166   rare: sell ticket             13/344 = 0.038
+    song         n(O)   818   common: sing song               134/818 = 0.164   rare: write song              32/818 = 0.039
+    contract     n(O)   305   common: sign contract            59/305 = 0.193   rare: win contract            14/305 = 0.046
+    debt         n(O)   384   common: pay off debt             64/384 = 0.167   rare: settle debt             16/384 = 0.042
+    engagement   n(O)   271   common: break off engagement     42/271 = 0.155   rare: end engagement          11/271 = 0.041
+    chase        n(O)   563   common: give chase              103/563 = 0.183   rare: lead to chase           15/563 = 0.027
+    argument     n(O)   486   common: get into argument       101/486 = 0.208   rare: lead to argument        17/486 = 0.035
+    deal         n(O)   627   common: make deal               150/627 = 0.239   rare: strike deal             22/627 = 0.035
+    bank         n(O)   410   common: rob bank                 92/410 = 0.224   rare: go to bank              18/410 = 0.044
+    race         n(O)   508   common: win race                 82/508 = 0.161   rare: challenge to race       18/508 = 0.035
+  Fantasy: 2 nouns shown
+    power        n(O)   578   common: use power               141/578 = 0.244   rare: gain power              27/578 = 0.047
+    love         n(O)   682   common: fall in love            332/682 = 0.487   rare: confess love            27/682 = 0.040

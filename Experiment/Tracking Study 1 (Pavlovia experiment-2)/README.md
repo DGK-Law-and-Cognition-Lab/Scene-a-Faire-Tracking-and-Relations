@@ -31,13 +31,11 @@ Nothing is preregistered yet.
 
 ## Is it randomized?
 
-Assigned by rotation from the sign-up code (not a random draw, and unrelated to anything
-about the participant):
+Assigned from the sign-up code, which is unrelated to anything about the participant:
 
 - design cell = the numeric SONA survey code modulo 72 (a non-numeric code, such as a
   pilot id, gets a random cell)
-- question = `QUESTION_ORDER[cell modulo 3]` (COPY, GENRE, STOCK), so consecutive sign-ups
-  rotate through the questions
+- question = `QUESTION_ORDER[cell modulo 3]` (COPY, GENRE, STOCK)
 - the way the first genre is answered = `MODE_ORDER[floor(cell / 3) modulo 2]` (track,
   rate); the second genre is answered the other way
 - genre schedule = `floor(cell / 6)`, the law review study's twelve schedules (`cell_index`
@@ -45,7 +43,11 @@ about the participant):
 
 Across the 72 cells, under every question, each genre is rated and tracked equally often,
 in first and in second position. (Checked: 144 consecutive codes fill each of the 72
-combinations of genre, way, position and question exactly four times.)
+combinations of genre, way, position and question exactly four times.) A study's SONA codes
+are not consecutive, though, so in practice the cells fill as under a random draw: the law
+review study's twelve cells received 6 to 18 sessions each. The three question groups will be
+about equal, not exactly equal, which is why more than 315 sessions are posted for 100 usable
+per question (memo Section 8.8).
 
 Drawn at random for each participant, and recorded:
 
@@ -136,7 +138,7 @@ screen is not: touch drags produce no path (flagged by `pointer: touch` and `lat
 
 | Constant | Now | Note |
 | --- | --- | --- |
-| `SONA_URL_BASE` | empty | Set to the listing's credit URL ending in `survey_code=`. While empty, SONA sessions end on the completion page and give no credit. The deploy script warns about this. Blank the credit token in any public copy. |
+| `SONA_URL_BASE` | the law review study's return link (SONA study 3298) | Set on November 19, 2026, because David said the SONA listing will have the same return link. It must match the completion URL shown on the listing (same `experiment_id` and `credit_token`); a new SONA listing has its own. When it is empty, SONA sessions end on the completion page and give no credit, and the deploy script warns. The public repository's copy keeps it empty. |
 | `CONSENT_URL` | the law review study's Box link | Confirm it is right for this study. |
 | Box labels (`QUESTIONS.<q>.yes`, `.no`) | Copied / Not copied; Because of the genre / Could be in any film; Stock / Not stock | "Not copied" replaced "Coincidence" on November 19 (David). |
 | `SLOW_MS_CHOICE` | 4000 | Adjust after the investigators' own sessions. |
@@ -316,10 +318,11 @@ build or has a syntax error, copies `index.html`, `experiment.js`, `style.css`,
 `captcha.png` and the seven stimuli files, shows the changes, and pushes only after you
 type `experiment-2`. It never pushes `config.json`. It warns if `SONA_URL_BASE` is empty.
 
-**Deployed by David on November 19, 2026** (the three-group build, with "Coincidence" and the
-288 items). The eleven live files were downloaded and compared with this folder at that time
-and were identical. The build in this folder has since changed ("Not copied", the 432-item
-pool) and **needs one more deploy** to go live.
+**Deployed by David on November 19, 2026**, three times as the build changed. After the last
+deploy that evening the eleven live files were downloaded and compared with this folder and were
+identical: the 432-item pool, "Not copied", the closing question, and every item shown in the
+tracked genre. `SONA_URL_BASE` was set after that comparison, so the build in this folder
+**needs one more deploy** before the SONA listing opens.
 
 Then run one session per version with the six test links the script prints, and check
 that each file appears in the project's data before opening the SONA listing. Pilot ids

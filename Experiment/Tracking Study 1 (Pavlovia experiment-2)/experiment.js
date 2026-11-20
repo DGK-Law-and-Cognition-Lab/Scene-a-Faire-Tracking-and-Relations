@@ -325,9 +325,11 @@ var SPR_FAST_MEDIAN_MS = 150;
 // Completion routing.
 var PROLIFIC_COMPLETION_URL = '';
 var COMPLETION_CODE = 'SAFTRACK1';           // shown only when no redirect happens (test sessions)
-// SONA credit redirect for this study's listing. TO BE SET when the listing exists: the
-// credit URL ending in 'survey_code=' (the participant's code is appended). While it is
-// empty, SONA sessions end on the completion page instead of redirecting.
+// SONA credit redirect: the credit URL ending in 'survey_code=' (the participant's code is appended).
+// Set on November 19, 2026 to the same return link as the law review study (SONA study 3298), as David
+// said the listing will have. If the listing's own completion URL shows another experiment_id or
+// credit_token, replace it. When it is empty, SONA sessions end on the completion page instead of
+// redirecting. Blank the token in any public copy of this file.
 var SONA_URL_BASE = '';
 
 // Consent and contact (same as the law review study).

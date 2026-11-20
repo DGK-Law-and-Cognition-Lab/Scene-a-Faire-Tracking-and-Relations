@@ -27,9 +27,10 @@
 //   genre, three questions) > (COPY group: one question on how "copied" was read) >
 //   demographics > final questions > debrief > save >
 //   SONA credit redirect or completion page
-//   A rated genre:   familiarity, then 56 items and two attention checks.
-//   A tracked genre: Stroop practice, practice choices, familiarity, then 56 items and
-//                    two instructed-response trials.
+//   A rated genre:   familiarity, then 56 items (the 8 foils and 12 of each cell's 18
+//                    stratified items) and two attention checks.
+//   A tracked genre: Stroop practice, practice choices, familiarity, then all 80 items
+//                    and two instructed-response trials.
 //
 // The question, the way that comes first and the two genres come from the numeric
 // survey code (see ASSIGNMENT). The pages, identity, consent, trap page, reading task,
@@ -81,9 +82,12 @@ var FAMILIARITY_LABELS = [
 // The rated genre.
 var RATING_SCALE_MIN = 1;
 var RATING_SCALE_MAX = 7;
-// Stratified items shown per cell and genre. When a genre's file holds more than this in a cell (the
-// extended set has 18), each participant is shown this many, drawn at random; every foil is shown.
+// Stratified items shown per cell. In the RATED genre, when the file holds more than SHOW_PER_CELL in a
+// cell (the extended set has 18), each participant is shown that many, drawn at random. In the TRACKED
+// genre every item of the file is shown (SHOW_ALL_WHEN_TRACKED), because the measures taken from the
+// pointer depend on how many tracked trials a participant makes. Every foil is shown in both.
 var SHOW_PER_CELL = 12;
+var SHOW_ALL_WHEN_TRACKED = true;
 var RATING_ITEMS_PER_PAGE = 8;   // as in the law review study; set to 1 for one item per screen
 
 function capFirst(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
@@ -207,13 +211,16 @@ var QUESTIONS = {
 };
 
 // Instructed-response attention checks, two per genre whichever way it is answered, at random
-// positions (1-based, inclusive) between ATTENTION_MIN_POS and ATTENTION_MAX_POS.
+// positions (1-based, inclusive) between ATTENTION_MIN_POS and ATTENTION_MAX_POS. In a block longer
+// than the rated genre's 58 entries (the tracked genre has 82) the upper end moves out with the block,
+// to ATTENTION_END_MARGIN entries before its end, so that the checks can fall anywhere in it.
 var ATTENTION_CHECKS = [
   { id: 'ATT_SELECT_2', text: 'Attention check: please select 2 for this item.', expected: 2 },
   { id: 'ATT_SELECT_6', text: 'Attention check: please select 6 for this item.', expected: 6 }
 ];
 var ATTENTION_MIN_POS = 10;
 var ATTENTION_MAX_POS = 50;
+var ATTENTION_END_MARGIN = 8;   // 58 - 50: the same distance from the end as in the rated genre
 
 // Frequency estimates (last block, every participant). For each genre the participant estimates
 // FREQ_PER_CELL of the stratified items they judged in each cell, drawn at random, and gives all three
@@ -327,7 +334,7 @@ var SONA_URL_BASE = '';
 var CONSENT_URL = 'https://ucla.box.com/s/8lubbsolq5lwjuwm4h7me47io3zyeat0';
 var CONTACT_NAME = 'David G. Kamper';
 var CONTACT_EMAIL = 'davidgkamper@ucla.edu';
-var ESTIMATED_MINUTES = '25 to 30';
+var ESTIMATED_MINUTES = '30';
 
 function minWait(secs) { return secs > 0 ? { nt: false, timer: secs } : { nt: true }; }
 
@@ -649,7 +656,7 @@ function parseIdentity(up) {
 // often, in first and in second position.
 // Drawn at random for each participant and recorded: the side of the question's first
 // box label, and the order of the three frequency questions. Also drawn at random: which
-// SHOW_PER_CELL items of each cell are shown (when the item file holds more), their order,
+// SHOW_PER_CELL items of each cell are shown in the rated genre, the order of the items,
 // the positions of the attention checks, the items estimated in the frequency block, and
 // the Stroop trials.
 // Test links may force any of these: ?cond=COPY|GENRE|STOCK, ?first=track|rate,
@@ -731,7 +738,8 @@ function assignDesign(up) {
   var fo = parseInt(up.get('forder'), 10);
   var foIdx = (!isNaN(fo) && fo >= 0 && fo < FREQ_ORDERS.length) ? fo : randInt(FREQ_ORDERS.length);
   ST.freqOrder = FREQ_ORDERS[foIdx].slice();
-  rec('items_per_cell_shown', SHOW_PER_CELL);
+  rec('items_per_cell_shown', SHOW_PER_CELL);            // in the rated genre
+  rec('tracked_genre_shows_all', SHOW_ALL_WHEN_TRACKED);
   rec('freq_order', ST.freqOrder.join(','));
 }
 
@@ -792,21 +800,22 @@ async function loadStimuli(keys) {
   })));
 }
 
-// The items a participant judges in a genre: every foil, and SHOW_PER_CELL stratified items from each
-// cell, drawn at random for this participant when the file holds more than that (six items of any
-// kind in a short test). The draw is made once per genre and kept, so the judgments and the frequency
-// block use the same items.
+// The items a participant judges in a genre. In the tracked genre: every item of the file. In the rated
+// genre: every foil, and SHOW_PER_CELL stratified items from each cell, drawn at random for this
+// participant when the file holds more than that. (Six items of any kind in a short test.) The draw is
+// made once per genre and kept, so the judgments and the frequency block use the same items.
 function judgedItems(gi) {
   var gk = ST.genreOrder[gi];
   if (ST.judged[gk]) return ST.judged[gk];
   var items = ST.stimuli[gk].items, out;
+  var limit = (ST.modes[gi] === 'track' && SHOW_ALL_WHEN_TRACKED) ? Infinity : SHOW_PER_CELL;
   if (ST.short) out = shuffle(items).slice(0, 6);
   else {
     var byCell = {};
     out = [];
     items.forEach(function(it) { if (it.is_foil) out.push(it); else (byCell[it.cell_code] = byCell[it.cell_code] || []).push(it); });
     Object.keys(byCell).sort().forEach(function(c) {
-      out = out.concat(byCell[c].length > SHOW_PER_CELL ? shuffle(byCell[c]).slice(0, SHOW_PER_CELL) : byCell[c]);
+      out = out.concat(byCell[c].length > limit ? shuffle(byCell[c]).slice(0, limit) : byCell[c]);
     });
   }
   ST.judged[gk] = out;
@@ -817,7 +826,7 @@ function judgedItems(gi) {
 function attentionPositions(nItems, k) {
   var total = nItems + k;
   var lo = Math.max(1, Math.min(ATTENTION_MIN_POS, total - k + 1));
-  var hi = Math.min(ATTENTION_MAX_POS, total);
+  var hi = Math.min(Math.max(ATTENTION_MAX_POS, total - ATTENTION_END_MARGIN), total);
   var cand = [];
   for (var p = lo; p <= hi; p++) cand.push(p);
   if (cand.length < k) { cand = []; for (var q = 1; q <= total; q++) cand.push(q); }

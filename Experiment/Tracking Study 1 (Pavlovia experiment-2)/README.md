@@ -50,11 +50,13 @@ combinations of genre, way, position and question exactly four times.)
 Drawn at random for each participant, and recorded:
 
 - the order of the items in each genre
-- the positions of the two attention checks in each genre (between positions 10 and 50)
+- the positions of the two attention checks in each genre (between positions 10 and 50 of
+  the rated genre's 58 entries, and between 10 and 74 of the tracked genre's 82 trials)
 - which box label is on the left (`yes_side`; fixed for the whole session)
-- which 12 of a cell's items they are shown, when the item files hold more than 12 per cell
-  (`SHOW_PER_CELL`; the extended set has 18)
-- which 4 of the 12 items they judged in each cell they then estimate in the frequency
+- which 12 of a cell's 18 items they rate in the rated genre (`SHOW_PER_CELL`). In the
+  tracked genre nothing is drawn: every item of the genre is shown
+  (`SHOW_ALL_WHEN_TRACKED`)
+- which 4 of the items they judged in each cell they then estimate in the frequency
   block, and the order of the three frequency questions (`freq_order`)
 - the Stroop trials and the order of the practice choices
 
@@ -82,14 +84,17 @@ There is no `config.json`: Pavlovia serves the correct one.
    answer is always the third option.
 4. Genre 1, then a page saying that the genre and the way of answering change and the
    question stays the same, then genre 2.
-   In each genre a participant judges 56 items: the 8 foils and 12 of the 18 stratified
-   items of each cell, drawn at random for that participant.
+   In the rated genre a participant judges 56 items: the 8 foils and 12 of the 18
+   stratified items of each cell, drawn at random for that participant. In the tracked
+   genre a participant judges all 80 items of the genre (72 stratified and 8 foils),
+   because the measures taken from the pointer depend on the number of tracked trials
+   each participant makes.
    - **Rated genre:** familiarity (1 to 7), the question's wording, then 56 items and two
      instructed-response attention checks ("please select 2", "please select 6") on pages
      of 8.
    - **Tracked genre:** a mouse-tracked Stroop task (8 practice trials with feedback, 32
      scored trials), 4 practice choices about Romance films with the participant's own two
-     boxes, familiarity, the question's wording, then 56 item trials and two
+     boxes, familiarity, the question's wording, then 80 item trials and two
      instructed-response trials (one naming each box).
 5. Frequency estimates, the same for everyone: for 16 of the items they judged in each
    genre (4 per cell, drawn at random, the same items for all three questions), three
@@ -103,7 +108,7 @@ There is no `config.json`: Pavlovia serves the correct one.
    redirect is set. If the upload fails, the data file is downloaded and the participant
    sees a request to email it, with a button to go on for credit.
 
-About 25 to 30 minutes for everyone.
+About 30 minutes for everyone, to be fixed after the investigators' own sessions.
 
 ### One mouse-tracked trial
 
@@ -135,9 +140,9 @@ screen is not: touch drags produce no path (flagged by `pointer: touch` and `lat
 | `CONSENT_URL` | the law review study's Box link | Confirm it is right for this study. |
 | Box labels (`QUESTIONS.<q>.yes`, `.no`) | Copied / Not copied; Because of the genre / Could be in any film; Stock / Not stock | "Not copied" replaced "Coincidence" on November 19 (David). |
 | `SLOW_MS_CHOICE` | 4000 | Adjust after the investigators' own sessions. |
-| `ESTIMATED_MINUTES` | 25 to 30 | Shown on the instructions page. Adjust after the investigators' own sessions. |
+| `ESTIMATED_MINUTES` | 30 | Shown on the instructions page. Adjust after the investigators' own sessions. |
 | `WELCOME_TITLE` and the page title | Judgments About Films | Should match the SONA listing's name. |
-| Stimuli | 432 stratified items (18 per cell and genre: the law review study's 288 and 144 new ones) and 48 foils | Each participant is shown 12 of a cell's 18 (`SHOW_PER_CELL`), drawn at random. The new items are drawn by `Analysis/notebooks/20_extended_item_set.ipynb`; the review and the list are in `Analysis/v4_rebuild/20_extended_item_set/extension_review_log.md`. David confirmed the new items on November 19, 2026. |
+| Stimuli | 432 stratified items (18 per cell and genre: the law review study's 288 and 144 new ones) and 48 foils | In the rated genre each participant is shown 12 of a cell's 18 (`SHOW_PER_CELL`), drawn at random. In the tracked genre each participant is shown all 18 (`SHOW_ALL_WHEN_TRACKED`). The new items are drawn by `Analysis/notebooks/20_extended_item_set.ipynb`; the review and the list are in `Analysis/v4_rebuild/20_extended_item_set/extension_review_log.md`. David confirmed the new items on November 19, 2026. |
 
 The quoted adjectives in the `STOCK` wording (`STOCK_RULE`) are the Restatement's as the
 law review manuscript quotes them. If the manuscript's check changes them, change
@@ -165,7 +170,8 @@ Assignment: `question` (COPY, GENRE, STOCK), `first_mode` (track, rate), `condit
 the design), `cell_index` (genre schedule, 0 to 11), `wave`, `pair_index`, `order`,
 `assignment_source`, `question_source`, `first_mode_source`, `genre_source`
 (`survey_code_mod`, `random` or `url...`), `questions_in_design`, `yes_side`, `box_yes`,
-`box_no`, `box_left`, `box_right`, `items_per_cell_shown`, `freq_order`, `stimuli_source`,
+`box_no`, `box_left`, `box_right`, `items_per_cell_shown` (in the rated genre),
+`tracked_genre_shows_all`, `freq_order`, `stimuli_source`,
 `stimuli_meta`.
 
 Reading task: `spr1_*`, `spr2_*` (`_rts`, `_mean_rt`, `_median_rt`, `_fast`, `_min_rt`,
@@ -280,6 +286,13 @@ and one more full `short=1` session to the saved record.
 The closing question of the COPY group was checked on its own page: it sits between the
 frequency block and the questions about the participant, cannot be skipped, records the code
 of the answer, and is absent for the other two groups.
+
+After the tracked genre was set to show every item: with the real item files, the tracked
+genre has 80 items (18 per cell and 8 foils) and 82 trials, the rated genre has 56 items and
+58 entries, 200 redraws all gave those counts, the frequency items are among the items
+judged, and the instructions say 30 minutes. The attention checks of the longer block were
+moved to fall anywhere between trials 10 and 74 (20,000 draws; the rated genre's rule,
+10 to 50, is unchanged). No full-length session has been run with 82 tracked trials.
 
 These sessions were driven by a script in a hidden browser pane, so they check the logic
 and the record, not the timing. **Nobody has yet taken the study by hand, on a laptop,

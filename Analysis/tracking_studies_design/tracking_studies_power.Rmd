@@ -60,7 +60,7 @@ T0 <- Sys.time()
 
 # Study 1: one shared story feature, three questions, two ways of answering
 
-**Design.** Study 1 has three groups of participants, one for each question. COPY asks how strongly a story feature shared by a screenplay and a later film suggests copying; GENRE asks how much the feature is in the film because of the genre; STOCK asks whether it is a stock feature. Each participant answers their one question in both ways. For one of their two genres they rate each story feature from 1 to 7. For the other genre they give the same judgment as a mouse-tracked choice between two boxes, "Copied" and "Coincidence" for the COPY question. Which way comes first is counterbalanced. The two genres come from the law review study's twelve-cell schedule (six genre pairs, each in both orders), crossed with which way comes first. That gives 24 cells, and over the 24 cells every genre is rated and tracked equally often and in both positions. In the simulation participant *i* is given cell (*i* − 1) modulo 24. The planned sample is 100 participants per question, 300 in all.
+**Design.** Study 1 has three groups of participants, one for each question. COPY asks how strongly a story feature shared by a screenplay and a later film suggests copying; GENRE asks how much the feature is in the film because of the genre; STOCK asks whether it is a stock feature. Each participant answers their one question in both ways. For one of their two genres they rate each story feature from 1 to 7. For the other genre they give the same judgment as a mouse-tracked choice between two boxes, "Copied" and "Not copied" for the COPY question. Which way comes first is counterbalanced. The two genres come from the law review study's twelve-cell schedule (six genre pairs, each in both orders), crossed with which way comes first. That gives 24 cells, and over the 24 cells every genre is rated and tracked equally often and in both positions. In the simulation participant *i* is given cell (*i* − 1) modulo 24. The planned sample is 100 participants per question, 300 in all.
 
 **What is simulated.** The accounts below make predictions about the COPY question, so the simulations are of the COPY group, and *n* is the number of participants who answer that question. The GENRE and STOCK groups have the same structure, so the same power applies to effects of the same size there. Under the design each of the *n* participants gives ratings on the items of one genre and tracked choices on the items of the other genre. Items are crossed with participants within a genre. Prevalence (P) and distinctiveness (D) are coded +0.5 for a genre's top third and −0.5 for its bottom third, as in the law review study. The item set is either the 288 items the law review study rated (48 per genre, 12 per cell) or an extended set of 432 (72 per genre, 18 per cell). Each analysis is run for *n* = 60, 80, 100 and 120 and for both item sets.
 
@@ -68,12 +68,12 @@ T0 <- Sys.time()
 
 **Two comparison designs.** Both keep the same total number of participants per question. In *separate groups*, half of the *n* participants rate and the other half make tracked choices, and each judges both genres of their pair in that one way. This is the structure of the earlier four-group design at half its size per group. In *first half only*, the new design is analysed using only each participant's first genre, so about half the participants contribute ratings on one genre and the other half tracked choices on one genre. That is the clean check against one way of answering colouring the other, and its power shows what the check can detect. The results of the new design are labelled *both ways*.
 
-**The design as built.** The experiment as built uses the larger pool without a longer session. The pool has 432 items, 18 in each cell of each genre, and each participant is shown 12 of the 18 in every cell, drawn at random for that participant, so a participant still judges 48 items per genre. Different participants see different items. Because the differences among items, and not the number of answers per item, limit precision, this should give nearly the power of showing everyone all 432 items. It is simulated here as *both ways, 48 of 72 shown* and can be compared with the rows for 432 items shown in full.
+**The design as built.** The pool has 432 items, 18 in each cell of each genre. In the rated genre each participant is shown 12 of the 18 in every cell, drawn at random for that participant, so a participant rates 48 of the genre's 72 items and different participants rate different items. Because the differences among items, and not the number of answers per item, limit precision, this gives nearly the power of having everyone rate all 72. In the tracked genre each participant judges all 72 items, because the precision of the measures taken from the pointer depends on the number of tracked trials each participant makes. The design as built is therefore read from two sets of rows: the ratings from *both ways, 48 of 72 shown*, and the tracked choices and the paths from *both ways* with 432 items. The two ways are simulated with independent random effects and fitted separately, so the rows can be combined in this way. The rows of *both ways, 48 of 72 shown* for the tracked choices and the paths show what the tracked genre would give if it too showed 48 of the 72.
 
 ```{r study1-schedule}
 DESIGNS <- c("both ways", "separate groups", "first half only")
 NS <- c(60, 80, 100, 120)
-SAMPLED <- "both ways, 48 of 72 shown"         # the design as built: 18 items per cell in the pool, each participant shown 12 of them
+SAMPLED <- "both ways, 48 of 72 shown"         # 18 items per cell in the pool, each participant shown 12 of them: the rated genre as built (the tracked genre as built shows all 18)
 DESIGNS4 <- c(DESIGNS, SAMPLED)
 keep_shown <- function(d, shown, per_cell) {     # each participant is shown `shown` of the `per_cell` items of a cell, drawn at random
   if (is.na(shown) || shown >= per_cell) return(d)
@@ -139,7 +139,7 @@ cols <- c("account", "items", "n", "n_analysed", "trials", "P_minus_D_negative",
 kable(res_rate[res_rate$design == "both ways", cols], digits = 2, row.names = FALSE,
       caption = "Study 1, copying rating, both ways: share of simulations in which each test gives the stated result (n = participants answering the question; n_analysed = participants who rated; trials = rated items per participant)")
 kable(res_rate[res_rate$design != "both ways", c("design", cols)], digits = 2, row.names = FALSE,
-      caption = "Study 1, copying rating, the two comparison designs at the same n per question, and the design as built (432 items in the pool, 48 of 72 shown per genre)")
+      caption = "Study 1, copying rating, the two comparison designs at the same n per question, and the rated genre as built (432 items in the pool, 48 of a genre's 72 rated)")
 ```
 
 ```{r fig-study1-ratings, fig.width = 9.1, fig.height = 7.5}
@@ -206,7 +206,7 @@ cols <- c("account", "items", "n", "n_analysed", "trials", "share_copied", "P_mi
 kable(res_choice[res_choice$design == "both ways", cols], digits = 2, row.names = FALSE,
       caption = "Study 1, tracked choice of Copied, both ways: share of simulations in which each test gives the stated result (n = participants answering the question; n_analysed = participants who made tracked choices; standard errors in logits)")
 kable(res_choice[res_choice$design != "both ways", c("design", cols)], digits = 2, row.names = FALSE,
-      caption = "Study 1, tracked choice of Copied, the two comparison designs at 100 participants per question, and the design as built")
+      caption = "Study 1, tracked choice of Copied, the two comparison designs at 100 participants per question, and 48 of 72 shown (the tracked genre as built shows all 72: the rows of both ways with 432 items, above)")
 ```
 
 ## The path of the mouse
@@ -244,7 +244,7 @@ cols <- c("pullD", "items", "n", "n_analysed", "trials", "pull_D", "pull_P", "D_
 kable(res_curve[res_curve$design == "both ways", cols], digits = 2, row.names = FALSE,
       caption = "Study 1, curvature, both ways: power to detect a pull toward the typical answer (pullD, in trial SDs) when choices follow prevalence only; pull_P is the power for the prevalence pull of 0.10; D_minus_P is the power to tell the two pulls apart; trials = tracked items per participant")
 kable(res_curve[res_curve$design != "both ways", c("design", cols)], digits = 2, row.names = FALSE,
-      caption = "Study 1, curvature, the two comparison designs at 100 participants per question, and the design as built")
+      caption = "Study 1, curvature, the two comparison designs at 100 participants per question, and 48 of 72 shown (the tracked genre as built shows all 72: the rows of both ways with 432 items, above)")
 ```
 
 ```{r fig-study1-tracking, fig.width = 9.1, fig.height = 4}

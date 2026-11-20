@@ -5,7 +5,7 @@ author: "Prepared for David Kamper, Keith Holyoak and Mira Patel"
 date: "November 19, 2026. Revises the memorandum of November 18. Draft for discussion; nothing here is preregistered."
 ---
 
-*What changed on November 19.* The four studies are now numbered 1 to 4, because they belong to a paper of their own. The completed study that the law review article reports as its Study 1 is called the law review study throughout. Study 1 has three groups, one for each question, and every participant answers in two ways: one genre with ratings and the other with a mouse-tracked choice between two boxes. Its item pool grows from 288 to 432 stratified items, of which each participant is shown 48 per genre, the second box of the copying choice reads "Not copied," response time joins the bend of the path as a registered measure of conflict, and participants who answer the copying question are asked at the end how they read it. Study 2 gains a third kind of pair, a story feature together with what happens to it. Each study's section opens with a one-page statement of its design, and Section 15 lists what a reviewer is likely to press on. Study 1's experiment has been rebuilt to this design and run locally in all six of its versions.
+*What changed on November 19.* The four studies are now numbered 1 to 4, because they belong to a paper of their own. The completed study that the law review article reports as its Study 1 is called the law review study throughout. Study 1 has three groups, one for each question, and every participant answers in two ways: one genre with ratings and the other with a mouse-tracked choice between two boxes. Its item pool grows from 288 to 432 stratified items, of which each participant rates 48 of one genre's 72 and judges all 72 of another genre with the mouse, the second box of the copying choice reads "Not copied," response time joins the bend of the path as a registered measure of conflict, and participants who answer the copying question are asked at the end how they read it. Study 2 gains a third kind of pair, a story feature together with what happens to it. Each study's section opens with a one-page statement of its design, and Section 15 lists what a reviewer is likely to press on. Study 1's experiment has been rebuilt to this design and run locally in all six of its versions.
 
 # 1. Summary
 
@@ -215,10 +215,10 @@ Notebook 18 also confirms that the materials for Studies 2 and 3 exist. Among co
 | Unit judged | One feature shared by two unseen works | A pair of shared features, or a feature and what happens to it | Two synopses | Features in a dispute, with expert counts |
 | Varied between participants | The question (copying; because of the genre; stock) | The question (copying; necessity) | Role (plaintiff's side; defendant's side; juror) | Count format (none; prevalence; distinctiveness; both; increment) |
 | Varied within participants | The way of answering (ratings for one genre, mouse-tracked choice for the other); prevalence × distinctiveness of the feature | Kind of pair (implied; unrelated; event) | Kind of shared features (2 × 2) × arrangement (aligned, scattered) | Prevalence × distinctiveness of the feature |
-| Materials | 432 stratified items (the law review study's 288 and 144 new ones) and 48 foils; each participant is shown 48 stratified items per genre | 144 pairs in 72 matched sets and 48 event pairs, drawn from corpus counts | 12 story shells, 96 synopsis pairs | 48 items of the law review study with their corpus counts |
+| Materials | 432 stratified items and 48 foils; a participant rates 48 of one genre's 72 and tracks all 72 of another | 144 pairs in 72 matched sets and 48 event pairs, drawn from corpus counts | 12 story shells, 96 synopsis pairs | 48 items of the law review study with their corpus counts |
 | Main measures | Rating, 1 to 7; choice and pointer path; frequency estimates | Rating, 1 to 7; conditional frequency estimates | Probability of copying; similarity; character mapping; feature checklist | Stock rating; copying rating |
 | Usable participants proposed | 300 (100 per question) | 120 (60 per question) | 210 (70 per role) | 300 (60 per format) |
-| Session | 25 to 30 minutes | About 30 minutes | About 45 minutes | About 20 minutes |
+| Session | About 30 minutes | About 30 minutes | About 45 minutes | About 20 minutes |
 | New materials work | Done: 144 items drawn and reviewed | Moderate: the pairs are drawn and reviewed | Large: the story shells are written by hand | Small |
 | State | Built and run locally in all six versions | Not built | Not built | Not built |
 
@@ -236,14 +236,14 @@ The four studies together call for 930 usable participants. Sections 8 to 11 eac
 |------------------|--------------------------------------------------------------|
 | The question it answers | When people judge a shared story feature, which fact do they use: how common it is in the genre, or how much it belongs to the genre? Does that depend on what they are asked? And does the fact they do not use still pull at the answer while it forms? |
 | Who takes part | 300 usable participants from the UCLA subject pool, 100 for each question, on a desktop or laptop with a mouse or a trackpad. |
-| What a participant does | Answers one question about the items of two genres. For one genre, rates each item from 1 to 7. For the other, chooses between two boxes by moving the pointer, one item at a time. Then estimates how often 32 of the items occur in films. |
+| What a participant does | Answers one question about the items of two genres. For one genre, rates 56 items from 1 to 7. For the other, chooses between two boxes by moving the pointer, one item at a time, for all 80 items of the genre. Then estimates how often 32 of the items occur in films. |
 | What differs between participants | The question: does this shared feature suggest copying (COPY); is it in the film because of the genre (GENRE); is it a stock feature of the genre (STOCK). Also which way of answering comes first, and which two genres. |
-| What differs within a participant | The way of answering: ratings for one genre, the mouse for the other. Within each genre, prevalence (high, low) by distinctiveness (high, low): the pool has 18 items in each of the four cells and a participant is shown 12 of them, with 8 foils from another genre. |
+| What differs within a participant | The way of answering: ratings for one genre, the mouse for the other. Within each genre, prevalence (high, low) by distinctiveness (high, low): the pool has 18 items in each of the four cells. In the rated genre a participant is shown 12 of the 18, and in the tracked genre all 18. Both have 8 foils from another genre. |
 | How people are assigned | By the numeric sign-up code. The code modulo 72 picks one of 72 cells: 3 questions by 2 orders of answering by 12 genre schedules. Consecutive sign-ups rotate through the questions. This is a rotation, as in the law review study, and not a random draw. Across the 72 cells, under every question, each genre is rated and tracked equally often, in first and in second position. |
-| What is drawn at random for each person | Which 12 of the 18 items of each cell they are shown, and the order of the items. The positions of the attention checks. Which box is on the left. Which of the items they judged they then estimate, and the order of the three frequency questions. |
+| What is drawn at random for each person | Which 12 of the 18 items of each cell they rate, and the order of the items in both genres. The positions of the attention checks. Which box is on the left. Which of the items they judged they then estimate, and the order of the three frequency questions. |
 | What is recorded | Each rating and its response time. Each choice, its response time and the position of the pointer up to 125 times a second. Three frequency estimates for each of 32 items. Familiarity with each genre, the pointing device, and the closing questions. In the COPY group, one closing question on how the participant read "copied." |
-| The main tests | In ratings of copying: the sign of prevalence minus distinctiveness, and whether distinctiveness has no effect (within ±0.40 points). Across the three questions: whether the two facts are weighted differently. In the tracked choices, on two measures, the bend of the path and the response time: whether the answer that typicality favors, and the answer that prevalence favors, pulls at the response. |
-| Length | 25 to 30 minutes. |
+| The main tests | Primary, in ratings of copying: the sign of prevalence minus distinctiveness (S1-H2), and whether distinctiveness has no effect, within ±0.40 points (S1-H3). Secondary, across the three questions: whether the two facts are weighted differently. In the tracked choices, on two measures, the bend of the path and the response time: whether the answer that typicality favors, and the answer that prevalence favors, pulls at the response. |
+| Length | About 30 minutes. |
 | State | Built, and run locally in all six versions (three questions, two orders of answering). Not yet taken by a person. Not preregistered. |
 
 : Study 1 on one page.
@@ -260,7 +260,7 @@ The way of answering varies within participants. Each participant judges the ite
 
 Each question is therefore answered both ways, by the same people, on different genres. Three things follow. The rated and the tracked results can be compared within each question. One question can serve as the control for another: on the genre question typicality and the right answer agree, so the pull of typicality that the copying question is expected to show should be absent there, and a pull of plain commonness may appear in its place. And the first genre of every session, taken alone, is a comparison between separate groups of participants, free of any influence of one way of answering on the other.
 
-The two genres come from the twelve-cell schedule of the law review study (six genre pairs in two orders). Crossed with the three questions and the two orders of answering, that gives 72 cells, in which every genre is rated and tracked equally often, in first and in second position, under every question. The item pool of a genre has 72 stratified items, 18 in each cell of high or low prevalence crossed with high or low distinctiveness, and 8 foils. Each participant is shown 12 of the 18 items of every cell, drawn at random for that participant, and all 8 foils, in a random order. A participant therefore judges 56 items per genre, as in the law review study, and different participants judge different items.
+The two genres come from the twelve-cell schedule of the law review study (six genre pairs in two orders). Crossed with the three questions and the two orders of answering, that gives 72 cells, in which every genre is rated and tracked equally often, in first and in second position, under every question. The item pool of a genre has 72 stratified items, 18 in each cell of high or low prevalence crossed with high or low distinctiveness, and 8 foils. In the rated genre each participant is shown 12 of the 18 items of every cell, drawn at random for that participant, and all 8 foils: 56 items, as in the law review study, with different participants rating different items. In the tracked genre each participant judges all 72 items and the 8 foils, because the measures taken from the pointer depend on the number of tracked trials each participant makes (Section 8.9). The order of the items is random in both.
 
 An earlier draft carried a fourth question, whether the screenwriter should be able to stop the film's makers from using the feature. It is set aside. It would add a third to the sample and is not needed to tell the three accounts apart.
 
@@ -268,7 +268,7 @@ An earlier draft carried a fourth question, whether the screenwriter should be a
 
 The pool is the 336 rated items of the law review study, with their display text unchanged, and 144 new stratified items. Every one of the law review study's items has an expectedness rating given by 36 to 49 other participants, so the one-intuition account can be tested with a predictor measured on different people. The new items have no such rating.
 
-The pool was enlarged because the law review study's variance components show that the item set, not the sample, limits precision. The item standard deviation was 0.99 rating points, against 0.61 for participants and 1.30 for the residual, so the standard error of a cell contrast across 288 items has a floor of about 0.12 to 0.14 however many participants are run, and 432 items lower that floor by about a fifth. Showing every participant all 72 items of a genre would lengthen the session by about ten minutes. Showing each participant 48 of the 72 keeps the session as it was and keeps most of the gain for the ratings and the choices, because there the items and not the number of answers per item are the limit (Section 8.8). It does not help the measure taken from the pointer's path, whose precision depends on the number of tracked trials per participant (Section 8.9).
+The pool was enlarged because the law review study's variance components show that the item set, not the sample, limits precision. The item standard deviation was 0.99 rating points, against 0.61 for participants and 1.30 for the residual, so the standard error of a cell contrast across 288 items has a floor of about 0.12 to 0.14 however many participants are run, and 432 items lower that floor by about a fifth. Showing every participant all 72 items of both genres would lengthen the session by about ten minutes, so the design shows all 72 only where the number of trials matters. In the rated genre each participant is shown 48 of the 72, which keeps most of the gain for the ratings, because there the items and not the number of answers per item are the limit (Section 8.8). In the tracked genre each participant judges all 72, because the precision of the measures taken from the pointer depends on the number of tracked trials each participant makes (Section 8.9). That adds 24 tracked trials, a few minutes, to the session.
 
 The 144 new items, 6 in each cell of each genre, were drawn by Notebook 20. It first reproduces the law review study's draw exactly from that study's seeded queues, and then continues each queue from where it stopped, with the same pool, filters, exclusions and overlap rule. The new items were reviewed by the standards of the law review study's review: 36 strings were rejected as idiom residue, meta words, ambiguous nouns or fragments, each replaced by the next candidate in its queue, in three rounds. The cells stay matched. With all 18 items per cell and the genres pooled, median prevalence is 3.0% in the common-and-characteristic cell against 3.3% in the common-but-uncharacteristic cell, and 0.75% against 0.75% in the two rare cells, and on within-genre percentiles the new items do not differ from the old in any cell. David confirmed the 144 new items on November 19. The list of new items, the rejected strings and the tables are in `Analysis/v4_rebuild/20_extended_item_set/`.
 
@@ -276,17 +276,17 @@ The 144 new items, 6 in each cell of each genre, were drawn by Notebook 20. It f
 
 The session follows the law review study's structure with the listing task removed. After consent and the two-sentence reading task, participants read the instructions for their question, which say that they will answer in two ways and in which order, and answer the task check ("What is your task in this study?"), with one retry after re-reading.
 
-For the rated genre participants rate their familiarity with the genre, read the question's wording, and rate their 56 items of the genre eight to a page, with two instructed-response attention checks among them. For the tracked genre they first learn the mouse procedure on a color-word Stroop task and make four practice choices (Section 8.9). They then rate their familiarity with the genre, read the same question in its two-box form, and judge their 56 items one at a time, with two instructed-response trials among them. A page between the two genres says that the genre changes, that the question stays the same, and that the way of answering changes.
+For the rated genre participants rate their familiarity with the genre, read the question's wording, and rate their 56 items of the genre eight to a page, with two instructed-response attention checks among them. For the tracked genre they first learn the mouse procedure on a color-word Stroop task and make four practice choices (Section 8.9). They then rate their familiarity with the genre, read the same question in its two-box form, and judge all 80 items of the genre one at a time, with two instructed-response trials among them. A page between the two genres says that the genre changes, that the question stays the same, and that the way of answering changes.
 
-A final block, the same for everyone, collects frequency estimates. Participants in the COPY group then answer one closing question on how they read the copying question (Section 8.11). The session ends with demographics, a question on legal training, three questions about the participant's setup (mouse or trackpad, which hand, color vision), the law review study's closing questions (seriousness, distraction, use of AI tools) and the debriefing, which says that the path of the pointer was recorded. The expected length is 25 to 30 minutes.
+A final block, the same for everyone, collects frequency estimates. Participants in the COPY group then answer one closing question on how they read the copying question (Section 8.11). The session ends with demographics, a question on legal training, three questions about the participant's setup (mouse or trackpad, which hand, color vision), the law review study's closing questions (seriousness, distraction, use of AI tools) and the debriefing, which says that the path of the pointer was recorded. The expected length is about 30 minutes, to be fixed after the investigators' own sessions.
 
-In the frequency block each participant gives three estimates for 16 of the items they judged in each of their two genres (4 of the 12 they were shown in each cell, drawn at random, and the same items for all three estimates, so every item of the pool is estimated by about two ninths of the participants who had its genre). The three estimates are the number, out of 100 films of the genre, that include the feature; the number, out of 100 films of all kinds, that include it; and the number, out of 100 films that include it, that are films of the genre. They are collected in three short blocks whose order is drawn at random for each participant, on sliders from 0 to 100 that show no handle until they are clicked. They give each item a subjective prevalence, a subjective base rate and a subjective cue validity, from which a subjective copying ratio and a subjective share due to the genre follow. The block comes last so that it cannot affect the main judgments; whether the question a participant answered affects the estimates is checked.
+In the frequency block each participant gives three estimates for 16 of the items they judged in each of their two genres (4 of the items they judged in each cell, drawn at random, and the same items for all three estimates, so every item of the pool is estimated by about two ninths of the participants who had its genre). The three estimates are the number, out of 100 films of the genre, that include the feature; the number, out of 100 films of all kinds, that include it; and the number, out of 100 films that include it, that are films of the genre. They are collected in three short blocks whose order is drawn at random for each participant, on sliders from 0 to 100 that show no handle until they are clicked. They give each item a subjective prevalence, a subjective base rate and a subjective cue validity, from which a subjective copying ratio and a subjective share due to the genre follow. The block comes last so that it cannot affect the main judgments; whether the question a participant answered affects the estimates is checked.
 
 The exact wording of every instruction and question is in Appendix A. It is the wording of the experiment as built (`Experiment/Tracking Study 1 (Pavlovia experiment-2)/`).
 
 ## 8.5 Hypotheses and registered tests for the ratings
 
-These tests use each participant's rated genre; the tests of the tracked genre are in Section 8.9. All tests use the stratified items. Prevalence (P) and distinctiveness (D) are coded +0.5 for the top third and −0.5 for the bottom third of the genre, as in the law review study.
+S1-H2 and S1-H3 are the primary tests of Study 1, and the preregistration will name them so. Every other hypothesis of Study 1 is secondary. These tests use each participant's rated genre; the tests of the tracked genre are in Section 8.9. All tests use the stratified items. Prevalence (P) and distinctiveness (D) are coded +0.5 for the top third and −0.5 for the bottom third of the genre, as in the law review study.
 
 S1-H1. *Prevalence lowers judged evidence of copying.* In the COPY group the coefficient of P is below zero. All three accounts predict the sign; the query-sensitive account predicts the largest effect.
 
@@ -330,17 +330,28 @@ Robustness checks follow the law review study: the model without word frequency;
 
 An item-level analysis uses the law review study's norms directly, for the 288 items that have them. The mean COPY rating of each item is regressed on its copying weight and its expectedness rating from the law review study, with genre. Because the two predictors correlate only −.23, their coefficients are well separated.
 
-## 8.8 Sample size for the ratings
+## 8.8 Sample size
 
-The simulations (Appendix C) varied the number of participants per question (60, 80, 100 or 120) under each account, for the design as built: a pool of 432 items, of which each participant is shown 48 of a genre's 72 and rates one genre. With 100 participants per question every item is then rated by about 11 of them. If copying judgments follow prevalence alone, with an effect of 0.60 points, the contrast of S1-H2 is significantly below zero in 95% of simulations with 100 participants, and the equivalence test of S1-H3 at ±0.40 succeeds in 92%. At ±0.30 it succeeds in 61%, so a zero cannot be established that tightly. If the one-intuition account holds at seven tenths of the size of the law review study's effects, or the overall-frequency account at the size assumed, the contrast and the distinctiveness effect are detected in 99% to 100% of simulations. A prevalence effect as small as 0.25 points, which the one-intuition account implies, is detected in 68%.
+*The ratings.* The simulations (Appendix C) varied the number of participants per question (60, 80, 100 or 120) under each account, for the design as built: a pool of 432 items, of which each participant rates 48 of one genre's 72. With 100 participants per question every item is then rated by about 11 of them. If copying judgments follow prevalence alone, with an effect of 0.60 points, the contrast of S1-H2 is significantly below zero in 95% of simulations with 100 participants, and the equivalence test of S1-H3 at ±0.40 succeeds in 92%. At ±0.30 it succeeds in 61%, so a zero cannot be established that tightly. If the one-intuition account holds at seven tenths of the size of the law review study's effects, or the overall-frequency account at the size assumed, the contrast and the distinctiveness effect are detected in 99% to 100% of simulations. A prevalence effect as small as 0.25 points, which the one-intuition account implies, is detected in 68%.
 
-The larger pool is what buys this, and showing each participant only part of it costs little. With the law review study's 288 items alone the two tests succeed in 90% and 79% of simulations. With all 432 items shown to everyone, in a session about ten minutes longer, they would succeed in 97% and 95%. The reason is that the differences among items, and not the number of ratings each item receives, limit precision.
+The larger pool is what buys this, and showing each participant only part of it costs little. With the law review study's 288 items alone the two tests succeed in 90% and 79% of simulations. With all 72 items of the genre rated by everyone they would succeed in 97% and 95%. The reason is that the differences among items, and not the number of ratings each item receives, limit precision.
 
-Having each participant answer both ways also costs nothing against separate groups. If 100 participants per question were split into 50 who rate two genres and 50 who answer two genres with the mouse, all items shown, the two tests would succeed in 95% and 81% of simulations. People differ a good deal in the weight they give distinctiveness, so 100 people rating one genre each say more than 50 people rating two. The check on first genres alone, about 50 participants with one genre each, was simulated with all items shown and succeeds in 95% and 81%; with 48 of 72 shown it will be somewhat lower.
+Having each participant answer both ways also costs nothing against separate groups. If 100 participants per question were split into 50 who rate two genres and 50 who answer two genres with the mouse, all items shown, the two tests would succeed in 95% and 81% of simulations. People differ a good deal in the weight they give distinctiveness, so 100 people rating one genre each say more than 50 people rating two. The check on first genres alone, about 50 participants with one genre each, was simulated with all items shown and succeeds in 95% and 81%; with 48 of 72 rated it will be somewhat lower.
 
-The proposal is 100 usable participants per question, 300 in all. The law review study lost 6 of 137 sessions to its exclusion rules, so about 315 would be recruited. Figure 2 shows the two tests for the designs in which every item is shown; the design as built is in Tables C1 and C4.
+*How many participants.* The table below gives the main tests by the number of participants per question, for the design as built: 48 of a genre's 72 items rated, and all 72 of another genre judged with the mouse. The two primary tests, which use the ratings, are at 86% or more with 60 participants per question, because the items and not the participants limit them. The tests on the pointer's path are the ones that need people: a pull of 0.10 is detected in 76% of simulations with 60 participants per question, 85% with 80, 94% with 100 and 97% with 120 (Section 8.9).
 
-![Figure 2. Study 1, ratings of copying: share of simulations in which each test succeeds if copying judgments follow prevalence alone, by number of participants per question and item set. The blue line is the design in which everyone answers both ways and sees every item; the black line, in the right-hand panels, is the design as built, in which each participant is shown 48 of a genre's 72 items; the gray line splits the same participants into separate groups for the two ways; the red line uses first genres only. The dashed line is 80%. Source: `tracking_studies_power.Rmd`.](figures/power_one_feature_ratings.png)
+| Participants per question | Ratings: P minus D below zero (S1-H2) | Ratings: D within ±0.40 (S1-H3) | Choice: P minus D below zero | Choice: D within the bound | Path: pull of 0.10 detected | Path: pull of 0.20 told apart from 0.10 |
+|---|---|---|---|---|---|---|
+| 60 | 95% | 86% | 92% | 88% | 76% | 58% |
+| 80 | 96% | 91% | 96% | 93% | 85% | 60% |
+| 100 | 95% | 92% | 97% | 95% | 94% | 77% |
+| 120 | 98% | 92% | 96% | 97% | 97% | 75% |
+
+: Study 1 as built: share of simulations in which each main test succeeds, by the number of participants per question, when judgments follow prevalence alone.
+
+The proposal is 100 usable participants per question, 300 in all. Under these assumptions that puts five tests at 92% or more: the two primary tests, the same two tests in the tracked choice, and the detection of a pull of 0.10. With 80 per question, 240 in all, the same five are at 85% or more. Telling two pulls apart stays uncertain at every size simulated. The law review study lost 6 of 137 sessions to its exclusion rules, so about 315 would be recruited for 300. The figures rest on the assumed sizes of the effects. If the effect of prevalence on judged copying is smaller than 0.60 points, more items would be needed, and more participants would not make up for them. Figure 2 shows the two rating tests.
+
+![Figure 2. Study 1, ratings of copying: share of simulations in which each test succeeds if copying judgments follow prevalence alone, by number of participants per question and item set. The black line, in the right-hand panels, is the design as built, in which each participant rates 48 of a genre's 72 items. The blue line is the design in which every item is rated; the gray line splits the same participants into separate groups for the two ways; the red line uses first genres only. The dashed line is 80%. Source: `tracking_studies_power.Rmd`.](figures/power_one_feature_ratings.png)
 
 ## 8.9 The mouse-tracked genre
 
@@ -354,7 +365,7 @@ For COPY the choice asks which explanation is more likely, where the rating asks
 
 *Practice and control.* Before the tracked genre, participants complete a mouse-tracked color-word Stroop task: 8 practice trials with feedback and 32 scored trials, half of them incongruent. It teaches the procedure, and it is a positive control. Mouse-tracked Stroop tasks show a reliable effect of congruency on the movement toward the response (Bundt, Ruitenberg, Abrahamse and Notebaert, 2018; Yamamoto, Incera and McLennan, 2016), so a session's own Stroop trials show whether its paths register a conflict whose existence is not in doubt, and how large such a conflict is on the measure used here. Four practice choices about Romance films follow, with the participant's own two boxes.
 
-*Trials.* The tracked genre has 56 items drawn as for a rated genre, in random order, and two instructed-response trials, one naming each box, which take the place of the two attention checks. A response slower than four seconds from the item's onset brings a short reminder to answer a little faster. That limit is a first setting, to be fixed after the investigators' own sessions.
+*Trials.* The tracked genre has all 80 items of the genre, in random order, and two instructed-response trials, one naming each box, which take the place of the two attention checks. A response slower than four seconds from the item's onset brings a short reminder to answer a little faster. That limit is a first setting, to be fixed after the investigators' own sessions.
 
 *Measures.* The choice is one measure. Conflict between the two candidate answers is measured in two ways, and both are registered.
 
@@ -384,13 +395,15 @@ S1-H15. *The same people.* A participant's weight on distinctiveness in their ra
 
 *Trials and sessions left out.* The proposal, to be settled before preregistration, is to drop tracked trials on which the item appeared only after the two-second limit for starting to move, trials during which the window was resized, and trials slower than six seconds; and to leave out the tracked genre, but keep the ratings, of sessions answered with a touch screen and of sessions with fewer than three quarters of the scored Stroop trials correct. The common rules of Section 12 remove whole sessions.
 
-*Power.* Appendix C has the simulations, for the design as built. The choice loses little against the rating, because the differences among items, and not the noise in a single response, limit precision. If choices of copying follow prevalence alone, then with 100 participants the contrast P minus D is below zero in 93% of simulations (the ratings: 95%), and the effect of D is shown to be equivalent to zero, within the logit equivalent of ±0.40 rating points, in 92% (the ratings: 92%). If the one-intuition or the overall-frequency account holds, the contrast and the effect of D are detected in 98% to 100% of simulations. These figures assume that a choice is the rating cut at a threshold, with the same noise. A noisier choice would lower them. If only a quarter of the choices are "Copied," the two figures are 94% and 93%.
+*Power.* Appendix C has the simulations. In the tracked genre every participant judges all 72 items of the genre. The choice loses little against the rating, because the differences among items, and not the noise in a single response, limit precision. If choices of copying follow prevalence alone, then with 100 participants per question the contrast P minus D is below zero in 97% of simulations, and the effect of D is shown to be equivalent to zero, within the logit equivalent of ±0.40 rating points, in 95%. If the one-intuition or the overall-frequency account holds, the contrast and the effect of D are detected in 100% of simulations. These figures assume that a choice is the rating cut at a threshold, with the same noise. A noisier choice would lower them. If only a quarter of the choices are "Copied," the two figures are 92% and 93%.
 
-For the path no quantity has an earlier estimate, so the simulation states its assumptions (Appendix C) and asks how small a pull could be found. With choices following prevalence alone and 100 participants each answering one genre with the mouse, a pull of typicality of 0.10 trial standard deviations is detected in 85% of simulations, and a pull of 0.15 or 0.20 in 100%. A pull of prevalence of 0.10 is detected in 86% to 89%. Telling the two pulls apart is harder. A pull of typicality twice the size of the pull of prevalence (0.20 against 0.10) is distinguished from it in 63% of simulations, and a pull half again as large (0.15 against 0.10) in 22%. The larger pool does little for this measure, because its precision depends on how many tracked trials each participant makes and not on how many items there are. With the 288 items alone the smallest pull is detected in 83%, and showing every participant all 72 items of the tracked genre, 72 trials in place of 48 and a longer session, would give 94%. Fifty participants each answering two genres with the mouse, all items shown, would give 88%. Only the copying question was simulated. The other two groups have the same structure, so the same figures apply to pulls of the same size there.
+For the path no quantity has an earlier estimate, so the simulation states its assumptions (Appendix C) and asks how small a pull could be found. With choices following prevalence alone and 100 participants each answering one genre with the mouse, a pull of typicality of 0.10 trial standard deviations is detected in 94% of simulations, and a pull of 0.15 or 0.20 in 100%. A pull of prevalence of 0.10 is detected in 96% to 98%. Telling the two pulls apart is harder. A pull of typicality twice the size of the pull of prevalence (0.20 against 0.10) is distinguished from it in 77% of simulations, and a pull half again as large (0.15 against 0.10) in 23%.
 
-The proposal of 100 usable participants per question is, under these assumptions, enough to detect a pull of 0.10 in about six simulations of seven and any larger pull almost always, which is what S1-H11, S1-H12 and S1-H13 need. It is not enough to tell two pulls apart unless one is at least twice the other, and then only in about three simulations of five. S1-H14 was not simulated: its power depends on how far apart in time the two effects begin and on the shape of the noise in the paths, and nothing yet gives either. The investigators' own sessions and the Stroop trials will give the first real numbers. Figure 3 shows the test of S1-H11 when every item is shown; the design as built is in Table C3.
+Showing every item of the tracked genre is what gives these figures. The precision of the measures taken from the pointer depends on how many tracked trials each participant makes and not on how many items there are. With 48 of the 72 items shown, as in the rated genre, the smallest pull would be detected in 85% of simulations, and with the law review study's 288 items alone in 83%. Fifty participants each answering two genres with the mouse would give 88%, and the check on first genres alone gives 79%. Only the copying question was simulated. The other two groups have the same structure, so the same figures apply to pulls of the same size there. Response time, the second registered measure, was not simulated separately; a pull of the same size in standard deviations of the logarithm of response time has the same power.
 
-![Figure 3. Study 1, tracked choice of copying: share of simulations in which a pull toward the typical answer is detected in the curvature of the paths when choices follow prevalence alone, by its assumed size, the number of participants per question and the item set, with every item shown. The dashed line is 80%. Source: `tracking_studies_power.Rmd`.](figures/power_one_feature_tracking.png)
+The proposal of 100 usable participants per question is, under these assumptions, enough for S1-H11, S1-H12 and S1-H13. It tells two pulls apart only when one is at least twice the other, and then in about three simulations of four. S1-H14 was not simulated: its power depends on how far apart in time the two effects begin and on the shape of the noise in the paths, and nothing yet gives either. The investigators' own sessions and the Stroop trials will give the first real numbers. Figure 3 shows the test of S1-H11.
+
+![Figure 3. Study 1, tracked choice of copying: share of simulations in which a pull toward the typical answer is detected in the curvature of the paths when choices follow prevalence alone, by its assumed size and the number of participants per question, with every item of the tracked genre shown. The right-hand panel is the design as built. The dashed line is 80%. Source: `tracking_studies_power.Rmd`.](figures/power_one_feature_tracking.png)
 
 *What it costs.* A choice carries less information than a rating, which is why each question is answered both ways and neither way replaces the other. The tracked genre needs a mouse or trackpad and a window of at least 800 by 550 pixels, which the page checks. Because everyone answers both ways, every session has the same length and one listing and one credit value serve all participants.
 
@@ -683,7 +696,7 @@ The studies are designed so that every judgment has a model prediction computed 
 
 *Incremental category validity.* Keith's proposal, the feature's rate in the genre minus its rate elsewhere, is not a factor of the design. Within a genre it cannot be: the increment is fixed once prevalence and distinctiveness are, so it is a third summary of the same two numbers and enters only as one of the single-predictor models of S1-H9.
 
-*Many hypotheses.* Study 1 states sixteen. The preregistration should name S1-H2 and S1-H3 as primary and the rest as secondary.
+*Many hypotheses.* Study 1 states sixteen. S1-H2 and S1-H3 are the primary tests and the rest are secondary (Section 8.5).
 
 *Demand.* Participants in the COPY group might guess that rare things are meant to count. The instructions do not say so, the items are not labeled, and the frequency block comes last. The one-intuition account predicts a result that no demand explanation produces.
 
@@ -715,25 +728,24 @@ Study 1 can be preregistered first: its items exist, its experiment is built, an
 
 On November 18 David retired the two-genre choice study and moved mouse tracking to the judgments of what is now Study 1.
 
-On November 19 David decided eight things. Study 1 has three groups, one for each question, and every participant answers one genre with ratings and the other with the mouse; a design with only the copying question tracked is dropped. Laptops and trackpads are acceptable for the tracked genre. The four studies are numbered 1 to 4, as the studies of their own paper. Events, a feature with what happens to it, join Study 2. The second box of the copying choice reads "Not copied" and not "Coincidence," because a feature the genre explains is not a coincidence and the label would have sat badly on exactly the common items. Study 1 uses the pool of 432 items, with each participant shown 48 of a genre's 72, and David confirmed the 144 new items. Response time is a second registered measure of conflict in the tracked choices, beside the bend of the path. And participants who answer the copying question are asked at the end how they read it.
+On November 19 David decided ten things. Study 1 has three groups, one for each question, and every participant answers one genre with ratings and the other with the mouse; a design with only the copying question tracked is dropped. Laptops and trackpads are acceptable for the tracked genre. The four studies are numbered 1 to 4, as the studies of their own paper. Events, a feature with what happens to it, join Study 2. The second box of the copying choice reads "Not copied" and not "Coincidence," because a feature the genre explains is not a coincidence and the label would have sat badly on exactly the common items. Study 1 uses the pool of 432 items, and David confirmed the 144 new items. Response time is a second registered measure of conflict in the tracked choices, beside the bend of the path. Participants who answer the copying question are asked at the end how they read it. In the tracked genre every participant judges all 72 items, and in the rated genre 48 of the 72. And S1-H2 and S1-H3 are the primary tests.
 
 ## 16.3 Decisions still needed
 
-1. David's push to Pavlovia of the build with the 432 items and the "Not copied" box, which replaces the build deployed earlier on November 19.
+1. David's push to Pavlovia of the current build, which has the 432 items, the "Not copied" box, the closing question and every item shown in the tracked genre. It replaces the build deployed earlier on November 19.
 2. Which of Studies 2 to 4 to run, and in what order. The recommendation is Study 1 first, then Study 3, with Study 4 alongside Study 1 if a panel sample can be paid for.
-3. For Study 1, the number of participants: 100 for each question, 300 in all, as proposed, or more.
+3. For Study 1, the number of participants. The recommendation is 100 for each question, 300 in all. Eighty for each, 240 in all, is the least that keeps the primary tests, the same tests in the tracked choice and the detection of a small pull at 85% or more under the assumptions (Section 8.8).
 4. For Study 1, the wording of the COPY question and whether the equivalence bound of ±0.40 is the right smallest effect of interest.
-5. For Study 1, whether the preregistration names S1-H2 and S1-H3 as the primary tests and treats the other fourteen hypotheses as secondary.
-6. For Study 1, the labels "Because of the genre" and "Could be in any film," and "Stock" and "Not stock," which are as built, and the rules of Section 8.9 for leaving out tracked trials and tracked genres.
-7. Whether necessity (Study 2) should stay in this series, as proposed, or be run separately as first planned, and whether Study 2 has 8 event pairs per genre or 12.
-8. For Study 3, who writes the story shells, how many (12 or 18), and whether the roles should be lawyers' assistants, as proposed, or the writers themselves, as in Spellman and Holyoak.
-9. For Study 4, the subject pool or a paid online panel of jury-eligible adults, and the budget for the latter.
-10. Whether Keith's lab would model the Study 3 mappings with ACME or with Probabilistic Analogical Mapping.
-11. Whether to write to Barbara Spellman for the 1996 story materials and her comments on the design.
-12. Whether each study gets its own preregistration or Studies 1 and 2 share one.
-13. Confirmation that the existing exemption covers these tasks.
-14. Whether the corpus work of Section 15 should start now.
-15. Before Study 1 can launch: the SONA listing and its credit address; a session in each of the six versions taken by the investigators on a laptop, after which the time limit and the estimated length are fixed; and the preregistration.
+5. For Study 1, the labels "Because of the genre" and "Could be in any film," and "Stock" and "Not stock," which are as built, and the rules of Section 8.9 for leaving out tracked trials and tracked genres.
+6. Whether necessity (Study 2) should stay in this series, as proposed, or be run separately as first planned, and whether Study 2 has 8 event pairs per genre or 12.
+7. For Study 3, who writes the story shells, how many (12 or 18), and whether the roles should be lawyers' assistants, as proposed, or the writers themselves, as in Spellman and Holyoak.
+8. For Study 4, the subject pool or a paid online panel of jury-eligible adults, and the budget for the latter.
+9. Whether Keith's lab would model the Study 3 mappings with ACME or with Probabilistic Analogical Mapping.
+10. Whether to write to Barbara Spellman for the 1996 story materials and her comments on the design.
+11. Whether each study gets its own preregistration or Studies 1 and 2 share one.
+12. Confirmation that the existing exemption covers these tasks.
+13. Whether the corpus work of Section 15 should start now.
+14. Before Study 1 can launch: the SONA listing and its credit address; a session in each of the six versions taken by the investigators on a laptop, after which the time limit and the estimated length are fixed; and the preregistration.
 
 # Appendix A. Instructions and questions
 
@@ -787,7 +799,7 @@ Stroop practice: "Each trial starts when you click Start at the bottom of the sc
 
 Practice choices, COPY: "The boxes now say Copied and Not copied. Imagine a screenplay and a later film made by different people. The screenwriter says the film was copied from the screenplay; the film's makers say they came up with it on their own. Each trial shows one thing that the screenplay and the film both include. Choose Copied if you think the film's makers more likely copied it, and Not copied if you think they more likely came up with it on their own." GENRE: "The boxes now say Because of the genre and Could be in any film. Films include things for different reasons. Some things are in a film because of the kind of film it is. Others would be just as likely in a film of any kind. Each trial shows one thing that a Romance includes. Choose Because of the genre if you think it is in the film because the film is a Romance, and Could be in any film if you think it would be just as likely in a film of any kind." STOCK: "The boxes now say Stock and Not stock. [The four sentences about the rule.] Each trial shows one thing that a Romance might include. Choose Stock if you think it is a stock feature of Romance films in this sense, and Not stock if you think it is not."
 
-Before the tracked genre, after the question's instructions: "Click Start, keep the pointer moving upward, and click your choice as quickly as you can while still choosing carefully. [The first label] is on the left and [the second] on the right, in every trial. There are 58 trials. A few will instead tell you which box to choose." An instructed-response trial reads "Attention check: choose 'Copied'" (or the other label).
+Before the tracked genre, after the question's instructions: "Click Start, keep the pointer moving upward, and click your choice as quickly as you can while still choosing carefully. [The first label] is on the left and [the second] on the right, in every trial. There are 82 trials. A few will instead tell you which box to choose." An instructed-response trial reads "Attention check: choose 'Copied'" (or the other label).
 
 ## A.6 Frequency estimates (Study 1, every participant)
 
@@ -835,7 +847,7 @@ The same shell filled from the common-and-characteristic cell would share a sher
 
 # Appendix C. Power simulations
 
-The simulations are in `Analysis/tracking_studies_design/tracking_studies_power.Rmd`. Each scenario was simulated 200 times, and each simulated data set was analyzed with the mixed model proposed for the study and a Wald test at the .05 level. For the rating tasks the standard deviations are the law review study's (items 0.99, participants 0.61, the participant slope for distinctiveness 0.59, the participant slope for prevalence 0.09, residual 1.30). For the tracked choices of Study 1 the same values are converted to logits on the assumption that a choice is the rating cut at a threshold, which makes one rating point 1.31 logits and the equivalence bound ±0.52 logits. For the curvature of mouse paths no estimates exist: the simulation works in units of the trial-to-trial standard deviation of curvature and assumes a participant standard deviation of 0.6, participant slopes of 0.15 for each pull, and an item standard deviation of 0.15. In Study 1 each simulated participant rates one genre and answers another with the mouse, by the schedule of Section 8.2. In the design as built the pool has 18 items in each cell of each genre and a simulated participant is shown 12 of them, drawn at random. The ratings and the choices are analyzed in separate models, so nothing has to be assumed about how a person's two sets of answers are related. Only the copying question is simulated; the other two groups have the same structure. For Study 3 no estimates exist either, and the simulation assumes a participant standard deviation of 14 points on the 0-to-100 scale, a participant slope for arrangement of 8, a shell standard deviation of 6, a further deviation of 5 for each shell-by-condition version, and a residual of 18. For Study 4 each item is given a further deviation of 0.5 points in each format. These are assumptions, not data.
+The simulations are in `Analysis/tracking_studies_design/tracking_studies_power.Rmd`. Each scenario was simulated 200 times, and each simulated data set was analyzed with the mixed model proposed for the study and a Wald test at the .05 level. For the rating tasks the standard deviations are the law review study's (items 0.99, participants 0.61, the participant slope for distinctiveness 0.59, the participant slope for prevalence 0.09, residual 1.30). For the tracked choices of Study 1 the same values are converted to logits on the assumption that a choice is the rating cut at a threshold, which makes one rating point 1.31 logits and the equivalence bound ±0.52 logits. For the curvature of mouse paths no estimates exist: the simulation works in units of the trial-to-trial standard deviation of curvature and assumes a participant standard deviation of 0.6, participant slopes of 0.15 for each pull, and an item standard deviation of 0.15. In Study 1 each simulated participant rates one genre and answers another with the mouse, by the schedule of Section 8.2. In the design as built the pool has 18 items in each cell of each genre. In the rated genre a simulated participant is shown 12 of them, drawn at random, and in the tracked genre all 18. The ratings and the choices are analyzed in separate models, so nothing has to be assumed about how a person's two sets of answers are related. Only the copying question is simulated; the other two groups have the same structure. For Study 3 no estimates exist either, and the simulation assumes a participant standard deviation of 14 points on the 0-to-100 scale, a participant slope for arrangement of 8, a shell standard deviation of 6, a further deviation of 5 for each shell-by-condition version, and a residual of 18. For Study 4 each item is given a further deviation of 0.5 points in each format. These are assumptions, not data.
 
 | Account simulated | Participants per question | P minus D below zero | P minus D above zero | D differs from zero | D within ±0.40 | D within ±0.30 | P differs from zero |
 |---|---|---|---|---|---|---|---|
@@ -852,47 +864,48 @@ The simulations are in `Analysis/tracking_studies_design/tracking_studies_power.
 | query-sensitive | 100 | 95% | 0% | 6% | 92% | 61% | 100% |
 | query-sensitive | 120 | 98% | 0% | 6% | 92% | 69% | 100% |
 
-: Table C1. Study 1 as built (432 items in the pool, 48 shown per participant and genre), ratings of copying: share of simulations in which each test gives the stated result.
+: Table C1. Study 1 as built, ratings of copying (each participant rates 48 of a genre's 72 items): share of simulations in which each test gives the stated result.
 
 | Account simulated | Participants per question | Share choosing "Copied" | P minus D below zero | P minus D above zero | D differs from zero | D within the bound | P differs from zero |
 |---|---|---|---|---|---|---|---|
-| one intuition | 60 | 50% | 0% | 100% | 100% | 0% | 46% |
-| one intuition | 80 | 50% | 0% | 99% | 100% | 0% | 52% |
-| one intuition | 100 | 50% | 0% | 99% | 100% | 0% | 52% |
-| one intuition | 120 | 50% | 0% | 100% | 100% | 0% | 61% |
+| one intuition | 60 | 50% | 0% | 98% | 100% | 0% | 58% |
+| one intuition | 80 | 50% | 0% | 99% | 100% | 0% | 63% |
+| one intuition | 100 | 50% | 0% | 100% | 100% | 0% | 58% |
+| one intuition | 120 | 50% | 0% | 100% | 100% | 0% | 64% |
 | overall frequency | 60 | 50% | 100% | 0% | 99% | 0% | 100% |
-| overall frequency | 80 | 50% | 100% | 0% | 99% | 0% | 100% |
-| overall frequency | 100 | 50% | 100% | 0% | 98% | 0% | 100% |
+| overall frequency | 80 | 50% | 100% | 0% | 100% | 0% | 100% |
+| overall frequency | 100 | 50% | 100% | 0% | 100% | 0% | 100% |
 | overall frequency | 120 | 50% | 100% | 0% | 100% | 0% | 100% |
-| query-sensitive | 60 | 51% | 83% | 0% | 4% | 87% | 100% |
-| query-sensitive | 80 | 50% | 89% | 0% | 4% | 90% | 100% |
-| query-sensitive | 100 | 50% | 93% | 0% | 3% | 92% | 100% |
-| query-sensitive | 120 | 50% | 95% | 0% | 2% | 95% | 100% |
-| query-sensitive, a quarter "Copied" | 100 | 32% | 94% | 0% | 4% | 93% | 100% |
+| query-sensitive | 60 | 50% | 92% | 0% | 4% | 88% | 100% |
+| query-sensitive | 80 | 50% | 96% | 0% | 4% | 93% | 100% |
+| query-sensitive | 100 | 50% | 97% | 0% | 4% | 95% | 100% |
+| query-sensitive | 120 | 51% | 96% | 0% | 2% | 97% | 100% |
+| query-sensitive, a quarter "Copied" | 100 | 32% | 92% | 0% | 4% | 93% | 100% |
 
-: Table C2. Study 1 as built, tracked choice of copying: share of simulations in which each test gives the stated result. The bound for D is the logit equivalent of ±0.40 rating points.
+: Table C2. Study 1 as built, tracked choice of copying (each participant judges all 72 items of the tracked genre): share of simulations in which each test gives the stated result. The bound for D is the logit equivalent of ±0.40 rating points.
 
 | Pull of typicality (trial SDs) | Participants per question | Item trials per participant | Pull of typicality detected | Pull of prevalence (0.10) detected | The two pulls told apart |
 |---|---|---|---|---|---|
-| 0.10 | 60 | 48 | 59% | 71% | 9% |
-| 0.10 | 80 | 48 | 73% | 82% | 10% |
-| 0.10 | 100 | 48 | 85% | 88% | 5% |
-| 0.10 | 120 | 48 | 88% | 92% | 12% |
-| 0.15 | 60 | 48 | 94% | 69% | 17% |
-| 0.15 | 80 | 48 | 98% | 83% | 18% |
-| 0.15 | 100 | 48 | 100% | 89% | 22% |
-| 0.15 | 120 | 48 | 100% | 96% | 23% |
-| 0.20 | 60 | 48 | 99% | 69% | 43% |
-| 0.20 | 80 | 48 | 100% | 81% | 52% |
-| 0.20 | 100 | 48 | 100% | 86% | 63% |
-| 0.20 | 120 | 48 | 100% | 95% | 68% |
+| 0.10 | 60 | 72 | 76% | 84% | 7% |
+| 0.10 | 80 | 72 | 85% | 88% | 6% |
+| 0.10 | 100 | 72 | 94% | 96% | 9% |
+| 0.10 | 120 | 72 | 97% | 98% | 6% |
+| 0.15 | 60 | 72 | 99% | 87% | 21% |
+| 0.15 | 80 | 72 | 100% | 92% | 27% |
+| 0.15 | 100 | 72 | 100% | 98% | 23% |
+| 0.15 | 120 | 72 | 100% | 100% | 35% |
+| 0.20 | 60 | 72 | 100% | 86% | 58% |
+| 0.20 | 80 | 72 | 100% | 89% | 60% |
+| 0.20 | 100 | 72 | 100% | 97% | 77% |
+| 0.20 | 120 | 72 | 100% | 98% | 75% |
 
-: Table C3. Study 1 as built, tracked choice of copying, curvature: share of simulations in which each pull is detected, and in which the two are distinguished, when choices follow prevalence alone. Where the two pulls are equal (0.10), the last column is the false-positive rate.
+: Table C3. Study 1 as built, tracked choice of copying, curvature (all 72 items of the tracked genre): share of simulations in which each pull is detected, and in which the two are distinguished, when choices follow prevalence alone. Where the two pulls are equal (0.10), the last column is the false-positive rate.
 
 | Design | Participants rating and tracking | Items each rates and tracks | Ratings: P minus D below zero | Ratings: D within ±0.40 | Choice: P minus D below zero | Choice: D within the bound | Pull of 0.10 detected | Pull of 0.20 told apart from 0.10 |
 |---|---|---|---|---|---|---|---|---|
-| As built: 432 in the pool, 48 shown per genre | 100 and 100 | 48 and 48 | 95% | 92% | 93% | 92% | 85% | 63% |
-| All 432 items shown | 100 and 100 | 72 and 72 | 97% | 95% | 97% | 95% | 94% | 77% |
+| As built: 48 of 72 rated, all 72 tracked | 100 and 100 | 48 and 72 | 95% | 92% | 97% | 95% | 94% | 77% |
+| 48 of 72 shown in both genres | 100 and 100 | 48 and 48 | 95% | 92% | 93% | 92% | 85% | 63% |
+| All 72 shown in both genres | 100 and 100 | 72 and 72 | 97% | 95% | 97% | 95% | 94% | 77% |
 | The 288 items only | 100 and 100 | 48 and 48 | 90% | 79% | 88% | 80% | 83% | 55% |
 | Separate groups for the two ways, all 432 shown | 50 and 50 | 144 and 144 | 95% | 81% | 94% | 87% | 88% | 62% |
 | First genres only, all 432 shown | 52 and 48 | 72 and 72 | 95% | 81% | 87% | 84% | 79% | 45% |

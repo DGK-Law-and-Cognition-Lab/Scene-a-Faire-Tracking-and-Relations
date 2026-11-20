@@ -18,14 +18,15 @@ the count that answers the question they are asked.
 
 **Status (November 19, 2026).** This is a working repository. Nothing here is
 preregistered and no data have been collected. Study 1 is built and has been run by
-script in all six of its versions; nobody has yet taken it by hand. Studies 2 to 4 are
-designs.
+script in all six of its versions; nobody has yet taken it by hand, and no full-length
+session has been run since the tracked genre was set to show every item. Studies 2 to 4
+are designs.
 
 ## The studies
 
 | Study | What it does | Status |
 |---|---|---|
-| 1 | One shared story feature at a time. Three groups, one per question: does it suggest copying, is it in the film because of the genre, is it a stock feature. Every participant answers in two ways: ratings from 1 to 7 for one genre, and for another genre a choice between two boxes made with the mouse or trackpad while the pointer's path and the response time are recorded. The item pool has 432 stratified items, of which each participant is shown 48 per genre. | Experiment built; not preregistered |
+| 1 | One shared story feature at a time. Three groups, one per question: does it suggest copying, is it in the film because of the genre, is it a stock feature. Every participant answers in two ways: ratings from 1 to 7 for one genre, and for another genre a choice between two boxes made with the mouse or trackpad while the pointer's path and the response time are recorded. The item pool has 432 stratified items, 72 per genre: a participant rates 48 of one genre's 72 and judges all 72 of another with the mouse. The two primary tests are in the ratings of copying: the sign of prevalence minus distinctiveness, and whether distinctiveness has no effect. | Experiment built; not preregistered |
 | 2 | Pairs of shared features in which one implies the other, or does not; and a feature together with what happens to it (a stagecoach; a stagecoach is robbed). | Design |
 | 3 | Two synopses in a copying dispute, after Spellman and Holyoak (1996): the kind of features they share, how those features are arranged, and the side the participant is on. | Design |
 | 4 | The same judgments when an expert's counts are shown, and which count is shown. | Design |

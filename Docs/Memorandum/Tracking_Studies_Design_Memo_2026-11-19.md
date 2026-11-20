@@ -732,20 +732,19 @@ On November 19 David decided eleven things. Study 1 has three groups, one for ea
 
 ## 16.3 Decisions still needed
 
-1. One more push to Pavlovia by David. The build with the 432 items, the "Not copied" box, the closing question and every item shown in the tracked genre is live, checked file by file on the evening of November 19. The return link was added after that check and is not yet live.
-2. Which of Studies 2 to 4 to run, and in what order. The recommendation is Study 1 first, then Study 3, with Study 4 alongside Study 1 if a panel sample can be paid for.
-3. For Study 1, the number of sessions to post and the stopping rule. The recommendation is 345 sessions, stopping when every question has 100 usable sessions or at 375 (Section 8.8).
-4. For Study 1, the wording of the COPY question and whether the equivalence bound of ±0.40 is the right smallest effect of interest.
-5. For Study 1, the labels "Because of the genre" and "Could be in any film," and "Stock" and "Not stock," which are as built, and the rules of Section 8.9 for leaving out tracked trials and tracked genres.
-6. Whether necessity (Study 2) should stay in this series, as proposed, or be run separately as first planned, and whether Study 2 has 8 event pairs per genre or 12.
-7. For Study 3, who writes the story shells, how many (12 or 18), and whether the roles should be lawyers' assistants, as proposed, or the writers themselves, as in Spellman and Holyoak.
-8. For Study 4, the subject pool or a paid online panel of jury-eligible adults, and the budget for the latter.
-9. Whether Keith's lab would model the Study 3 mappings with ACME or with Probabilistic Analogical Mapping.
-10. Whether to write to Barbara Spellman for the 1996 story materials and her comments on the design.
-11. Whether each study gets its own preregistration or Studies 1 and 2 share one.
-12. Confirmation that the existing exemption covers these tasks.
-13. Whether the corpus work of Section 15 should start now.
-14. Before Study 1 can launch: the SONA listing, whose return link David said on November 19 is the law review study's and which the build now carries; a deploy of that build; a session in each of the six versions taken by the investigators on a laptop, after which the time limit and the estimated length are fixed; and the preregistration.
+1. Which of Studies 2 to 4 to run, and in what order. The recommendation is Study 1 first, then Study 3, with Study 4 alongside Study 1 if a panel sample can be paid for.
+2. For Study 1, the number of sessions to post and the stopping rule. The recommendation is 345 sessions, stopping when every question has 100 usable sessions or at 375 (Section 8.8).
+3. For Study 1, the wording of the COPY question and whether the equivalence bound of ±0.40 is the right smallest effect of interest.
+4. For Study 1, the labels "Because of the genre" and "Could be in any film," and "Stock" and "Not stock," which are as built, and the rules of Section 8.9 for leaving out tracked trials and tracked genres.
+5. Whether necessity (Study 2) should stay in this series, as proposed, or be run separately as first planned, and whether Study 2 has 8 event pairs per genre or 12.
+6. For Study 3, who writes the story shells, how many (12 or 18), and whether the roles should be lawyers' assistants, as proposed, or the writers themselves, as in Spellman and Holyoak.
+7. For Study 4, the subject pool or a paid online panel of jury-eligible adults, and the budget for the latter.
+8. Whether Keith's lab would model the Study 3 mappings with ACME or with Probabilistic Analogical Mapping.
+9. Whether to write to Barbara Spellman for the 1996 story materials and her comments on the design.
+10. Whether each study gets its own preregistration or Studies 1 and 2 share one.
+11. Confirmation that the existing exemption covers these tasks.
+12. Whether the corpus work of Section 15 should start now.
+13. Before Study 1 can launch: the SONA listing, whose return link David said on November 19 is the law review study's and which the build live on Pavlovia since November 20 carries; a session in each of the six versions taken by the investigators on a laptop, after which the time limit and the estimated length are fixed; and the preregistration.
 
 # Appendix A. Instructions and questions
 

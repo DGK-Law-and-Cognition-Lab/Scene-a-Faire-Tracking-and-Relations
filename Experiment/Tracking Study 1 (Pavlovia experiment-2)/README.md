@@ -318,11 +318,10 @@ build or has a syntax error, copies `index.html`, `experiment.js`, `style.css`,
 `captcha.png` and the seven stimuli files, shows the changes, and pushes only after you
 type `experiment-2`. It never pushes `config.json`. It warns if `SONA_URL_BASE` is empty.
 
-**Deployed by David on November 19, 2026**, three times as the build changed. After the last
-deploy that evening the eleven live files were downloaded and compared with this folder and were
-identical: the 432-item pool, "Not copied", the closing question, and every item shown in the
-tracked genre. `SONA_URL_BASE` was set after that comparison, so the build in this folder
-**needs one more deploy** before the SONA listing opens.
+**Deployed by David**, three times on November 19, 2026 as the build changed and once more
+after `SONA_URL_BASE` was set. On November 20 the eleven live files were downloaded and
+compared with this folder and were identical: the 432-item pool, "Not copied", the closing
+question, every item shown in the tracked genre, and the return link.
 
 Then run one session per version with the six test links the script prints, and check
 that each file appears in the project's data before opening the SONA listing. Pilot ids

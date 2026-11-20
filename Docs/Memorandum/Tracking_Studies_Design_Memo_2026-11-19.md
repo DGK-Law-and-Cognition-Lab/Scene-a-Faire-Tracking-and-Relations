@@ -217,7 +217,7 @@ Notebook 18 also confirms that the materials for Studies 2 and 3 exist. Among co
 | Varied within participants | The way of answering (ratings for one genre, mouse-tracked choice for the other); prevalence × distinctiveness of the feature | Kind of pair (implied; unrelated; event) | Kind of shared features (2 × 2) × arrangement (aligned, scattered) | Prevalence × distinctiveness of the feature |
 | Materials | 432 stratified items and 48 foils; a participant rates 48 of one genre's 72 and tracks all 72 of another | 144 pairs in 72 matched sets and 48 event pairs, drawn from corpus counts | 12 story shells, 96 synopsis pairs | 48 items of the law review study with their corpus counts |
 | Main measures | Rating, 1 to 7; choice and pointer path; frequency estimates | Rating, 1 to 7; conditional frequency estimates | Probability of copying; similarity; character mapping; feature checklist | Stock rating; copying rating |
-| Usable participants proposed | 300 (100 per question) | 120 (60 per question) | 210 (70 per role) | 300 (60 per format) |
+| Usable participants | 300 (100 per question), decided | 120 (60 per question), proposed | 210 (70 per role), proposed | 300 (60 per format), proposed |
 | Session | About 30 minutes | About 30 minutes | About 45 minutes | About 20 minutes |
 | New materials work | Done: 144 items drawn and reviewed | Moderate: the pairs are drawn and reviewed | Large: the story shells are written by hand | Small |
 | State | Built and run locally in all six versions | Not built | Not built | Not built |
@@ -349,7 +349,7 @@ Having each participant answer both ways also costs nothing against separate gro
 
 : Study 1 as built: share of simulations in which each main test succeeds, by the number of participants per question, when judgments follow prevalence alone.
 
-The proposal is 100 usable participants per question, 300 in all. Under these assumptions that puts five tests at 92% or more: the two primary tests, the same two tests in the tracked choice, and the detection of a pull of 0.10. With 80 per question, 240 in all, the same five are at 85% or more. Telling two pulls apart stays uncertain at every size simulated. The law review study lost 6 of 137 sessions to its exclusion rules, so about 315 would be recruited for 300. The figures rest on the assumed sizes of the effects. If the effect of prevalence on judged copying is smaller than 0.60 points, more items would be needed, and more participants would not make up for them. Figure 2 shows the two rating tests.
+Study 1 will have 100 usable participants per question, 300 in all, as David decided on November 19. Under these assumptions that puts five tests at 92% or more: the two primary tests, the same two tests in the tracked choice, and the detection of a pull of 0.10. With 80 per question, 240 in all, the same five would be at 85% or more. Telling two pulls apart stays uncertain at every size simulated. The law review study lost 6 of 137 sessions to its exclusion rules, so about 315 will be recruited for 300. The figures rest on the assumed sizes of the effects. If the effect of prevalence on judged copying is smaller than 0.60 points, more items would be needed, and more participants would not make up for them. Figure 2 shows the two rating tests.
 
 ![Figure 2. Study 1, ratings of copying: share of simulations in which each test succeeds if copying judgments follow prevalence alone, by number of participants per question and item set. The black line, in the right-hand panels, is the design as built, in which each participant rates 48 of a genre's 72 items. The blue line is the design in which every item is rated; the gray line splits the same participants into separate groups for the two ways; the red line uses first genres only. The dashed line is 80%. Source: `tracking_studies_power.Rmd`.](figures/power_one_feature_ratings.png)
 
@@ -401,7 +401,7 @@ For the path no quantity has an earlier estimate, so the simulation states its a
 
 Showing every item of the tracked genre is what gives these figures. The precision of the measures taken from the pointer depends on how many tracked trials each participant makes and not on how many items there are. With 48 of the 72 items shown, as in the rated genre, the smallest pull would be detected in 85% of simulations, and with the law review study's 288 items alone in 83%. Fifty participants each answering two genres with the mouse would give 88%, and the check on first genres alone gives 79%. Only the copying question was simulated. The other two groups have the same structure, so the same figures apply to pulls of the same size there. Response time, the second registered measure, was not simulated separately; a pull of the same size in standard deviations of the logarithm of response time has the same power.
 
-The proposal of 100 usable participants per question is, under these assumptions, enough for S1-H11, S1-H12 and S1-H13. It tells two pulls apart only when one is at least twice the other, and then in about three simulations of four. S1-H14 was not simulated: its power depends on how far apart in time the two effects begin and on the shape of the noise in the paths, and nothing yet gives either. The investigators' own sessions and the Stroop trials will give the first real numbers. Figure 3 shows the test of S1-H11.
+The sample of 100 usable participants per question is, under these assumptions, enough for S1-H11, S1-H12 and S1-H13. It tells two pulls apart only when one is at least twice the other, and then in about three simulations of four. S1-H14 was not simulated: its power depends on how far apart in time the two effects begin and on the shape of the noise in the paths, and nothing yet gives either. The investigators' own sessions and the Stroop trials will give the first real numbers. Figure 3 shows the test of S1-H11.
 
 ![Figure 3. Study 1, tracked choice of copying: share of simulations in which a pull toward the typical answer is detected in the curvature of the paths when choices follow prevalence alone, by its assumed size and the number of participants per question, with every item of the tracked genre shown. The right-hand panel is the design as built. The dashed line is 80%. Source: `tracking_studies_power.Rmd`.](figures/power_one_feature_tracking.png)
 
@@ -728,24 +728,23 @@ Study 1 can be preregistered first: its items exist, its experiment is built, an
 
 On November 18 David retired the two-genre choice study and moved mouse tracking to the judgments of what is now Study 1.
 
-On November 19 David decided ten things. Study 1 has three groups, one for each question, and every participant answers one genre with ratings and the other with the mouse; a design with only the copying question tracked is dropped. Laptops and trackpads are acceptable for the tracked genre. The four studies are numbered 1 to 4, as the studies of their own paper. Events, a feature with what happens to it, join Study 2. The second box of the copying choice reads "Not copied" and not "Coincidence," because a feature the genre explains is not a coincidence and the label would have sat badly on exactly the common items. Study 1 uses the pool of 432 items, and David confirmed the 144 new items. Response time is a second registered measure of conflict in the tracked choices, beside the bend of the path. Participants who answer the copying question are asked at the end how they read it. In the tracked genre every participant judges all 72 items, and in the rated genre 48 of the 72. And S1-H2 and S1-H3 are the primary tests.
+On November 19 David decided eleven things. Study 1 has three groups, one for each question, and every participant answers one genre with ratings and the other with the mouse; a design with only the copying question tracked is dropped. Laptops and trackpads are acceptable for the tracked genre. The four studies are numbered 1 to 4, as the studies of their own paper. Events, a feature with what happens to it, join Study 2. The second box of the copying choice reads "Not copied" and not "Coincidence," because a feature the genre explains is not a coincidence and the label would have sat badly on exactly the common items. Study 1 uses the pool of 432 items, and David confirmed the 144 new items. Response time is a second registered measure of conflict in the tracked choices, beside the bend of the path. Participants who answer the copying question are asked at the end how they read it. In the tracked genre every participant judges all 72 items, and in the rated genre 48 of the 72. S1-H2 and S1-H3 are the primary tests. And Study 1 will have 100 usable participants for each question, 300 in all.
 
 ## 16.3 Decisions still needed
 
 1. David's push to Pavlovia of the current build, which has the 432 items, the "Not copied" box, the closing question and every item shown in the tracked genre. It replaces the build deployed earlier on November 19.
 2. Which of Studies 2 to 4 to run, and in what order. The recommendation is Study 1 first, then Study 3, with Study 4 alongside Study 1 if a panel sample can be paid for.
-3. For Study 1, the number of participants. The recommendation is 100 for each question, 300 in all. Eighty for each, 240 in all, is the least that keeps the primary tests, the same tests in the tracked choice and the detection of a small pull at 85% or more under the assumptions (Section 8.8).
-4. For Study 1, the wording of the COPY question and whether the equivalence bound of ±0.40 is the right smallest effect of interest.
-5. For Study 1, the labels "Because of the genre" and "Could be in any film," and "Stock" and "Not stock," which are as built, and the rules of Section 8.9 for leaving out tracked trials and tracked genres.
-6. Whether necessity (Study 2) should stay in this series, as proposed, or be run separately as first planned, and whether Study 2 has 8 event pairs per genre or 12.
-7. For Study 3, who writes the story shells, how many (12 or 18), and whether the roles should be lawyers' assistants, as proposed, or the writers themselves, as in Spellman and Holyoak.
-8. For Study 4, the subject pool or a paid online panel of jury-eligible adults, and the budget for the latter.
-9. Whether Keith's lab would model the Study 3 mappings with ACME or with Probabilistic Analogical Mapping.
-10. Whether to write to Barbara Spellman for the 1996 story materials and her comments on the design.
-11. Whether each study gets its own preregistration or Studies 1 and 2 share one.
-12. Confirmation that the existing exemption covers these tasks.
-13. Whether the corpus work of Section 15 should start now.
-14. Before Study 1 can launch: the SONA listing and its credit address; a session in each of the six versions taken by the investigators on a laptop, after which the time limit and the estimated length are fixed; and the preregistration.
+3. For Study 1, the wording of the COPY question and whether the equivalence bound of ±0.40 is the right smallest effect of interest.
+4. For Study 1, the labels "Because of the genre" and "Could be in any film," and "Stock" and "Not stock," which are as built, and the rules of Section 8.9 for leaving out tracked trials and tracked genres.
+5. Whether necessity (Study 2) should stay in this series, as proposed, or be run separately as first planned, and whether Study 2 has 8 event pairs per genre or 12.
+6. For Study 3, who writes the story shells, how many (12 or 18), and whether the roles should be lawyers' assistants, as proposed, or the writers themselves, as in Spellman and Holyoak.
+7. For Study 4, the subject pool or a paid online panel of jury-eligible adults, and the budget for the latter.
+8. Whether Keith's lab would model the Study 3 mappings with ACME or with Probabilistic Analogical Mapping.
+9. Whether to write to Barbara Spellman for the 1996 story materials and her comments on the design.
+10. Whether each study gets its own preregistration or Studies 1 and 2 share one.
+11. Confirmation that the existing exemption covers these tasks.
+12. Whether the corpus work of Section 15 should start now.
+13. Before Study 1 can launch: the SONA listing and its credit address; a session in each of the six versions taken by the investigators on a laptop, after which the time limit and the estimated length are fixed; and the preregistration.
 
 # Appendix A. Instructions and questions
 

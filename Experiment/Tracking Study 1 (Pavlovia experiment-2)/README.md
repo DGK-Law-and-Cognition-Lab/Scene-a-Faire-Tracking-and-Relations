@@ -307,6 +307,9 @@ Pavlovia username and password or token):
 bash "Experiment/Tracking Study 1 (Pavlovia experiment-2)/deploy_to_pavlovia.sh"
 ```
 
+That path is relative to the project's root folder. From any other folder, give the script's
+full path.
+
 It clones `genres-and-themes/experiment-2`, stops if the clone points anywhere else, is
 empty, or holds the law review study's experiment, stops if `experiment.js` is not this
 build or has a syntax error, copies `index.html`, `experiment.js`, `style.css`,

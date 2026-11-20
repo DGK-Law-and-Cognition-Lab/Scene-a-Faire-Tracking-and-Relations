@@ -6,7 +6,7 @@ window.STIMULI = {
   "genre_key": "western",
   "seed": 20260219,
   "min_films_in_genre": 20,
-  "k_per_cell": 12,
+  "k_per_cell": 18,
   "n_foils": 8,
   "foil_rule": "flat",
   "foil_max_films_in_target": 5,
@@ -20,7 +20,7 @@ window.STIMULI = {
    "low_prev_high_dist",
    "low_prev_low_dist"
   ],
-  "n_items": 56,
+  "n_items": 80,
   "display_text_note": "text is what participants see: the pipeline element string, with DISPLAY_OVERRIDES applied (capitals, hyphens, possessives, natural plurals, US spelling; no content word changed). element_string keeps the pipeline string.",
   "items": [
    {
@@ -42,7 +42,8 @@ window.STIMULI = {
     "ensemble": 15.84003667726332,
     "subtlex_token": "outlaw",
     "Lg10WF": 2.1761,
-    "Lg10CD": 1.9191
+    "Lg10CD": 1.9191,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_02",
@@ -63,7 +64,8 @@ window.STIMULI = {
     "ensemble": 10.216722925428915,
     "subtlex_token": "cowboy",
     "Lg10WF": 2.9863,
-    "Lg10CD": 2.6839
+    "Lg10CD": 2.6839,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_03",
@@ -84,7 +86,8 @@ window.STIMULI = {
     "ensemble": 5.8582612400306715,
     "subtlex_token": "bandit",
     "Lg10WF": 2.2833,
-    "Lg10CD": 1.9823
+    "Lg10CD": 1.9823,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_04",
@@ -105,7 +108,8 @@ window.STIMULI = {
     "ensemble": 5.436359705083184,
     "subtlex_token": "settler",
     "Lg10WF": 0.699,
-    "Lg10CD": 0.6021
+    "Lg10CD": 0.6021,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_05",
@@ -126,7 +130,8 @@ window.STIMULI = {
     "ensemble": 4.979478355637463,
     "subtlex_token": "gunfight",
     "Lg10WF": 1.7709,
-    "Lg10CD": 1.6628
+    "Lg10CD": 1.6628,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_06",
@@ -147,7 +152,8 @@ window.STIMULI = {
     "ensemble": 3.4634143946655875,
     "subtlex_token": "townspeople",
     "Lg10WF": 1.7482,
-    "Lg10CD": 1.6812
+    "Lg10CD": 1.6812,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_07",
@@ -168,7 +174,8 @@ window.STIMULI = {
     "ensemble": 2.662576294189974,
     "subtlex_token": "war",
     "Lg10WF": 3.95,
-    "Lg10CD": 3.406
+    "Lg10CD": 3.406,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_08",
@@ -189,7 +196,8 @@ window.STIMULI = {
     "ensemble": 2.2120299362622684,
     "subtlex_token": "shipment",
     "Lg10WF": 2.5092,
-    "Lg10CD": 2.3404
+    "Lg10CD": 2.3404,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_09",
@@ -210,7 +218,8 @@ window.STIMULI = {
     "ensemble": 1.8959183421878556,
     "subtlex_token": "tribe",
     "Lg10WF": 2.5132,
-    "Lg10CD": 2.2856
+    "Lg10CD": 2.2856,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_10",
@@ -231,7 +240,8 @@ window.STIMULI = {
     "ensemble": 1.4045709287561512,
     "subtlex_token": "robber",
     "Lg10WF": 2.3802,
-    "Lg10CD": 2.179
+    "Lg10CD": 2.179,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_11",
@@ -252,7 +262,8 @@ window.STIMULI = {
     "ensemble": 1.104633831736268,
     "subtlex_token": "troop",
     "Lg10WF": 2.4728,
-    "Lg10CD": 2.143
+    "Lg10CD": 2.143,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HH_12",
@@ -273,7 +284,8 @@ window.STIMULI = {
     "ensemble": 0.7506980485159518,
     "subtlex_token": "passenger",
     "Lg10WF": 2.7404,
-    "Lg10CD": 2.4579
+    "Lg10CD": 2.4579,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_01",
@@ -294,7 +306,8 @@ window.STIMULI = {
     "ensemble": 2.876794842336539,
     "subtlex_token": "father",
     "Lg10WF": 4.4515,
-    "Lg10CD": 3.7362
+    "Lg10CD": 3.7362,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_02",
@@ -315,7 +328,8 @@ window.STIMULI = {
     "ensemble": 2.4609345749059703,
     "subtlex_token": "son",
     "Lg10WF": 4.3212,
-    "Lg10CD": 3.7115
+    "Lg10CD": 3.7115,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_03",
@@ -336,7 +350,8 @@ window.STIMULI = {
     "ensemble": 1.892328155056727,
     "subtlex_token": "death",
     "Lg10WF": 4.0434,
-    "Lg10CD": 3.6313
+    "Lg10CD": 3.6313,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_04",
@@ -357,7 +372,8 @@ window.STIMULI = {
     "ensemble": 1.8138705769306023,
     "subtlex_token": "daughter",
     "Lg10WF": 3.9415,
-    "Lg10CD": 3.4763
+    "Lg10CD": 3.4763,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_05",
@@ -378,7 +394,8 @@ window.STIMULI = {
     "ensemble": 1.6653075282878802,
     "subtlex_token": "love",
     "Lg10WF": 4.7548,
-    "Lg10CD": 3.8679
+    "Lg10CD": 3.8679,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_06",
@@ -399,7 +416,8 @@ window.STIMULI = {
     "ensemble": 1.4705923618965302,
     "subtlex_token": "family",
     "Lg10WF": 4.2569,
-    "Lg10CD": 3.7276
+    "Lg10CD": 3.7276,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_07",
@@ -420,7 +438,8 @@ window.STIMULI = {
     "ensemble": 1.040171295798461,
     "subtlex_token": "city",
     "Lg10WF": 3.9358,
-    "Lg10CD": 3.5214
+    "Lg10CD": 3.5214,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_08",
@@ -441,7 +460,8 @@ window.STIMULI = {
     "ensemble": 0.867345248694247,
     "subtlex_token": "house",
     "Lg10WF": 4.4185,
-    "Lg10CD": 3.7811
+    "Lg10CD": 3.7811,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_09",
@@ -462,7 +482,8 @@ window.STIMULI = {
     "ensemble": 0.4304610375156407,
     "subtlex_token": "room",
     "Lg10WF": 4.3506,
-    "Lg10CD": 3.796
+    "Lg10CD": 3.796,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_10",
@@ -483,7 +504,8 @@ window.STIMULI = {
     "ensemble": 0.14798931799362097,
     "subtlex_token": "doctor",
     "Lg10WF": 4.1291,
-    "Lg10CD": 3.5687
+    "Lg10CD": 3.5687,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_11",
@@ -504,7 +526,8 @@ window.STIMULI = {
     "ensemble": 0.08934132961295438,
     "subtlex_token": "relationship",
     "Lg10WF": 3.5382,
-    "Lg10CD": 3.2721
+    "Lg10CD": 3.2721,
+    "in_law_review_study": true
    },
    {
     "id": "WES_HL_12",
@@ -525,7 +548,8 @@ window.STIMULI = {
     "ensemble": 0.07732354444999022,
     "subtlex_token": "truth",
     "Lg10WF": 3.9913,
-    "Lg10CD": 3.6226
+    "Lg10CD": 3.6226,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_01",
@@ -546,7 +570,8 @@ window.STIMULI = {
     "ensemble": 3.764071606398549,
     "subtlex_token": "hand",
     "Lg10WF": 4.1542,
-    "Lg10CD": 3.7453
+    "Lg10CD": 3.7453,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_02",
@@ -567,7 +592,8 @@ window.STIMULI = {
     "ensemble": 2.6961716935743,
     "subtlex_token": "ranger",
     "Lg10WF": 2.5798,
-    "Lg10CD": 2.179
+    "Lg10CD": 2.179,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_03",
@@ -588,7 +614,8 @@ window.STIMULI = {
     "ensemble": 2.608762367772028,
     "subtlex_token": "sheriff",
     "Lg10WF": 3.4936,
-    "Lg10CD": 2.8215
+    "Lg10CD": 2.8215,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_04",
@@ -609,7 +636,8 @@ window.STIMULI = {
     "ensemble": 1.8005639602268129,
     "subtlex_token": "hunter",
     "Lg10WF": 2.9717,
-    "Lg10CD": 2.5866
+    "Lg10CD": 2.5866,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_05",
@@ -630,7 +658,8 @@ window.STIMULI = {
     "ensemble": 1.5846729964205775,
     "subtlex_token": "stampede",
     "Lg10WF": 1.8388,
-    "Lg10CD": 1.6812
+    "Lg10CD": 1.6812,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_06",
@@ -651,7 +680,8 @@ window.STIMULI = {
     "ensemble": 0.9368752889315091,
     "subtlex_token": "man",
     "Lg10WF": 4.9737,
-    "Lg10CD": 3.9061
+    "Lg10CD": 3.9061,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_07",
@@ -672,7 +702,8 @@ window.STIMULI = {
     "ensemble": 0.7904954845085266,
     "subtlex_token": "badge",
     "Lg10WF": 2.8915,
-    "Lg10CD": 2.6665
+    "Lg10CD": 2.6665,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_08",
@@ -693,7 +724,8 @@ window.STIMULI = {
     "ensemble": 0.7125005325189809,
     "subtlex_token": "sheriff",
     "Lg10WF": 3.4936,
-    "Lg10CD": 2.8215
+    "Lg10CD": 2.8215,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_09",
@@ -714,7 +746,8 @@ window.STIMULI = {
     "ensemble": 0.408351813213078,
     "subtlex_token": "boot",
     "Lg10WF": 2.7551,
-    "Lg10CD": 2.574
+    "Lg10CD": 2.574,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_10",
@@ -735,7 +768,8 @@ window.STIMULI = {
     "ensemble": 0.33945862750136446,
     "subtlex_token": "captive",
     "Lg10WF": 2.0682,
-    "Lg10CD": 1.9912
+    "Lg10CD": 1.9912,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_11",
@@ -756,7 +790,8 @@ window.STIMULI = {
     "ensemble": 0.1703286583843145,
     "subtlex_token": "winter",
     "Lg10WF": 3.1265,
-    "Lg10CD": 2.9243
+    "Lg10CD": 2.9243,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LH_12",
@@ -777,7 +812,8 @@ window.STIMULI = {
     "ensemble": 0.1573798582565043,
     "subtlex_token": "barn",
     "Lg10WF": 2.8414,
-    "Lg10CD": 2.5977
+    "Lg10CD": 2.5977,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_01",
@@ -798,7 +834,8 @@ window.STIMULI = {
     "ensemble": 0.010904244911368877,
     "subtlex_token": "lady",
     "Lg10WF": 4.0442,
-    "Lg10CD": 3.616
+    "Lg10CD": 3.616,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_02",
@@ -819,7 +856,8 @@ window.STIMULI = {
     "ensemble": -0.052438290268708,
     "subtlex_token": "woman",
     "Lg10WF": 4.3457,
-    "Lg10CD": 3.7728
+    "Lg10CD": 3.7728,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_03",
@@ -840,7 +878,8 @@ window.STIMULI = {
     "ensemble": -0.07581980491521746,
     "subtlex_token": "choice",
     "Lg10WF": 3.6969,
-    "Lg10CD": 3.4908
+    "Lg10CD": 3.4908,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_04",
@@ -861,7 +900,8 @@ window.STIMULI = {
     "ensemble": -0.0835286482527162,
     "subtlex_token": "promise",
     "Lg10WF": 3.8927,
-    "Lg10CD": 3.5883
+    "Lg10CD": 3.5883,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_05",
@@ -882,7 +922,8 @@ window.STIMULI = {
     "ensemble": -0.08867677818260897,
     "subtlex_token": "fate",
     "Lg10WF": 3.1386,
-    "Lg10CD": 2.9375
+    "Lg10CD": 2.9375,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_06",
@@ -903,7 +944,8 @@ window.STIMULI = {
     "ensemble": -0.09098502199448384,
     "subtlex_token": "official",
     "Lg10WF": 3.0881,
-    "Lg10CD": 2.9713
+    "Lg10CD": 2.9713,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_07",
@@ -924,7 +966,8 @@ window.STIMULI = {
     "ensemble": -0.10231634042533813,
     "subtlex_token": "dream",
     "Lg10WF": 3.8324,
-    "Lg10CD": 3.4487
+    "Lg10CD": 3.4487,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_08",
@@ -945,7 +988,8 @@ window.STIMULI = {
     "ensemble": -0.10361694588560091,
     "subtlex_token": "rage",
     "Lg10WF": 2.7619,
-    "Lg10CD": 2.6107
+    "Lg10CD": 2.6107,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_09",
@@ -966,7 +1010,8 @@ window.STIMULI = {
     "ensemble": -0.10746660057883478,
     "subtlex_token": "servant",
     "Lg10WF": 2.7924,
-    "Lg10CD": 2.5866
+    "Lg10CD": 2.5866,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_10",
@@ -987,7 +1032,8 @@ window.STIMULI = {
     "ensemble": -0.12805658141622564,
     "subtlex_token": "friend",
     "Lg10WF": 4.3301,
-    "Lg10CD": 3.7909
+    "Lg10CD": 3.7909,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_11",
@@ -1008,7 +1054,8 @@ window.STIMULI = {
     "ensemble": -0.132327242366849,
     "subtlex_token": "romance",
     "Lg10WF": 2.8993,
-    "Lg10CD": 2.7574
+    "Lg10CD": 2.7574,
+    "in_law_review_study": true
    },
    {
     "id": "WES_LL_12",
@@ -1029,7 +1076,8 @@ window.STIMULI = {
     "ensemble": -0.14562234684053627,
     "subtlex_token": "fear",
     "Lg10WF": 3.547,
-    "Lg10CD": 3.2817
+    "Lg10CD": 3.2817,
+    "in_law_review_study": true
    },
    {
     "id": "WES_FOIL_01",
@@ -1050,7 +1098,8 @@ window.STIMULI = {
     "ensemble": 1.9132386732041593,
     "subtlex_token": "closet",
     "Lg10WF": 3.1405,
-    "Lg10CD": 2.9479
+    "Lg10CD": 2.9479,
+    "in_law_review_study": true
    },
    {
     "id": "WES_FOIL_02",
@@ -1071,7 +1120,8 @@ window.STIMULI = {
     "ensemble": 5.365090645847867,
     "subtlex_token": "humanity",
     "Lg10WF": 2.6955,
-    "Lg10CD": 2.549
+    "Lg10CD": 2.549,
+    "in_law_review_study": true
    },
    {
     "id": "WES_FOIL_03",
@@ -1092,7 +1142,8 @@ window.STIMULI = {
     "ensemble": 4.22308971994923,
     "subtlex_token": "policeman",
     "Lg10WF": 2.7774,
-    "Lg10CD": 2.5877
+    "Lg10CD": 2.5877,
+    "in_law_review_study": true
    },
    {
     "id": "WES_FOIL_04",
@@ -1113,7 +1164,8 @@ window.STIMULI = {
     "ensemble": 0.4001321752244822,
     "subtlex_token": "anniversary",
     "Lg10WF": 2.9731,
-    "Lg10CD": 2.6561
+    "Lg10CD": 2.6561,
+    "in_law_review_study": true
    },
    {
     "id": "WES_FOIL_05",
@@ -1134,7 +1186,8 @@ window.STIMULI = {
     "ensemble": 1.5086297430784164,
     "subtlex_token": "scientist",
     "Lg10WF": 2.7938,
-    "Lg10CD": 2.5999
+    "Lg10CD": 2.5999,
+    "in_law_review_study": true
    },
    {
     "id": "WES_FOIL_06",
@@ -1155,7 +1208,8 @@ window.STIMULI = {
     "ensemble": 0.8423845538707452,
     "subtlex_token": "shower",
     "Lg10WF": 3.3218,
-    "Lg10CD": 3.1139
+    "Lg10CD": 3.1139,
+    "in_law_review_study": true
    },
    {
     "id": "WES_FOIL_07",
@@ -1176,7 +1230,8 @@ window.STIMULI = {
     "ensemble": 1.3630914379781969,
     "subtlex_token": "earthquake",
     "Lg10WF": 2.5132,
-    "Lg10CD": 2.2718
+    "Lg10CD": 2.2718,
+    "in_law_review_study": true
    },
    {
     "id": "WES_FOIL_08",
@@ -1197,7 +1252,536 @@ window.STIMULI = {
     "ensemble": 0.7240344944870489,
     "subtlex_token": "neighborhood",
     "Lg10WF": 3.2723,
-    "Lg10CD": 3.0402
+    "Lg10CD": 3.0402,
+    "in_law_review_study": true
+   },
+   {
+    "id": "WES_HH_13",
+    "text": "horse",
+    "element_string": "horse",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 299,
+    "film_count_in_target_genre": 299,
+    "foil_rule": null,
+    "prevalence_pct": 0.9975903614457832,
+    "distinctiveness_pct": 0.8795180722891566,
+    "ensemble": 16.29257742155116,
+    "subtlex_token": "horse",
+    "Lg10WF": null,
+    "Lg10CD": 3.1981,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HH_14",
+    "text": "cattle",
+    "element_string": "cattle",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 124,
+    "film_count_in_target_genre": 124,
+    "foil_rule": null,
+    "prevalence_pct": 0.9120481927710843,
+    "distinctiveness_pct": 0.9614457831325302,
+    "ensemble": 11.531633615419754,
+    "subtlex_token": "cattle",
+    "Lg10WF": null,
+    "Lg10CD": 2.4232,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HH_15",
+    "text": "gold",
+    "element_string": "gold",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 136,
+    "film_count_in_target_genre": 136,
+    "foil_rule": null,
+    "prevalence_pct": 0.9349397590361446,
+    "distinctiveness_pct": 0.8578313253012049,
+    "ensemble": 7.416062904047514,
+    "subtlex_token": "gold",
+    "Lg10WF": null,
+    "Lg10CD": 3.1858,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HH_16",
+    "text": "land",
+    "element_string": "land",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 178,
+    "film_count_in_target_genre": 178,
+    "foil_rule": null,
+    "prevalence_pct": 0.9614457831325302,
+    "distinctiveness_pct": 0.7397590361445783,
+    "ensemble": 3.4224217334053226,
+    "subtlex_token": "land",
+    "Lg10WF": null,
+    "Lg10CD": 3.317,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HH_17",
+    "text": "robbery",
+    "element_string": "robbery",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 136,
+    "film_count_in_target_genre": 136,
+    "foil_rule": null,
+    "prevalence_pct": 0.9349397590361446,
+    "distinctiveness_pct": 0.7951807228915663,
+    "ensemble": 3.321264557584369,
+    "subtlex_token": "robbery",
+    "Lg10WF": 3.0704,
+    "Lg10CD": 2.7551,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HH_18",
+    "text": "stranger",
+    "element_string": "stranger",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 54,
+    "film_count_in_target_genre": 54,
+    "foil_rule": null,
+    "prevalence_pct": 0.7024096385542169,
+    "distinctiveness_pct": 0.6819277108433734,
+    "ensemble": 1.1620388223583562,
+    "subtlex_token": "stranger",
+    "Lg10WF": null,
+    "Lg10CD": 2.9943,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HL_13",
+    "text": "officer",
+    "element_string": "officer",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 108,
+    "film_count_in_target_genre": 108,
+    "foil_rule": null,
+    "prevalence_pct": 0.891566265060241,
+    "distinctiveness_pct": 0.3253012048192771,
+    "ensemble": 0.7386562240472057,
+    "subtlex_token": "officer",
+    "Lg10WF": 3.7215,
+    "Lg10CD": 3.3069,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HL_14",
+    "text": "mother",
+    "element_string": "mother",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 106,
+    "film_count_in_target_genre": 106,
+    "foil_rule": null,
+    "prevalence_pct": 0.8879518072289156,
+    "distinctiveness_pct": 0.02891566265060241,
+    "ensemble": 0.6260081503279034,
+    "subtlex_token": "mother",
+    "Lg10WF": 4.3888,
+    "Lg10CD": 3.7448,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HL_15",
+    "text": "village",
+    "element_string": "village",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 54,
+    "film_count_in_target_genre": 54,
+    "foil_rule": null,
+    "prevalence_pct": 0.7024096385542169,
+    "distinctiveness_pct": 0.1108433734939759,
+    "ensemble": 0.36876711739129364,
+    "subtlex_token": "village",
+    "Lg10WF": null,
+    "Lg10CD": 2.8893,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HL_16",
+    "text": "agent",
+    "element_string": "agent",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 56,
+    "film_count_in_target_genre": 56,
+    "foil_rule": null,
+    "prevalence_pct": 0.7204819277108434,
+    "distinctiveness_pct": 0.2746987951807229,
+    "ensemble": 0.2163594434208906,
+    "subtlex_token": "agent",
+    "Lg10WF": 3.719,
+    "Lg10CD": 3.1461,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HL_17",
+    "text": "boss",
+    "element_string": "boss",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 51,
+    "film_count_in_target_genre": 51,
+    "foil_rule": null,
+    "prevalence_pct": 0.672289156626506,
+    "distinctiveness_pct": 0.20963855421686747,
+    "ensemble": 0.2017717581302465,
+    "subtlex_token": "boss",
+    "Lg10WF": 3.8021,
+    "Lg10CD": 3.3681,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_HL_18",
+    "text": "country",
+    "element_string": "country",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 59,
+    "film_count_in_target_genre": 59,
+    "foil_rule": null,
+    "prevalence_pct": 0.7506024096385542,
+    "distinctiveness_pct": 0.2891566265060241,
+    "ensemble": 0.18660110743287428,
+    "subtlex_token": "country",
+    "Lg10WF": 3.9167,
+    "Lg10CD": 3.5184,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LH_13",
+    "text": "hired gun",
+    "element_string": "hired gun",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 22,
+    "film_count_in_target_genre": 22,
+    "foil_rule": null,
+    "prevalence_pct": 0.10722891566265061,
+    "distinctiveness_pct": 0.9710843373493976,
+    "ensemble": 3.034171066631135,
+    "subtlex_token": "gun",
+    "Lg10WF": null,
+    "Lg10CD": 3.4738,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LH_14",
+    "text": "holdup",
+    "element_string": "holdup",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.29156626506024097,
+    "distinctiveness_pct": 0.944578313253012,
+    "ensemble": 2.694836918777395,
+    "subtlex_token": "holdup",
+    "Lg10WF": null,
+    "Lg10CD": 1.9638,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LH_15",
+    "text": "town sheriff",
+    "element_string": "town sheriff",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 20,
+    "film_count_in_target_genre": 20,
+    "foil_rule": null,
+    "prevalence_pct": 0.020481927710843374,
+    "distinctiveness_pct": 0.9132530120481928,
+    "ensemble": 1.3355457610942145,
+    "subtlex_token": "sheriff",
+    "Lg10WF": 3.4936,
+    "Lg10CD": 2.8215,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LH_16",
+    "text": "bull",
+    "element_string": "bull",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.29156626506024097,
+    "distinctiveness_pct": 0.8096385542168675,
+    "ensemble": 0.8934063390500062,
+    "subtlex_token": "bull",
+    "Lg10WF": null,
+    "Lg10CD": 2.8235,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LH_17",
+    "text": "trader",
+    "element_string": "trader",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 26,
+    "film_count_in_target_genre": 26,
+    "foil_rule": null,
+    "prevalence_pct": 0.25542168674698795,
+    "distinctiveness_pct": 0.8168674698795181,
+    "ensemble": 0.6694091836982384,
+    "subtlex_token": "trader",
+    "Lg10WF": null,
+    "Lg10CD": 1.7709,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LH_18",
+    "text": "gang member",
+    "element_string": "gang member",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.29156626506024097,
+    "distinctiveness_pct": 0.7614457831325301,
+    "ensemble": 0.3322568351322944,
+    "subtlex_token": "member",
+    "Lg10WF": 3.167,
+    "Lg10CD": 3.0453,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LL_13",
+    "text": "funeral",
+    "element_string": "funeral",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.29156626506024097,
+    "distinctiveness_pct": 0.26024096385542167,
+    "ensemble": -0.05224260605947999,
+    "subtlex_token": "funeral",
+    "Lg10WF": null,
+    "Lg10CD": 2.9827,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LL_14",
+    "text": "rival",
+    "element_string": "rival",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 24,
+    "film_count_in_target_genre": 24,
+    "foil_rule": null,
+    "prevalence_pct": 0.1963855421686747,
+    "distinctiveness_pct": 0.3132530120481928,
+    "ensemble": -0.06700394706448926,
+    "subtlex_token": "rival",
+    "Lg10WF": null,
+    "Lg10CD": 2.1644,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LL_15",
+    "text": "priest",
+    "element_string": "priest",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 20,
+    "film_count_in_target_genre": 20,
+    "foil_rule": null,
+    "prevalence_pct": 0.020481927710843374,
+    "distinctiveness_pct": 0.17590361445783131,
+    "ensemble": -0.06887496654255969,
+    "subtlex_token": "priest",
+    "Lg10WF": 3.1261,
+    "Lg10CD": 2.7185,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LL_16",
+    "text": "table",
+    "element_string": "table",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 24,
+    "film_count_in_target_genre": 24,
+    "foil_rule": null,
+    "prevalence_pct": 0.1963855421686747,
+    "distinctiveness_pct": 0.1614457831325301,
+    "ensemble": -0.10493243787000309,
+    "subtlex_token": "table",
+    "Lg10WF": null,
+    "Lg10CD": 3.4609,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LL_17",
+    "text": "visit",
+    "element_string": "visit",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 22,
+    "film_count_in_target_genre": 22,
+    "foil_rule": null,
+    "prevalence_pct": 0.10722891566265061,
+    "distinctiveness_pct": 0.05783132530120482,
+    "ensemble": -0.12432839650591554,
+    "subtlex_token": "visit",
+    "Lg10WF": 3.4763,
+    "Lg10CD": 3.3206,
+    "in_law_review_study": false
+   },
+   {
+    "id": "WES_LL_18",
+    "text": "affair",
+    "element_string": "affair",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Western",
+    "element_type": "noun",
+    "element_taxonomy": "relationship",
+    "category_key": "characters",
+    "film_count": 25,
+    "film_count_in_target_genre": 25,
+    "foil_rule": null,
+    "prevalence_pct": 0.2289156626506024,
+    "distinctiveness_pct": 0.00963855421686747,
+    "ensemble": -0.12936549846516687,
+    "subtlex_token": "affair",
+    "Lg10WF": null,
+    "Lg10CD": 2.9217,
+    "in_law_review_study": false
    }
   ]
  },
@@ -1206,7 +1790,7 @@ window.STIMULI = {
   "genre_key": "horror",
   "seed": 20260219,
   "min_films_in_genre": 20,
-  "k_per_cell": 12,
+  "k_per_cell": 18,
   "n_foils": 8,
   "foil_rule": "flat",
   "foil_max_films_in_target": 5,
@@ -1220,7 +1804,7 @@ window.STIMULI = {
    "low_prev_high_dist",
    "low_prev_low_dist"
   ],
-  "n_items": 56,
+  "n_items": 80,
   "display_text_note": "text is what participants see: the pipeline element string, with DISPLAY_OVERRIDES applied (capitals, hyphens, possessives, natural plurals, US spelling; no content word changed). element_string keeps the pipeline string.",
   "items": [
    {
@@ -1242,7 +1826,8 @@ window.STIMULI = {
     "ensemble": 16.589326183841575,
     "subtlex_token": "creature",
     "Lg10WF": 3.0386,
-    "Lg10CD": 2.8182
+    "Lg10CD": 2.8182,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_02",
@@ -1263,7 +1848,8 @@ window.STIMULI = {
     "ensemble": 7.78245803306668,
     "subtlex_token": "basement",
     "Lg10WF": 3.0314,
-    "Lg10CD": 2.8325
+    "Lg10CD": 2.8325,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_03",
@@ -1284,7 +1870,8 @@ window.STIMULI = {
     "ensemble": 3.119550554852953,
     "subtlex_token": "beast",
     "Lg10WF": 3.098,
-    "Lg10CD": 2.7427
+    "Lg10CD": 2.7427,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_04",
@@ -1305,7 +1892,8 @@ window.STIMULI = {
     "ensemble": 2.6535973499809815,
     "subtlex_token": "human",
     "Lg10WF": 3.8037,
-    "Lg10CD": 3.4672
+    "Lg10CD": 3.4672,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_05",
@@ -1326,7 +1914,8 @@ window.STIMULI = {
     "ensemble": 2.060509580209554,
     "subtlex_token": "darkness",
     "Lg10WF": 2.9509,
-    "Lg10CD": 2.7543
+    "Lg10CD": 2.7543,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_06",
@@ -1347,7 +1936,8 @@ window.STIMULI = {
     "ensemble": 1.9295939964304347,
     "subtlex_token": "killer",
     "Lg10WF": 3.5061,
-    "Lg10CD": 3.1471
+    "Lg10CD": 3.1471,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_07",
@@ -1368,7 +1958,8 @@ window.STIMULI = {
     "ensemble": 1.9159771545395619,
     "subtlex_token": "body",
     "Lg10WF": 3.9988,
-    "Lg10CD": 3.5979
+    "Lg10CD": 3.5979,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_08",
@@ -1389,7 +1980,8 @@ window.STIMULI = {
     "ensemble": 1.2426550944199306,
     "subtlex_token": "woman",
     "Lg10WF": 4.3457,
-    "Lg10CD": 3.7728
+    "Lg10CD": 3.7728,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_09",
@@ -1410,7 +2002,8 @@ window.STIMULI = {
     "ensemble": 1.0268617075661406,
     "subtlex_token": "panic",
     "Lg10WF": 3.0473,
-    "Lg10CD": 2.8993
+    "Lg10CD": 2.8993,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_10",
@@ -1431,7 +2024,8 @@ window.STIMULI = {
     "ensemble": 0.7711760296917076,
     "subtlex_token": "girl",
     "Lg10WF": 4.4535,
-    "Lg10CD": 3.7885
+    "Lg10CD": 3.7885,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_11",
@@ -1452,7 +2046,8 @@ window.STIMULI = {
     "ensemble": 0.7412968034968714,
     "subtlex_token": "attacker",
     "Lg10WF": 1.8692,
-    "Lg10CD": 1.7853
+    "Lg10CD": 1.7853,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HH_12",
@@ -1473,7 +2068,8 @@ window.STIMULI = {
     "ensemble": 0.7191117431713328,
     "subtlex_token": "lair",
     "Lg10WF": 2.0934,
-    "Lg10CD": 1.8751
+    "Lg10CD": 1.8751,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_01",
@@ -1494,7 +2090,8 @@ window.STIMULI = {
     "ensemble": 2.615452817586929,
     "subtlex_token": "son",
     "Lg10WF": 4.3212,
-    "Lg10CD": 3.7115
+    "Lg10CD": 3.7115,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_02",
@@ -1515,7 +2112,8 @@ window.STIMULI = {
     "ensemble": 0.7397109204940803,
     "subtlex_token": "truth",
     "Lg10WF": 3.9913,
-    "Lg10CD": 3.6226
+    "Lg10CD": 3.6226,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_03",
@@ -1536,7 +2134,8 @@ window.STIMULI = {
     "ensemble": 0.4102312732521141,
     "subtlex_token": "birth",
     "Lg10WF": 3.148,
-    "Lg10CD": 2.9773
+    "Lg10CD": 2.9773,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_04",
@@ -1557,7 +2156,8 @@ window.STIMULI = {
     "ensemble": 0.3403079344515856,
     "subtlex_token": "man",
     "Lg10WF": 4.9737,
-    "Lg10CD": 3.9061
+    "Lg10CD": 3.9061,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_05",
@@ -1578,7 +2178,8 @@ window.STIMULI = {
     "ensemble": 0.24266123529561123,
     "subtlex_token": "passenger",
     "Lg10WF": 2.7404,
-    "Lg10CD": 2.4579
+    "Lg10CD": 2.4579,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_06",
@@ -1599,7 +2200,8 @@ window.STIMULI = {
     "ensemble": 0.183959953379828,
     "subtlex_token": "prisoner",
     "Lg10WF": 3.0722,
-    "Lg10CD": 2.8007
+    "Lg10CD": 2.8007,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_07",
@@ -1620,7 +2222,8 @@ window.STIMULI = {
     "ensemble": 0.13641070756559387,
     "subtlex_token": "grandfather",
     "Lg10WF": 3.0941,
-    "Lg10CD": 2.7832
+    "Lg10CD": 2.7832,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_08",
@@ -1641,7 +2244,8 @@ window.STIMULI = {
     "ensemble": 0.10695270402241197,
     "subtlex_token": "friend",
     "Lg10WF": 4.3301,
-    "Lg10CD": 3.7909
+    "Lg10CD": 3.7909,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_09",
@@ -1662,7 +2266,8 @@ window.STIMULI = {
     "ensemble": 0.07990585463372628,
     "subtlex_token": "maid",
     "Lg10WF": 3.0663,
-    "Lg10CD": 2.7889
+    "Lg10CD": 2.7889,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_10",
@@ -1683,7 +2288,8 @@ window.STIMULI = {
     "ensemble": 0.056690605277492506,
     "subtlex_token": "violence",
     "Lg10WF": 3.0697,
-    "Lg10CD": 2.8848
+    "Lg10CD": 2.8848,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_11",
@@ -1704,7 +2310,8 @@ window.STIMULI = {
     "ensemble": -0.014503638123886553,
     "subtlex_token": "desire",
     "Lg10WF": 3.0149,
-    "Lg10CD": 2.8657
+    "Lg10CD": 2.8657,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_HL_12",
@@ -1725,7 +2332,8 @@ window.STIMULI = {
     "ensemble": -0.01548390225327409,
     "subtlex_token": "country",
     "Lg10WF": 3.9167,
-    "Lg10CD": 3.5184
+    "Lg10CD": 3.5184,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_01",
@@ -1746,7 +2354,8 @@ window.STIMULI = {
     "ensemble": 1.6491669297464735,
     "subtlex_token": "fetus",
     "Lg10WF": 1.9191,
-    "Lg10CD": 1.6128
+    "Lg10CD": 1.6128,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_02",
@@ -1767,7 +2376,8 @@ window.STIMULI = {
     "ensemble": 1.1562162573524009,
     "subtlex_token": "flamethrower",
     "Lg10WF": 1.4771,
-    "Lg10CD": 1.3617
+    "Lg10CD": 1.3617,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_03",
@@ -1788,7 +2398,8 @@ window.STIMULI = {
     "ensemble": 0.9401488475587002,
     "subtlex_token": "trap",
     "Lg10WF": 3.0853,
-    "Lg10CD": 2.9069
+    "Lg10CD": 2.9069,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_04",
@@ -1809,7 +2420,8 @@ window.STIMULI = {
     "ensemble": 0.8591547919131832,
     "subtlex_token": "house",
     "Lg10WF": 4.4185,
-    "Lg10CD": 3.7811
+    "Lg10CD": 3.7811,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_05",
@@ -1830,7 +2442,8 @@ window.STIMULI = {
     "ensemble": 0.7294983593011845,
     "subtlex_token": "sighting",
     "Lg10WF": 1.9031,
-    "Lg10CD": 1.8195
+    "Lg10CD": 1.8195,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_06",
@@ -1851,7 +2464,8 @@ window.STIMULI = {
     "ensemble": 0.7266798314673271,
     "subtlex_token": "mutant",
     "Lg10WF": 2.2648,
-    "Lg10CD": 1.8865
+    "Lg10CD": 1.8865,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_07",
@@ -1872,7 +2486,8 @@ window.STIMULI = {
     "ensemble": 0.5801209393343421,
     "subtlex_token": "circumstance",
     "Lg10WF": 2.0253,
-    "Lg10CD": 1.9777
+    "Lg10CD": 1.9777,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_08",
@@ -1893,7 +2508,8 @@ window.STIMULI = {
     "ensemble": 0.5287142341150579,
     "subtlex_token": "room",
     "Lg10WF": 4.3506,
-    "Lg10CD": 3.796
+    "Lg10CD": 3.796,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_09",
@@ -1914,7 +2530,8 @@ window.STIMULI = {
     "ensemble": 0.5007210660902686,
     "subtlex_token": "preacher",
     "Lg10WF": 2.5353,
-    "Lg10CD": 2.1644
+    "Lg10CD": 2.1644,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_10",
@@ -1935,7 +2552,8 @@ window.STIMULI = {
     "ensemble": 0.2785178529527855,
     "subtlex_token": "house",
     "Lg10WF": 4.4185,
-    "Lg10CD": 3.7811
+    "Lg10CD": 3.7811,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_11",
@@ -1956,7 +2574,8 @@ window.STIMULI = {
     "ensemble": 0.24229382552477888,
     "subtlex_token": "thirst",
     "Lg10WF": 2.281,
-    "Lg10CD": 2.1847
+    "Lg10CD": 2.1847,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LH_12",
@@ -1977,7 +2596,8 @@ window.STIMULI = {
     "ensemble": 0.15219758133093403,
     "subtlex_token": "world",
     "Lg10WF": 4.3658,
-    "Lg10CD": 3.792
+    "Lg10CD": 3.792,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_01",
@@ -1998,7 +2618,8 @@ window.STIMULI = {
     "ensemble": -0.10578559672865454,
     "subtlex_token": "woman",
     "Lg10WF": 4.3457,
-    "Lg10CD": 3.7728
+    "Lg10CD": 3.7728,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_02",
@@ -2019,7 +2640,8 @@ window.STIMULI = {
     "ensemble": -0.11911836250816202,
     "subtlex_token": "stress",
     "Lg10WF": 2.9015,
-    "Lg10CD": 2.7664
+    "Lg10CD": 2.7664,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_03",
@@ -2040,7 +2662,8 @@ window.STIMULI = {
     "ensemble": -0.1378186711012186,
     "subtlex_token": "punch",
     "Lg10WF": 3.1804,
-    "Lg10CD": 2.975
+    "Lg10CD": 2.975,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_04",
@@ -2061,7 +2684,8 @@ window.STIMULI = {
     "ensemble": -0.14725718547309385,
     "subtlex_token": "life",
     "Lg10WF": 4.6088,
-    "Lg10CD": 3.8806
+    "Lg10CD": 3.8806,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_05",
@@ -2082,7 +2706,8 @@ window.STIMULI = {
     "ensemble": -0.15558350864995993,
     "subtlex_token": "addiction",
     "Lg10WF": 2.301,
-    "Lg10CD": 2.1173
+    "Lg10CD": 2.1173,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_06",
@@ -2103,7 +2728,8 @@ window.STIMULI = {
     "ensemble": -0.18830980877699088,
     "subtlex_token": "death",
     "Lg10WF": 4.0434,
-    "Lg10CD": 3.6313
+    "Lg10CD": 3.6313,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_07",
@@ -2124,7 +2750,8 @@ window.STIMULI = {
     "ensemble": -0.1964592894690327,
     "subtlex_token": "room",
     "Lg10WF": 4.3506,
-    "Lg10CD": 3.796
+    "Lg10CD": 3.796,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_08",
@@ -2145,7 +2772,8 @@ window.STIMULI = {
     "ensemble": -0.22068402454247377,
     "subtlex_token": "combat",
     "Lg10WF": 2.8494,
-    "Lg10CD": 2.5988
+    "Lg10CD": 2.5988,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_09",
@@ -2166,7 +2794,8 @@ window.STIMULI = {
     "ensemble": -0.2244489364390152,
     "subtlex_token": "friend",
     "Lg10WF": 4.3301,
-    "Lg10CD": 3.7909
+    "Lg10CD": 3.7909,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_10",
@@ -2187,7 +2816,8 @@ window.STIMULI = {
     "ensemble": -0.23799877959686438,
     "subtlex_token": "grandson",
     "Lg10WF": 2.6107,
-    "Lg10CD": 2.3927
+    "Lg10CD": 2.3927,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_11",
@@ -2208,7 +2838,8 @@ window.STIMULI = {
     "ensemble": -0.25479411775319405,
     "subtlex_token": "theatre",
     "Lg10WF": 2.7657,
-    "Lg10CD": 2.3747
+    "Lg10CD": 2.3747,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_LL_12",
@@ -2229,7 +2860,8 @@ window.STIMULI = {
     "ensemble": -0.2693525700934476,
     "subtlex_token": "friend",
     "Lg10WF": 4.3301,
-    "Lg10CD": 3.7909
+    "Lg10CD": 3.7909,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_FOIL_01",
@@ -2250,7 +2882,8 @@ window.STIMULI = {
     "ensemble": 7.726059440304339,
     "subtlex_token": "rustler",
     "Lg10WF": 1.415,
-    "Lg10CD": 1.1461
+    "Lg10CD": 1.1461,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_FOIL_02",
@@ -2271,7 +2904,8 @@ window.STIMULI = {
     "ensemble": 2.5873863780830333,
     "subtlex_token": "parole",
     "Lg10WF": 2.7275,
-    "Lg10CD": 2.4639
+    "Lg10CD": 2.4639,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_FOIL_03",
@@ -2292,7 +2926,8 @@ window.STIMULI = {
     "ensemble": 2.1445120444207415,
     "subtlex_token": "chef",
     "Lg10WF": 2.7832,
-    "Lg10CD": 2.5092
+    "Lg10CD": 2.5092,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_FOIL_04",
@@ -2313,7 +2948,8 @@ window.STIMULI = {
     "ensemble": 6.677225811793553,
     "subtlex_token": "lawman",
     "Lg10WF": 1.7709,
-    "Lg10CD": 1.4771
+    "Lg10CD": 1.4771,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_FOIL_05",
@@ -2334,7 +2970,8 @@ window.STIMULI = {
     "ensemble": 0.43337535303645,
     "subtlex_token": "tournament",
     "Lg10WF": 2.6675,
-    "Lg10CD": 2.1987
+    "Lg10CD": 2.1987,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_FOIL_06",
@@ -2355,7 +2992,8 @@ window.STIMULI = {
     "ensemble": 4.799276322927038,
     "subtlex_token": "cavalry",
     "Lg10WF": 2.5024,
-    "Lg10CD": 2.2718
+    "Lg10CD": 2.2718,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_FOIL_07",
@@ -2376,7 +3014,8 @@ window.STIMULI = {
     "ensemble": 1.4103023248104423,
     "subtlex_token": "misadventure",
     "Lg10WF": 1.0414,
-    "Lg10CD": 1.0414
+    "Lg10CD": 1.0414,
+    "in_law_review_study": true
    },
    {
     "id": "HOR_FOIL_08",
@@ -2397,7 +3036,536 @@ window.STIMULI = {
     "ensemble": 1.6021557746832698,
     "subtlex_token": "gambler",
     "Lg10WF": 2.3711,
-    "Lg10CD": 2.1818
+    "Lg10CD": 2.1818,
+    "in_law_review_study": true
+   },
+   {
+    "id": "HOR_HH_13",
+    "text": "laboratory",
+    "element_string": "laboratory",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 130,
+    "film_count_in_target_genre": 130,
+    "foil_rule": null,
+    "prevalence_pct": 0.8521970705725699,
+    "distinctiveness_pct": 0.9041278295605859,
+    "ensemble": 2.1180077346141903,
+    "subtlex_token": "laboratory",
+    "Lg10WF": null,
+    "Lg10CD": 2.2945,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HH_14",
+    "text": "barn",
+    "element_string": "barn",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 81,
+    "film_count_in_target_genre": 81,
+    "foil_rule": null,
+    "prevalence_pct": 0.7303595206391478,
+    "distinctiveness_pct": 0.8262316910785619,
+    "ensemble": 1.4781875260036623,
+    "subtlex_token": "barn",
+    "Lg10WF": 2.8414,
+    "Lg10CD": 2.5977,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HH_15",
+    "text": "gate",
+    "element_string": "gate",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 104,
+    "film_count_in_target_genre": 104,
+    "foil_rule": null,
+    "prevalence_pct": 0.7956058588548602,
+    "distinctiveness_pct": 0.7177097203728362,
+    "ensemble": 1.0398487190297627,
+    "subtlex_token": "gate",
+    "Lg10WF": null,
+    "Lg10CD": 2.9557,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HH_16",
+    "text": "research",
+    "element_string": "research",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 118,
+    "film_count_in_target_genre": 118,
+    "foil_rule": null,
+    "prevalence_pct": 0.8252330226364847,
+    "distinctiveness_pct": 0.7683089214380826,
+    "ensemble": 1.0280233555111216,
+    "subtlex_token": "research",
+    "Lg10WF": null,
+    "Lg10CD": 3.0166,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HH_17",
+    "text": "motel",
+    "element_string": "motel",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 72,
+    "film_count_in_target_genre": 72,
+    "foil_rule": null,
+    "prevalence_pct": 0.6924101198402131,
+    "distinctiveness_pct": 0.7283621837549934,
+    "ensemble": 0.9739351445787624,
+    "subtlex_token": "motel",
+    "Lg10WF": null,
+    "Lg10CD": 2.6721,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HH_18",
+    "text": "creation",
+    "element_string": "creation",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 73,
+    "film_count_in_target_genre": 73,
+    "foil_rule": null,
+    "prevalence_pct": 0.6960719041278296,
+    "distinctiveness_pct": 0.8035952063914781,
+    "ensemble": 0.8906366951686938,
+    "subtlex_token": "creation",
+    "Lg10WF": null,
+    "Lg10CD": 2.3945,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HL_13",
+    "text": "officer",
+    "element_string": "officer",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 350,
+    "film_count_in_target_genre": 350,
+    "foil_rule": null,
+    "prevalence_pct": 0.9647137150466045,
+    "distinctiveness_pct": 0.24500665778961384,
+    "ensemble": 1.3439911853873001,
+    "subtlex_token": "officer",
+    "Lg10WF": 3.7215,
+    "Lg10CD": 3.3069,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HL_14",
+    "text": "train",
+    "element_string": "train",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 119,
+    "film_count_in_target_genre": 119,
+    "foil_rule": null,
+    "prevalence_pct": 0.8282290279627164,
+    "distinctiveness_pct": 0.08189081225033289,
+    "ensemble": 0.35321948137017734,
+    "subtlex_token": "train",
+    "Lg10WF": null,
+    "Lg10CD": 3.2458,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HL_15",
+    "text": "shop",
+    "element_string": "shop",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 121,
+    "film_count_in_target_genre": 121,
+    "foil_rule": null,
+    "prevalence_pct": 0.8338881491344874,
+    "distinctiveness_pct": 0.21504660452729693,
+    "ensemble": 0.23322572156316473,
+    "subtlex_token": "shop",
+    "Lg10WF": 3.4365,
+    "Lg10CD": 3.2079,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HL_16",
+    "text": "land",
+    "element_string": "land",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 139,
+    "film_count_in_target_genre": 139,
+    "foil_rule": null,
+    "prevalence_pct": 0.8628495339547271,
+    "distinctiveness_pct": 0.12649800266311584,
+    "ensemble": 0.17650370414313726,
+    "subtlex_token": "land",
+    "Lg10WF": null,
+    "Lg10CD": 3.317,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HL_17",
+    "text": "cousin",
+    "element_string": "cousin",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "relationship",
+    "category_key": "characters",
+    "film_count": 88,
+    "film_count_in_target_genre": 88,
+    "foil_rule": null,
+    "prevalence_pct": 0.7536617842876165,
+    "distinctiveness_pct": 0.1677762982689747,
+    "ensemble": 0.050215602774802665,
+    "subtlex_token": "cousin",
+    "Lg10WF": null,
+    "Lg10CD": 3.0179,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_HL_18",
+    "text": "crowd",
+    "element_string": "crowd",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 84,
+    "film_count_in_target_genre": 84,
+    "foil_rule": null,
+    "prevalence_pct": 0.7403462050599201,
+    "distinctiveness_pct": 0.1384820239680426,
+    "ensemble": -0.006377165451040417,
+    "subtlex_token": "crowd",
+    "Lg10WF": 3.2804,
+    "Lg10CD": 3.0903,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LH_13",
+    "text": "parasite",
+    "element_string": "parasite",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 29,
+    "film_count_in_target_genre": 29,
+    "foil_rule": null,
+    "prevalence_pct": 0.2706391478029294,
+    "distinctiveness_pct": 0.9840213049267643,
+    "ensemble": 2.0922426635181957,
+    "subtlex_token": "parasite",
+    "Lg10WF": null,
+    "Lg10CD": 1.9243,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LH_14",
+    "text": "holy water",
+    "element_string": "holy water",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "chunk",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 26,
+    "film_count_in_target_genre": 26,
+    "foil_rule": null,
+    "prevalence_pct": 0.20372836218375498,
+    "distinctiveness_pct": 0.9800266311584553,
+    "ensemble": 1.4933943500048468,
+    "subtlex_token": "water",
+    "Lg10WF": null,
+    "Lg10CD": 3.6157,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LH_15",
+    "text": "Molotov cocktail",
+    "element_string": "molotov cocktail",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "chunk",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 21,
+    "film_count_in_target_genre": 21,
+    "foil_rule": null,
+    "prevalence_pct": 0.05392809587217044,
+    "distinctiveness_pct": 0.9587217043941412,
+    "ensemble": 0.9197765468985322,
+    "subtlex_token": "cocktail",
+    "Lg10WF": null,
+    "Lg10CD": 2.6335,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LH_16",
+    "text": "dead woman",
+    "element_string": "dead woman",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 23,
+    "film_count_in_target_genre": 23,
+    "foil_rule": null,
+    "prevalence_pct": 0.11684420772303596,
+    "distinctiveness_pct": 0.9201065246338216,
+    "ensemble": 0.7133031136983621,
+    "subtlex_token": "woman",
+    "Lg10WF": 4.3457,
+    "Lg10CD": 3.7728,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LH_17",
+    "text": "biker",
+    "element_string": "biker",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 26,
+    "film_count_in_target_genre": 26,
+    "foil_rule": null,
+    "prevalence_pct": 0.20372836218375498,
+    "distinctiveness_pct": 0.729693741677763,
+    "ensemble": 0.21465562040177835,
+    "subtlex_token": "biker",
+    "Lg10WF": null,
+    "Lg10CD": 1.7324,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LH_18",
+    "text": "recorder",
+    "element_string": "recorder",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.2266977363515313,
+    "distinctiveness_pct": 0.7143808255659121,
+    "ensemble": 0.21007852162359156,
+    "subtlex_token": "recorder",
+    "Lg10WF": 2.4031,
+    "Lg10CD": 2.2529,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LL_13",
+    "text": "abortion",
+    "element_string": "abortion",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 28,
+    "film_count_in_target_genre": 28,
+    "foil_rule": null,
+    "prevalence_pct": 0.24900133155792276,
+    "distinctiveness_pct": 0.2929427430093209,
+    "ensemble": -0.110288475957967,
+    "subtlex_token": "abortion",
+    "Lg10WF": null,
+    "Lg10CD": 2.1931,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LL_14",
+    "text": "virginity",
+    "element_string": "virginity",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 20,
+    "film_count_in_target_genre": 20,
+    "foil_rule": null,
+    "prevalence_pct": 0.019307589880159785,
+    "distinctiveness_pct": 0.3202396804260985,
+    "ensemble": -0.14222241596912671,
+    "subtlex_token": "virginity",
+    "Lg10WF": null,
+    "Lg10CD": 2.1931,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LL_15",
+    "text": "older brother",
+    "element_string": "older brother",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "chunk",
+    "element_taxonomy": "relationship",
+    "category_key": "characters",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.2266977363515313,
+    "distinctiveness_pct": 0.2643142476697736,
+    "ensemble": -0.1477316281206596,
+    "subtlex_token": "brother",
+    "Lg10WF": 4.1608,
+    "Lg10CD": 3.5793,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LL_16",
+    "text": "terrorist",
+    "element_string": "terrorist",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 21,
+    "film_count_in_target_genre": 21,
+    "foil_rule": null,
+    "prevalence_pct": 0.05392809587217044,
+    "distinctiveness_pct": 0.03062583222370173,
+    "ensemble": -0.25877807550313336,
+    "subtlex_token": "terrorist",
+    "Lg10WF": null,
+    "Lg10CD": 2.4969,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LL_17",
+    "text": "wealth",
+    "element_string": "wealth",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 32,
+    "film_count_in_target_genre": 32,
+    "foil_rule": null,
+    "prevalence_pct": 0.322237017310253,
+    "distinctiveness_pct": 0.0426098535286285,
+    "ensemble": -0.2618404825694503,
+    "subtlex_token": "wealth",
+    "Lg10WF": null,
+    "Lg10CD": 2.3838,
+    "in_law_review_study": false
+   },
+   {
+    "id": "HOR_LL_18",
+    "text": "ticket",
+    "element_string": "ticket",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Horror",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 24,
+    "film_count_in_target_genre": 24,
+    "foil_rule": null,
+    "prevalence_pct": 0.14713715046604528,
+    "distinctiveness_pct": 0.008655126498002663,
+    "ensemble": -0.2914628665960076,
+    "subtlex_token": "ticket",
+    "Lg10WF": null,
+    "Lg10CD": 3.1216,
+    "in_law_review_study": false
    }
   ]
  },
@@ -2406,7 +3574,7 @@ window.STIMULI = {
   "genre_key": "science_fiction",
   "seed": 20260219,
   "min_films_in_genre": 20,
-  "k_per_cell": 12,
+  "k_per_cell": 18,
   "n_foils": 8,
   "foil_rule": "flat",
   "foil_max_films_in_target": 5,
@@ -2420,7 +3588,7 @@ window.STIMULI = {
    "low_prev_high_dist",
    "low_prev_low_dist"
   ],
-  "n_items": 56,
+  "n_items": 80,
   "display_text_note": "text is what participants see: the pipeline element string, with DISPLAY_OVERRIDES applied (capitals, hyphens, possessives, natural plurals, US spelling; no content word changed). element_string keeps the pipeline string.",
   "items": [
    {
@@ -2442,7 +3610,8 @@ window.STIMULI = {
     "ensemble": 15.69928407689823,
     "subtlex_token": "creature",
     "Lg10WF": 3.0386,
-    "Lg10CD": 2.8182
+    "Lg10CD": 2.8182,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_02",
@@ -2463,7 +3632,8 @@ window.STIMULI = {
     "ensemble": 8.002914083586786,
     "subtlex_token": "machine",
     "Lg10WF": 3.5544,
-    "Lg10CD": 3.2744
+    "Lg10CD": 3.2744,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_03",
@@ -2484,7 +3654,8 @@ window.STIMULI = {
     "ensemble": 2.8508979688325073,
     "subtlex_token": "satellite",
     "Lg10WF": 2.9025,
-    "Lg10CD": 2.5899
+    "Lg10CD": 2.5899,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_04",
@@ -2505,7 +3676,8 @@ window.STIMULI = {
     "ensemble": 2.7721279890440127,
     "subtlex_token": "fleet",
     "Lg10WF": 2.7332,
-    "Lg10CD": 2.3385
+    "Lg10CD": 2.3385,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_05",
@@ -2526,7 +3698,8 @@ window.STIMULI = {
     "ensemble": 2.353841096899514,
     "subtlex_token": "cave",
     "Lg10WF": 2.8537,
-    "Lg10CD": 2.5635
+    "Lg10CD": 2.5635,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_06",
@@ -2547,7 +3720,8 @@ window.STIMULI = {
     "ensemble": 2.230192307907374,
     "subtlex_token": "rocket",
     "Lg10WF": 2.7818,
-    "Lg10CD": 2.4609
+    "Lg10CD": 2.4609,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_07",
@@ -2568,7 +3742,8 @@ window.STIMULI = {
     "ensemble": 2.19687888244428,
     "subtlex_token": "helicopter",
     "Lg10WF": 2.9069,
-    "Lg10CD": 2.6542
+    "Lg10CD": 2.6542,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_08",
@@ -2589,7 +3764,8 @@ window.STIMULI = {
     "ensemble": 2.1827305772555716,
     "subtlex_token": "bomb",
     "Lg10WF": 3.4373,
-    "Lg10CD": 2.9708
+    "Lg10CD": 2.9708,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_09",
@@ -2610,7 +3786,8 @@ window.STIMULI = {
     "ensemble": 1.5975412009249892,
     "subtlex_token": "cure",
     "Lg10WF": 3.0269,
-    "Lg10CD": 2.798
+    "Lg10CD": 2.798,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_10",
@@ -2631,7 +3808,8 @@ window.STIMULI = {
     "ensemble": 1.3511157788527448,
     "subtlex_token": "damage",
     "Lg10WF": 3.2271,
-    "Lg10CD": 3.0711
+    "Lg10CD": 3.0711,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_11",
@@ -2652,7 +3830,8 @@ window.STIMULI = {
     "ensemble": 1.0892350564515543,
     "subtlex_token": "transformation",
     "Lg10WF": 2.0086,
-    "Lg10CD": 1.8921
+    "Lg10CD": 1.8921,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HH_12",
@@ -2673,7 +3852,8 @@ window.STIMULI = {
     "ensemble": 0.7628381801561319,
     "subtlex_token": "landing",
     "Lg10WF": 2.9133,
-    "Lg10CD": 2.6972
+    "Lg10CD": 2.6972,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_01",
@@ -2694,7 +3874,8 @@ window.STIMULI = {
     "ensemble": 1.0811817033234346,
     "subtlex_token": "hospital",
     "Lg10WF": 3.8017,
-    "Lg10CD": 3.417
+    "Lg10CD": 3.417,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_02",
@@ -2715,7 +3896,8 @@ window.STIMULI = {
     "ensemble": 0.5871988949612496,
     "subtlex_token": "window",
     "Lg10WF": 3.6422,
-    "Lg10CD": 3.3879
+    "Lg10CD": 3.3879,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_03",
@@ -2736,7 +3918,8 @@ window.STIMULI = {
     "ensemble": 0.5317697681516165,
     "subtlex_token": "book",
     "Lg10WF": 3.9555,
-    "Lg10CD": 3.5112
+    "Lg10CD": 3.5112,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_04",
@@ -2757,7 +3940,8 @@ window.STIMULI = {
     "ensemble": 0.41443948984782136,
     "subtlex_token": "trip",
     "Lg10WF": 3.6236,
-    "Lg10CD": 3.3742
+    "Lg10CD": 3.3742,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_05",
@@ -2778,7 +3962,8 @@ window.STIMULI = {
     "ensemble": 0.31026612791195385,
     "subtlex_token": "killer",
     "Lg10WF": 3.5061,
-    "Lg10CD": 3.1471
+    "Lg10CD": 3.1471,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_06",
@@ -2799,7 +3984,8 @@ window.STIMULI = {
     "ensemble": 0.29803149646969623,
     "subtlex_token": "couple",
     "Lg10WF": 4.0567,
-    "Lg10CD": 3.6981
+    "Lg10CD": 3.6981,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_07",
@@ -2820,7 +4006,8 @@ window.STIMULI = {
     "ensemble": 0.13530017282934134,
     "subtlex_token": "crowd",
     "Lg10WF": 3.2804,
-    "Lg10CD": 3.0903
+    "Lg10CD": 3.0903,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_08",
@@ -2841,7 +4028,8 @@ window.STIMULI = {
     "ensemble": 0.1335323304882411,
     "subtlex_token": "boss",
     "Lg10WF": 3.8021,
-    "Lg10CD": 3.3681
+    "Lg10CD": 3.3681,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_09",
@@ -2862,7 +4050,8 @@ window.STIMULI = {
     "ensemble": 0.09699146300784306,
     "subtlex_token": "bed",
     "Lg10WF": 3.9797,
-    "Lg10CD": 3.6143
+    "Lg10CD": 3.6143,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_10",
@@ -2883,7 +4072,8 @@ window.STIMULI = {
     "ensemble": 0.024780690221480328,
     "subtlex_token": "shop",
     "Lg10WF": 3.4365,
-    "Lg10CD": 3.2079
+    "Lg10CD": 3.2079,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_11",
@@ -2904,7 +4094,8 @@ window.STIMULI = {
     "ensemble": 0.016638173707695325,
     "subtlex_token": "woman",
     "Lg10WF": 4.3457,
-    "Lg10CD": 3.7728
+    "Lg10CD": 3.7728,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_HL_12",
@@ -2925,7 +4116,8 @@ window.STIMULI = {
     "ensemble": 0.01183288704782201,
     "subtlex_token": "officer",
     "Lg10WF": 3.7215,
-    "Lg10CD": 3.3069
+    "Lg10CD": 3.3069,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_01",
@@ -2946,7 +4138,8 @@ window.STIMULI = {
     "ensemble": 2.8093135553184627,
     "subtlex_token": "starship",
     "Lg10WF": 2.1644,
-    "Lg10CD": 1.8062
+    "Lg10CD": 1.8062,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_02",
@@ -2967,7 +4160,8 @@ window.STIMULI = {
     "ensemble": 2.0949769085884435,
     "subtlex_token": "ship",
     "Lg10WF": 3.7028,
-    "Lg10CD": 3.066
+    "Lg10CD": 3.066,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_03",
@@ -2988,7 +4182,8 @@ window.STIMULI = {
     "ensemble": 1.4535983624992466,
     "subtlex_token": "room",
     "Lg10WF": 4.3506,
-    "Lg10CD": 3.796
+    "Lg10CD": 3.796,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_04",
@@ -3009,7 +4204,8 @@ window.STIMULI = {
     "ensemble": 1.3119537850473015,
     "subtlex_token": "missile",
     "Lg10WF": 2.8267,
-    "Lg10CD": 2.3181
+    "Lg10CD": 2.3181,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_05",
@@ -3030,7 +4226,8 @@ window.STIMULI = {
     "ensemble": 1.1133208048275367,
     "subtlex_token": "telepathy",
     "Lg10WF": 1.6812,
-    "Lg10CD": 1.5563
+    "Lg10CD": 1.5563,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_06",
@@ -3051,7 +4248,8 @@ window.STIMULI = {
     "ensemble": 0.8775647999490037,
     "subtlex_token": "life",
     "Lg10WF": 4.6088,
-    "Lg10CD": 3.8806
+    "Lg10CD": 3.8806,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_07",
@@ -3072,7 +4270,8 @@ window.STIMULI = {
     "ensemble": 0.7237251576882906,
     "subtlex_token": "eruption",
     "Lg10WF": 1.3222,
-    "Lg10CD": 1.2553
+    "Lg10CD": 1.2553,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_08",
@@ -3093,7 +4292,8 @@ window.STIMULI = {
     "ensemble": 0.6365839172962569,
     "subtlex_token": "being",
     "Lg10WF": 4.3941,
-    "Lg10CD": 3.8503
+    "Lg10CD": 3.8503,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_09",
@@ -3114,7 +4314,8 @@ window.STIMULI = {
     "ensemble": 0.613330625419884,
     "subtlex_token": "mechanism",
     "Lg10WF": 2.281,
-    "Lg10CD": 2.1732
+    "Lg10CD": 2.1732,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_10",
@@ -3135,7 +4336,8 @@ window.STIMULI = {
     "ensemble": 0.511842456352666,
     "subtlex_token": "battle",
     "Lg10WF": 3.3336,
-    "Lg10CD": 3.0519
+    "Lg10CD": 3.0519,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_11",
@@ -3156,7 +4358,8 @@ window.STIMULI = {
     "ensemble": 0.24150920332520937,
     "subtlex_token": "acid",
     "Lg10WF": 2.7067,
-    "Lg10CD": 2.5105
+    "Lg10CD": 2.5105,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LH_12",
@@ -3177,7 +4380,8 @@ window.STIMULI = {
     "ensemble": 0.1171719780381478,
     "subtlex_token": "operative",
     "Lg10WF": 2.2227,
-    "Lg10CD": 2.1106
+    "Lg10CD": 2.1106,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_01",
@@ -3198,7 +4402,8 @@ window.STIMULI = {
     "ensemble": -0.10304608305262387,
     "subtlex_token": "curse",
     "Lg10WF": 2.9685,
-    "Lg10CD": 2.7143
+    "Lg10CD": 2.7143,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_02",
@@ -3219,7 +4424,8 @@ window.STIMULI = {
     "ensemble": -0.11610757897388833,
     "subtlex_token": "festival",
     "Lg10WF": 2.7042,
-    "Lg10CD": 2.4346
+    "Lg10CD": 2.4346,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_03",
@@ -3240,7 +4446,8 @@ window.STIMULI = {
     "ensemble": -0.12059389908376458,
     "subtlex_token": "farmer",
     "Lg10WF": 2.7818,
-    "Lg10CD": 2.5051
+    "Lg10CD": 2.5051,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_04",
@@ -3261,7 +4468,8 @@ window.STIMULI = {
     "ensemble": -0.12878035222236936,
     "subtlex_token": "station",
     "Lg10WF": 3.6057,
-    "Lg10CD": 3.3222
+    "Lg10CD": 3.3222,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_05",
@@ -3282,7 +4490,8 @@ window.STIMULI = {
     "ensemble": -0.15173609514927125,
     "subtlex_token": "identity",
     "Lg10WF": 2.8215,
-    "Lg10CD": 2.6767
+    "Lg10CD": 2.6767,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_06",
@@ -3303,7 +4512,8 @@ window.STIMULI = {
     "ensemble": -0.16323213650387797,
     "subtlex_token": "town",
     "Lg10WF": 4.1019,
-    "Lg10CD": 3.6146
+    "Lg10CD": 3.6146,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_07",
@@ -3324,7 +4534,8 @@ window.STIMULI = {
     "ensemble": -0.17448696017036663,
     "subtlex_token": "girl",
     "Lg10WF": 4.4535,
-    "Lg10CD": 3.7885
+    "Lg10CD": 3.7885,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_08",
@@ -3345,7 +4556,8 @@ window.STIMULI = {
     "ensemble": -0.1760395985501058,
     "subtlex_token": "concert",
     "Lg10WF": 2.9523,
-    "Lg10CD": 2.6212
+    "Lg10CD": 2.6212,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_09",
@@ -3366,7 +4578,8 @@ window.STIMULI = {
     "ensemble": -0.1866290965186072,
     "subtlex_token": "accident",
     "Lg10WF": 3.6177,
-    "Lg10CD": 3.3387
+    "Lg10CD": 3.3387,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_10",
@@ -3387,7 +4600,8 @@ window.STIMULI = {
     "ensemble": -0.19219950387385237,
     "subtlex_token": "school",
     "Lg10WF": 4.2302,
-    "Lg10CD": 3.6563
+    "Lg10CD": 3.6563,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_11",
@@ -3408,7 +4622,8 @@ window.STIMULI = {
     "ensemble": -0.19952965666491657,
     "subtlex_token": "niece",
     "Lg10WF": 2.6875,
-    "Lg10CD": 2.4409
+    "Lg10CD": 2.4409,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_LL_12",
@@ -3429,7 +4644,8 @@ window.STIMULI = {
     "ensemble": -0.27394354100116103,
     "subtlex_token": "singer",
     "Lg10WF": 2.9036,
-    "Lg10CD": 2.5988
+    "Lg10CD": 2.5988,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_FOIL_01",
@@ -3450,7 +4666,8 @@ window.STIMULI = {
     "ensemble": 4.7180034336719086,
     "subtlex_token": "fort",
     "Lg10WF": 2.8965,
-    "Lg10CD": 2.6096
+    "Lg10CD": 2.6096,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_FOIL_02",
@@ -3471,7 +4688,8 @@ window.STIMULI = {
     "ensemble": 0.9312215931619956,
     "subtlex_token": "commissioner",
     "Lg10WF": 2.7959,
-    "Lg10CD": 2.2672
+    "Lg10CD": 2.2672,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_FOIL_03",
@@ -3492,7 +4710,8 @@ window.STIMULI = {
     "ensemble": 0.8807452587638518,
     "subtlex_token": "suitor",
     "Lg10WF": 1.8451,
-    "Lg10CD": 1.5051
+    "Lg10CD": 1.5051,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_FOIL_04",
@@ -3513,7 +4732,8 @@ window.STIMULI = {
     "ensemble": 2.9675150351411212,
     "subtlex_token": "cocaine",
     "Lg10WF": 2.6253,
-    "Lg10CD": 2.3345
+    "Lg10CD": 2.3345,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_FOIL_05",
@@ -3534,7 +4754,8 @@ window.STIMULI = {
     "ensemble": 0.7836761504187633,
     "subtlex_token": "football",
     "Lg10WF": 3.2822,
-    "Lg10CD": 2.9069
+    "Lg10CD": 2.9069,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_FOIL_06",
@@ -3555,7 +4776,8 @@ window.STIMULI = {
     "ensemble": 1.8362674332799087,
     "subtlex_token": "jury",
     "Lg10WF": 3.3389,
-    "Lg10CD": 2.7679
+    "Lg10CD": 2.7679,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_FOIL_07",
@@ -3576,7 +4798,8 @@ window.STIMULI = {
     "ensemble": 1.7265781800123556,
     "subtlex_token": "waiter",
     "Lg10WF": 2.8287,
-    "Lg10CD": 2.6375
+    "Lg10CD": 2.6375,
+    "in_law_review_study": true
    },
    {
     "id": "SCI_FOIL_08",
@@ -3597,7 +4820,536 @@ window.STIMULI = {
     "ensemble": 1.6081962999127108,
     "subtlex_token": "crook",
     "Lg10WF": 2.4624,
-    "Lg10CD": 2.2945
+    "Lg10CD": 2.2945,
+    "in_law_review_study": true
+   },
+   {
+    "id": "SCI_HH_13",
+    "text": "experiment",
+    "element_string": "experiment",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 233,
+    "film_count_in_target_genre": 233,
+    "foil_rule": null,
+    "prevalence_pct": 0.9566755083996463,
+    "distinctiveness_pct": 0.9115826702033598,
+    "ensemble": 6.2754054403882815,
+    "subtlex_token": "experiment",
+    "Lg10WF": 2.9175,
+    "Lg10CD": 2.6628,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HH_14",
+    "text": "clone",
+    "element_string": "clone",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 67,
+    "film_count_in_target_genre": 67,
+    "foil_rule": null,
+    "prevalence_pct": 0.7316534040671971,
+    "distinctiveness_pct": 0.9575596816976127,
+    "ensemble": 3.5982505057107126,
+    "subtlex_token": "clone",
+    "Lg10WF": null,
+    "Lg10CD": 1.7559,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HH_15",
+    "text": "explosion",
+    "element_string": "explosion",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 225,
+    "film_count_in_target_genre": 225,
+    "foil_rule": null,
+    "prevalence_pct": 0.9549071618037135,
+    "distinctiveness_pct": 0.8222811671087533,
+    "ensemble": 3.1683380932353367,
+    "subtlex_token": "explosion",
+    "Lg10WF": null,
+    "Lg10CD": 2.6702,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HH_16",
+    "text": "vehicle",
+    "element_string": "vehicle",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 134,
+    "film_count_in_target_genre": 134,
+    "foil_rule": null,
+    "prevalence_pct": 0.903183023872679,
+    "distinctiveness_pct": 0.7170645446507515,
+    "ensemble": 1.4739960129661303,
+    "subtlex_token": "vehicle",
+    "Lg10WF": null,
+    "Lg10CD": 2.8254,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HH_17",
+    "text": "ruins",
+    "element_string": "ruin",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 80,
+    "film_count_in_target_genre": 80,
+    "foil_rule": null,
+    "prevalence_pct": 0.7793987621573828,
+    "distinctiveness_pct": 0.7736516357206012,
+    "ensemble": 1.0018046924337454,
+    "subtlex_token": "ruin",
+    "Lg10WF": null,
+    "Lg10CD": 3.0734,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HH_18",
+    "text": "lair",
+    "element_string": "lair",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 58,
+    "film_count_in_target_genre": 58,
+    "foil_rule": null,
+    "prevalence_pct": 0.6803713527851459,
+    "distinctiveness_pct": 0.7824933687002652,
+    "ensemble": 0.7182128317208382,
+    "subtlex_token": "lair",
+    "Lg10WF": 2.0934,
+    "Lg10CD": 1.8751,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HL_13",
+    "text": "house",
+    "element_string": "house",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 382,
+    "film_count_in_target_genre": 382,
+    "foil_rule": null,
+    "prevalence_pct": 0.986737400530504,
+    "distinctiveness_pct": 0.08753315649867374,
+    "ensemble": 2.348265133617085,
+    "subtlex_token": "house",
+    "Lg10WF": 4.4185,
+    "Lg10CD": 3.7811,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HL_14",
+    "text": "wife",
+    "element_string": "wife",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 384,
+    "film_count_in_target_genre": 384,
+    "foil_rule": null,
+    "prevalence_pct": 0.9876215738284704,
+    "distinctiveness_pct": 0.08576480990274093,
+    "ensemble": 1.9377263379795795,
+    "subtlex_token": "wife",
+    "Lg10WF": null,
+    "Lg10CD": 3.6823,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HL_15",
+    "text": "love",
+    "element_string": "love",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 296,
+    "film_count_in_target_genre": 296,
+    "foil_rule": null,
+    "prevalence_pct": 0.9734748010610079,
+    "distinctiveness_pct": 0.015030946065428824,
+    "ensemble": 1.1273655194518466,
+    "subtlex_token": "love",
+    "Lg10WF": 4.7548,
+    "Lg10CD": 3.8679,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HL_16",
+    "text": "murder",
+    "element_string": "murder",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 155,
+    "film_count_in_target_genre": 155,
+    "foil_rule": null,
+    "prevalence_pct": 0.9235190097259063,
+    "distinctiveness_pct": 0.07427055702917772,
+    "ensemble": 0.48268894846270516,
+    "subtlex_token": "murder",
+    "Lg10WF": 3.7572,
+    "Lg10CD": 3.3111,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HL_17",
+    "text": "suicide",
+    "element_string": "suicide",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 119,
+    "film_count_in_target_genre": 119,
+    "foil_rule": null,
+    "prevalence_pct": 0.8784261715296198,
+    "distinctiveness_pct": 0.11229000884173299,
+    "ensemble": 0.24771020190010806,
+    "subtlex_token": "suicide",
+    "Lg10WF": null,
+    "Lg10CD": 2.9782,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_HL_18",
+    "text": "witness",
+    "element_string": "witness",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 66,
+    "film_count_in_target_genre": 66,
+    "foil_rule": null,
+    "prevalence_pct": 0.7294429708222812,
+    "distinctiveness_pct": 0.29442970822281167,
+    "ensemble": 0.05934094972078374,
+    "subtlex_token": "witness",
+    "Lg10WF": null,
+    "Lg10CD": 3.0874,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LH_13",
+    "text": "homeworld",
+    "element_string": "homeworld",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 26,
+    "film_count_in_target_genre": 26,
+    "foil_rule": null,
+    "prevalence_pct": 0.24491600353669318,
+    "distinctiveness_pct": 0.969053934571176,
+    "ensemble": 1.7771599100280993,
+    "subtlex_token": "homeworld",
+    "Lg10WF": null,
+    "Lg10CD": null,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LH_14",
+    "text": "test subject",
+    "element_string": "test subject",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 26,
+    "film_count_in_target_genre": 26,
+    "foil_rule": null,
+    "prevalence_pct": 0.24491600353669318,
+    "distinctiveness_pct": 0.9442970822281167,
+    "ensemble": 1.3321113901900836,
+    "subtlex_token": "subject",
+    "Lg10WF": null,
+    "Lg10CD": 3.1342,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LH_15",
+    "text": "autopsy",
+    "element_string": "autopsy",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 28,
+    "film_count_in_target_genre": 28,
+    "foil_rule": null,
+    "prevalence_pct": 0.29089301503094606,
+    "distinctiveness_pct": 0.874447391688771,
+    "ensemble": 0.7040952233245119,
+    "subtlex_token": "autopsy",
+    "Lg10WF": null,
+    "Lg10CD": 2.4654,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LH_16",
+    "text": "news report",
+    "element_string": "news report",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "chunk",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 25,
+    "film_count_in_target_genre": 25,
+    "foil_rule": null,
+    "prevalence_pct": 0.21175950486295314,
+    "distinctiveness_pct": 0.7877984084880637,
+    "ensemble": 0.3025727518911955,
+    "subtlex_token": "report",
+    "Lg10WF": null,
+    "Lg10CD": 3.4186,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LH_17",
+    "text": "firefight",
+    "element_string": "firefight",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 24,
+    "film_count_in_target_genre": 24,
+    "foil_rule": null,
+    "prevalence_pct": 0.1781609195402299,
+    "distinctiveness_pct": 0.7409372236958444,
+    "ensemble": 0.16873232294173393,
+    "subtlex_token": "firefight",
+    "Lg10WF": null,
+    "Lg10CD": 1.4472,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LH_18",
+    "text": "outside world",
+    "element_string": "outside world",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "chunk",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.26790450928381965,
+    "distinctiveness_pct": 0.6852343059239611,
+    "ensemble": 0.12044049875159867,
+    "subtlex_token": "world",
+    "Lg10WF": 4.3658,
+    "Lg10CD": 3.792,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LL_13",
+    "text": "pill",
+    "element_string": "pill",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 23,
+    "film_count_in_target_genre": 23,
+    "foil_rule": null,
+    "prevalence_pct": 0.14412024756852343,
+    "distinctiveness_pct": 0.28116710875331563,
+    "ensemble": -0.10530158493497567,
+    "subtlex_token": "pill",
+    "Lg10WF": null,
+    "Lg10CD": 2.5888,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LL_14",
+    "text": "gold",
+    "element_string": "gold",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 28,
+    "film_count_in_target_genre": 28,
+    "foil_rule": null,
+    "prevalence_pct": 0.29089301503094606,
+    "distinctiveness_pct": 0.1317418213969938,
+    "ensemble": -0.10864143681094547,
+    "subtlex_token": "gold",
+    "Lg10WF": null,
+    "Lg10CD": 3.1858,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LL_15",
+    "text": "market",
+    "element_string": "market",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 29,
+    "film_count_in_target_genre": 29,
+    "foil_rule": null,
+    "prevalence_pct": 0.3183023872679045,
+    "distinctiveness_pct": 0.28824049513704686,
+    "ensemble": -0.12808444508946373,
+    "subtlex_token": "market",
+    "Lg10WF": null,
+    "Lg10CD": 3.0755,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LL_16",
+    "text": "punishment",
+    "element_string": "punishment",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.26790450928381965,
+    "distinctiveness_pct": 0.1290893015030946,
+    "ensemble": -0.19567046994542248,
+    "subtlex_token": "punishment",
+    "Lg10WF": null,
+    "Lg10CD": 2.7118,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LL_17",
+    "text": "palace",
+    "element_string": "palace",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 25,
+    "film_count_in_target_genre": 25,
+    "foil_rule": null,
+    "prevalence_pct": 0.21175950486295314,
+    "distinctiveness_pct": 0.07957559681697612,
+    "ensemble": -0.20419748665035933,
+    "subtlex_token": "palace",
+    "Lg10WF": null,
+    "Lg10CD": 2.6425,
+    "in_law_review_study": false
+   },
+   {
+    "id": "SCI_LL_18",
+    "text": "contest",
+    "element_string": "contest",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Science Fiction",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 20,
+    "film_count_in_target_genre": 20,
+    "foil_rule": null,
+    "prevalence_pct": 0.02564102564102564,
+    "distinctiveness_pct": 0.08399646330680813,
+    "ensemble": -0.21491386052609657,
+    "subtlex_token": "contest",
+    "Lg10WF": null,
+    "Lg10CD": 2.6998,
+    "in_law_review_study": false
    }
   ]
  },
@@ -3606,7 +5358,7 @@ window.STIMULI = {
   "genre_key": "crime",
   "seed": 20260219,
   "min_films_in_genre": 20,
-  "k_per_cell": 12,
+  "k_per_cell": 18,
   "n_foils": 8,
   "foil_rule": "flat",
   "foil_max_films_in_target": 5,
@@ -3620,7 +5372,7 @@ window.STIMULI = {
    "low_prev_high_dist",
    "low_prev_low_dist"
   ],
-  "n_items": 56,
+  "n_items": 80,
   "display_text_note": "text is what participants see: the pipeline element string, with DISPLAY_OVERRIDES applied (capitals, hyphens, possessives, natural plurals, US spelling; no content word changed). element_string keeps the pipeline string.",
   "items": [
    {
@@ -3642,7 +5394,8 @@ window.STIMULI = {
     "ensemble": 3.5452791986579513,
     "subtlex_token": "officer",
     "Lg10WF": 3.7215,
-    "Lg10CD": 3.3069
+    "Lg10CD": 3.3069,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_02",
@@ -3663,7 +5416,8 @@ window.STIMULI = {
     "ensemble": 2.1539924038582403,
     "subtlex_token": "justice",
     "Lg10WF": 3.2813,
-    "Lg10CD": 3.0228
+    "Lg10CD": 3.0228,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_03",
@@ -3684,7 +5438,8 @@ window.STIMULI = {
     "ensemble": 2.150572449326513,
     "subtlex_token": "killer",
     "Lg10WF": 3.5061,
-    "Lg10CD": 3.1471
+    "Lg10CD": 3.1471,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_04",
@@ -3705,7 +5460,8 @@ window.STIMULI = {
     "ensemble": 2.0255047568291533,
     "subtlex_token": "agent",
     "Lg10WF": 3.719,
-    "Lg10CD": 3.1461
+    "Lg10CD": 3.1461,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_05",
@@ -3726,7 +5482,8 @@ window.STIMULI = {
     "ensemble": 1.956869069065423,
     "subtlex_token": "force",
     "Lg10WF": 3.5569,
-    "Lg10CD": 3.298
+    "Lg10CD": 3.298,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_06",
@@ -3747,7 +5504,8 @@ window.STIMULI = {
     "ensemble": 1.542928994844941,
     "subtlex_token": "defense",
     "Lg10WF": 3.2217,
-    "Lg10CD": 2.9206
+    "Lg10CD": 2.9206,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_07",
@@ -3768,7 +5526,8 @@ window.STIMULI = {
     "ensemble": 1.3116749420206772,
     "subtlex_token": "car",
     "Lg10WF": 4.3916,
-    "Lg10CD": 3.7122
+    "Lg10CD": 3.7122,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_08",
@@ -3789,7 +5548,8 @@ window.STIMULI = {
     "ensemble": 1.2986574902606975,
     "subtlex_token": "guilt",
     "Lg10WF": 2.8814,
-    "Lg10CD": 2.7597
+    "Lg10CD": 2.7597,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_09",
@@ -3810,7 +5570,8 @@ window.STIMULI = {
     "ensemble": 1.1737681558009,
     "subtlex_token": "shipment",
     "Lg10WF": 2.5092,
-    "Lg10CD": 2.3404
+    "Lg10CD": 2.3404,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_10",
@@ -3831,7 +5592,8 @@ window.STIMULI = {
     "ensemble": 0.7981829390400323,
     "subtlex_token": "conspiracy",
     "Lg10WF": 2.7218,
-    "Lg10CD": 2.5623
+    "Lg10CD": 2.5623,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_11",
@@ -3852,7 +5614,8 @@ window.STIMULI = {
     "ensemble": 0.7056010089415021,
     "subtlex_token": "ambulance",
     "Lg10WF": 3.0584,
-    "Lg10CD": 2.8621
+    "Lg10CD": 2.8621,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HH_12",
@@ -3873,7 +5636,8 @@ window.STIMULI = {
     "ensemble": 0.5267804135406008,
     "subtlex_token": "wire",
     "Lg10WF": 3.1474,
-    "Lg10CD": 2.9138
+    "Lg10CD": 2.9138,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_01",
@@ -3894,7 +5658,8 @@ window.STIMULI = {
     "ensemble": 3.8903372549179975,
     "subtlex_token": "daughter",
     "Lg10WF": 3.9415,
-    "Lg10CD": 3.4763
+    "Lg10CD": 3.4763,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_02",
@@ -3915,7 +5680,8 @@ window.STIMULI = {
     "ensemble": 0.990402332524421,
     "subtlex_token": "doctor",
     "Lg10WF": 4.1291,
-    "Lg10CD": 3.5687
+    "Lg10CD": 3.5687,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_03",
@@ -3936,7 +5702,8 @@ window.STIMULI = {
     "ensemble": 0.5793507414497672,
     "subtlex_token": "trip",
     "Lg10WF": 3.6236,
-    "Lg10CD": 3.3742
+    "Lg10CD": 3.3742,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_04",
@@ -3957,7 +5724,8 @@ window.STIMULI = {
     "ensemble": 0.5401656925329903,
     "subtlex_token": "wall",
     "Lg10WF": 3.557,
-    "Lg10CD": 3.3235
+    "Lg10CD": 3.3235,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_05",
@@ -3978,7 +5746,8 @@ window.STIMULI = {
     "ensemble": 0.4054306991964593,
     "subtlex_token": "friend",
     "Lg10WF": 4.3301,
-    "Lg10CD": 3.7909
+    "Lg10CD": 3.7909,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_06",
@@ -3999,7 +5768,8 @@ window.STIMULI = {
     "ensemble": 0.301114164505025,
     "subtlex_token": "mistake",
     "Lg10WF": 3.7161,
-    "Lg10CD": 3.4944
+    "Lg10CD": 3.4944,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_07",
@@ -4020,7 +5790,8 @@ window.STIMULI = {
     "ensemble": 0.2353348551440372,
     "subtlex_token": "soldier",
     "Lg10WF": 3.298,
-    "Lg10CD": 2.9196
+    "Lg10CD": 2.9196,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_08",
@@ -4041,7 +5812,8 @@ window.STIMULI = {
     "ensemble": 0.2031840992433206,
     "subtlex_token": "success",
     "Lg10WF": 3.1433,
-    "Lg10CD": 3.0009
+    "Lg10CD": 3.0009,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_09",
@@ -4062,7 +5834,8 @@ window.STIMULI = {
     "ensemble": 0.0513443904347361,
     "subtlex_token": "attraction",
     "Lg10WF": 2.5428,
-    "Lg10CD": 2.4216
+    "Lg10CD": 2.4216,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_10",
@@ -4083,7 +5856,8 @@ window.STIMULI = {
     "ensemble": 0.007543965248936385,
     "subtlex_token": "wedding",
     "Lg10WF": 3.7138,
-    "Lg10CD": 3.2188
+    "Lg10CD": 3.2188,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_11",
@@ -4104,7 +5878,8 @@ window.STIMULI = {
     "ensemble": -0.11838907427348788,
     "subtlex_token": "sea",
     "Lg10WF": 3.4847,
-    "Lg10CD": 3.1316
+    "Lg10CD": 3.1316,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_HL_12",
@@ -4125,7 +5900,8 @@ window.STIMULI = {
     "ensemble": -0.13951417244243686,
     "subtlex_token": "birth",
     "Lg10WF": 3.148,
-    "Lg10CD": 2.9773
+    "Lg10CD": 2.9773,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_01",
@@ -4146,7 +5922,8 @@ window.STIMULI = {
     "ensemble": 1.0445023461367673,
     "subtlex_token": "agent",
     "Lg10WF": 3.719,
-    "Lg10CD": 3.1461
+    "Lg10CD": 3.1461,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_02",
@@ -4167,7 +5944,8 @@ window.STIMULI = {
     "ensemble": 1.0361847130349968,
     "subtlex_token": "money",
     "Lg10WF": 4.5143,
-    "Lg10CD": 3.7519
+    "Lg10CD": 3.7519,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_03",
@@ -4188,7 +5966,8 @@ window.STIMULI = {
     "ensemble": 0.9737881455925659,
     "subtlex_token": "manslaughter",
     "Lg10WF": 2.1492,
-    "Lg10CD": 1.9956
+    "Lg10CD": 1.9956,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_04",
@@ -4209,7 +5988,8 @@ window.STIMULI = {
     "ensemble": 0.9540290897950114,
     "subtlex_token": "cross",
     "Lg10WF": 3.4484,
-    "Lg10CD": 3.2307
+    "Lg10CD": 3.2307,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_05",
@@ -4230,7 +6010,8 @@ window.STIMULI = {
     "ensemble": 0.6579870927687086,
     "subtlex_token": "murder",
     "Lg10WF": 3.7572,
-    "Lg10CD": 3.3111
+    "Lg10CD": 3.3111,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_06",
@@ -4251,7 +6032,8 @@ window.STIMULI = {
     "ensemble": 0.4194750697094346,
     "subtlex_token": "identification",
     "Lg10WF": 2.6128,
-    "Lg10CD": 2.48
+    "Lg10CD": 2.48,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_07",
@@ -4272,7 +6054,8 @@ window.STIMULI = {
     "ensemble": 0.4078187653107027,
     "subtlex_token": "bouncer",
     "Lg10WF": 1.9138,
-    "Lg10CD": 1.7709
+    "Lg10CD": 1.7709,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_08",
@@ -4293,7 +6076,8 @@ window.STIMULI = {
     "ensemble": 0.40011791822076814,
     "subtlex_token": "man",
     "Lg10WF": 4.9737,
-    "Lg10CD": 3.9061
+    "Lg10CD": 3.9061,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_09",
@@ -4314,7 +6098,8 @@ window.STIMULI = {
     "ensemble": 0.1859520235570196,
     "subtlex_token": "ferry",
     "Lg10WF": 2.4378,
-    "Lg10CD": 2.1106
+    "Lg10CD": 2.1106,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_10",
@@ -4335,7 +6120,8 @@ window.STIMULI = {
     "ensemble": 0.18041650204590026,
     "subtlex_token": "recorder",
     "Lg10WF": 2.4031,
-    "Lg10CD": 2.2529
+    "Lg10CD": 2.2529,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_11",
@@ -4356,7 +6142,8 @@ window.STIMULI = {
     "ensemble": 0.1046223612050394,
     "subtlex_token": "death",
     "Lg10WF": 4.0434,
-    "Lg10CD": 3.6313
+    "Lg10CD": 3.6313,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LH_12",
@@ -4377,7 +6164,8 @@ window.STIMULI = {
     "ensemble": 0.09104245342476641,
     "subtlex_token": "monologue",
     "Lg10WF": 1.7709,
-    "Lg10CD": 1.5798
+    "Lg10CD": 1.5798,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_01",
@@ -4398,7 +6186,8 @@ window.STIMULI = {
     "ensemble": -0.132315900212238,
     "subtlex_token": "man",
     "Lg10WF": 4.9737,
-    "Lg10CD": 3.9061
+    "Lg10CD": 3.9061,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_02",
@@ -4419,7 +6208,8 @@ window.STIMULI = {
     "ensemble": -0.13319217249205184,
     "subtlex_token": "tourist",
     "Lg10WF": 2.3766,
-    "Lg10CD": 2.2742
+    "Lg10CD": 2.2742,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_03",
@@ -4440,7 +6230,8 @@ window.STIMULI = {
     "ensemble": -0.14581539393454077,
     "subtlex_token": "room",
     "Lg10WF": 4.3506,
-    "Lg10CD": 3.796
+    "Lg10CD": 3.796,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_04",
@@ -4461,7 +6252,8 @@ window.STIMULI = {
     "ensemble": -0.16005846554449668,
     "subtlex_token": "couple",
     "Lg10WF": 4.0567,
-    "Lg10CD": 3.6981
+    "Lg10CD": 3.6981,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_05",
@@ -4482,7 +6274,8 @@ window.STIMULI = {
     "ensemble": -0.18831680032905468,
     "subtlex_token": "death",
     "Lg10WF": 4.0434,
-    "Lg10CD": 3.6313
+    "Lg10CD": 3.6313,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_06",
@@ -4503,7 +6296,8 @@ window.STIMULI = {
     "ensemble": -0.18855731439999246,
     "subtlex_token": "job",
     "Lg10WF": 4.3235,
-    "Lg10CD": 3.777
+    "Lg10CD": 3.777,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_07",
@@ -4524,7 +6318,8 @@ window.STIMULI = {
     "ensemble": -0.20669331780179534,
     "subtlex_token": "friend",
     "Lg10WF": 4.3301,
-    "Lg10CD": 3.7909
+    "Lg10CD": 3.7909,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_08",
@@ -4545,7 +6340,8 @@ window.STIMULI = {
     "ensemble": -0.2234134974262904,
     "subtlex_token": "christmas",
     "Lg10WF": 3.7955,
-    "Lg10CD": 3.1408
+    "Lg10CD": 3.1408,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_09",
@@ -4566,7 +6362,8 @@ window.STIMULI = {
     "ensemble": -0.24059828299574776,
     "subtlex_token": "award",
     "Lg10WF": 2.8182,
-    "Lg10CD": 2.5821
+    "Lg10CD": 2.5821,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_10",
@@ -4587,7 +6384,8 @@ window.STIMULI = {
     "ensemble": -0.2576989966455179,
     "subtlex_token": "tooth",
     "Lg10WF": 2.8407,
-    "Lg10CD": 2.6042
+    "Lg10CD": 2.6042,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_11",
@@ -4608,7 +6406,8 @@ window.STIMULI = {
     "ensemble": -0.31387553411011426,
     "subtlex_token": "hunter",
     "Lg10WF": 2.9717,
-    "Lg10CD": 2.5866
+    "Lg10CD": 2.5866,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_LL_12",
@@ -4629,7 +6428,8 @@ window.STIMULI = {
     "ensemble": -0.35657869748506354,
     "subtlex_token": "kingdom",
     "Lg10WF": 2.8965,
-    "Lg10CD": 2.6474
+    "Lg10CD": 2.6474,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_FOIL_01",
@@ -4650,7 +6450,8 @@ window.STIMULI = {
     "ensemble": 3.8134929219475957,
     "subtlex_token": "herd",
     "Lg10WF": 2.5575,
-    "Lg10CD": 2.2923
+    "Lg10CD": 2.2923,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_FOIL_02",
@@ -4671,7 +6472,8 @@ window.STIMULI = {
     "ensemble": 7.197635009917304,
     "subtlex_token": "werewolf",
     "Lg10WF": 2.3579,
-    "Lg10CD": 1.7482
+    "Lg10CD": 1.7482,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_FOIL_03",
@@ -4692,7 +6494,8 @@ window.STIMULI = {
     "ensemble": 4.7685095282563825,
     "subtlex_token": "orbit",
     "Lg10WF": 2.4609,
-    "Lg10CD": 2.1553
+    "Lg10CD": 2.1553,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_FOIL_04",
@@ -4713,7 +6516,8 @@ window.STIMULI = {
     "ensemble": 1.273974787840984,
     "subtlex_token": "cow",
     "Lg10WF": 3.1146,
-    "Lg10CD": 2.8627
+    "Lg10CD": 2.8627,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_FOIL_05",
@@ -4734,7 +6538,8 @@ window.STIMULI = {
     "ensemble": 8.816565462976376,
     "subtlex_token": "fairy",
     "Lg10WF": 2.9304,
-    "Lg10CD": 2.6345
+    "Lg10CD": 2.6345,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_FOIL_06",
@@ -4755,7 +6560,8 @@ window.STIMULI = {
     "ensemble": 6.242232321650062,
     "subtlex_token": "gunslinger",
     "Lg10WF": 1.3424,
-    "Lg10CD": 1.2788
+    "Lg10CD": 1.2788,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_FOIL_07",
@@ -4776,7 +6582,8 @@ window.STIMULI = {
     "ensemble": 3.7507571263120125,
     "subtlex_token": "undead",
     "Lg10WF": 2.0792,
-    "Lg10CD": 1.8633
+    "Lg10CD": 1.8633,
+    "in_law_review_study": true
    },
    {
     "id": "CRI_FOIL_08",
@@ -4797,7 +6604,536 @@ window.STIMULI = {
     "ensemble": 4.494111196564602,
     "subtlex_token": "android",
     "Lg10WF": 1.6628,
-    "Lg10CD": 1.4472
+    "Lg10CD": 1.4472,
+    "in_law_review_study": true
+   },
+   {
+    "id": "CRI_HH_13",
+    "text": "diamond",
+    "element_string": "diamond",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 127,
+    "film_count_in_target_genre": 127,
+    "foil_rule": null,
+    "prevalence_pct": 0.8333333333333334,
+    "distinctiveness_pct": 0.8818800247371676,
+    "ensemble": 3.1352182177982066,
+    "subtlex_token": "diamond",
+    "Lg10WF": null,
+    "Lg10CD": 2.6758,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HH_14",
+    "text": "gang member",
+    "element_string": "gang member",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 115,
+    "film_count_in_target_genre": 115,
+    "foil_rule": null,
+    "prevalence_pct": 0.8150896722325294,
+    "distinctiveness_pct": 0.9672232529375386,
+    "ensemble": 2.628963151381604,
+    "subtlex_token": "member",
+    "Lg10WF": 3.167,
+    "Lg10CD": 3.0453,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HH_15",
+    "text": "police station",
+    "element_string": "police station",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "chunk",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 176,
+    "film_count_in_target_genre": 176,
+    "foil_rule": null,
+    "prevalence_pct": 0.8896103896103896,
+    "distinctiveness_pct": 0.8676561533704391,
+    "ensemble": 2.249518081954747,
+    "subtlex_token": "station",
+    "Lg10WF": 3.6057,
+    "Lg10CD": 3.3222,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HH_16",
+    "text": "assassination",
+    "element_string": "assassination",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 94,
+    "film_count_in_target_genre": 94,
+    "foil_rule": null,
+    "prevalence_pct": 0.7578849721706865,
+    "distinctiveness_pct": 0.8596165739022882,
+    "ensemble": 1.1953856234150004,
+    "subtlex_token": "assassination",
+    "Lg10WF": null,
+    "Lg10CD": 2.248,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HH_17",
+    "text": "beating",
+    "element_string": "beating",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 71,
+    "film_count_in_target_genre": 71,
+    "foil_rule": null,
+    "prevalence_pct": 0.6750154607297465,
+    "distinctiveness_pct": 0.8324056895485467,
+    "ensemble": 0.8539852405095409,
+    "subtlex_token": "beating",
+    "Lg10WF": null,
+    "Lg10CD": 2.9547,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HH_18",
+    "text": "hotel room",
+    "element_string": "hotel room",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "chunk",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 96,
+    "film_count_in_target_genre": 96,
+    "foil_rule": null,
+    "prevalence_pct": 0.7665429808286951,
+    "distinctiveness_pct": 0.7810760667903525,
+    "ensemble": 0.7953121811905133,
+    "subtlex_token": "room",
+    "Lg10WF": 4.3506,
+    "Lg10CD": 3.796,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HL_13",
+    "text": "love",
+    "element_string": "love",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 874,
+    "film_count_in_target_genre": 874,
+    "foil_rule": null,
+    "prevalence_pct": 0.9925788497217068,
+    "distinctiveness_pct": 0.07730364873222016,
+    "ensemble": 2.8961043118014085,
+    "subtlex_token": "love",
+    "Lg10WF": 4.7548,
+    "Lg10CD": 3.8679,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HL_14",
+    "text": "letter",
+    "element_string": "letter",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 227,
+    "film_count_in_target_genre": 227,
+    "foil_rule": null,
+    "prevalence_pct": 0.9245516388373531,
+    "distinctiveness_pct": 0.29684601113172543,
+    "ensemble": 0.8490130923249366,
+    "subtlex_token": "letter",
+    "Lg10WF": null,
+    "Lg10CD": 3.2453,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HL_15",
+    "text": "gold",
+    "element_string": "gold",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 71,
+    "film_count_in_target_genre": 71,
+    "foil_rule": null,
+    "prevalence_pct": 0.6750154607297465,
+    "distinctiveness_pct": 0.32529375386518244,
+    "ensemble": 0.31069606220437085,
+    "subtlex_token": "gold",
+    "Lg10WF": null,
+    "Lg10CD": 3.1858,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HL_16",
+    "text": "teenager",
+    "element_string": "teenager",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 95,
+    "film_count_in_target_genre": 95,
+    "foil_rule": null,
+    "prevalence_pct": 0.7628324056895486,
+    "distinctiveness_pct": 0.3327149041434756,
+    "ensemble": 0.17296689306834817,
+    "subtlex_token": "teenager",
+    "Lg10WF": null,
+    "Lg10CD": 2.4609,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HL_17",
+    "text": "minister",
+    "element_string": "minister",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 86,
+    "film_count_in_target_genre": 86,
+    "foil_rule": null,
+    "prevalence_pct": 0.7353123067408782,
+    "distinctiveness_pct": 0.22510822510822512,
+    "ensemble": 0.15908994765445217,
+    "subtlex_token": "minister",
+    "Lg10WF": null,
+    "Lg10CD": 2.5977,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_HL_18",
+    "text": "promise",
+    "element_string": "promise",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 96,
+    "film_count_in_target_genre": 96,
+    "foil_rule": null,
+    "prevalence_pct": 0.7665429808286951,
+    "distinctiveness_pct": 0.20037105751391465,
+    "ensemble": 0.08523389845070364,
+    "subtlex_token": "promise",
+    "Lg10WF": 3.8927,
+    "Lg10CD": 3.5883,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LH_13",
+    "text": "corrupt cop",
+    "element_string": "corrupt cop",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 28,
+    "film_count_in_target_genre": 28,
+    "foil_rule": null,
+    "prevalence_pct": 0.2680890538033395,
+    "distinctiveness_pct": 0.9764996907854051,
+    "ensemble": 1.0958635609122154,
+    "subtlex_token": "cop",
+    "Lg10WF": null,
+    "Lg10CD": 3.1667,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LH_14",
+    "text": "defendant",
+    "element_string": "defendant",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 20,
+    "film_count_in_target_genre": 20,
+    "foil_rule": null,
+    "prevalence_pct": 0.019789734075448363,
+    "distinctiveness_pct": 0.935064935064935,
+    "ensemble": 0.743070026433461,
+    "subtlex_token": "defendant",
+    "Lg10WF": null,
+    "Lg10CD": 2.5011,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LH_15",
+    "text": "strip club",
+    "element_string": "strip club",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "chunk",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 22,
+    "film_count_in_target_genre": 22,
+    "foil_rule": null,
+    "prevalence_pct": 0.08565244279529993,
+    "distinctiveness_pct": 0.7730364873222016,
+    "ensemble": 0.26757927261138087,
+    "subtlex_token": "club",
+    "Lg10WF": null,
+    "Lg10CD": 3.3339,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LH_16",
+    "text": "cargo",
+    "element_string": "cargo",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.24211502782931354,
+    "distinctiveness_pct": 0.6858379715522572,
+    "ensemble": 0.1564499561864966,
+    "subtlex_token": "cargo",
+    "Lg10WF": null,
+    "Lg10CD": 2.3784,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LH_17",
+    "text": "poisoning",
+    "element_string": "poisoning",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 25,
+    "film_count_in_target_genre": 25,
+    "foil_rule": null,
+    "prevalence_pct": 0.17872603586889302,
+    "distinctiveness_pct": 0.7158317872603587,
+    "ensemble": 0.13496547768482692,
+    "subtlex_token": "poisoning",
+    "Lg10WF": null,
+    "Lg10CD": 2.356,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LH_18",
+    "text": "pregnant wife",
+    "element_string": "pregnant wife",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 21,
+    "film_count_in_target_genre": 21,
+    "foil_rule": null,
+    "prevalence_pct": 0.055658627087198514,
+    "distinctiveness_pct": 0.6988249845392702,
+    "ensemble": 0.10260114406127073,
+    "subtlex_token": "wife",
+    "Lg10WF": null,
+    "Lg10CD": 3.6823,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LL_13",
+    "text": "posse",
+    "element_string": "posse",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 22,
+    "film_count_in_target_genre": 22,
+    "foil_rule": null,
+    "prevalence_pct": 0.08565244279529993,
+    "distinctiveness_pct": 0.3228200371057514,
+    "ensemble": -0.1152382951899947,
+    "subtlex_token": "posse",
+    "Lg10WF": null,
+    "Lg10CD": 2.0492,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LL_14",
+    "text": "clan",
+    "element_string": "clan",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 24,
+    "film_count_in_target_genre": 24,
+    "foil_rule": null,
+    "prevalence_pct": 0.14996907854050712,
+    "distinctiveness_pct": 0.20470006184291897,
+    "ensemble": -0.14333686201074927,
+    "subtlex_token": "clan",
+    "Lg10WF": null,
+    "Lg10CD": 2.1004,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LL_15",
+    "text": "small village",
+    "element_string": "small village",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "chunk",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 22,
+    "film_count_in_target_genre": 22,
+    "foil_rule": null,
+    "prevalence_pct": 0.08565244279529993,
+    "distinctiveness_pct": 0.23685837971552257,
+    "ensemble": -0.17142793384992205,
+    "subtlex_token": "village",
+    "Lg10WF": null,
+    "Lg10CD": 2.8893,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LL_16",
+    "text": "younger sister",
+    "element_string": "younger sister",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "chunk",
+    "element_taxonomy": "relationship",
+    "category_key": "characters",
+    "film_count": 28,
+    "film_count_in_target_genre": 28,
+    "foil_rule": null,
+    "prevalence_pct": 0.2680890538033395,
+    "distinctiveness_pct": 0.16388373531230674,
+    "ensemble": -0.18530490659747567,
+    "subtlex_token": "sister",
+    "Lg10WF": 3.9642,
+    "Lg10CD": 3.4839,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LL_17",
+    "text": "inn",
+    "element_string": "inn",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 23,
+    "film_count_in_target_genre": 23,
+    "foil_rule": null,
+    "prevalence_pct": 0.11626468769325912,
+    "distinctiveness_pct": 0.1471861471861472,
+    "ensemble": -0.187143735996311,
+    "subtlex_token": "inn",
+    "Lg10WF": null,
+    "Lg10CD": 2.2504,
+    "in_law_review_study": false
+   },
+   {
+    "id": "CRI_LL_18",
+    "text": "misunderstanding",
+    "element_string": "misunderstanding",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Crime",
+    "element_type": "noun",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 24,
+    "film_count_in_target_genre": 24,
+    "foil_rule": null,
+    "prevalence_pct": 0.14996907854050712,
+    "distinctiveness_pct": 0.0191713048855906,
+    "ensemble": -0.309590648103245,
+    "subtlex_token": "misunderstanding",
+    "Lg10WF": null,
+    "Lg10CD": 2.5587,
+    "in_law_review_study": false
    }
   ]
  },
@@ -4806,7 +7142,7 @@ window.STIMULI = {
   "genre_key": "comedy",
   "seed": 20260219,
   "min_films_in_genre": 20,
-  "k_per_cell": 12,
+  "k_per_cell": 18,
   "n_foils": 8,
   "foil_rule": "rate_fallback",
   "foil_max_films_in_target": 30,
@@ -4820,7 +7156,7 @@ window.STIMULI = {
    "low_prev_high_dist",
    "low_prev_low_dist"
   ],
-  "n_items": 56,
+  "n_items": 80,
   "display_text_note": "text is what participants see: the pipeline element string, with DISPLAY_OVERRIDES applied (capitals, hyphens, possessives, natural plurals, US spelling; no content word changed). element_string keeps the pipeline string.",
   "items": [
    {
@@ -4842,7 +7178,8 @@ window.STIMULI = {
     "ensemble": 11.924248652184597,
     "subtlex_token": "party",
     "Lg10WF": 4.0752,
-    "Lg10CD": 3.5711
+    "Lg10CD": 3.5711,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_02",
@@ -4863,7 +7200,8 @@ window.STIMULI = {
     "ensemble": 3.9396455267957027,
     "subtlex_token": "friend",
     "Lg10WF": 4.3301,
-    "Lg10CD": 3.7909
+    "Lg10CD": 3.7909,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_03",
@@ -4884,7 +7222,8 @@ window.STIMULI = {
     "ensemble": 3.058499254979002,
     "subtlex_token": "guest",
     "Lg10WF": 3.3092,
-    "Lg10CD": 3.1405
+    "Lg10CD": 3.1405,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_04",
@@ -4905,7 +7244,8 @@ window.STIMULI = {
     "ensemble": 2.3940988829697343,
     "subtlex_token": "school",
     "Lg10WF": 4.2302,
-    "Lg10CD": 3.6563
+    "Lg10CD": 3.6563,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_05",
@@ -4926,7 +7266,8 @@ window.STIMULI = {
     "ensemble": 2.2555897981152526,
     "subtlex_token": "divorce",
     "Lg10WF": 3.2227,
-    "Lg10CD": 2.9405
+    "Lg10CD": 2.9405,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_06",
@@ -4947,7 +7288,8 @@ window.STIMULI = {
     "ensemble": 2.1867090787455283,
     "subtlex_token": "marijuana",
     "Lg10WF": 2.4346,
-    "Lg10CD": 2.179
+    "Lg10CD": 2.179,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_07",
@@ -4968,7 +7310,8 @@ window.STIMULI = {
     "ensemble": 1.0221471969226172,
     "subtlex_token": "pub",
     "Lg10WF": 2.281,
-    "Lg10CD": 2.0645
+    "Lg10CD": 2.0645,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_08",
@@ -4989,7 +7332,8 @@ window.STIMULI = {
     "ensemble": 0.938774260900425,
     "subtlex_token": "love",
     "Lg10WF": 4.7548,
-    "Lg10CD": 3.8679
+    "Lg10CD": 3.8679,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_09",
@@ -5010,7 +7354,8 @@ window.STIMULI = {
     "ensemble": 0.6926723625252743,
     "subtlex_token": "museum",
     "Lg10WF": 2.9745,
-    "Lg10CD": 2.6628
+    "Lg10CD": 2.6628,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_10",
@@ -5031,7 +7376,8 @@ window.STIMULI = {
     "ensemble": 0.6307151990079638,
     "subtlex_token": "job",
     "Lg10WF": 4.3235,
-    "Lg10CD": 3.777
+    "Lg10CD": 3.777,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_11",
@@ -5052,7 +7398,8 @@ window.STIMULI = {
     "ensemble": 0.3658954484795758,
     "subtlex_token": "guard",
     "Lg10WF": 3.4726,
-    "Lg10CD": 3.1959
+    "Lg10CD": 3.1959,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HH_12",
@@ -5073,7 +7420,8 @@ window.STIMULI = {
     "ensemble": 0.26624603131128427,
     "subtlex_token": "eve",
     "Lg10WF": 3.1578,
-    "Lg10CD": 2.6902
+    "Lg10CD": 2.6902,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_01",
@@ -5094,7 +7442,8 @@ window.STIMULI = {
     "ensemble": 1.274039055458997,
     "subtlex_token": "lover",
     "Lg10WF": 3.1332,
-    "Lg10CD": 2.9479
+    "Lg10CD": 2.9479,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_02",
@@ -5115,7 +7464,8 @@ window.STIMULI = {
     "ensemble": 0.4231184798550326,
     "subtlex_token": "woman",
     "Lg10WF": 4.3457,
-    "Lg10CD": 3.7728
+    "Lg10CD": 3.7728,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_03",
@@ -5136,7 +7486,8 @@ window.STIMULI = {
     "ensemble": 0.31405298864698294,
     "subtlex_token": "priest",
     "Lg10WF": 3.1261,
-    "Lg10CD": 2.7185
+    "Lg10CD": 2.7185,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_04",
@@ -5157,7 +7508,8 @@ window.STIMULI = {
     "ensemble": 0.1321251116022567,
     "subtlex_token": "town",
     "Lg10WF": 4.1019,
-    "Lg10CD": 3.6146
+    "Lg10CD": 3.6146,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_05",
@@ -5178,7 +7530,8 @@ window.STIMULI = {
     "ensemble": 0.07900671326842983,
     "subtlex_token": "man",
     "Lg10WF": 4.9737,
-    "Lg10CD": 3.9061
+    "Lg10CD": 3.9061,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_06",
@@ -5199,7 +7552,8 @@ window.STIMULI = {
     "ensemble": 0.02531805296337552,
     "subtlex_token": "sailor",
     "Lg10WF": 2.8014,
-    "Lg10CD": 2.4533
+    "Lg10CD": 2.4533,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_07",
@@ -5220,7 +7574,8 @@ window.STIMULI = {
     "ensemble": -0.02648972677362052,
     "subtlex_token": "friend",
     "Lg10WF": 4.3301,
-    "Lg10CD": 3.7909
+    "Lg10CD": 3.7909,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_08",
@@ -5241,7 +7596,8 @@ window.STIMULI = {
     "ensemble": -0.03628334527124469,
     "subtlex_token": "corpse",
     "Lg10WF": 2.7126,
-    "Lg10CD": 2.5752
+    "Lg10CD": 2.5752,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_09",
@@ -5262,7 +7618,8 @@ window.STIMULI = {
     "ensemble": -0.04961579853044998,
     "subtlex_token": "brother",
     "Lg10WF": 4.1608,
-    "Lg10CD": 3.5793
+    "Lg10CD": 3.5793,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_10",
@@ -5283,7 +7640,8 @@ window.STIMULI = {
     "ensemble": -0.1497637420077128,
     "subtlex_token": "boy",
     "Lg10WF": 4.4317,
-    "Lg10CD": 3.7877
+    "Lg10CD": 3.7877,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_11",
@@ -5304,7 +7662,8 @@ window.STIMULI = {
     "ensemble": -0.18993267614697576,
     "subtlex_token": "slave",
     "Lg10WF": 2.9736,
-    "Lg10CD": 2.6981
+    "Lg10CD": 2.6981,
+    "in_law_review_study": true
    },
    {
     "id": "COM_HL_12",
@@ -5325,7 +7684,8 @@ window.STIMULI = {
     "ensemble": -0.22414173860263514,
     "subtlex_token": "culprit",
     "Lg10WF": 1.7482,
-    "Lg10CD": 1.699
+    "Lg10CD": 1.699,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_01",
@@ -5346,7 +7706,8 @@ window.STIMULI = {
     "ensemble": 0.6323089606331193,
     "subtlex_token": "girl",
     "Lg10WF": 4.4535,
-    "Lg10CD": 3.7885
+    "Lg10CD": 3.7885,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_02",
@@ -5367,7 +7728,8 @@ window.STIMULI = {
     "ensemble": 0.42940272760158676,
     "subtlex_token": "exterminator",
     "Lg10WF": 2.0128,
-    "Lg10CD": 1.7709
+    "Lg10CD": 1.7709,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_03",
@@ -5388,7 +7750,8 @@ window.STIMULI = {
     "ensemble": 0.41396931687724164,
     "subtlex_token": "relationship",
     "Lg10WF": 3.5382,
-    "Lg10CD": 3.2721
+    "Lg10CD": 3.2721,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_04",
@@ -5409,7 +7772,8 @@ window.STIMULI = {
     "ensemble": 0.36698307002205655,
     "subtlex_token": "song",
     "Lg10WF": 3.6793,
-    "Lg10CD": 3.2894
+    "Lg10CD": 3.2894,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_05",
@@ -5430,7 +7794,8 @@ window.STIMULI = {
     "ensemble": 0.35688717568596756,
     "subtlex_token": "tailor",
     "Lg10WF": 2.3304,
-    "Lg10CD": 2.1584
+    "Lg10CD": 2.1584,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_06",
@@ -5451,7 +7816,8 @@ window.STIMULI = {
     "ensemble": 0.24238059707576884,
     "subtlex_token": "principal",
     "Lg10WF": 2.8463,
-    "Lg10CD": 2.5647
+    "Lg10CD": 2.5647,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_07",
@@ -5472,7 +7838,8 @@ window.STIMULI = {
     "ensemble": 0.2283705722491386,
     "subtlex_token": "newspaper",
     "Lg10WF": 3.0824,
-    "Lg10CD": 2.8768
+    "Lg10CD": 2.8768,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_08",
@@ -5493,7 +7860,8 @@ window.STIMULI = {
     "ensemble": 0.2247172184714864,
     "subtlex_token": "fireman",
     "Lg10WF": 2.1761,
-    "Lg10CD": 2.0253
+    "Lg10CD": 2.0253,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_09",
@@ -5514,7 +7882,8 @@ window.STIMULI = {
     "ensemble": 0.18785492562718406,
     "subtlex_token": "visit",
     "Lg10WF": 3.4763,
-    "Lg10CD": 3.3206
+    "Lg10CD": 3.3206,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_10",
@@ -5535,7 +7904,8 @@ window.STIMULI = {
     "ensemble": 0.173204432350002,
     "subtlex_token": "lipstick",
     "Lg10WF": 2.6532,
-    "Lg10CD": 2.5211
+    "Lg10CD": 2.5211,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_11",
@@ -5556,7 +7926,8 @@ window.STIMULI = {
     "ensemble": 0.1348126364024352,
     "subtlex_token": "surfer",
     "Lg10WF": 1.9243,
-    "Lg10CD": 1.7482
+    "Lg10CD": 1.7482,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LH_12",
@@ -5577,7 +7948,8 @@ window.STIMULI = {
     "ensemble": 0.12733218421689368,
     "subtlex_token": "rowboat",
     "Lg10WF": 1.7404,
-    "Lg10CD": 1.5682
+    "Lg10CD": 1.5682,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_01",
@@ -5598,7 +7970,8 @@ window.STIMULI = {
     "ensemble": -0.17142904529515193,
     "subtlex_token": "violinist",
     "Lg10WF": 1.5315,
-    "Lg10CD": 1.3802
+    "Lg10CD": 1.3802,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_02",
@@ -5619,7 +7992,8 @@ window.STIMULI = {
     "ensemble": -0.17600670708644334,
     "subtlex_token": "sister",
     "Lg10WF": 3.9642,
-    "Lg10CD": 3.4839
+    "Lg10CD": 3.4839,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_03",
@@ -5640,7 +8014,8 @@ window.STIMULI = {
     "ensemble": -0.1785581718856831,
     "subtlex_token": "mother",
     "Lg10WF": 4.3888,
-    "Lg10CD": 3.7448
+    "Lg10CD": 3.7448,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_04",
@@ -5661,7 +8036,8 @@ window.STIMULI = {
     "ensemble": -0.18437967286545573,
     "subtlex_token": "figure",
     "Lg10WF": 3.8195,
-    "Lg10CD": 3.5675
+    "Lg10CD": 3.5675,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_05",
@@ -5682,7 +8058,8 @@ window.STIMULI = {
     "ensemble": -0.18462616398576354,
     "subtlex_token": "preacher",
     "Lg10WF": 2.5353,
-    "Lg10CD": 2.1644
+    "Lg10CD": 2.1644,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_06",
@@ -5703,7 +8080,8 @@ window.STIMULI = {
     "ensemble": -0.24277680683355246,
     "subtlex_token": "blackout",
     "Lg10WF": 2.3541,
-    "Lg10CD": 2.1173
+    "Lg10CD": 2.1173,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_07",
@@ -5724,7 +8102,8 @@ window.STIMULI = {
     "ensemble": -0.25348904610783984,
     "subtlex_token": "schoolteacher",
     "Lg10WF": 2.248,
-    "Lg10CD": 1.9085
+    "Lg10CD": 1.9085,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_08",
@@ -5745,7 +8124,8 @@ window.STIMULI = {
     "ensemble": -0.2778643101173096,
     "subtlex_token": "member",
     "Lg10WF": 3.167,
-    "Lg10CD": 3.0453
+    "Lg10CD": 3.0453,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_09",
@@ -5766,7 +8146,8 @@ window.STIMULI = {
     "ensemble": -0.28297901495930905,
     "subtlex_token": "killer",
     "Lg10WF": 3.5061,
-    "Lg10CD": 3.1471
+    "Lg10CD": 3.1471,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_10",
@@ -5787,7 +8168,8 @@ window.STIMULI = {
     "ensemble": -0.2950587317311193,
     "subtlex_token": "advisor",
     "Lg10WF": 2.3541,
-    "Lg10CD": 2.1644
+    "Lg10CD": 2.1644,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_11",
@@ -5808,7 +8190,8 @@ window.STIMULI = {
     "ensemble": -0.3657175819097706,
     "subtlex_token": "informant",
     "Lg10WF": 2.3304,
-    "Lg10CD": 1.9868
+    "Lg10CD": 1.9868,
+    "in_law_review_study": true
    },
    {
     "id": "COM_LL_12",
@@ -5829,7 +8212,8 @@ window.STIMULI = {
     "ensemble": -0.37661450144073677,
     "subtlex_token": "life",
     "Lg10WF": 4.6088,
-    "Lg10CD": 3.8806
+    "Lg10CD": 3.8806,
+    "in_law_review_study": true
    },
    {
     "id": "COM_FOIL_01",
@@ -5850,7 +8234,8 @@ window.STIMULI = {
     "ensemble": 3.4071223735954597,
     "subtlex_token": "gunman",
     "Lg10WF": 2.0294,
-    "Lg10CD": 1.8633
+    "Lg10CD": 1.8633,
+    "in_law_review_study": true
    },
    {
     "id": "COM_FOIL_02",
@@ -5871,7 +8256,8 @@ window.STIMULI = {
     "ensemble": 1.8145278445202293,
     "subtlex_token": "tomb",
     "Lg10WF": 2.4594,
-    "Lg10CD": 2.1492
+    "Lg10CD": 2.1492,
+    "in_law_review_study": true
    },
    {
     "id": "COM_FOIL_03",
@@ -5892,7 +8278,8 @@ window.STIMULI = {
     "ensemble": 5.844268880750354,
     "subtlex_token": "spacecraft",
     "Lg10WF": 2.0645,
-    "Lg10CD": 1.6435
+    "Lg10CD": 1.6435,
+    "in_law_review_study": true
    },
    {
     "id": "COM_FOIL_04",
@@ -5913,7 +8300,8 @@ window.STIMULI = {
     "ensemble": 2.3150631682236247,
     "subtlex_token": "prosecutor",
     "Lg10WF": 2.5647,
-    "Lg10CD": 2.2122
+    "Lg10CD": 2.2122,
+    "in_law_review_study": true
    },
    {
     "id": "COM_FOIL_05",
@@ -5934,7 +8322,8 @@ window.STIMULI = {
     "ensemble": 4.412906126104214,
     "subtlex_token": "realm",
     "Lg10WF": 2.3784,
-    "Lg10CD": 2.1931
+    "Lg10CD": 2.1931,
+    "in_law_review_study": true
    },
    {
     "id": "COM_FOIL_06",
@@ -5955,7 +8344,8 @@ window.STIMULI = {
     "ensemble": 7.81401987547454,
     "subtlex_token": "marshal",
     "Lg10WF": 2.9547,
-    "Lg10CD": 2.3345
+    "Lg10CD": 2.3345,
+    "in_law_review_study": true
    },
    {
     "id": "COM_FOIL_07",
@@ -5976,7 +8366,8 @@ window.STIMULI = {
     "ensemble": 2.6578404749725197,
     "subtlex_token": "apparition",
     "Lg10WF": 1.6021,
-    "Lg10CD": 1.4771
+    "Lg10CD": 1.4771,
+    "in_law_review_study": true
    },
    {
     "id": "COM_FOIL_08",
@@ -5997,7 +8388,536 @@ window.STIMULI = {
     "ensemble": 4.147761218951347,
     "subtlex_token": "shuttle",
     "Lg10WF": 2.4518,
-    "Lg10CD": 2.1139
+    "Lg10CD": 2.1139,
+    "in_law_review_study": true
+   },
+   {
+    "id": "COM_HH_13",
+    "text": "millionaire",
+    "element_string": "millionaire",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 152,
+    "film_count_in_target_genre": 152,
+    "foil_rule": null,
+    "prevalence_pct": 0.8285714285714286,
+    "distinctiveness_pct": 0.949615975422427,
+    "ensemble": 2.196646111839423,
+    "subtlex_token": "millionaire",
+    "Lg10WF": null,
+    "Lg10CD": 2.3304,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HH_14",
+    "text": "speech",
+    "element_string": "speech",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 335,
+    "film_count_in_target_genre": 335,
+    "foil_rule": null,
+    "prevalence_pct": 0.9348694316436252,
+    "distinctiveness_pct": 0.8052227342549924,
+    "ensemble": 1.904944183888389,
+    "subtlex_token": "speech",
+    "Lg10WF": null,
+    "Lg10CD": 3.0378,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HH_15",
+    "text": "dollar",
+    "element_string": "dollar",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 235,
+    "film_count_in_target_genre": 235,
+    "foil_rule": null,
+    "prevalence_pct": 0.8952380952380953,
+    "distinctiveness_pct": 0.7720430107526882,
+    "ensemble": 1.0625279291267067,
+    "subtlex_token": "dollar",
+    "Lg10WF": null,
+    "Lg10CD": 2.941,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HH_16",
+    "text": "inheritance",
+    "element_string": "inheritance",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 135,
+    "film_count_in_target_genre": 135,
+    "foil_rule": null,
+    "prevalence_pct": 0.8015360983102918,
+    "distinctiveness_pct": 0.783410138248848,
+    "ensemble": 1.027934573459022,
+    "subtlex_token": "inheritance",
+    "Lg10WF": null,
+    "Lg10CD": 2.0719,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HH_17",
+    "text": "publicity",
+    "element_string": "publicity",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 81,
+    "film_count_in_target_genre": 81,
+    "foil_rule": null,
+    "prevalence_pct": 0.6821812596006145,
+    "distinctiveness_pct": 0.8599078341013825,
+    "ensemble": 0.6299686995386156,
+    "subtlex_token": "publicity",
+    "Lg10WF": null,
+    "Lg10CD": 2.5587,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HH_18",
+    "text": "heiress",
+    "element_string": "heiress",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 79,
+    "film_count_in_target_genre": 79,
+    "foil_rule": null,
+    "prevalence_pct": 0.6737327188940092,
+    "distinctiveness_pct": 0.8377880184331797,
+    "ensemble": 0.6221309815825604,
+    "subtlex_token": "heiress",
+    "Lg10WF": null,
+    "Lg10CD": 1.6128,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HL_13",
+    "text": "fear",
+    "element_string": "fear",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 385,
+    "film_count_in_target_genre": 385,
+    "foil_rule": null,
+    "prevalence_pct": 0.9466973886328724,
+    "distinctiveness_pct": 0.1858678955453149,
+    "ensemble": 0.5765436038567907,
+    "subtlex_token": "fear",
+    "Lg10WF": 3.547,
+    "Lg10CD": 3.2817,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HL_14",
+    "text": "young man",
+    "element_string": "young man",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 331,
+    "film_count_in_target_genre": 331,
+    "foil_rule": null,
+    "prevalence_pct": 0.9333333333333333,
+    "distinctiveness_pct": 0.20460829493087557,
+    "ensemble": 0.48781632487755244,
+    "subtlex_token": "man",
+    "Lg10WF": 4.9737,
+    "Lg10CD": 3.9061,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HL_15",
+    "text": "shelter",
+    "element_string": "shelter",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 168,
+    "film_count_in_target_genre": 168,
+    "foil_rule": null,
+    "prevalence_pct": 0.8462365591397849,
+    "distinctiveness_pct": 0.13118279569892474,
+    "ensemble": 0.058809852065506485,
+    "subtlex_token": "shelter",
+    "Lg10WF": null,
+    "Lg10CD": 2.5752,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HL_16",
+    "text": "little girl",
+    "element_string": "little girl",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 101,
+    "film_count_in_target_genre": 101,
+    "foil_rule": null,
+    "prevalence_pct": 0.7428571428571429,
+    "distinctiveness_pct": 0.23563748079877112,
+    "ensemble": -0.026965939456169208,
+    "subtlex_token": "girl",
+    "Lg10WF": 4.4535,
+    "Lg10CD": 3.7885,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HL_17",
+    "text": "dead body",
+    "element_string": "dead body",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "chunk",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 82,
+    "film_count_in_target_genre": 82,
+    "foil_rule": null,
+    "prevalence_pct": 0.6861751152073733,
+    "distinctiveness_pct": 0.05683563748079877,
+    "ensemble": -0.21709233081719873,
+    "subtlex_token": "body",
+    "Lg10WF": 3.9988,
+    "Lg10CD": 3.5979,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_HL_18",
+    "text": "fighter",
+    "element_string": "fighter",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 95,
+    "film_count_in_target_genre": 95,
+    "foil_rule": null,
+    "prevalence_pct": 0.729800307219662,
+    "distinctiveness_pct": 0.025806451612903226,
+    "ensemble": -0.22313130363431824,
+    "subtlex_token": "fighter",
+    "Lg10WF": null,
+    "Lg10CD": 2.5658,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LH_13",
+    "text": "coconut",
+    "element_string": "coconut",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 20,
+    "film_count_in_target_genre": 20,
+    "foil_rule": null,
+    "prevalence_pct": 0.016897081413210446,
+    "distinctiveness_pct": 0.9923195084485407,
+    "ensemble": 0.8248265092748991,
+    "subtlex_token": "coconut",
+    "Lg10WF": null,
+    "Lg10CD": 2.1492,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LH_14",
+    "text": "senior year",
+    "element_string": "senior year",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "chunk",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 28,
+    "film_count_in_target_genre": 28,
+    "foil_rule": null,
+    "prevalence_pct": 0.23072196620583718,
+    "distinctiveness_pct": 0.9726574500768049,
+    "ensemble": 0.641422050520932,
+    "subtlex_token": "year",
+    "Lg10WF": null,
+    "Lg10CD": 3.6974,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LH_15",
+    "text": "gymnasium",
+    "element_string": "gymnasium",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 23,
+    "film_count_in_target_genre": 23,
+    "foil_rule": null,
+    "prevalence_pct": 0.10706605222734256,
+    "distinctiveness_pct": 0.957910906298003,
+    "ensemble": 0.49842669762883385,
+    "subtlex_token": "gymnasium",
+    "Lg10WF": null,
+    "Lg10CD": 1.6902,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LH_16",
+    "text": "mistaken identity",
+    "element_string": "mistaken identity",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "chunk",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 30,
+    "film_count_in_target_genre": 30,
+    "foil_rule": null,
+    "prevalence_pct": 0.2714285714285714,
+    "distinctiveness_pct": 0.8920122887864823,
+    "ensemble": 0.42934708950215494,
+    "subtlex_token": "identity",
+    "Lg10WF": 2.8215,
+    "Lg10CD": 2.6767,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LH_17",
+    "text": "trustee",
+    "element_string": "trustee",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 25,
+    "film_count_in_target_genre": 25,
+    "foil_rule": null,
+    "prevalence_pct": 0.1585253456221198,
+    "distinctiveness_pct": 0.8700460829493087,
+    "ensemble": 0.39541862719758425,
+    "subtlex_token": "trustee",
+    "Lg10WF": null,
+    "Lg10CD": 1.5563,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LH_18",
+    "text": "bank manager",
+    "element_string": "bank manager",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.2098310291858679,
+    "distinctiveness_pct": 0.6812596006144394,
+    "ensemble": 0.09594640496172982,
+    "subtlex_token": "manager",
+    "Lg10WF": null,
+    "Lg10CD": 3.0237,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LL_13",
+    "text": "database",
+    "element_string": "database",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 24,
+    "film_count_in_target_genre": 24,
+    "foil_rule": null,
+    "prevalence_pct": 0.13256528417818741,
+    "distinctiveness_pct": 0.3185867895545315,
+    "ensemble": -0.1572199288843356,
+    "subtlex_token": "database",
+    "Lg10WF": null,
+    "Lg10CD": 2.3579,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LL_14",
+    "text": "social worker",
+    "element_string": "social worker",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "chunk",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 25,
+    "film_count_in_target_genre": 25,
+    "foil_rule": null,
+    "prevalence_pct": 0.1585253456221198,
+    "distinctiveness_pct": 0.19723502304147467,
+    "ensemble": -0.2162438684419745,
+    "subtlex_token": "worker",
+    "Lg10WF": null,
+    "Lg10CD": 2.6222,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LL_15",
+    "text": "firearm",
+    "element_string": "firearm",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 30,
+    "film_count_in_target_genre": 30,
+    "foil_rule": null,
+    "prevalence_pct": 0.2714285714285714,
+    "distinctiveness_pct": 0.18125960061443933,
+    "ensemble": -0.2206653412996882,
+    "subtlex_token": "firearm",
+    "Lg10WF": null,
+    "Lg10CD": 1.8261,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LL_16",
+    "text": "locket",
+    "element_string": "locket",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 23,
+    "film_count_in_target_genre": 23,
+    "foil_rule": null,
+    "prevalence_pct": 0.10706605222734256,
+    "distinctiveness_pct": 0.18310291858678956,
+    "ensemble": -0.22222655295126992,
+    "subtlex_token": "locket",
+    "Lg10WF": null,
+    "Lg10CD": 1.6021,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LL_17",
+    "text": "phone call",
+    "element_string": "phone call",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "chunk",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 23,
+    "film_count_in_target_genre": 23,
+    "foil_rule": null,
+    "prevalence_pct": 0.10706605222734256,
+    "distinctiveness_pct": 0.19631336405529953,
+    "ensemble": -0.22475803309460907,
+    "subtlex_token": "call",
+    "Lg10WF": null,
+    "Lg10CD": 3.8783,
+    "in_law_review_study": false
+   },
+   {
+    "id": "COM_LL_18",
+    "text": "remote village",
+    "element_string": "remote village",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Comedy",
+    "element_type": "chunk",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 22,
+    "film_count_in_target_genre": 22,
+    "foil_rule": null,
+    "prevalence_pct": 0.07818740399385561,
+    "distinctiveness_pct": 0.1499231950844854,
+    "ensemble": -0.26382198844474547,
+    "subtlex_token": "village",
+    "Lg10WF": null,
+    "Lg10CD": 2.8893,
+    "in_law_review_study": false
    }
   ]
  },
@@ -6006,7 +8926,7 @@ window.STIMULI = {
   "genre_key": "fantasy",
   "seed": 20260219,
   "min_films_in_genre": 20,
-  "k_per_cell": 12,
+  "k_per_cell": 18,
   "n_foils": 8,
   "foil_rule": "flat",
   "foil_max_films_in_target": 5,
@@ -6020,7 +8940,7 @@ window.STIMULI = {
    "low_prev_high_dist",
    "low_prev_low_dist"
   ],
-  "n_items": 56,
+  "n_items": 80,
   "display_text_note": "text is what participants see: the pipeline element string, with DISPLAY_OVERRIDES applied (capitals, hyphens, possessives, natural plurals, US spelling; no content word changed). element_string keeps the pipeline string.",
   "items": [
    {
@@ -6042,7 +8962,8 @@ window.STIMULI = {
     "ensemble": 11.744590328569055,
     "subtlex_token": "witch",
     "Lg10WF": 3.1495,
-    "Lg10CD": 2.6776
+    "Lg10CD": 2.6776,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_02",
@@ -6063,7 +8984,8 @@ window.STIMULI = {
     "ensemble": 10.498485789509312,
     "subtlex_token": "kingdom",
     "Lg10WF": 2.8965,
-    "Lg10CD": 2.6474
+    "Lg10CD": 2.6474,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_03",
@@ -6084,7 +9006,8 @@ window.STIMULI = {
     "ensemble": 7.1966373738003115,
     "subtlex_token": "monster",
     "Lg10WF": 3.2973,
-    "Lg10CD": 2.9759
+    "Lg10CD": 2.9759,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_04",
@@ -6105,7 +9028,8 @@ window.STIMULI = {
     "ensemble": 6.536121132427331,
     "subtlex_token": "forest",
     "Lg10WF": 2.9841,
-    "Lg10CD": 2.6998
+    "Lg10CD": 2.6998,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_05",
@@ -6126,7 +9050,8 @@ window.STIMULI = {
     "ensemble": 4.253035226470492,
     "subtlex_token": "portal",
     "Lg10WF": 2.3483,
-    "Lg10CD": 2.0414
+    "Lg10CD": 2.0414,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_06",
@@ -6147,7 +9072,8 @@ window.STIMULI = {
     "ensemble": 3.905261963101072,
     "subtlex_token": "form",
     "Lg10WF": 3.3387,
-    "Lg10CD": 3.1864
+    "Lg10CD": 3.1864,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_07",
@@ -6168,7 +9094,8 @@ window.STIMULI = {
     "ensemble": 2.515861657571792,
     "subtlex_token": "master",
     "Lg10WF": 3.6485,
-    "Lg10CD": 3.1216
+    "Lg10CD": 3.1216,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_08",
@@ -6189,7 +9116,8 @@ window.STIMULI = {
     "ensemble": 2.2227690679175187,
     "subtlex_token": "throne",
     "Lg10WF": 2.6454,
-    "Lg10CD": 2.3674
+    "Lg10CD": 2.3674,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_09",
@@ -6210,7 +9138,8 @@ window.STIMULI = {
     "ensemble": 2.028982118629172,
     "subtlex_token": "universe",
     "Lg10WF": 3.1106,
-    "Lg10CD": 2.8476
+    "Lg10CD": 2.8476,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_10",
@@ -6231,7 +9160,8 @@ window.STIMULI = {
     "ensemble": 1.1824030192936923,
     "subtlex_token": "hair",
     "Lg10WF": 3.8939,
-    "Lg10CD": 3.5603
+    "Lg10CD": 3.5603,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_11",
@@ -6252,7 +9182,8 @@ window.STIMULI = {
     "ensemble": 1.104606202997888,
     "subtlex_token": "hunter",
     "Lg10WF": 2.9717,
-    "Lg10CD": 2.5866
+    "Lg10CD": 2.5866,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HH_12",
@@ -6273,7 +9204,8 @@ window.STIMULI = {
     "ensemble": 0.858477490846684,
     "subtlex_token": "experiment",
     "Lg10WF": 2.9175,
-    "Lg10CD": 2.6628
+    "Lg10CD": 2.6628,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_01",
@@ -6294,7 +9226,8 @@ window.STIMULI = {
     "ensemble": 0.7960592346423022,
     "subtlex_token": "student",
     "Lg10WF": 3.3416,
-    "Lg10CD": 3.0573
+    "Lg10CD": 3.0573,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_02",
@@ -6315,7 +9248,8 @@ window.STIMULI = {
     "ensemble": 0.6060404855502657,
     "subtlex_token": "identity",
     "Lg10WF": 2.8215,
-    "Lg10CD": 2.6767
+    "Lg10CD": 2.6767,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_03",
@@ -6336,7 +9270,8 @@ window.STIMULI = {
     "ensemble": 0.4065704363938272,
     "subtlex_token": "country",
     "Lg10WF": 3.9167,
-    "Lg10CD": 3.5184
+    "Lg10CD": 3.5184,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_04",
@@ -6357,7 +9292,8 @@ window.STIMULI = {
     "ensemble": 0.3328876499500948,
     "subtlex_token": "friend",
     "Lg10WF": 4.3301,
-    "Lg10CD": 3.7909
+    "Lg10CD": 3.7909,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_05",
@@ -6378,7 +9314,8 @@ window.STIMULI = {
     "ensemble": 0.282917560447048,
     "subtlex_token": "uncle",
     "Lg10WF": 3.8013,
-    "Lg10CD": 3.2709
+    "Lg10CD": 3.2709,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_06",
@@ -6399,7 +9336,8 @@ window.STIMULI = {
     "ensemble": 0.26707324325517867,
     "subtlex_token": "friendship",
     "Lg10WF": 3.0663,
-    "Lg10CD": 2.8971
+    "Lg10CD": 2.8971,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_07",
@@ -6420,7 +9358,8 @@ window.STIMULI = {
     "ensemble": 0.20776358373373774,
     "subtlex_token": "woman",
     "Lg10WF": 4.3457,
-    "Lg10CD": 3.7728
+    "Lg10CD": 3.7728,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_08",
@@ -6441,7 +9380,8 @@ window.STIMULI = {
     "ensemble": 0.1749339437048568,
     "subtlex_token": "date",
     "Lg10WF": 3.8585,
-    "Lg10CD": 3.4754
+    "Lg10CD": 3.4754,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_09",
@@ -6462,7 +9402,8 @@ window.STIMULI = {
     "ensemble": 0.17488449471019013,
     "subtlex_token": "man",
     "Lg10WF": 4.9737,
-    "Lg10CD": 3.9061
+    "Lg10CD": 3.9061,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_10",
@@ -6483,7 +9424,8 @@ window.STIMULI = {
     "ensemble": 0.1747631966705771,
     "subtlex_token": "boyfriend",
     "Lg10WF": 3.5664,
-    "Lg10CD": 3.2625
+    "Lg10CD": 3.2625,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_11",
@@ -6504,7 +9446,8 @@ window.STIMULI = {
     "ensemble": 0.16101075909428764,
     "subtlex_token": "murder",
     "Lg10WF": 3.7572,
-    "Lg10CD": 3.3111
+    "Lg10CD": 3.3111,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_HL_12",
@@ -6525,7 +9468,8 @@ window.STIMULI = {
     "ensemble": 0.01506143412830796,
     "subtlex_token": "law",
     "Lg10WF": 3.7733,
-    "Lg10CD": 3.4011
+    "Lg10CD": 3.4011,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_01",
@@ -6546,7 +9490,8 @@ window.STIMULI = {
     "ensemble": 2.0840296914802328,
     "subtlex_token": "world",
     "Lg10WF": 4.3658,
-    "Lg10CD": 3.792
+    "Lg10CD": 3.792,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_02",
@@ -6567,7 +9512,8 @@ window.STIMULI = {
     "ensemble": 1.8825101347250366,
     "subtlex_token": "pole",
     "Lg10WF": 2.8082,
-    "Lg10CD": 2.5966
+    "Lg10CD": 2.5966,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_03",
@@ -6588,7 +9534,8 @@ window.STIMULI = {
     "ensemble": 1.8007600628971758,
     "subtlex_token": "tale",
     "Lg10WF": 2.7875,
-    "Lg10CD": 2.6395
+    "Lg10CD": 2.6395,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_04",
@@ -6609,7 +9556,8 @@ window.STIMULI = {
     "ensemble": 1.5721129526707585,
     "subtlex_token": "serpent",
     "Lg10WF": 2.0,
-    "Lg10CD": 1.8261
+    "Lg10CD": 1.8261,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_05",
@@ -6630,7 +9578,8 @@ window.STIMULI = {
     "ensemble": 1.1195724972242427,
     "subtlex_token": "warlord",
     "Lg10WF": 1.6021,
-    "Lg10CD": 1.415
+    "Lg10CD": 1.415,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_06",
@@ -6651,7 +9600,8 @@ window.STIMULI = {
     "ensemble": 1.0690808338564626,
     "subtlex_token": "power",
     "Lg10WF": 3.8809,
-    "Lg10CD": 3.4744
+    "Lg10CD": 3.4744,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_07",
@@ -6672,7 +9622,8 @@ window.STIMULI = {
     "ensemble": 0.5923524056763545,
     "subtlex_token": "shield",
     "Lg10WF": 2.6222,
-    "Lg10CD": 2.4099
+    "Lg10CD": 2.4099,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_08",
@@ -6693,7 +9644,8 @@ window.STIMULI = {
     "ensemble": 0.34905809001985444,
     "subtlex_token": "monastery",
     "Lg10WF": 2.2788,
-    "Lg10CD": 1.9191
+    "Lg10CD": 1.9191,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_09",
@@ -6714,7 +9666,8 @@ window.STIMULI = {
     "ensemble": 0.30725793707915633,
     "subtlex_token": "arena",
     "Lg10WF": 2.2695,
-    "Lg10CD": 2.0682
+    "Lg10CD": 2.0682,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_10",
@@ -6735,7 +9688,8 @@ window.STIMULI = {
     "ensemble": 0.21962448694451916,
     "subtlex_token": "ending",
     "Lg10WF": 2.9101,
-    "Lg10CD": 2.776
+    "Lg10CD": 2.776,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_11",
@@ -6756,7 +9710,8 @@ window.STIMULI = {
     "ensemble": 0.1869640802110273,
     "subtlex_token": "smoke",
     "Lg10WF": 3.5235,
-    "Lg10CD": 3.2751
+    "Lg10CD": 3.2751,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LH_12",
@@ -6777,7 +9732,8 @@ window.STIMULI = {
     "ensemble": 0.10507924984401475,
     "subtlex_token": "electricity",
     "Lg10WF": 2.7672,
-    "Lg10CD": 2.5729
+    "Lg10CD": 2.5729,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_01",
@@ -6798,7 +9754,8 @@ window.STIMULI = {
     "ensemble": -0.11715616392720357,
     "subtlex_token": "school",
     "Lg10WF": 4.2302,
-    "Lg10CD": 3.6563
+    "Lg10CD": 3.6563,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_02",
@@ -6819,7 +9776,8 @@ window.STIMULI = {
     "ensemble": -0.12076140314069213,
     "subtlex_token": "engine",
     "Lg10WF": 3.2114,
-    "Lg10CD": 2.9074
+    "Lg10CD": 2.9074,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_03",
@@ -6840,7 +9798,8 @@ window.STIMULI = {
     "ensemble": -0.1602713691540913,
     "subtlex_token": "accident",
     "Lg10WF": 3.6177,
-    "Lg10CD": 3.3387
+    "Lg10CD": 3.3387,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_04",
@@ -6861,7 +9820,8 @@ window.STIMULI = {
     "ensemble": -0.17533666741488674,
     "subtlex_token": "stair",
     "Lg10WF": 1.8451,
-    "Lg10CD": 1.6628
+    "Lg10CD": 1.6628,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_05",
@@ -6882,7 +9842,8 @@ window.STIMULI = {
     "ensemble": -0.18196639765703237,
     "subtlex_token": "attack",
     "Lg10WF": 3.5859,
-    "Lg10CD": 3.2918
+    "Lg10CD": 3.2918,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_06",
@@ -6903,7 +9864,8 @@ window.STIMULI = {
     "ensemble": -0.19230056535158319,
     "subtlex_token": "town",
     "Lg10WF": 4.1019,
-    "Lg10CD": 3.6146
+    "Lg10CD": 3.6146,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_07",
@@ -6924,7 +9886,8 @@ window.STIMULI = {
     "ensemble": -0.23558939943245122,
     "subtlex_token": "secretary",
     "Lg10WF": 3.2292,
-    "Lg10CD": 2.8938
+    "Lg10CD": 2.8938,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_08",
@@ -6945,7 +9908,8 @@ window.STIMULI = {
     "ensemble": -0.24794346238913623,
     "subtlex_token": "friend",
     "Lg10WF": 4.3301,
-    "Lg10CD": 3.7909
+    "Lg10CD": 3.7909,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_09",
@@ -6966,7 +9930,8 @@ window.STIMULI = {
     "ensemble": -0.2562842568784097,
     "subtlex_token": "lawyer",
     "Lg10WF": 3.6081,
-    "Lg10CD": 3.2271
+    "Lg10CD": 3.2271,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_10",
@@ -6987,7 +9952,8 @@ window.STIMULI = {
     "ensemble": -0.27750747112443763,
     "subtlex_token": "murderer",
     "Lg10WF": 3.1323,
-    "Lg10CD": 2.8633
+    "Lg10CD": 2.8633,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_11",
@@ -7008,7 +9974,8 @@ window.STIMULI = {
     "ensemble": -0.3069142125336112,
     "subtlex_token": "robbery",
     "Lg10WF": 3.0704,
-    "Lg10CD": 2.7551
+    "Lg10CD": 2.7551,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_LL_12",
@@ -7029,7 +9996,8 @@ window.STIMULI = {
     "ensemble": -0.31138001464456055,
     "subtlex_token": "officer",
     "Lg10WF": 3.7215,
-    "Lg10CD": 3.3069
+    "Lg10CD": 3.3069,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_FOIL_01",
@@ -7050,7 +10018,8 @@ window.STIMULI = {
     "ensemble": 9.725013434019969,
     "subtlex_token": "rancher",
     "Lg10WF": 1.6812,
-    "Lg10CD": 1.5682
+    "Lg10CD": 1.5682,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_FOIL_02",
@@ -7071,7 +10040,8 @@ window.STIMULI = {
     "ensemble": 3.8818474770768567,
     "subtlex_token": "alibi",
     "Lg10WF": 2.6304,
-    "Lg10CD": 2.3979
+    "Lg10CD": 2.3979,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_FOIL_03",
@@ -7092,7 +10062,8 @@ window.STIMULI = {
     "ensemble": 1.0681471573742123,
     "subtlex_token": "toilet",
     "Lg10WF": 3.1688,
-    "Lg10CD": 2.98
+    "Lg10CD": 2.98,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_FOIL_04",
@@ -7113,7 +10084,8 @@ window.STIMULI = {
     "ensemble": 10.278847531335074,
     "subtlex_token": "stagecoach",
     "Lg10WF": 1.716,
-    "Lg10CD": 1.5563
+    "Lg10CD": 1.5563,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_FOIL_05",
@@ -7134,7 +10106,8 @@ window.STIMULI = {
     "ensemble": 2.8499627257898212,
     "subtlex_token": "mafia",
     "Lg10WF": 2.3784,
-    "Lg10CD": 2.179
+    "Lg10CD": 2.179,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_FOIL_06",
@@ -7155,7 +10128,8 @@ window.STIMULI = {
     "ensemble": 1.0071799213297596,
     "subtlex_token": "embarrassment",
     "Lg10WF": 2.3945,
-    "Lg10CD": 2.3483
+    "Lg10CD": 2.3483,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_FOIL_07",
@@ -7176,7 +10150,8 @@ window.STIMULI = {
     "ensemble": 2.629928906179293,
     "subtlex_token": "dealer",
     "Lg10WF": 2.9201,
-    "Lg10CD": 2.6955
+    "Lg10CD": 2.6955,
+    "in_law_review_study": true
    },
    {
     "id": "FAN_FOIL_08",
@@ -7197,7 +10172,536 @@ window.STIMULI = {
     "ensemble": 1.1696116079436347,
     "subtlex_token": "suite",
     "Lg10WF": 2.9294,
-    "Lg10CD": 2.6464
+    "Lg10CD": 2.6464,
+    "in_law_review_study": true
+   },
+   {
+    "id": "FAN_HH_13",
+    "text": "battle",
+    "element_string": "battle",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 397,
+    "film_count_in_target_genre": 397,
+    "foil_rule": null,
+    "prevalence_pct": 0.9885931558935361,
+    "distinctiveness_pct": 0.8288973384030418,
+    "ensemble": 7.560240394407284,
+    "subtlex_token": "battle",
+    "Lg10WF": 3.3336,
+    "Lg10CD": 3.0519,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HH_14",
+    "text": "spirit",
+    "element_string": "spirit",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 212,
+    "film_count_in_target_genre": 212,
+    "foil_rule": null,
+    "prevalence_pct": 0.9629277566539924,
+    "distinctiveness_pct": 0.8479087452471483,
+    "ensemble": 6.410064951010308,
+    "subtlex_token": "spirit",
+    "Lg10WF": null,
+    "Lg10CD": 3.1664,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HH_15",
+    "text": "cave",
+    "element_string": "cave",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 150,
+    "film_count_in_target_genre": 150,
+    "foil_rule": null,
+    "prevalence_pct": 0.9268060836501901,
+    "distinctiveness_pct": 0.9163498098859315,
+    "ensemble": 5.741432880067341,
+    "subtlex_token": "cave",
+    "Lg10WF": 2.8537,
+    "Lg10CD": 2.5635,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HH_16",
+    "text": "god",
+    "element_string": "god",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 180,
+    "film_count_in_target_genre": 180,
+    "foil_rule": null,
+    "prevalence_pct": 0.9448669201520913,
+    "distinctiveness_pct": 0.8298479087452472,
+    "ensemble": 5.168856208703696,
+    "subtlex_token": "god",
+    "Lg10WF": null,
+    "Lg10CD": 3.8414,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HH_17",
+    "text": "guardian",
+    "element_string": "guardian",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 59,
+    "film_count_in_target_genre": 59,
+    "foil_rule": null,
+    "prevalence_pct": 0.6758555133079848,
+    "distinctiveness_pct": 0.8678707224334601,
+    "ensemble": 1.6384169862079467,
+    "subtlex_token": "guardian",
+    "Lg10WF": null,
+    "Lg10CD": 2.3945,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HH_18",
+    "text": "chamber",
+    "element_string": "chamber",
+    "cell": "high_prev_high_dist",
+    "cell_code": "HH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 60,
+    "film_count_in_target_genre": 60,
+    "foil_rule": null,
+    "prevalence_pct": 0.6848859315589354,
+    "distinctiveness_pct": 0.7908745247148289,
+    "ensemble": 0.892153636849889,
+    "subtlex_token": "chamber",
+    "Lg10WF": null,
+    "Lg10CD": 2.601,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HL_13",
+    "text": "revenge",
+    "element_string": "revenge",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 177,
+    "film_count_in_target_genre": 177,
+    "foil_rule": null,
+    "prevalence_pct": 0.9439163498098859,
+    "distinctiveness_pct": 0.2899239543726236,
+    "ensemble": 0.9201171459555597,
+    "subtlex_token": "revenge",
+    "Lg10WF": null,
+    "Lg10CD": 2.8129,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HL_14",
+    "text": "prison",
+    "element_string": "prison",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 120,
+    "film_count_in_target_genre": 120,
+    "foil_rule": null,
+    "prevalence_pct": 0.8854562737642585,
+    "distinctiveness_pct": 0.1596958174904943,
+    "ensemble": 0.4489343188330256,
+    "subtlex_token": "prison",
+    "Lg10WF": null,
+    "Lg10CD": 3.1841,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HL_15",
+    "text": "office",
+    "element_string": "office",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 110,
+    "film_count_in_target_genre": 110,
+    "foil_rule": null,
+    "prevalence_pct": 0.8697718631178707,
+    "distinctiveness_pct": 0.11977186311787072,
+    "ensemble": 0.4208304705479212,
+    "subtlex_token": "office",
+    "Lg10WF": null,
+    "Lg10CD": 3.5994,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HL_16",
+    "text": "gun",
+    "element_string": "gun",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 117,
+    "film_count_in_target_genre": 117,
+    "foil_rule": null,
+    "prevalence_pct": 0.8807034220532319,
+    "distinctiveness_pct": 0.05038022813688213,
+    "ensemble": 0.40800043188107615,
+    "subtlex_token": "gun",
+    "Lg10WF": null,
+    "Lg10CD": 3.4738,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HL_17",
+    "text": "truck",
+    "element_string": "truck",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 84,
+    "film_count_in_target_genre": 84,
+    "foil_rule": null,
+    "prevalence_pct": 0.8013307984790875,
+    "distinctiveness_pct": 0.24904942965779467,
+    "ensemble": 0.34427834222265963,
+    "subtlex_token": "truck",
+    "Lg10WF": null,
+    "Lg10CD": 3.192,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_HL_18",
+    "text": "agent",
+    "element_string": "agent",
+    "cell": "high_prev_low_dist",
+    "cell_code": "HL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 79,
+    "film_count_in_target_genre": 79,
+    "foil_rule": null,
+    "prevalence_pct": 0.785171102661597,
+    "distinctiveness_pct": 0.05608365019011407,
+    "ensemble": 0.18025625919311072,
+    "subtlex_token": "agent",
+    "Lg10WF": 3.719,
+    "Lg10CD": 3.1461,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LH_13",
+    "text": "fountain",
+    "element_string": "fountain",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 28,
+    "film_count_in_target_genre": 28,
+    "foil_rule": null,
+    "prevalence_pct": 0.27756653992395436,
+    "distinctiveness_pct": 0.9144486692015209,
+    "ensemble": 1.1852010455426172,
+    "subtlex_token": "fountain",
+    "Lg10WF": null,
+    "Lg10CD": 2.3766,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LH_14",
+    "text": "apple",
+    "element_string": "apple",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 30,
+    "film_count_in_target_genre": 30,
+    "foil_rule": null,
+    "prevalence_pct": 0.32366920152091255,
+    "distinctiveness_pct": 0.8740494296577946,
+    "ensemble": 0.7650791593364813,
+    "subtlex_token": "apple",
+    "Lg10WF": null,
+    "Lg10CD": 2.8388,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LH_15",
+    "text": "helmet",
+    "element_string": "helmet",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 24,
+    "film_count_in_target_genre": 24,
+    "foil_rule": null,
+    "prevalence_pct": 0.16634980988593157,
+    "distinctiveness_pct": 0.782319391634981,
+    "ensemble": 0.2542682070597607,
+    "subtlex_token": "helmet",
+    "Lg10WF": null,
+    "Lg10CD": 2.4829,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LH_16",
+    "text": "amnesia",
+    "element_string": "amnesia",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "theme",
+    "category_key": "themes",
+    "film_count": 25,
+    "film_count_in_target_genre": 25,
+    "foil_rule": null,
+    "prevalence_pct": 0.1991444866920152,
+    "distinctiveness_pct": 0.7224334600760456,
+    "ensemble": 0.22540066401333492,
+    "subtlex_token": "amnesia",
+    "Lg10WF": null,
+    "Lg10CD": 2.0531,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LH_17",
+    "text": "submarine",
+    "element_string": "submarine",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.2590304182509506,
+    "distinctiveness_pct": 0.688212927756654,
+    "ensemble": 0.19148546408621495,
+    "subtlex_token": "submarine",
+    "Lg10WF": null,
+    "Lg10CD": 2.1492,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LH_18",
+    "text": "successor",
+    "element_string": "successor",
+    "cell": "low_prev_high_dist",
+    "cell_code": "LH",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 20,
+    "film_count_in_target_genre": 20,
+    "foil_rule": null,
+    "prevalence_pct": 0.02709125475285171,
+    "distinctiveness_pct": 0.7538022813688213,
+    "ensemble": 0.16923249760578668,
+    "subtlex_token": "successor",
+    "Lg10WF": null,
+    "Lg10CD": 1.8325,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LL_13",
+    "text": "nation",
+    "element_string": "nation",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 22,
+    "film_count_in_target_genre": 22,
+    "foil_rule": null,
+    "prevalence_pct": 0.10836501901140684,
+    "distinctiveness_pct": 0.30038022813688214,
+    "ensemble": -0.1279797108588148,
+    "subtlex_token": "nation",
+    "Lg10WF": null,
+    "Lg10CD": 2.7931,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LL_14",
+    "text": "holiday",
+    "element_string": "holiday",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "event",
+    "category_key": "events",
+    "film_count": 30,
+    "film_count_in_target_genre": 30,
+    "foil_rule": null,
+    "prevalence_pct": 0.32366920152091255,
+    "distinctiveness_pct": 0.20437262357414449,
+    "ensemble": -0.13419592458969404,
+    "subtlex_token": "holiday",
+    "Lg10WF": null,
+    "Lg10CD": 2.791,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LL_15",
+    "text": "alarm",
+    "element_string": "alarm",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "object",
+    "category_key": "objects",
+    "film_count": 23,
+    "film_count_in_target_genre": 23,
+    "foil_rule": null,
+    "prevalence_pct": 0.1373574144486692,
+    "distinctiveness_pct": 0.31653992395437264,
+    "ensemble": -0.1386909829397129,
+    "subtlex_token": "alarm",
+    "Lg10WF": null,
+    "Lg10CD": 2.9538,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LL_16",
+    "text": "client",
+    "element_string": "client",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "character_type",
+    "category_key": "characters",
+    "film_count": 29,
+    "film_count_in_target_genre": 29,
+    "foil_rule": null,
+    "prevalence_pct": 0.2984790874524715,
+    "distinctiveness_pct": 0.0741444866920152,
+    "ensemble": -0.18956161243984712,
+    "subtlex_token": "client",
+    "Lg10WF": null,
+    "Lg10CD": 3.009,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LL_17",
+    "text": "nightclub",
+    "element_string": "nightclub",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "noun",
+    "element_taxonomy": "setting",
+    "category_key": "settings",
+    "film_count": 27,
+    "film_count_in_target_genre": 27,
+    "foil_rule": null,
+    "prevalence_pct": 0.2590304182509506,
+    "distinctiveness_pct": 0.09600760456273764,
+    "ensemble": -0.19585062418739455,
+    "subtlex_token": "nightclub",
+    "Lg10WF": null,
+    "Lg10CD": 2.243,
+    "in_law_review_study": false
+   },
+   {
+    "id": "FAN_LL_18",
+    "text": "younger brother",
+    "element_string": "younger brother",
+    "cell": "low_prev_low_dist",
+    "cell_code": "LL",
+    "is_foil": false,
+    "home_genre": "Fantasy",
+    "element_type": "chunk",
+    "element_taxonomy": "relationship",
+    "category_key": "characters",
+    "film_count": 20,
+    "film_count_in_target_genre": 20,
+    "foil_rule": null,
+    "prevalence_pct": 0.02709125475285171,
+    "distinctiveness_pct": 0.05418250950570342,
+    "ensemble": -0.26361199015802483,
+    "subtlex_token": "brother",
+    "Lg10WF": 4.1608,
+    "Lg10CD": 3.5793,
+    "in_law_review_study": false
    }
   ]
  }

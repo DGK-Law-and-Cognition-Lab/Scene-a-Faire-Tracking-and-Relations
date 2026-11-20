@@ -24,7 +24,8 @@
 // Flow:
 //   device check > full screen > captcha > consent > reading task > instructions >
 //   task check (one retry) > genre 1 > genre 2 > frequency estimates (16 items per
-//   genre, three questions) > demographics > final questions > debrief > save >
+//   genre, three questions) > (COPY group: one question on how "copied" was read) >
+//   demographics > final questions > debrief > save >
 //   SONA credit redirect or completion page
 //   A rated genre:   familiarity, then 56 items and two attention checks.
 //   A tracked genre: Stroop practice, practice choices, familiarity, then 56 items and
@@ -80,6 +81,9 @@ var FAMILIARITY_LABELS = [
 // The rated genre.
 var RATING_SCALE_MIN = 1;
 var RATING_SCALE_MAX = 7;
+// Stratified items shown per cell and genre. When a genre's file holds more than this in a cell (the
+// extended set has 18), each participant is shown this many, drawn at random; every foil is shown.
+var SHOW_PER_CELL = 12;
 var RATING_ITEMS_PER_PAGE = 8;   // as in the law review study; set to 1 for one item per screen
 
 function capFirst(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
@@ -122,19 +126,19 @@ var QUESTIONS = {
     low: function(g) { return '1 = Not at all'; },
     high: function(g) { return '7 = Very strongly'; },
     yes: 'Copied',
-    no: 'Coincidence',
+    no: 'Not copied',
     context: function(g) { return 'Two ' + g.many + ' both include:'; },
     trackIntro: function(g) {
       return disputeParagraphs(g).concat([
-        'You will not read the screenplay or see the film. We will show you, one at a time, things that both of them include. For each one, choose what is more likely: that the film\'s makers <strong>copied</strong> it from the screenplay, or that it is a <strong>coincidence</strong>, meaning that they came up with it on their own.',
+        'You will not read the screenplay or see the film. We will show you, one at a time, things that both of them include. For each one, choose what is more likely: that the film\'s makers <strong>copied</strong> it from the screenplay, or that they did <strong>not copy</strong> it, meaning that they came up with it on their own.',
         'Some things that two ' + g.many + ' have in common say very little about whether one was copied from the other. Others say a lot. There are no right or wrong answers.'
       ]);
     },
-    practiceTitle: 'Practice: copied or coincidence',
+    practiceTitle: 'Practice: copied or not copied',
     practice: function(g) {
       return [
         'Imagine a screenplay and a later film made by different people. The screenwriter says the film was copied from the screenplay; the film\'s makers say they came up with it on their own.',
-        'Each trial shows one thing that the screenplay and the film both include. Choose <strong>Copied</strong> if you think the film\'s makers more likely copied it, and <strong>Coincidence</strong> if you think they more likely came up with it on their own.'
+        'Each trial shows one thing that the screenplay and the film both include. Choose <strong>Copied</strong> if you think the film\'s makers more likely copied it, and <strong>Not copied</strong> if you think they more likely came up with it on their own.'
       ];
     }
   },
@@ -211,14 +215,10 @@ var ATTENTION_CHECKS = [
 var ATTENTION_MIN_POS = 10;
 var ATTENTION_MAX_POS = 50;
 
-// Frequency estimates (last block, every participant). Each genre's stratified items are
-// divided into FREQ_SETS fixed sets within each cell (by id order: 1st, 4th, 7th, 10th
-// item of the cell form set 0, and so on). A participant estimates one set, chosen at
-// random, so FREQ_POOL_PER_CELL / FREQ_SETS items per cell and genre. Only the first
-// FREQ_POOL_PER_CELL ids of a cell are used, so an extended item file leaves the
-// frequency block on the law review study's items.
-var FREQ_SETS = 3;
-var FREQ_POOL_PER_CELL = 12;
+// Frequency estimates (last block, every participant). For each genre the participant estimates
+// FREQ_PER_CELL of the stratified items they judged in each cell, drawn at random, and gives all three
+// estimates for the same items.
+var FREQ_PER_CELL = 4;
 var FREQ_ITEMS_PER_PAGE = 8;
 // How an estimate is entered: 'slider' (0 to 100 in steps of 1; no handle is shown until the
 // participant clicks the line, so no starting position can pull the answer, and the chosen
@@ -280,6 +280,21 @@ var MIN_SECONDS = {
   taskCheck: 5, freqIntro: 7, freqPage: 8,
   switchWays: 6,                  // the page between the genres, which says that the way of answering changes
   stroopIntro: 8, practiceIntro: 8, trackIntro: 12   // the instruction panels of the tracked genre
+};
+
+// One closing question, for the COPY group only: how the participant read "copied". The question
+// can be read as one of fact (did the film's makers take this from the screenplay?) or as one of
+// what belongs to the screenwriter. The first two options are shown in random order; the code of
+// the chosen option (fact, own, both, other) is recorded as copy_reading.
+var COPY_READING = {
+  title: 'One Question About Your Judgments',
+  text: 'In this study you judged whether things that a screenplay and a later film both include suggest that the film was copied from the screenplay. People understand that question in different ways. Which of these is closest to what you had in mind when you answered?',
+  options: {
+    fact: 'How likely it is that the film\'s makers took it from the screenplay, and did not come up with it on their own',
+    own: 'Whether it is something that fairly belongs to the screenwriter',
+    both: 'Both of these about equally',
+    other: 'Something else'
+  }
 };
 
 // Task check after the instructions. The correct option is the participant's own
@@ -469,7 +484,8 @@ var ST = {
   stroopTrials: [],
   practiceTrials: [],
   choiceTrials: {},      // slot index -> [trial records] (the tracked genre)
-  freqSet: null,
+  judged: {},            // genre key -> the items this participant judges in that genre
+  freqSel: {},           // genre key -> the items this participant estimates
   freqOrder: [],
   freq: [],              // frequency-estimate entries
   fullscreenExits: 0,
@@ -632,11 +648,12 @@ function parseIdentity(up) {
 // Across the 72 cells, under every question, each genre is rated and tracked equally
 // often, in first and in second position.
 // Drawn at random for each participant and recorded: the side of the question's first
-// box label, the frequency item set, and the order of the three frequency questions.
-// Item order, the positions of the attention checks and the Stroop trials are drawn at
-// random as well.
+// box label, and the order of the three frequency questions. Also drawn at random: which
+// SHOW_PER_CELL items of each cell are shown (when the item file holds more), their order,
+// the positions of the attention checks, the items estimated in the frequency block, and
+// the Stroop trials.
 // Test links may force any of these: ?cond=COPY|GENRE|STOCK, ?first=track|rate,
-// ?gcell=0..11, ?g1=western&g2=horror, ?side=left|right, ?fset=0..2, ?forder=0..5.
+// ?gcell=0..11, ?g1=western&g2=horror, ?side=left|right, ?forder=0..5.
 // ============================================================
 
 function genreCells() {
@@ -711,11 +728,10 @@ function assignDesign(up) {
   rec('box_left', ST.yesSide === 'left' ? q.yes : q.no);
   rec('box_right', ST.yesSide === 'left' ? q.no : q.yes);
 
-  var fs = parseInt(up.get('fset'), 10), fo = parseInt(up.get('forder'), 10);
-  ST.freqSet = (!isNaN(fs) && fs >= 0 && fs < FREQ_SETS) ? fs : randInt(FREQ_SETS);
+  var fo = parseInt(up.get('forder'), 10);
   var foIdx = (!isNaN(fo) && fo >= 0 && fo < FREQ_ORDERS.length) ? fo : randInt(FREQ_ORDERS.length);
   ST.freqOrder = FREQ_ORDERS[foIdx].slice();
-  rec('freq_set', ST.freqSet);
+  rec('items_per_cell_shown', SHOW_PER_CELL);
   rec('freq_order', ST.freqOrder.join(','));
 }
 
@@ -776,10 +792,25 @@ async function loadStimuli(keys) {
   })));
 }
 
-// The items a participant judges in a genre (every item in the file; six in a short test).
+// The items a participant judges in a genre: every foil, and SHOW_PER_CELL stratified items from each
+// cell, drawn at random for this participant when the file holds more than that (six items of any
+// kind in a short test). The draw is made once per genre and kept, so the judgments and the frequency
+// block use the same items.
 function judgedItems(gi) {
-  var items = ST.stimuli[ST.genreOrder[gi]].items;
-  return ST.short ? shuffle(items).slice(0, 6) : items;
+  var gk = ST.genreOrder[gi];
+  if (ST.judged[gk]) return ST.judged[gk];
+  var items = ST.stimuli[gk].items, out;
+  if (ST.short) out = shuffle(items).slice(0, 6);
+  else {
+    var byCell = {};
+    out = [];
+    items.forEach(function(it) { if (it.is_foil) out.push(it); else (byCell[it.cell_code] = byCell[it.cell_code] || []).push(it); });
+    Object.keys(byCell).sort().forEach(function(c) {
+      out = out.concat(byCell[c].length > SHOW_PER_CELL ? shuffle(byCell[c]).slice(0, SHOW_PER_CELL) : byCell[c]);
+    });
+  }
+  ST.judged[gk] = out;
+  return out;
 }
 
 // k distinct 1-based positions for attention checks in a sequence of nItems + k entries.
@@ -1346,18 +1377,15 @@ function buildTrackGenreBlock(gi) {
 // ============================================================
 
 function freqItems(gk) {
+  if (ST.freqSel[gk]) return ST.freqSel[gk];
   var byCell = {};
-  ST.stimuli[gk].items.forEach(function(it) {
-    if (it.is_foil) return;
-    (byCell[it.cell_code] = byCell[it.cell_code] || []).push(it);
+  judgedItems(ST.genreOrder.indexOf(gk)).forEach(function(it) {
+    if (!it.is_foil) (byCell[it.cell_code] = byCell[it.cell_code] || []).push(it);
   });
   var out = [];
-  Object.keys(byCell).sort().forEach(function(c) {
-    byCell[c].sort(function(a, b) { return a.id < b.id ? -1 : (a.id > b.id ? 1 : 0); })
-      .slice(0, FREQ_POOL_PER_CELL)
-      .forEach(function(it, i) { if (i % FREQ_SETS === ST.freqSet) out.push(it); });
-  });
-  if (ST.short) out = out.filter(function(it, i) { return i % 8 === 0; });
+  Object.keys(byCell).sort().forEach(function(c) { out = out.concat(shuffle(byCell[c]).slice(0, FREQ_PER_CELL)); });
+  if (ST.short) out = shuffle(out).slice(0, 2);
+  ST.freqSel[gk] = out;      // the same items for all three questions
   return out;
 }
 
@@ -1705,8 +1733,33 @@ function buildAll() {
   });
 
   buildFrequencyBlock();
+  buildCopyReading();
   buildDemographics();
   buildDebrief();
+}
+
+
+// ============================================================
+// THE CLOSING QUESTION ON HOW "COPIED" WAS READ (COPY group only)
+// ============================================================
+
+function buildCopyReading() {
+  if (ST.question !== 'COPY') return;
+  var order = (Math.random() < 0.5 ? ['fact', 'own'] : ['own', 'fact']).concat(['both', 'other']);
+  rec('copy_reading_order', order.join(','));
+  P.push(Object.assign({
+    html: '<h1>' + esc(COPY_READING.title) + '</h1><div class="form-group"><p class="question-text">' + esc(COPY_READING.text) + '</p><div class="radio-group">'
+      + order.map(function(k) {
+          return '<label class="radio-option"><input type="radio" name="copy_reading" value="' + k + '"> ' + esc(COPY_READING.options[k]) + '</label>';
+        }).join('')
+      + '</div></div><p class="error-msg" id="err-copyread">Please select an answer.</p>',
+    val: function() {
+      var v = gR('copy_reading');
+      if (!v) { sE('err-copyread'); return false; }
+      rec('copy_reading', v);
+      return true;
+    }
+  }, minWait(MIN_SECONDS.taskCheck)));
 }
 
 

@@ -17,7 +17,7 @@ feature at a time, and answers it **in two ways**, one genre each.
 
 | Question (between participants) | Rated genre: 1 to 7 | Tracked genre: two boxes |
 | --- | --- | --- |
-| `COPY` | Both a screenplay and a later film include the feature. How strongly does this suggest that the film was copied from the screenplay? | **Copied** or **Coincidence** |
+| `COPY` | Both a screenplay and a later film include the feature. How strongly does this suggest that the film was copied from the screenplay? | **Copied** or **Not copied** |
 | `GENRE` | How much is this in the film because the film is a Western? | **Because of the genre** or **Could be in any film** |
 | `STOCK` | Is this a stock feature of Westerns (the Restatement's five adjectives)? | **Stock** or **Not stock** |
 
@@ -52,8 +52,10 @@ Drawn at random for each participant, and recorded:
 - the order of the items in each genre
 - the positions of the two attention checks in each genre (between positions 10 and 50)
 - which box label is on the left (`yes_side`; fixed for the whole session)
-- which third of the items they estimate in the frequency block (`freq_set`) and the order
-  of the three frequency questions (`freq_order`)
+- which 12 of a cell's items they are shown, when the item files hold more than 12 per cell
+  (`SHOW_PER_CELL`; the extended set has 18)
+- which 4 of the 12 items they judged in each cell they then estimate in the frequency
+  block, and the order of the three frequency questions (`freq_order`)
 - the Stroop trials and the order of the practice choices
 
 ## Files
@@ -64,7 +66,7 @@ Drawn at random for each participant, and recorded:
 | `experiment.js` | The whole experiment: constants, Pavlovia plumbing, pages, rating pages, trial engine, frequency block, data record. Plain JavaScript, no build step. |
 | `style.css` | The law review study's styles plus the trial stage (`#mtStage`, `.mt-*`) and the rating and frequency pages. |
 | `captcha.png` | Image for the hidden-instruction captcha trap (identical to the law review study's). |
-| `stimuli/stimuli_<genre>.json` | The law review study's items, unchanged: per genre 48 stratified items (12 in each cell of high or low prevalence by high or low distinctiveness) and 8 foils. |
+| `stimuli/stimuli_<genre>.json` | The item pool: per genre the law review study's 56 items unchanged (48 stratified and 8 foils), followed by 24 new stratified items, so 18 in each cell of high or low prevalence by high or low distinctiveness. `in_law_review_study` marks which are which. Copied from `Analysis/v4_rebuild/20_extended_item_set/`. |
 | `stimuli/stimuli_all.js` | The same items as `window.STIMULI`, used only when `fetch` fails. |
 | `deploy_to_pavlovia.sh` | Pushes the page files and stimuli to `genres-and-themes/experiment-2` only. Not itself uploaded. |
 
@@ -80,6 +82,8 @@ There is no `config.json`: Pavlovia serves the correct one.
    answer is always the third option.
 4. Genre 1, then a page saying that the genre and the way of answering change and the
    question stays the same, then genre 2.
+   In each genre a participant judges 56 items: the 8 foils and 12 of the 18 stratified
+   items of each cell, drawn at random for that participant.
    - **Rated genre:** familiarity (1 to 7), the question's wording, then 56 items and two
      instructed-response attention checks ("please select 2", "please select 6") on pages
      of 8.
@@ -87,12 +91,15 @@ There is no `config.json`: Pavlovia serves the correct one.
      scored trials), 4 practice choices about Romance films with the participant's own two
      boxes, familiarity, the question's wording, then 56 item trials and two
      instructed-response trials (one naming each box).
-5. Frequency estimates, the same for everyone: for 16 items from each genre (4 per cell),
-   three questions in three short blocks, on sliders from 0 to 100 with no handle until
-   clicked.
-6. Demographics, legal training, "Your Setup" (mouse or trackpad, hand, color vision), AI
+5. Frequency estimates, the same for everyone: for 16 of the items they judged in each
+   genre (4 per cell, drawn at random, the same items for all three questions), three
+   questions in three short blocks, on sliders from 0 to 100 with no handle until clicked.
+6. COPY group only: one closing question on how the participant read "copied" (as a
+   question of fact, or as a question of what belongs to the screenwriter; the first two
+   answers in random order).
+7. Demographics, legal training, "Your Setup" (mouse or trackpad, hand, color vision), AI
    use, final questions, feedback, debrief (which says the pointer's path was recorded).
-7. Save to Pavlovia, then the SONA credit redirect, or the completion page when no
+8. Save to Pavlovia, then the SONA credit redirect, or the completion page when no
    redirect is set. If the upload fails, the data file is downloaded and the participant
    sees a request to email it, with a button to go on for credit.
 
@@ -126,11 +133,11 @@ screen is not: touch drags produce no path (flagged by `pointer: touch` and `lat
 | --- | --- | --- |
 | `SONA_URL_BASE` | empty | Set to the listing's credit URL ending in `survey_code=`. While empty, SONA sessions end on the completion page and give no credit. The deploy script warns about this. Blank the credit token in any public copy. |
 | `CONSENT_URL` | the law review study's Box link | Confirm it is right for this study. |
-| Box labels (`QUESTIONS.<q>.yes`, `.no`) | Copied / Coincidence; Because of the genre / Could be in any film; Stock / Not stock | The memo leaves "Coincidence" against "Not copied" open. |
+| Box labels (`QUESTIONS.<q>.yes`, `.no`) | Copied / Not copied; Because of the genre / Could be in any film; Stock / Not stock | "Not copied" replaced "Coincidence" on November 19 (David). |
 | `SLOW_MS_CHOICE` | 4000 | Adjust after the investigators' own sessions. |
 | `ESTIMATED_MINUTES` | 25 to 30 | Shown on the instructions page. Adjust after the investigators' own sessions. |
 | `WELCOME_TITLE` and the page title | Judgments About Films | Should match the SONA listing's name. |
-| Stimuli | the law review study's 288 items and 48 foils | The memo recommends an extended set of 432 stratified items. If it is drawn and reviewed, replace the six JSON files and `stimuli_all.js`. |
+| Stimuli | 432 stratified items (18 per cell and genre: the law review study's 288 and 144 new ones) and 48 foils | Each participant is shown 12 of a cell's 18 (`SHOW_PER_CELL`), drawn at random. The new items are drawn by `Analysis/notebooks/20_extended_item_set.ipynb`; the review and the list are in `Analysis/v4_rebuild/20_extended_item_set/extension_review_log.md`. David confirmed the new items on November 19, 2026. |
 
 The quoted adjectives in the `STOCK` wording (`STOCK_RULE`) are the Restatement's as the
 law review manuscript quotes them. If the manuscript's check changes them, change
@@ -158,7 +165,7 @@ Assignment: `question` (COPY, GENRE, STOCK), `first_mode` (track, rate), `condit
 the design), `cell_index` (genre schedule, 0 to 11), `wave`, `pair_index`, `order`,
 `assignment_source`, `question_source`, `first_mode_source`, `genre_source`
 (`survey_code_mod`, `random` or `url...`), `questions_in_design`, `yes_side`, `box_yes`,
-`box_no`, `box_left`, `box_right`, `freq_set`, `freq_order`, `stimuli_source`,
+`box_no`, `box_left`, `box_right`, `items_per_cell_shown`, `freq_order`, `stimuli_source`,
 `stimuli_meta`.
 
 Reading task: `spr1_*`, `spr2_*` (`_rts`, `_mean_rt`, `_median_rt`, `_fast`, `_min_rt`,
@@ -211,6 +218,13 @@ films that include it, how many are of the genre), `block` (1 to 3), `genre`, `i
 `text`, `cell_code`, `value` (0 to 100), `page`, `pos`, `page_ms`, `first_ms`, `changes`;
 `freq_n` (96 in a full session); `freq_input`.
 
+Closing question, COPY group only: `copy_reading` (`fact` = how likely it is that the film's
+makers took it from the screenplay; `own` = whether it fairly belongs to the screenwriter;
+`both`; `other`) and `copy_reading_order` (the order in which the four answers were shown).
+
+Response time in the tracked choices is `rt` in each trial object: ms from the appearance of
+the item to the click on a box. It is a registered measure of conflict beside the path.
+
 Questionnaires: `age`, `gender`, `race`, `race_other`, `native_language`,
 `english_proficiency`, `films_per_month`, `film_knowledge`, `legal_training`,
 `input_device`, `mouse_hand`, `color_vision`, `ai_usage`, `seriousness`,
@@ -234,7 +248,7 @@ Questionnaires: `age`, `gender`, `race`, `race_other`, `native_language`,
      which way comes first
    - `&gcell=0` to `11` forces the genre schedule; `&g1=western&g2=horror` forces any two
      genres
-   - `&side=left` or `right`, `&fset=0` to `2`, `&forder=0` to `5` force the random draws
+   - `&side=left` or `right` and `&forder=0` to `5` force two of the random draws
    - `&short=1` shortens everything (6 items per genre, 2 practice and 4 scored Stroop
      trials, 2 frequency items per genre, 1-second waits); recorded as `short_test`. In a
      short session the two attention checks are always the last two items.
@@ -257,6 +271,16 @@ window was not checked between trials, Start could be triggered from the keyboar
 double click, two columns had misleading names, and a failed upload was followed by an
 immediate redirect.
 
+Later on November 19, after the second copying box became "Not copied" and the item pool grew to
+18 per cell: the item draw over 300 random participants (always 56 items per genre, 12 per cell,
+every foil, each stratified item shown about two thirds of the time), the frequency items (4 per
+cell, among the items judged, the same for all three questions), a load of the real 80-item files,
+and one more full `short=1` session to the saved record.
+
+The closing question of the COPY group was checked on its own page: it sits between the
+frequency block and the questions about the participant, cannot be skipped, records the code
+of the answer, and is absent for the other two groups.
+
 These sessions were driven by a script in a hidden browser pane, so they check the logic
 and the record, not the timing. **Nobody has yet taken the study by hand, on a laptop,
 with a mouse or a trackpad.** That is the next check.
@@ -276,9 +300,10 @@ build or has a syntax error, copies `index.html`, `experiment.js`, `style.css`,
 `captcha.png` and the seven stimuli files, shows the changes, and pushes only after you
 type `experiment-2`. It never pushes `config.json`. It warns if `SONA_URL_BASE` is empty.
 
-**Deployed by David on November 19, 2026** (the three-group build). The eleven live files
-were downloaded and compared with this folder afterwards and are identical; the retired
-builds are no longer served.
+**Deployed by David on November 19, 2026** (the three-group build, with "Coincidence" and the
+288 items). The eleven live files were downloaded and compared with this folder at that time
+and were identical. The build in this folder has since changed ("Not copied", the 432-item
+pool) and **needs one more deploy** to go live.
 
 Then run one session per version with the six test links the script prints, and check
 that each file appears in the project's data before opening the SONA listing. Pilot ids

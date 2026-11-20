@@ -25,7 +25,7 @@ designs.
 
 | Study | What it does | Status |
 |---|---|---|
-| 1 | One shared story feature at a time. Three groups, one per question: does it suggest copying, is it in the film because of the genre, is it a stock feature. Every participant answers in two ways: ratings from 1 to 7 for one genre, and for another genre a choice between two boxes made with the mouse or trackpad while the pointer's path is recorded. | Experiment built; not preregistered |
+| 1 | One shared story feature at a time. Three groups, one per question: does it suggest copying, is it in the film because of the genre, is it a stock feature. Every participant answers in two ways: ratings from 1 to 7 for one genre, and for another genre a choice between two boxes made with the mouse or trackpad while the pointer's path and the response time are recorded. The item pool has 432 stratified items, of which each participant is shown 48 per genre. | Experiment built; not preregistered |
 | 2 | Pairs of shared features in which one implies the other, or does not; and a feature together with what happens to it (a stagecoach; a stagecoach is robbed). | Design |
 | 3 | Two synopses in a copying dispute, after Spellman and Holyoak (1996): the kind of features they share, how those features are arranged, and the side the participant is on. | Design |
 | 4 | The same judgments when an expert's counts are shown, and which count is shown. | Design |
@@ -47,9 +47,9 @@ inherited from the corpus pipeline call it an `element`. They are the same thing
 |---|---|
 | `Docs/Memorandum/` | The design memorandum for Studies 1 to 4: the Markdown master, the Word version, its figures, and the script that builds the Word version. Each study's section opens with a one-page statement of its design. The memo sets out the causal model, the hypotheses (labeled S1-H1, S2-H1 and so on), the wording of every question, the power analysis and the open decisions. |
 | `Experiment/Tracking Study 1 (Pavlovia experiment-2)/` | The Study 1 experiment for Pavlovia in plain JavaScript, with its own README (design, what is randomized, session, data columns, test links). The items are the law review study's. The SONA credit address is empty. |
-| `Analysis/notebooks/` | `_build_18.py` and `18_tracking_studies_design.ipynb`: the three corpus quantities for every story feature and genre, the law review study's items under the model, what two unrelated films share, and candidate materials for Studies 2 and 3. `_build_19.py` and `19_event_pairs_design.ipynb`: events (a verb with its object) as material for Study 2, how stable their counts are, and the candidate pairs. |
+| `Analysis/notebooks/` | `_build_18.py` and `18_tracking_studies_design.ipynb`: the three corpus quantities for every story feature and genre, the law review study's items under the model, what two unrelated films share, and candidate materials for Studies 2 and 3. `_build_19.py` and `19_event_pairs_design.ipynb`: events (a verb with its object) as material for Study 2, how stable their counts are, and the candidate pairs. `_build_20.py` and `20_extended_item_set.ipynb`: the 144 items added to Study 1's pool, drawn by continuing the law review study's seeded queues after reproducing its draw exactly. |
 | `Analysis/tracking_studies_design/` | `design_inputs_from_law_review_study.Rmd` (item means, listing rates and variance components of the law review study) and `tracking_studies_power.Rmd` (power simulations for all four studies). |
-| `Analysis/v4_rebuild/18_tracking_studies_design/`, `19_event_pairs_design/` | Small outputs of those files: summary tables, the text reports, the power results and the figures. |
+| `Analysis/v4_rebuild/18_tracking_studies_design/`, `19_event_pairs_design/`, `20_extended_item_set/` | Small outputs of those files: summary tables, the text reports, the power results and the figures; and, for the item extension, the item files the experiment uses, the list of new items and the log of their review. |
 
 The folder layout mirrors the project's. File and folder names carry no study number, so
 that they do not have to change if the numbering does.
@@ -58,12 +58,13 @@ that they do not have to change if the numbering does.
 
 The notebooks read tables produced by the corpus pipeline of the law review repository
 (`Analysis/v4_rebuild/01c_union/`, `02_elements/`, `03b_classification/`,
-`03c_network/`, `10_human_study_stimuli/` and `13_event_elements/`), so they run when this repository's `Analysis` folder is laid over
+`03c_network/`, `10_human_study_stimuli/` and `13_event_elements/`; Notebook 20 also reads that
+repository's `notebooks/_build_10.py`), so they run when this repository's `Analysis` folder is laid over
 that one. `design_inputs_from_law_review_study.Rmd` reads the registered analysis and the
 session files of the law review study, which are not public; its outputs here are
 summaries only. `tracking_studies_power.Rmd` needs nothing but
 `law_review_study_h2_variance_components.csv`, which is included. A full render takes
-about half an hour:
+more than half an hour:
 
 ```bash
 Rscript -e "rmarkdown::render('Analysis/tracking_studies_design/tracking_studies_power.Rmd', params = list(sims = 200, workers = 8))"

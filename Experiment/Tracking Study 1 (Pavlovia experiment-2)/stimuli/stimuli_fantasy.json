@@ -3,7 +3,7 @@
   "genre_key": "fantasy",
   "seed": 20260219,
   "min_films_in_genre": 20,
-  "k_per_cell": 12,
+  "k_per_cell": 18,
   "n_foils": 8,
   "foil_rule": "flat",
   "foil_max_films_in_target": 5,
@@ -17,7 +17,7 @@
     "low_prev_high_dist",
     "low_prev_low_dist"
   ],
-  "n_items": 56,
+  "n_items": 80,
   "display_text_note": "text is what participants see: the pipeline element string, with DISPLAY_OVERRIDES applied (capitals, hyphens, possessives, natural plurals, US spelling; no content word changed). element_string keeps the pipeline string.",
   "items": [
     {
@@ -39,7 +39,8 @@
       "ensemble": 11.744590328569055,
       "subtlex_token": "witch",
       "Lg10WF": 3.1495,
-      "Lg10CD": 2.6776
+      "Lg10CD": 2.6776,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_02",
@@ -60,7 +61,8 @@
       "ensemble": 10.498485789509312,
       "subtlex_token": "kingdom",
       "Lg10WF": 2.8965,
-      "Lg10CD": 2.6474
+      "Lg10CD": 2.6474,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_03",
@@ -81,7 +83,8 @@
       "ensemble": 7.1966373738003115,
       "subtlex_token": "monster",
       "Lg10WF": 3.2973,
-      "Lg10CD": 2.9759
+      "Lg10CD": 2.9759,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_04",
@@ -102,7 +105,8 @@
       "ensemble": 6.536121132427331,
       "subtlex_token": "forest",
       "Lg10WF": 2.9841,
-      "Lg10CD": 2.6998
+      "Lg10CD": 2.6998,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_05",
@@ -123,7 +127,8 @@
       "ensemble": 4.253035226470492,
       "subtlex_token": "portal",
       "Lg10WF": 2.3483,
-      "Lg10CD": 2.0414
+      "Lg10CD": 2.0414,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_06",
@@ -144,7 +149,8 @@
       "ensemble": 3.905261963101072,
       "subtlex_token": "form",
       "Lg10WF": 3.3387,
-      "Lg10CD": 3.1864
+      "Lg10CD": 3.1864,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_07",
@@ -165,7 +171,8 @@
       "ensemble": 2.515861657571792,
       "subtlex_token": "master",
       "Lg10WF": 3.6485,
-      "Lg10CD": 3.1216
+      "Lg10CD": 3.1216,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_08",
@@ -186,7 +193,8 @@
       "ensemble": 2.2227690679175187,
       "subtlex_token": "throne",
       "Lg10WF": 2.6454,
-      "Lg10CD": 2.3674
+      "Lg10CD": 2.3674,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_09",
@@ -207,7 +215,8 @@
       "ensemble": 2.028982118629172,
       "subtlex_token": "universe",
       "Lg10WF": 3.1106,
-      "Lg10CD": 2.8476
+      "Lg10CD": 2.8476,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_10",
@@ -228,7 +237,8 @@
       "ensemble": 1.1824030192936923,
       "subtlex_token": "hair",
       "Lg10WF": 3.8939,
-      "Lg10CD": 3.5603
+      "Lg10CD": 3.5603,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_11",
@@ -249,7 +259,8 @@
       "ensemble": 1.104606202997888,
       "subtlex_token": "hunter",
       "Lg10WF": 2.9717,
-      "Lg10CD": 2.5866
+      "Lg10CD": 2.5866,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HH_12",
@@ -270,7 +281,8 @@
       "ensemble": 0.858477490846684,
       "subtlex_token": "experiment",
       "Lg10WF": 2.9175,
-      "Lg10CD": 2.6628
+      "Lg10CD": 2.6628,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_01",
@@ -291,7 +303,8 @@
       "ensemble": 0.7960592346423022,
       "subtlex_token": "student",
       "Lg10WF": 3.3416,
-      "Lg10CD": 3.0573
+      "Lg10CD": 3.0573,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_02",
@@ -312,7 +325,8 @@
       "ensemble": 0.6060404855502657,
       "subtlex_token": "identity",
       "Lg10WF": 2.8215,
-      "Lg10CD": 2.6767
+      "Lg10CD": 2.6767,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_03",
@@ -333,7 +347,8 @@
       "ensemble": 0.4065704363938272,
       "subtlex_token": "country",
       "Lg10WF": 3.9167,
-      "Lg10CD": 3.5184
+      "Lg10CD": 3.5184,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_04",
@@ -354,7 +369,8 @@
       "ensemble": 0.3328876499500948,
       "subtlex_token": "friend",
       "Lg10WF": 4.3301,
-      "Lg10CD": 3.7909
+      "Lg10CD": 3.7909,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_05",
@@ -375,7 +391,8 @@
       "ensemble": 0.282917560447048,
       "subtlex_token": "uncle",
       "Lg10WF": 3.8013,
-      "Lg10CD": 3.2709
+      "Lg10CD": 3.2709,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_06",
@@ -396,7 +413,8 @@
       "ensemble": 0.26707324325517867,
       "subtlex_token": "friendship",
       "Lg10WF": 3.0663,
-      "Lg10CD": 2.8971
+      "Lg10CD": 2.8971,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_07",
@@ -417,7 +435,8 @@
       "ensemble": 0.20776358373373774,
       "subtlex_token": "woman",
       "Lg10WF": 4.3457,
-      "Lg10CD": 3.7728
+      "Lg10CD": 3.7728,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_08",
@@ -438,7 +457,8 @@
       "ensemble": 0.1749339437048568,
       "subtlex_token": "date",
       "Lg10WF": 3.8585,
-      "Lg10CD": 3.4754
+      "Lg10CD": 3.4754,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_09",
@@ -459,7 +479,8 @@
       "ensemble": 0.17488449471019013,
       "subtlex_token": "man",
       "Lg10WF": 4.9737,
-      "Lg10CD": 3.9061
+      "Lg10CD": 3.9061,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_10",
@@ -480,7 +501,8 @@
       "ensemble": 0.1747631966705771,
       "subtlex_token": "boyfriend",
       "Lg10WF": 3.5664,
-      "Lg10CD": 3.2625
+      "Lg10CD": 3.2625,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_11",
@@ -501,7 +523,8 @@
       "ensemble": 0.16101075909428764,
       "subtlex_token": "murder",
       "Lg10WF": 3.7572,
-      "Lg10CD": 3.3111
+      "Lg10CD": 3.3111,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_HL_12",
@@ -522,7 +545,8 @@
       "ensemble": 0.01506143412830796,
       "subtlex_token": "law",
       "Lg10WF": 3.7733,
-      "Lg10CD": 3.4011
+      "Lg10CD": 3.4011,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_01",
@@ -543,7 +567,8 @@
       "ensemble": 2.0840296914802328,
       "subtlex_token": "world",
       "Lg10WF": 4.3658,
-      "Lg10CD": 3.792
+      "Lg10CD": 3.792,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_02",
@@ -564,7 +589,8 @@
       "ensemble": 1.8825101347250366,
       "subtlex_token": "pole",
       "Lg10WF": 2.8082,
-      "Lg10CD": 2.5966
+      "Lg10CD": 2.5966,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_03",
@@ -585,7 +611,8 @@
       "ensemble": 1.8007600628971758,
       "subtlex_token": "tale",
       "Lg10WF": 2.7875,
-      "Lg10CD": 2.6395
+      "Lg10CD": 2.6395,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_04",
@@ -606,7 +633,8 @@
       "ensemble": 1.5721129526707585,
       "subtlex_token": "serpent",
       "Lg10WF": 2.0,
-      "Lg10CD": 1.8261
+      "Lg10CD": 1.8261,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_05",
@@ -627,7 +655,8 @@
       "ensemble": 1.1195724972242427,
       "subtlex_token": "warlord",
       "Lg10WF": 1.6021,
-      "Lg10CD": 1.415
+      "Lg10CD": 1.415,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_06",
@@ -648,7 +677,8 @@
       "ensemble": 1.0690808338564626,
       "subtlex_token": "power",
       "Lg10WF": 3.8809,
-      "Lg10CD": 3.4744
+      "Lg10CD": 3.4744,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_07",
@@ -669,7 +699,8 @@
       "ensemble": 0.5923524056763545,
       "subtlex_token": "shield",
       "Lg10WF": 2.6222,
-      "Lg10CD": 2.4099
+      "Lg10CD": 2.4099,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_08",
@@ -690,7 +721,8 @@
       "ensemble": 0.34905809001985444,
       "subtlex_token": "monastery",
       "Lg10WF": 2.2788,
-      "Lg10CD": 1.9191
+      "Lg10CD": 1.9191,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_09",
@@ -711,7 +743,8 @@
       "ensemble": 0.30725793707915633,
       "subtlex_token": "arena",
       "Lg10WF": 2.2695,
-      "Lg10CD": 2.0682
+      "Lg10CD": 2.0682,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_10",
@@ -732,7 +765,8 @@
       "ensemble": 0.21962448694451916,
       "subtlex_token": "ending",
       "Lg10WF": 2.9101,
-      "Lg10CD": 2.776
+      "Lg10CD": 2.776,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_11",
@@ -753,7 +787,8 @@
       "ensemble": 0.1869640802110273,
       "subtlex_token": "smoke",
       "Lg10WF": 3.5235,
-      "Lg10CD": 3.2751
+      "Lg10CD": 3.2751,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LH_12",
@@ -774,7 +809,8 @@
       "ensemble": 0.10507924984401475,
       "subtlex_token": "electricity",
       "Lg10WF": 2.7672,
-      "Lg10CD": 2.5729
+      "Lg10CD": 2.5729,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_01",
@@ -795,7 +831,8 @@
       "ensemble": -0.11715616392720357,
       "subtlex_token": "school",
       "Lg10WF": 4.2302,
-      "Lg10CD": 3.6563
+      "Lg10CD": 3.6563,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_02",
@@ -816,7 +853,8 @@
       "ensemble": -0.12076140314069213,
       "subtlex_token": "engine",
       "Lg10WF": 3.2114,
-      "Lg10CD": 2.9074
+      "Lg10CD": 2.9074,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_03",
@@ -837,7 +875,8 @@
       "ensemble": -0.1602713691540913,
       "subtlex_token": "accident",
       "Lg10WF": 3.6177,
-      "Lg10CD": 3.3387
+      "Lg10CD": 3.3387,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_04",
@@ -858,7 +897,8 @@
       "ensemble": -0.17533666741488674,
       "subtlex_token": "stair",
       "Lg10WF": 1.8451,
-      "Lg10CD": 1.6628
+      "Lg10CD": 1.6628,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_05",
@@ -879,7 +919,8 @@
       "ensemble": -0.18196639765703237,
       "subtlex_token": "attack",
       "Lg10WF": 3.5859,
-      "Lg10CD": 3.2918
+      "Lg10CD": 3.2918,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_06",
@@ -900,7 +941,8 @@
       "ensemble": -0.19230056535158319,
       "subtlex_token": "town",
       "Lg10WF": 4.1019,
-      "Lg10CD": 3.6146
+      "Lg10CD": 3.6146,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_07",
@@ -921,7 +963,8 @@
       "ensemble": -0.23558939943245122,
       "subtlex_token": "secretary",
       "Lg10WF": 3.2292,
-      "Lg10CD": 2.8938
+      "Lg10CD": 2.8938,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_08",
@@ -942,7 +985,8 @@
       "ensemble": -0.24794346238913623,
       "subtlex_token": "friend",
       "Lg10WF": 4.3301,
-      "Lg10CD": 3.7909
+      "Lg10CD": 3.7909,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_09",
@@ -963,7 +1007,8 @@
       "ensemble": -0.2562842568784097,
       "subtlex_token": "lawyer",
       "Lg10WF": 3.6081,
-      "Lg10CD": 3.2271
+      "Lg10CD": 3.2271,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_10",
@@ -984,7 +1029,8 @@
       "ensemble": -0.27750747112443763,
       "subtlex_token": "murderer",
       "Lg10WF": 3.1323,
-      "Lg10CD": 2.8633
+      "Lg10CD": 2.8633,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_11",
@@ -1005,7 +1051,8 @@
       "ensemble": -0.3069142125336112,
       "subtlex_token": "robbery",
       "Lg10WF": 3.0704,
-      "Lg10CD": 2.7551
+      "Lg10CD": 2.7551,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_LL_12",
@@ -1026,7 +1073,8 @@
       "ensemble": -0.31138001464456055,
       "subtlex_token": "officer",
       "Lg10WF": 3.7215,
-      "Lg10CD": 3.3069
+      "Lg10CD": 3.3069,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_FOIL_01",
@@ -1047,7 +1095,8 @@
       "ensemble": 9.725013434019969,
       "subtlex_token": "rancher",
       "Lg10WF": 1.6812,
-      "Lg10CD": 1.5682
+      "Lg10CD": 1.5682,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_FOIL_02",
@@ -1068,7 +1117,8 @@
       "ensemble": 3.8818474770768567,
       "subtlex_token": "alibi",
       "Lg10WF": 2.6304,
-      "Lg10CD": 2.3979
+      "Lg10CD": 2.3979,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_FOIL_03",
@@ -1089,7 +1139,8 @@
       "ensemble": 1.0681471573742123,
       "subtlex_token": "toilet",
       "Lg10WF": 3.1688,
-      "Lg10CD": 2.98
+      "Lg10CD": 2.98,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_FOIL_04",
@@ -1110,7 +1161,8 @@
       "ensemble": 10.278847531335074,
       "subtlex_token": "stagecoach",
       "Lg10WF": 1.716,
-      "Lg10CD": 1.5563
+      "Lg10CD": 1.5563,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_FOIL_05",
@@ -1131,7 +1183,8 @@
       "ensemble": 2.8499627257898212,
       "subtlex_token": "mafia",
       "Lg10WF": 2.3784,
-      "Lg10CD": 2.179
+      "Lg10CD": 2.179,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_FOIL_06",
@@ -1152,7 +1205,8 @@
       "ensemble": 1.0071799213297596,
       "subtlex_token": "embarrassment",
       "Lg10WF": 2.3945,
-      "Lg10CD": 2.3483
+      "Lg10CD": 2.3483,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_FOIL_07",
@@ -1173,7 +1227,8 @@
       "ensemble": 2.629928906179293,
       "subtlex_token": "dealer",
       "Lg10WF": 2.9201,
-      "Lg10CD": 2.6955
+      "Lg10CD": 2.6955,
+      "in_law_review_study": true
     },
     {
       "id": "FAN_FOIL_08",
@@ -1194,7 +1249,536 @@
       "ensemble": 1.1696116079436347,
       "subtlex_token": "suite",
       "Lg10WF": 2.9294,
-      "Lg10CD": 2.6464
+      "Lg10CD": 2.6464,
+      "in_law_review_study": true
+    },
+    {
+      "id": "FAN_HH_13",
+      "text": "battle",
+      "element_string": "battle",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "event",
+      "category_key": "events",
+      "film_count": 397,
+      "film_count_in_target_genre": 397,
+      "foil_rule": null,
+      "prevalence_pct": 0.9885931558935361,
+      "distinctiveness_pct": 0.8288973384030418,
+      "ensemble": 7.560240394407284,
+      "subtlex_token": "battle",
+      "Lg10WF": 3.3336,
+      "Lg10CD": 3.0519,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HH_14",
+      "text": "spirit",
+      "element_string": "spirit",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 212,
+      "film_count_in_target_genre": 212,
+      "foil_rule": null,
+      "prevalence_pct": 0.9629277566539924,
+      "distinctiveness_pct": 0.8479087452471483,
+      "ensemble": 6.410064951010308,
+      "subtlex_token": "spirit",
+      "Lg10WF": null,
+      "Lg10CD": 3.1664,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HH_15",
+      "text": "cave",
+      "element_string": "cave",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 150,
+      "film_count_in_target_genre": 150,
+      "foil_rule": null,
+      "prevalence_pct": 0.9268060836501901,
+      "distinctiveness_pct": 0.9163498098859315,
+      "ensemble": 5.741432880067341,
+      "subtlex_token": "cave",
+      "Lg10WF": 2.8537,
+      "Lg10CD": 2.5635,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HH_16",
+      "text": "god",
+      "element_string": "god",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 180,
+      "film_count_in_target_genre": 180,
+      "foil_rule": null,
+      "prevalence_pct": 0.9448669201520913,
+      "distinctiveness_pct": 0.8298479087452472,
+      "ensemble": 5.168856208703696,
+      "subtlex_token": "god",
+      "Lg10WF": null,
+      "Lg10CD": 3.8414,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HH_17",
+      "text": "guardian",
+      "element_string": "guardian",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 59,
+      "film_count_in_target_genre": 59,
+      "foil_rule": null,
+      "prevalence_pct": 0.6758555133079848,
+      "distinctiveness_pct": 0.8678707224334601,
+      "ensemble": 1.6384169862079467,
+      "subtlex_token": "guardian",
+      "Lg10WF": null,
+      "Lg10CD": 2.3945,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HH_18",
+      "text": "chamber",
+      "element_string": "chamber",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 60,
+      "film_count_in_target_genre": 60,
+      "foil_rule": null,
+      "prevalence_pct": 0.6848859315589354,
+      "distinctiveness_pct": 0.7908745247148289,
+      "ensemble": 0.892153636849889,
+      "subtlex_token": "chamber",
+      "Lg10WF": null,
+      "Lg10CD": 2.601,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HL_13",
+      "text": "revenge",
+      "element_string": "revenge",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "theme",
+      "category_key": "themes",
+      "film_count": 177,
+      "film_count_in_target_genre": 177,
+      "foil_rule": null,
+      "prevalence_pct": 0.9439163498098859,
+      "distinctiveness_pct": 0.2899239543726236,
+      "ensemble": 0.9201171459555597,
+      "subtlex_token": "revenge",
+      "Lg10WF": null,
+      "Lg10CD": 2.8129,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HL_14",
+      "text": "prison",
+      "element_string": "prison",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 120,
+      "film_count_in_target_genre": 120,
+      "foil_rule": null,
+      "prevalence_pct": 0.8854562737642585,
+      "distinctiveness_pct": 0.1596958174904943,
+      "ensemble": 0.4489343188330256,
+      "subtlex_token": "prison",
+      "Lg10WF": null,
+      "Lg10CD": 3.1841,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HL_15",
+      "text": "office",
+      "element_string": "office",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 110,
+      "film_count_in_target_genre": 110,
+      "foil_rule": null,
+      "prevalence_pct": 0.8697718631178707,
+      "distinctiveness_pct": 0.11977186311787072,
+      "ensemble": 0.4208304705479212,
+      "subtlex_token": "office",
+      "Lg10WF": null,
+      "Lg10CD": 3.5994,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HL_16",
+      "text": "gun",
+      "element_string": "gun",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 117,
+      "film_count_in_target_genre": 117,
+      "foil_rule": null,
+      "prevalence_pct": 0.8807034220532319,
+      "distinctiveness_pct": 0.05038022813688213,
+      "ensemble": 0.40800043188107615,
+      "subtlex_token": "gun",
+      "Lg10WF": null,
+      "Lg10CD": 3.4738,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HL_17",
+      "text": "truck",
+      "element_string": "truck",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 84,
+      "film_count_in_target_genre": 84,
+      "foil_rule": null,
+      "prevalence_pct": 0.8013307984790875,
+      "distinctiveness_pct": 0.24904942965779467,
+      "ensemble": 0.34427834222265963,
+      "subtlex_token": "truck",
+      "Lg10WF": null,
+      "Lg10CD": 3.192,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_HL_18",
+      "text": "agent",
+      "element_string": "agent",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 79,
+      "film_count_in_target_genre": 79,
+      "foil_rule": null,
+      "prevalence_pct": 0.785171102661597,
+      "distinctiveness_pct": 0.05608365019011407,
+      "ensemble": 0.18025625919311072,
+      "subtlex_token": "agent",
+      "Lg10WF": 3.719,
+      "Lg10CD": 3.1461,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LH_13",
+      "text": "fountain",
+      "element_string": "fountain",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 28,
+      "film_count_in_target_genre": 28,
+      "foil_rule": null,
+      "prevalence_pct": 0.27756653992395436,
+      "distinctiveness_pct": 0.9144486692015209,
+      "ensemble": 1.1852010455426172,
+      "subtlex_token": "fountain",
+      "Lg10WF": null,
+      "Lg10CD": 2.3766,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LH_14",
+      "text": "apple",
+      "element_string": "apple",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 30,
+      "film_count_in_target_genre": 30,
+      "foil_rule": null,
+      "prevalence_pct": 0.32366920152091255,
+      "distinctiveness_pct": 0.8740494296577946,
+      "ensemble": 0.7650791593364813,
+      "subtlex_token": "apple",
+      "Lg10WF": null,
+      "Lg10CD": 2.8388,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LH_15",
+      "text": "helmet",
+      "element_string": "helmet",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 24,
+      "film_count_in_target_genre": 24,
+      "foil_rule": null,
+      "prevalence_pct": 0.16634980988593157,
+      "distinctiveness_pct": 0.782319391634981,
+      "ensemble": 0.2542682070597607,
+      "subtlex_token": "helmet",
+      "Lg10WF": null,
+      "Lg10CD": 2.4829,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LH_16",
+      "text": "amnesia",
+      "element_string": "amnesia",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "theme",
+      "category_key": "themes",
+      "film_count": 25,
+      "film_count_in_target_genre": 25,
+      "foil_rule": null,
+      "prevalence_pct": 0.1991444866920152,
+      "distinctiveness_pct": 0.7224334600760456,
+      "ensemble": 0.22540066401333492,
+      "subtlex_token": "amnesia",
+      "Lg10WF": null,
+      "Lg10CD": 2.0531,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LH_17",
+      "text": "submarine",
+      "element_string": "submarine",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 27,
+      "film_count_in_target_genre": 27,
+      "foil_rule": null,
+      "prevalence_pct": 0.2590304182509506,
+      "distinctiveness_pct": 0.688212927756654,
+      "ensemble": 0.19148546408621495,
+      "subtlex_token": "submarine",
+      "Lg10WF": null,
+      "Lg10CD": 2.1492,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LH_18",
+      "text": "successor",
+      "element_string": "successor",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 20,
+      "film_count_in_target_genre": 20,
+      "foil_rule": null,
+      "prevalence_pct": 0.02709125475285171,
+      "distinctiveness_pct": 0.7538022813688213,
+      "ensemble": 0.16923249760578668,
+      "subtlex_token": "successor",
+      "Lg10WF": null,
+      "Lg10CD": 1.8325,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LL_13",
+      "text": "nation",
+      "element_string": "nation",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 22,
+      "film_count_in_target_genre": 22,
+      "foil_rule": null,
+      "prevalence_pct": 0.10836501901140684,
+      "distinctiveness_pct": 0.30038022813688214,
+      "ensemble": -0.1279797108588148,
+      "subtlex_token": "nation",
+      "Lg10WF": null,
+      "Lg10CD": 2.7931,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LL_14",
+      "text": "holiday",
+      "element_string": "holiday",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "event",
+      "category_key": "events",
+      "film_count": 30,
+      "film_count_in_target_genre": 30,
+      "foil_rule": null,
+      "prevalence_pct": 0.32366920152091255,
+      "distinctiveness_pct": 0.20437262357414449,
+      "ensemble": -0.13419592458969404,
+      "subtlex_token": "holiday",
+      "Lg10WF": null,
+      "Lg10CD": 2.791,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LL_15",
+      "text": "alarm",
+      "element_string": "alarm",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 23,
+      "film_count_in_target_genre": 23,
+      "foil_rule": null,
+      "prevalence_pct": 0.1373574144486692,
+      "distinctiveness_pct": 0.31653992395437264,
+      "ensemble": -0.1386909829397129,
+      "subtlex_token": "alarm",
+      "Lg10WF": null,
+      "Lg10CD": 2.9538,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LL_16",
+      "text": "client",
+      "element_string": "client",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 29,
+      "film_count_in_target_genre": 29,
+      "foil_rule": null,
+      "prevalence_pct": 0.2984790874524715,
+      "distinctiveness_pct": 0.0741444866920152,
+      "ensemble": -0.18956161243984712,
+      "subtlex_token": "client",
+      "Lg10WF": null,
+      "Lg10CD": 3.009,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LL_17",
+      "text": "nightclub",
+      "element_string": "nightclub",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "noun",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 27,
+      "film_count_in_target_genre": 27,
+      "foil_rule": null,
+      "prevalence_pct": 0.2590304182509506,
+      "distinctiveness_pct": 0.09600760456273764,
+      "ensemble": -0.19585062418739455,
+      "subtlex_token": "nightclub",
+      "Lg10WF": null,
+      "Lg10CD": 2.243,
+      "in_law_review_study": false
+    },
+    {
+      "id": "FAN_LL_18",
+      "text": "younger brother",
+      "element_string": "younger brother",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Fantasy",
+      "element_type": "chunk",
+      "element_taxonomy": "relationship",
+      "category_key": "characters",
+      "film_count": 20,
+      "film_count_in_target_genre": 20,
+      "foil_rule": null,
+      "prevalence_pct": 0.02709125475285171,
+      "distinctiveness_pct": 0.05418250950570342,
+      "ensemble": -0.26361199015802483,
+      "subtlex_token": "brother",
+      "Lg10WF": 4.1608,
+      "Lg10CD": 3.5793,
+      "in_law_review_study": false
     }
   ]
 }

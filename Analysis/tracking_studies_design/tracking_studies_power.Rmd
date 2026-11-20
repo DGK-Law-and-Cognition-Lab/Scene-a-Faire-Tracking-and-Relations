@@ -68,9 +68,18 @@ T0 <- Sys.time()
 
 **Two comparison designs.** Both keep the same total number of participants per question. In *separate groups*, half of the *n* participants rate and the other half make tracked choices, and each judges both genres of their pair in that one way. This is the structure of the earlier four-group design at half its size per group. In *first half only*, the new design is analysed using only each participant's first genre, so about half the participants contribute ratings on one genre and the other half tracked choices on one genre. That is the clean check against one way of answering colouring the other, and its power shows what the check can detect. The results of the new design are labelled *both ways*.
 
+**The design as built.** The experiment as built uses the larger pool without a longer session. The pool has 432 items, 18 in each cell of each genre, and each participant is shown 12 of the 18 in every cell, drawn at random for that participant, so a participant still judges 48 items per genre. Different participants see different items. Because the differences among items, and not the number of answers per item, limit precision, this should give nearly the power of showing everyone all 432 items. It is simulated here as *both ways, 48 of 72 shown* and can be compared with the rows for 432 items shown in full.
+
 ```{r study1-schedule}
 DESIGNS <- c("both ways", "separate groups", "first half only")
 NS <- c(60, 80, 100, 120)
+SAMPLED <- "both ways, 48 of 72 shown"         # the design as built: 18 items per cell in the pool, each participant shown 12 of them
+DESIGNS4 <- c(DESIGNS, SAMPLED)
+keep_shown <- function(d, shown, per_cell) {     # each participant is shown `shown` of the `per_cell` items of a cell, drawn at random
+  if (is.na(shown) || shown >= per_cell) return(d)
+  key <- interaction(d$pid, d$genre, d$P, d$D, drop = TRUE)
+  d[ave(runif(nrow(d)), key, FUN = rank) <= shown, ]
+}
 schedule <- function(n, design) {                # one row per participant and genre: the way it is answered and its position
   pid <- seq_len(n)
   if (design == "separate groups") {
@@ -98,17 +107,17 @@ kable(cbind(genre = rownames(tab), tab), row.names = FALSE, caption = "Study 1 s
 **Tests.** The first is the contrast P minus D, the analogue of the law review study's H2c, whose sign separates the first account (negative) from the second (positive). The second is the effect of D alone. The third is equivalence of the D effect to zero within ±0.40 and within ±0.30 rating points (two one-sided tests, so the 90% interval must lie inside the bounds). The fourth is the effect of P alone. The model is the same in every design: `y ~ P + D + P:D + genre + (1 | pid) + (0 + D | pid) + (1 | item)`.
 
 ```{r sim-study1-ratings}
-make_rate <- function(n, per_cell, bP, bD, design) {
+make_rate <- function(n, per_cell, bP, bD, design, shown = NA) {
   items <- expand.grid(k = seq_len(per_cell), P = c(-.5, .5), D = c(-.5, .5), genre = 1:6)
   items$item <- seq_len(nrow(items)); items$w <- rnorm(nrow(items), 0, LR$item)
   u0 <- rnorm(n, 0, LR$pid); uD <- rnorm(n, 0, LR$slopeD); uP <- rnorm(n, 0, LR$slopeP)
   s <- schedule(n, design); s <- s[s$way == "rate", c("pid", "genre", "position")]
   d <- merge(s, items, by = "genre")
   d$y <- 4 + (bP + uP[d$pid]) * d$P + (bD + uD[d$pid]) * d$D + u0[d$pid] + d$w + rnorm(nrow(d), 0, LR$resid)
-  d$genre <- factor(d$genre); d
+  d <- keep_shown(d, shown, per_cell); d$genre <- factor(d$genre); d
 }
 one_rate <- function(g, s) {
-  d <- make_rate(g$n, g$per_cell, g$bP, g$bD, g$design)
+  d <- make_rate(g$n, g$per_cell, g$bP, g$bD, g$design, g$shown)
   m <- lmer(y ~ P + D + P:D + genre + (1 | pid) + (0 + D | pid) + (1 | item), d, control = CTRL)
   c1 <- wald(m, c(P = 1, D = -1)); cD <- wald(m, c(D = 1)); cP <- wald(m, c(P = 1))
   tost <- function(b) as.numeric(cD["est"] - 1.645 * cD["se"] > -b && cD["est"] + 1.645 * cD["se"] < b)
@@ -120,15 +129,17 @@ one_rate <- function(g, s) {
 }
 sc <- data.frame(account = c("query-sensitive", "one intuition", "overall frequency"), bP = c(-.60, -.25, -.60), bD = c(0, -1.04, .60))
 grid_rate <- merge(merge(merge(sc, data.frame(n = NS)), data.frame(per_cell = c(12, 18))), data.frame(design = DESIGNS, stringsAsFactors = FALSE))
-res_rate <- run_grid(grid_rate, one_rate, c("make_rate", "schedule"))
+grid_rate$shown <- grid_rate$per_cell          # the rows above show every item; the design as built is appended, so the rows above keep their seeds
+grid_rate <- rbind(grid_rate, cbind(merge(sc, data.frame(n = NS)), per_cell = 18, design = SAMPLED, shown = 12))
+res_rate <- run_grid(grid_rate, one_rate, c("make_rate", "schedule", "keep_shown"))
 res_rate$items <- res_rate$per_cell * 24
-res_rate <- res_rate[order(match(res_rate$design, DESIGNS), res_rate$account, res_rate$items, res_rate$n), ]
+res_rate <- res_rate[order(match(res_rate$design, DESIGNS4), res_rate$account, res_rate$items, res_rate$n), ]
 write.csv(res_rate, file.path(OUT, "power_one_feature_ratings.csv"), row.names = FALSE)
 cols <- c("account", "items", "n", "n_analysed", "trials", "P_minus_D_negative", "P_minus_D_positive", "D_sig", "D_equiv_040", "D_equiv_030", "P_sig", "se_D", "se_P_minus_D")
 kable(res_rate[res_rate$design == "both ways", cols], digits = 2, row.names = FALSE,
       caption = "Study 1, copying rating, both ways: share of simulations in which each test gives the stated result (n = participants answering the question; n_analysed = participants who rated; trials = rated items per participant)")
 kable(res_rate[res_rate$design != "both ways", c("design", cols)], digits = 2, row.names = FALSE,
-      caption = "Study 1, copying rating, the two comparison designs at the same n per question")
+      caption = "Study 1, copying rating, the two comparison designs at the same n per question, and the design as built (432 items in the pool, 48 of 72 shown per genre)")
 ```
 
 ```{r fig-study1-ratings, fig.width = 9.1, fig.height = 7.5}
@@ -136,11 +147,11 @@ f <- res_rate[res_rate$account == "query-sensitive", ]
 long <- rbind(data.frame(f[, c("n", "items", "design")], test = "P minus D below zero", power = f$P_minus_D_negative),
               data.frame(f[, c("n", "items", "design")], test = "D within ±0.40 of zero", power = f$D_equiv_040),
               data.frame(f[, c("n", "items", "design")], test = "D within ±0.30 of zero", power = f$D_equiv_030))
-long$items <- factor(paste(long$items, "items")); long$design <- factor(long$design, DESIGNS)
+long$items <- factor(paste(long$items, "items")); long$design <- factor(long$design, DESIGNS4)
 long$test <- factor(long$test, c("P minus D below zero", "D within ±0.40 of zero", "D within ±0.30 of zero"))
 p <- ggplot(long, aes(n, power, colour = design, shape = design)) + geom_line() + geom_point(size = 3) + facet_grid(test ~ items) +
   geom_hline(yintercept = .8, linetype = "dashed") + scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, .2)) +
-  scale_x_continuous(breaks = NS) + scale_colour_manual(values = c("#1f77b4", "#7f7f7f", "#d62728"), name = NULL) + scale_shape_discrete(name = NULL) +
+  scale_x_continuous(breaks = NS) + scale_colour_manual(values = c("#1f77b4", "#7f7f7f", "#d62728", "#000000"), name = NULL) + scale_shape_discrete(name = NULL) +
   labs(x = "Participants answering the copying question", y = "Share of simulations (power)",
        title = "Study 1 ratings, if copying judgments follow prevalence only") + theme(legend.position = "bottom")
 print(p); ggsave(file.path(OUT, "figures", "power_one_feature_ratings.png"), p, width = 9.1, height = 7.5, dpi = 200, bg = "white")
@@ -159,17 +170,17 @@ K <- 1.7 / LR$resid                                   # rating points to logits
 LG <- list(item = K * LR$item, pid = K * LR$pid, slopeD = K * LR$slopeD, slopeP = K * LR$slopeP)
 EQ_LOGIT <- K * 0.40
 GCTRL <- glmerControl(optimizer = "bobyqa", calc.derivs = FALSE)
-make_choice <- function(n, per_cell, bP, bD, b0, design) {   # bP, bD in logits; b0 is the logit of the overall rate of "Copied"
+make_choice <- function(n, per_cell, bP, bD, b0, design, shown = NA) {   # bP, bD in logits; b0 is the logit of the overall rate of "Copied"
   items <- expand.grid(k = seq_len(per_cell), P = c(-.5, .5), D = c(-.5, .5), genre = 1:6)
   items$item <- seq_len(nrow(items)); items$w <- rnorm(nrow(items), 0, LG$item)
   u0 <- rnorm(n, 0, LG$pid); uD <- rnorm(n, 0, LG$slopeD); uP <- rnorm(n, 0, LG$slopeP)   # drawn apart from the rating effects
   s <- schedule(n, design); s <- s[s$way == "track", c("pid", "genre", "position")]
   d <- merge(s, items, by = "genre")
   eta <- b0 + (bP + uP[d$pid]) * d$P + (bD + uD[d$pid]) * d$D + u0[d$pid] + d$w
-  d$copied <- rbinom(nrow(d), 1, plogis(eta)); d$genre <- factor(d$genre); d
+  d$copied <- rbinom(nrow(d), 1, plogis(eta)); d <- keep_shown(d, shown, per_cell); d$genre <- factor(d$genre); d
 }
 one_choice <- function(g, s) {
-  d <- make_choice(g$n, g$per_cell, g$bP, g$bD, g$b0, g$design)
+  d <- make_choice(g$n, g$per_cell, g$bP, g$bD, g$b0, g$design, g$shown)
   m <- glmer(copied ~ P + D + P:D + genre + (1 | pid) + (0 + D | pid) + (1 | item), d, family = binomial, nAGQ = 0, control = GCTRL)
   c1 <- wald(m, c(P = 1, D = -1)); cD <- wald(m, c(D = 1)); cP <- wald(m, c(P = 1))
   tost <- as.numeric(cD["est"] - 1.645 * cD["se"] > -EQ_LOGIT && cD["est"] + 1.645 * cD["se"] < EQ_LOGIT)
@@ -183,16 +194,19 @@ grid_choice <- rbind(
   merge(merge(merge(sc_c, data.frame(n = NS)), data.frame(per_cell = c(12, 18))), data.frame(design = "both ways", stringsAsFactors = FALSE)),
   data.frame(account = "query-sensitive, a quarter Copied", bP = K * -.60, bD = 0, b0 = qlogis(.25), n = 100, per_cell = c(12, 18), design = "both ways"),
   merge(merge(merge(sc_c, data.frame(n = 100)), data.frame(per_cell = c(12, 18))), data.frame(design = DESIGNS[-1], stringsAsFactors = FALSE)))
-res_choice <- run_grid(grid_choice, one_choice, c("make_choice", "schedule", "LG", "EQ_LOGIT", "GCTRL", "K"))
+grid_choice$shown <- grid_choice$per_cell
+grid_choice <- rbind(grid_choice, cbind(merge(sc_c, data.frame(n = NS)), per_cell = 18, design = SAMPLED, shown = 12),
+                     data.frame(account = "query-sensitive, a quarter Copied", bP = K * -.60, bD = 0, b0 = qlogis(.25), n = 100, per_cell = 18, design = SAMPLED, shown = 12))
+res_choice <- run_grid(grid_choice, one_choice, c("make_choice", "schedule", "keep_shown", "LG", "EQ_LOGIT", "GCTRL", "K"))
 res_choice$items <- res_choice$per_cell * 24
-res_choice <- res_choice[order(match(res_choice$design, DESIGNS), res_choice$account, res_choice$items, res_choice$n), ]
+res_choice <- res_choice[order(match(res_choice$design, DESIGNS4), res_choice$account, res_choice$items, res_choice$n), ]
 write.csv(res_choice, file.path(OUT, "power_one_feature_choice.csv"), row.names = FALSE)
 cat("one rating point =", round(K, 2), "logits; equivalence bound = ±", round(EQ_LOGIT, 2), "logits\n")
 cols <- c("account", "items", "n", "n_analysed", "trials", "share_copied", "P_minus_D_negative", "P_minus_D_positive", "D_sig", "D_equiv", "P_sig", "se_D", "se_P_minus_D")
 kable(res_choice[res_choice$design == "both ways", cols], digits = 2, row.names = FALSE,
       caption = "Study 1, tracked choice of Copied, both ways: share of simulations in which each test gives the stated result (n = participants answering the question; n_analysed = participants who made tracked choices; standard errors in logits)")
 kable(res_choice[res_choice$design != "both ways", c("design", cols)], digits = 2, row.names = FALSE,
-      caption = "Study 1, tracked choice of Copied, the two comparison designs at 100 participants per question")
+      caption = "Study 1, tracked choice of Copied, the two comparison designs at 100 participants per question, and the design as built")
 ```
 
 ## The path of the mouse
@@ -202,15 +216,15 @@ kable(res_choice[res_choice$design != "both ways", c("design", cols)], digits = 
 **Assumed values (not from data).** Curvature is in units of its own trial-to-trial standard deviation. Participant SD 0.6; participant slope SD for each conflict term 0.15; item SD 0.15; residual SD 1. The pull from distinctiveness is 0.10, 0.15 or 0.20 of a trial SD and the pull from prevalence 0.10. No estimate exists for this judgment. The Stroop trials at the start of each tracked block give a known conflict effect on the same measure, and the pulls can be scaled against it once data exist. Telling two pulls apart is the test that the distinctiveness pull differs from the prevalence pull; when both are 0.10 its rate is the false-positive rate. The comparison designs are run at *n* = 100 per question.
 
 ```{r sim-study1-curvature}
-make_curve <- function(n, per_cell, pullD, pullP, design) {
-  d <- make_choice(n, per_cell, K * -.60, 0, 0, design)          # choices follow prevalence only
+make_curve <- function(n, per_cell, pullD, pullP, design, shown = NA) {
+  d <- make_choice(n, per_cell, K * -.60, 0, 0, design, shown)          # choices follow prevalence only
   resp <- d$copied - .5
   d$resp <- resp; d$cD <- 2 * resp * d$D; d$cP <- 2 * resp * d$P        # +.5 when the response goes against what the feature's level suggests
   a <- rnorm(n, 0, 0.6); vD <- rnorm(n, 0, 0.15); vP <- rnorm(n, 0, 0.15); wi <- rnorm(max(d$item), 0, 0.15)
   d$y <- (pullD + vD[d$pid]) * d$cD + (pullP + vP[d$pid]) * d$cP + a[d$pid] + wi[d$item] + rnorm(nrow(d)); d
 }
 one_curve <- function(g, s) {
-  d <- make_curve(g$n, g$per_cell, g$pullD, g$pullP, g$design)
+  d <- make_curve(g$n, g$per_cell, g$pullD, g$pullP, g$design, g$shown)
   m <- lmer(y ~ resp + P + D + cD + cP + genre + (1 | pid) + (0 + cD | pid) + (1 | item), d, control = CTRL)
   wD <- wald(m, c(cD = 1)); wP <- wald(m, c(cP = 1)); wdiff <- wald(m, c(cD = 1, cP = -1))
   np <- length(unique(d$pid))
@@ -220,15 +234,17 @@ one_curve <- function(g, s) {
 }
 grid_curve <- rbind(expand.grid(n = NS, per_cell = c(12, 18), pullD = c(0.10, 0.15, 0.20), pullP = 0.10, design = "both ways", stringsAsFactors = FALSE),
                     expand.grid(n = 100, per_cell = c(12, 18), pullD = c(0.10, 0.15, 0.20), pullP = 0.10, design = DESIGNS[-1], stringsAsFactors = FALSE))
-res_curve <- run_grid(grid_curve, one_curve, c("make_curve", "make_choice", "schedule", "LG", "K"))
+grid_curve$shown <- grid_curve$per_cell
+grid_curve <- rbind(grid_curve, expand.grid(n = NS, per_cell = 18, pullD = c(0.10, 0.15, 0.20), pullP = 0.10, design = SAMPLED, shown = 12, stringsAsFactors = FALSE))
+res_curve <- run_grid(grid_curve, one_curve, c("make_curve", "make_choice", "schedule", "keep_shown", "LG", "K"))
 res_curve$items <- res_curve$per_cell * 24
-res_curve <- res_curve[order(match(res_curve$design, DESIGNS), res_curve$pullD, res_curve$items, res_curve$n), ]
+res_curve <- res_curve[order(match(res_curve$design, DESIGNS4), res_curve$pullD, res_curve$items, res_curve$n), ]
 write.csv(res_curve, file.path(OUT, "power_one_feature_tracking.csv"), row.names = FALSE)
 cols <- c("pullD", "items", "n", "n_analysed", "trials", "pull_D", "pull_P", "D_minus_P", "se_pull_D")
 kable(res_curve[res_curve$design == "both ways", cols], digits = 2, row.names = FALSE,
       caption = "Study 1, curvature, both ways: power to detect a pull toward the typical answer (pullD, in trial SDs) when choices follow prevalence only; pull_P is the power for the prevalence pull of 0.10; D_minus_P is the power to tell the two pulls apart; trials = tracked items per participant")
 kable(res_curve[res_curve$design != "both ways", c("design", cols)], digits = 2, row.names = FALSE,
-      caption = "Study 1, curvature, the two comparison designs at 100 participants per question")
+      caption = "Study 1, curvature, the two comparison designs at 100 participants per question, and the design as built")
 ```
 
 ```{r fig-study1-tracking, fig.width = 9.1, fig.height = 4}
@@ -260,7 +276,7 @@ glance <- function(design) {
   }
   cbind(design = design, x[order(x$items, x$n), ])
 }
-kable(do.call(rbind, lapply(DESIGNS, glance)), digits = 2, row.names = FALSE,
+kable(do.call(rbind, lapply(DESIGNS4, glance)), digits = 2, row.names = FALSE,
       caption = "Study 1, query-sensitive account: power of the main tests by design (apart_0.10 is the false-positive rate of the test that tells the two pulls apart)")
 ```
 

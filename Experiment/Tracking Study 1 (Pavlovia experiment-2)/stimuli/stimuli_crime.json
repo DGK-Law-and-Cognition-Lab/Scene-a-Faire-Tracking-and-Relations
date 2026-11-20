@@ -3,7 +3,7 @@
   "genre_key": "crime",
   "seed": 20260219,
   "min_films_in_genre": 20,
-  "k_per_cell": 12,
+  "k_per_cell": 18,
   "n_foils": 8,
   "foil_rule": "flat",
   "foil_max_films_in_target": 5,
@@ -17,7 +17,7 @@
     "low_prev_high_dist",
     "low_prev_low_dist"
   ],
-  "n_items": 56,
+  "n_items": 80,
   "display_text_note": "text is what participants see: the pipeline element string, with DISPLAY_OVERRIDES applied (capitals, hyphens, possessives, natural plurals, US spelling; no content word changed). element_string keeps the pipeline string.",
   "items": [
     {
@@ -39,7 +39,8 @@
       "ensemble": 3.5452791986579513,
       "subtlex_token": "officer",
       "Lg10WF": 3.7215,
-      "Lg10CD": 3.3069
+      "Lg10CD": 3.3069,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_02",
@@ -60,7 +61,8 @@
       "ensemble": 2.1539924038582403,
       "subtlex_token": "justice",
       "Lg10WF": 3.2813,
-      "Lg10CD": 3.0228
+      "Lg10CD": 3.0228,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_03",
@@ -81,7 +83,8 @@
       "ensemble": 2.150572449326513,
       "subtlex_token": "killer",
       "Lg10WF": 3.5061,
-      "Lg10CD": 3.1471
+      "Lg10CD": 3.1471,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_04",
@@ -102,7 +105,8 @@
       "ensemble": 2.0255047568291533,
       "subtlex_token": "agent",
       "Lg10WF": 3.719,
-      "Lg10CD": 3.1461
+      "Lg10CD": 3.1461,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_05",
@@ -123,7 +127,8 @@
       "ensemble": 1.956869069065423,
       "subtlex_token": "force",
       "Lg10WF": 3.5569,
-      "Lg10CD": 3.298
+      "Lg10CD": 3.298,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_06",
@@ -144,7 +149,8 @@
       "ensemble": 1.542928994844941,
       "subtlex_token": "defense",
       "Lg10WF": 3.2217,
-      "Lg10CD": 2.9206
+      "Lg10CD": 2.9206,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_07",
@@ -165,7 +171,8 @@
       "ensemble": 1.3116749420206772,
       "subtlex_token": "car",
       "Lg10WF": 4.3916,
-      "Lg10CD": 3.7122
+      "Lg10CD": 3.7122,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_08",
@@ -186,7 +193,8 @@
       "ensemble": 1.2986574902606975,
       "subtlex_token": "guilt",
       "Lg10WF": 2.8814,
-      "Lg10CD": 2.7597
+      "Lg10CD": 2.7597,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_09",
@@ -207,7 +215,8 @@
       "ensemble": 1.1737681558009,
       "subtlex_token": "shipment",
       "Lg10WF": 2.5092,
-      "Lg10CD": 2.3404
+      "Lg10CD": 2.3404,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_10",
@@ -228,7 +237,8 @@
       "ensemble": 0.7981829390400323,
       "subtlex_token": "conspiracy",
       "Lg10WF": 2.7218,
-      "Lg10CD": 2.5623
+      "Lg10CD": 2.5623,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_11",
@@ -249,7 +259,8 @@
       "ensemble": 0.7056010089415021,
       "subtlex_token": "ambulance",
       "Lg10WF": 3.0584,
-      "Lg10CD": 2.8621
+      "Lg10CD": 2.8621,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HH_12",
@@ -270,7 +281,8 @@
       "ensemble": 0.5267804135406008,
       "subtlex_token": "wire",
       "Lg10WF": 3.1474,
-      "Lg10CD": 2.9138
+      "Lg10CD": 2.9138,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_01",
@@ -291,7 +303,8 @@
       "ensemble": 3.8903372549179975,
       "subtlex_token": "daughter",
       "Lg10WF": 3.9415,
-      "Lg10CD": 3.4763
+      "Lg10CD": 3.4763,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_02",
@@ -312,7 +325,8 @@
       "ensemble": 0.990402332524421,
       "subtlex_token": "doctor",
       "Lg10WF": 4.1291,
-      "Lg10CD": 3.5687
+      "Lg10CD": 3.5687,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_03",
@@ -333,7 +347,8 @@
       "ensemble": 0.5793507414497672,
       "subtlex_token": "trip",
       "Lg10WF": 3.6236,
-      "Lg10CD": 3.3742
+      "Lg10CD": 3.3742,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_04",
@@ -354,7 +369,8 @@
       "ensemble": 0.5401656925329903,
       "subtlex_token": "wall",
       "Lg10WF": 3.557,
-      "Lg10CD": 3.3235
+      "Lg10CD": 3.3235,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_05",
@@ -375,7 +391,8 @@
       "ensemble": 0.4054306991964593,
       "subtlex_token": "friend",
       "Lg10WF": 4.3301,
-      "Lg10CD": 3.7909
+      "Lg10CD": 3.7909,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_06",
@@ -396,7 +413,8 @@
       "ensemble": 0.301114164505025,
       "subtlex_token": "mistake",
       "Lg10WF": 3.7161,
-      "Lg10CD": 3.4944
+      "Lg10CD": 3.4944,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_07",
@@ -417,7 +435,8 @@
       "ensemble": 0.2353348551440372,
       "subtlex_token": "soldier",
       "Lg10WF": 3.298,
-      "Lg10CD": 2.9196
+      "Lg10CD": 2.9196,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_08",
@@ -438,7 +457,8 @@
       "ensemble": 0.2031840992433206,
       "subtlex_token": "success",
       "Lg10WF": 3.1433,
-      "Lg10CD": 3.0009
+      "Lg10CD": 3.0009,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_09",
@@ -459,7 +479,8 @@
       "ensemble": 0.0513443904347361,
       "subtlex_token": "attraction",
       "Lg10WF": 2.5428,
-      "Lg10CD": 2.4216
+      "Lg10CD": 2.4216,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_10",
@@ -480,7 +501,8 @@
       "ensemble": 0.007543965248936385,
       "subtlex_token": "wedding",
       "Lg10WF": 3.7138,
-      "Lg10CD": 3.2188
+      "Lg10CD": 3.2188,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_11",
@@ -501,7 +523,8 @@
       "ensemble": -0.11838907427348788,
       "subtlex_token": "sea",
       "Lg10WF": 3.4847,
-      "Lg10CD": 3.1316
+      "Lg10CD": 3.1316,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_HL_12",
@@ -522,7 +545,8 @@
       "ensemble": -0.13951417244243686,
       "subtlex_token": "birth",
       "Lg10WF": 3.148,
-      "Lg10CD": 2.9773
+      "Lg10CD": 2.9773,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_01",
@@ -543,7 +567,8 @@
       "ensemble": 1.0445023461367673,
       "subtlex_token": "agent",
       "Lg10WF": 3.719,
-      "Lg10CD": 3.1461
+      "Lg10CD": 3.1461,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_02",
@@ -564,7 +589,8 @@
       "ensemble": 1.0361847130349968,
       "subtlex_token": "money",
       "Lg10WF": 4.5143,
-      "Lg10CD": 3.7519
+      "Lg10CD": 3.7519,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_03",
@@ -585,7 +611,8 @@
       "ensemble": 0.9737881455925659,
       "subtlex_token": "manslaughter",
       "Lg10WF": 2.1492,
-      "Lg10CD": 1.9956
+      "Lg10CD": 1.9956,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_04",
@@ -606,7 +633,8 @@
       "ensemble": 0.9540290897950114,
       "subtlex_token": "cross",
       "Lg10WF": 3.4484,
-      "Lg10CD": 3.2307
+      "Lg10CD": 3.2307,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_05",
@@ -627,7 +655,8 @@
       "ensemble": 0.6579870927687086,
       "subtlex_token": "murder",
       "Lg10WF": 3.7572,
-      "Lg10CD": 3.3111
+      "Lg10CD": 3.3111,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_06",
@@ -648,7 +677,8 @@
       "ensemble": 0.4194750697094346,
       "subtlex_token": "identification",
       "Lg10WF": 2.6128,
-      "Lg10CD": 2.48
+      "Lg10CD": 2.48,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_07",
@@ -669,7 +699,8 @@
       "ensemble": 0.4078187653107027,
       "subtlex_token": "bouncer",
       "Lg10WF": 1.9138,
-      "Lg10CD": 1.7709
+      "Lg10CD": 1.7709,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_08",
@@ -690,7 +721,8 @@
       "ensemble": 0.40011791822076814,
       "subtlex_token": "man",
       "Lg10WF": 4.9737,
-      "Lg10CD": 3.9061
+      "Lg10CD": 3.9061,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_09",
@@ -711,7 +743,8 @@
       "ensemble": 0.1859520235570196,
       "subtlex_token": "ferry",
       "Lg10WF": 2.4378,
-      "Lg10CD": 2.1106
+      "Lg10CD": 2.1106,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_10",
@@ -732,7 +765,8 @@
       "ensemble": 0.18041650204590026,
       "subtlex_token": "recorder",
       "Lg10WF": 2.4031,
-      "Lg10CD": 2.2529
+      "Lg10CD": 2.2529,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_11",
@@ -753,7 +787,8 @@
       "ensemble": 0.1046223612050394,
       "subtlex_token": "death",
       "Lg10WF": 4.0434,
-      "Lg10CD": 3.6313
+      "Lg10CD": 3.6313,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LH_12",
@@ -774,7 +809,8 @@
       "ensemble": 0.09104245342476641,
       "subtlex_token": "monologue",
       "Lg10WF": 1.7709,
-      "Lg10CD": 1.5798
+      "Lg10CD": 1.5798,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_01",
@@ -795,7 +831,8 @@
       "ensemble": -0.132315900212238,
       "subtlex_token": "man",
       "Lg10WF": 4.9737,
-      "Lg10CD": 3.9061
+      "Lg10CD": 3.9061,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_02",
@@ -816,7 +853,8 @@
       "ensemble": -0.13319217249205184,
       "subtlex_token": "tourist",
       "Lg10WF": 2.3766,
-      "Lg10CD": 2.2742
+      "Lg10CD": 2.2742,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_03",
@@ -837,7 +875,8 @@
       "ensemble": -0.14581539393454077,
       "subtlex_token": "room",
       "Lg10WF": 4.3506,
-      "Lg10CD": 3.796
+      "Lg10CD": 3.796,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_04",
@@ -858,7 +897,8 @@
       "ensemble": -0.16005846554449668,
       "subtlex_token": "couple",
       "Lg10WF": 4.0567,
-      "Lg10CD": 3.6981
+      "Lg10CD": 3.6981,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_05",
@@ -879,7 +919,8 @@
       "ensemble": -0.18831680032905468,
       "subtlex_token": "death",
       "Lg10WF": 4.0434,
-      "Lg10CD": 3.6313
+      "Lg10CD": 3.6313,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_06",
@@ -900,7 +941,8 @@
       "ensemble": -0.18855731439999246,
       "subtlex_token": "job",
       "Lg10WF": 4.3235,
-      "Lg10CD": 3.777
+      "Lg10CD": 3.777,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_07",
@@ -921,7 +963,8 @@
       "ensemble": -0.20669331780179534,
       "subtlex_token": "friend",
       "Lg10WF": 4.3301,
-      "Lg10CD": 3.7909
+      "Lg10CD": 3.7909,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_08",
@@ -942,7 +985,8 @@
       "ensemble": -0.2234134974262904,
       "subtlex_token": "christmas",
       "Lg10WF": 3.7955,
-      "Lg10CD": 3.1408
+      "Lg10CD": 3.1408,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_09",
@@ -963,7 +1007,8 @@
       "ensemble": -0.24059828299574776,
       "subtlex_token": "award",
       "Lg10WF": 2.8182,
-      "Lg10CD": 2.5821
+      "Lg10CD": 2.5821,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_10",
@@ -984,7 +1029,8 @@
       "ensemble": -0.2576989966455179,
       "subtlex_token": "tooth",
       "Lg10WF": 2.8407,
-      "Lg10CD": 2.6042
+      "Lg10CD": 2.6042,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_11",
@@ -1005,7 +1051,8 @@
       "ensemble": -0.31387553411011426,
       "subtlex_token": "hunter",
       "Lg10WF": 2.9717,
-      "Lg10CD": 2.5866
+      "Lg10CD": 2.5866,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_LL_12",
@@ -1026,7 +1073,8 @@
       "ensemble": -0.35657869748506354,
       "subtlex_token": "kingdom",
       "Lg10WF": 2.8965,
-      "Lg10CD": 2.6474
+      "Lg10CD": 2.6474,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_FOIL_01",
@@ -1047,7 +1095,8 @@
       "ensemble": 3.8134929219475957,
       "subtlex_token": "herd",
       "Lg10WF": 2.5575,
-      "Lg10CD": 2.2923
+      "Lg10CD": 2.2923,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_FOIL_02",
@@ -1068,7 +1117,8 @@
       "ensemble": 7.197635009917304,
       "subtlex_token": "werewolf",
       "Lg10WF": 2.3579,
-      "Lg10CD": 1.7482
+      "Lg10CD": 1.7482,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_FOIL_03",
@@ -1089,7 +1139,8 @@
       "ensemble": 4.7685095282563825,
       "subtlex_token": "orbit",
       "Lg10WF": 2.4609,
-      "Lg10CD": 2.1553
+      "Lg10CD": 2.1553,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_FOIL_04",
@@ -1110,7 +1161,8 @@
       "ensemble": 1.273974787840984,
       "subtlex_token": "cow",
       "Lg10WF": 3.1146,
-      "Lg10CD": 2.8627
+      "Lg10CD": 2.8627,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_FOIL_05",
@@ -1131,7 +1183,8 @@
       "ensemble": 8.816565462976376,
       "subtlex_token": "fairy",
       "Lg10WF": 2.9304,
-      "Lg10CD": 2.6345
+      "Lg10CD": 2.6345,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_FOIL_06",
@@ -1152,7 +1205,8 @@
       "ensemble": 6.242232321650062,
       "subtlex_token": "gunslinger",
       "Lg10WF": 1.3424,
-      "Lg10CD": 1.2788
+      "Lg10CD": 1.2788,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_FOIL_07",
@@ -1173,7 +1227,8 @@
       "ensemble": 3.7507571263120125,
       "subtlex_token": "undead",
       "Lg10WF": 2.0792,
-      "Lg10CD": 1.8633
+      "Lg10CD": 1.8633,
+      "in_law_review_study": true
     },
     {
       "id": "CRI_FOIL_08",
@@ -1194,7 +1249,536 @@
       "ensemble": 4.494111196564602,
       "subtlex_token": "android",
       "Lg10WF": 1.6628,
-      "Lg10CD": 1.4472
+      "Lg10CD": 1.4472,
+      "in_law_review_study": true
+    },
+    {
+      "id": "CRI_HH_13",
+      "text": "diamond",
+      "element_string": "diamond",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 127,
+      "film_count_in_target_genre": 127,
+      "foil_rule": null,
+      "prevalence_pct": 0.8333333333333334,
+      "distinctiveness_pct": 0.8818800247371676,
+      "ensemble": 3.1352182177982066,
+      "subtlex_token": "diamond",
+      "Lg10WF": null,
+      "Lg10CD": 2.6758,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HH_14",
+      "text": "gang member",
+      "element_string": "gang member",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "chunk",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 115,
+      "film_count_in_target_genre": 115,
+      "foil_rule": null,
+      "prevalence_pct": 0.8150896722325294,
+      "distinctiveness_pct": 0.9672232529375386,
+      "ensemble": 2.628963151381604,
+      "subtlex_token": "member",
+      "Lg10WF": 3.167,
+      "Lg10CD": 3.0453,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HH_15",
+      "text": "police station",
+      "element_string": "police station",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "chunk",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 176,
+      "film_count_in_target_genre": 176,
+      "foil_rule": null,
+      "prevalence_pct": 0.8896103896103896,
+      "distinctiveness_pct": 0.8676561533704391,
+      "ensemble": 2.249518081954747,
+      "subtlex_token": "station",
+      "Lg10WF": 3.6057,
+      "Lg10CD": 3.3222,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HH_16",
+      "text": "assassination",
+      "element_string": "assassination",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "event",
+      "category_key": "events",
+      "film_count": 94,
+      "film_count_in_target_genre": 94,
+      "foil_rule": null,
+      "prevalence_pct": 0.7578849721706865,
+      "distinctiveness_pct": 0.8596165739022882,
+      "ensemble": 1.1953856234150004,
+      "subtlex_token": "assassination",
+      "Lg10WF": null,
+      "Lg10CD": 2.248,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HH_17",
+      "text": "beating",
+      "element_string": "beating",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "event",
+      "category_key": "events",
+      "film_count": 71,
+      "film_count_in_target_genre": 71,
+      "foil_rule": null,
+      "prevalence_pct": 0.6750154607297465,
+      "distinctiveness_pct": 0.8324056895485467,
+      "ensemble": 0.8539852405095409,
+      "subtlex_token": "beating",
+      "Lg10WF": null,
+      "Lg10CD": 2.9547,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HH_18",
+      "text": "hotel room",
+      "element_string": "hotel room",
+      "cell": "high_prev_high_dist",
+      "cell_code": "HH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "chunk",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 96,
+      "film_count_in_target_genre": 96,
+      "foil_rule": null,
+      "prevalence_pct": 0.7665429808286951,
+      "distinctiveness_pct": 0.7810760667903525,
+      "ensemble": 0.7953121811905133,
+      "subtlex_token": "room",
+      "Lg10WF": 4.3506,
+      "Lg10CD": 3.796,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HL_13",
+      "text": "love",
+      "element_string": "love",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "theme",
+      "category_key": "themes",
+      "film_count": 874,
+      "film_count_in_target_genre": 874,
+      "foil_rule": null,
+      "prevalence_pct": 0.9925788497217068,
+      "distinctiveness_pct": 0.07730364873222016,
+      "ensemble": 2.8961043118014085,
+      "subtlex_token": "love",
+      "Lg10WF": 4.7548,
+      "Lg10CD": 3.8679,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HL_14",
+      "text": "letter",
+      "element_string": "letter",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 227,
+      "film_count_in_target_genre": 227,
+      "foil_rule": null,
+      "prevalence_pct": 0.9245516388373531,
+      "distinctiveness_pct": 0.29684601113172543,
+      "ensemble": 0.8490130923249366,
+      "subtlex_token": "letter",
+      "Lg10WF": null,
+      "Lg10CD": 3.2453,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HL_15",
+      "text": "gold",
+      "element_string": "gold",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 71,
+      "film_count_in_target_genre": 71,
+      "foil_rule": null,
+      "prevalence_pct": 0.6750154607297465,
+      "distinctiveness_pct": 0.32529375386518244,
+      "ensemble": 0.31069606220437085,
+      "subtlex_token": "gold",
+      "Lg10WF": null,
+      "Lg10CD": 3.1858,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HL_16",
+      "text": "teenager",
+      "element_string": "teenager",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 95,
+      "film_count_in_target_genre": 95,
+      "foil_rule": null,
+      "prevalence_pct": 0.7628324056895486,
+      "distinctiveness_pct": 0.3327149041434756,
+      "ensemble": 0.17296689306834817,
+      "subtlex_token": "teenager",
+      "Lg10WF": null,
+      "Lg10CD": 2.4609,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HL_17",
+      "text": "minister",
+      "element_string": "minister",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 86,
+      "film_count_in_target_genre": 86,
+      "foil_rule": null,
+      "prevalence_pct": 0.7353123067408782,
+      "distinctiveness_pct": 0.22510822510822512,
+      "ensemble": 0.15908994765445217,
+      "subtlex_token": "minister",
+      "Lg10WF": null,
+      "Lg10CD": 2.5977,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_HL_18",
+      "text": "promise",
+      "element_string": "promise",
+      "cell": "high_prev_low_dist",
+      "cell_code": "HL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "event",
+      "category_key": "events",
+      "film_count": 96,
+      "film_count_in_target_genre": 96,
+      "foil_rule": null,
+      "prevalence_pct": 0.7665429808286951,
+      "distinctiveness_pct": 0.20037105751391465,
+      "ensemble": 0.08523389845070364,
+      "subtlex_token": "promise",
+      "Lg10WF": 3.8927,
+      "Lg10CD": 3.5883,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LH_13",
+      "text": "corrupt cop",
+      "element_string": "corrupt cop",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "chunk",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 28,
+      "film_count_in_target_genre": 28,
+      "foil_rule": null,
+      "prevalence_pct": 0.2680890538033395,
+      "distinctiveness_pct": 0.9764996907854051,
+      "ensemble": 1.0958635609122154,
+      "subtlex_token": "cop",
+      "Lg10WF": null,
+      "Lg10CD": 3.1667,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LH_14",
+      "text": "defendant",
+      "element_string": "defendant",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 20,
+      "film_count_in_target_genre": 20,
+      "foil_rule": null,
+      "prevalence_pct": 0.019789734075448363,
+      "distinctiveness_pct": 0.935064935064935,
+      "ensemble": 0.743070026433461,
+      "subtlex_token": "defendant",
+      "Lg10WF": null,
+      "Lg10CD": 2.5011,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LH_15",
+      "text": "strip club",
+      "element_string": "strip club",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "chunk",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 22,
+      "film_count_in_target_genre": 22,
+      "foil_rule": null,
+      "prevalence_pct": 0.08565244279529993,
+      "distinctiveness_pct": 0.7730364873222016,
+      "ensemble": 0.26757927261138087,
+      "subtlex_token": "club",
+      "Lg10WF": null,
+      "Lg10CD": 3.3339,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LH_16",
+      "text": "cargo",
+      "element_string": "cargo",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "object",
+      "category_key": "objects",
+      "film_count": 27,
+      "film_count_in_target_genre": 27,
+      "foil_rule": null,
+      "prevalence_pct": 0.24211502782931354,
+      "distinctiveness_pct": 0.6858379715522572,
+      "ensemble": 0.1564499561864966,
+      "subtlex_token": "cargo",
+      "Lg10WF": null,
+      "Lg10CD": 2.3784,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LH_17",
+      "text": "poisoning",
+      "element_string": "poisoning",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "event",
+      "category_key": "events",
+      "film_count": 25,
+      "film_count_in_target_genre": 25,
+      "foil_rule": null,
+      "prevalence_pct": 0.17872603586889302,
+      "distinctiveness_pct": 0.7158317872603587,
+      "ensemble": 0.13496547768482692,
+      "subtlex_token": "poisoning",
+      "Lg10WF": null,
+      "Lg10CD": 2.356,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LH_18",
+      "text": "pregnant wife",
+      "element_string": "pregnant wife",
+      "cell": "low_prev_high_dist",
+      "cell_code": "LH",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "chunk",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 21,
+      "film_count_in_target_genre": 21,
+      "foil_rule": null,
+      "prevalence_pct": 0.055658627087198514,
+      "distinctiveness_pct": 0.6988249845392702,
+      "ensemble": 0.10260114406127073,
+      "subtlex_token": "wife",
+      "Lg10WF": null,
+      "Lg10CD": 3.6823,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LL_13",
+      "text": "posse",
+      "element_string": "posse",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 22,
+      "film_count_in_target_genre": 22,
+      "foil_rule": null,
+      "prevalence_pct": 0.08565244279529993,
+      "distinctiveness_pct": 0.3228200371057514,
+      "ensemble": -0.1152382951899947,
+      "subtlex_token": "posse",
+      "Lg10WF": null,
+      "Lg10CD": 2.0492,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LL_14",
+      "text": "clan",
+      "element_string": "clan",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "character_type",
+      "category_key": "characters",
+      "film_count": 24,
+      "film_count_in_target_genre": 24,
+      "foil_rule": null,
+      "prevalence_pct": 0.14996907854050712,
+      "distinctiveness_pct": 0.20470006184291897,
+      "ensemble": -0.14333686201074927,
+      "subtlex_token": "clan",
+      "Lg10WF": null,
+      "Lg10CD": 2.1004,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LL_15",
+      "text": "small village",
+      "element_string": "small village",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "chunk",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 22,
+      "film_count_in_target_genre": 22,
+      "foil_rule": null,
+      "prevalence_pct": 0.08565244279529993,
+      "distinctiveness_pct": 0.23685837971552257,
+      "ensemble": -0.17142793384992205,
+      "subtlex_token": "village",
+      "Lg10WF": null,
+      "Lg10CD": 2.8893,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LL_16",
+      "text": "younger sister",
+      "element_string": "younger sister",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "chunk",
+      "element_taxonomy": "relationship",
+      "category_key": "characters",
+      "film_count": 28,
+      "film_count_in_target_genre": 28,
+      "foil_rule": null,
+      "prevalence_pct": 0.2680890538033395,
+      "distinctiveness_pct": 0.16388373531230674,
+      "ensemble": -0.18530490659747567,
+      "subtlex_token": "sister",
+      "Lg10WF": 3.9642,
+      "Lg10CD": 3.4839,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LL_17",
+      "text": "inn",
+      "element_string": "inn",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "setting",
+      "category_key": "settings",
+      "film_count": 23,
+      "film_count_in_target_genre": 23,
+      "foil_rule": null,
+      "prevalence_pct": 0.11626468769325912,
+      "distinctiveness_pct": 0.1471861471861472,
+      "ensemble": -0.187143735996311,
+      "subtlex_token": "inn",
+      "Lg10WF": null,
+      "Lg10CD": 2.2504,
+      "in_law_review_study": false
+    },
+    {
+      "id": "CRI_LL_18",
+      "text": "misunderstanding",
+      "element_string": "misunderstanding",
+      "cell": "low_prev_low_dist",
+      "cell_code": "LL",
+      "is_foil": false,
+      "home_genre": "Crime",
+      "element_type": "noun",
+      "element_taxonomy": "theme",
+      "category_key": "themes",
+      "film_count": 24,
+      "film_count_in_target_genre": 24,
+      "foil_rule": null,
+      "prevalence_pct": 0.14996907854050712,
+      "distinctiveness_pct": 0.0191713048855906,
+      "ensemble": -0.309590648103245,
+      "subtlex_token": "misunderstanding",
+      "Lg10WF": null,
+      "Lg10CD": 2.5587,
+      "in_law_review_study": false
     }
   ]
 }

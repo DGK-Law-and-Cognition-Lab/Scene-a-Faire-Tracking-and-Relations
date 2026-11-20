@@ -1,0 +1,195 @@
+==============================================================================
+NOTEBOOK 20: THE EXTENDED ITEM SET FOR STUDY 1 OF THE TRACKING PAPER
+==============================================================================
+Six genres, four cells, 18 story features per cell: the 12 of the law review study
+plus 6 new ones taken from further down the same seeded queues. Foils unchanged (8 per genre).
+seed 20260219; constants read from notebooks/_build_10.py; 43 strings in MANUAL_EXCLUDE.
+
+1. REPRODUCTION OF THE LAW REVIEW STUDY ITEMS
+------------------------------------------------------------------------------
+The pool was rebuilt and matches eligible_pool_predictors.csv row for row (types,
+percentiles, terciles). The replayed draw gives, for every genre, the same 48 stratified
+items as stimuli_long.csv and the JSON files: same ids, pipeline strings, display text,
+cells, types, film counts and ensemble values, in the same order. Result: reproduced exactly.
+
+2. THE CONTINUATION RULE FOR THE NOUN AND CHUNK BALANCE
+------------------------------------------------------------------------------
+The first 12 are left as drawn. Notebook 10's three passes are then run again from where
+the queues stopped, with the target raised from 12 to 18: (1) chunks until the cell holds
+9 chunks, or as many as its chunk queue held at the start if that is fewer; (2) nouns until
+the cell holds 18; (3) chunks again for any cell still short of 18.
+
+3. QUEUES, TAKES AND SKIPS PER GENRE AND CELL
+------------------------------------------------------------------------------
+"left" is what the queue still held when Notebook 10 stopped (nouns + chunks); "taken" is
+the number of new items (nouns + chunks); "skipped" lists each skipped candidate.
+Western
+  HH: left   48 (48n + 0c)  taken 6 (6n + 0c)  skipped 2  final 17n + 1c
+      skipped 'lawman' (noun, queue position 18): is a foil of another genre ('Horror')
+      skipped 'fort' (noun, queue position 19): is a foil of another genre ('Science Fiction')
+  HL: left   21 (21n + 0c)  taken 6 (6n + 0c)  skipped 1  final 18n + 0c
+      skipped 'return' (noun, queue position 17): EXTENSION_EXCLUDE
+  LH: left   28 (23n + 5c)  taken 6 (3n + 3c)  skipped 1  final 9n + 9c
+      skipped 'baron' (noun, queue position 7): EXTENSION_EXCLUDE
+  LL: left   53 (53n + 0c)  taken 6 (6n + 0c)  skipped 2  final 16n + 2c
+      skipped 'flashback' (noun, queue position 11): EXTENSION_EXCLUDE
+      skipped 'ring' (noun, queue position 14): EXTENSION_EXCLUDE
+Horror
+  HH: left  137 (137n + 0c)  taken 6 (6n + 0c)  skipped 0  final 14n + 4c
+  HL: left  129 (129n + 0c)  taken 6 (6n + 0c)  skipped 2  final 16n + 2c
+      skipped 'band' (noun, queue position 14): MANUAL_EXCLUDE
+      skipped 'surprise' (noun, queue position 16): EXTENSION_EXCLUDE
+  LH: left  161 (123n + 38c)  taken 6 (3n + 3c)  skipped 1  final 9n + 9c
+      skipped 'burn' (noun, queue position 7): EXTENSION_EXCLUDE
+  LL: left  177 (176n + 1c)  taken 6 (5n + 1c)  skipped 6  final 11n + 7c
+      skipped 'wrath' (noun, queue position 8): EXTENSION_EXCLUDE
+      skipped 'vessel' (noun, queue position 9): EXTENSION_EXCLUDE
+      skipped 'meaning' (noun, queue position 11): EXTENSION_EXCLUDE
+      skipped 'script' (noun, queue position 15): EXTENSION_EXCLUDE
+      skipped 'comfort' (noun, queue position 16): EXTENSION_EXCLUDE
+      skipped 'cinema' (noun, queue position 17): EXTENSION_EXCLUDE
+Science Fiction
+  HH: left  118 (118n + 0c)  taken 6 (6n + 0c)  skipped 0  final 18n + 0c
+  HL: left   90 (90n + 0c)  taken 6 (6n + 0c)  skipped 1  final 16n + 2c
+      skipped 'car' (noun, queue position 12): overlaps a selected item ('car accident')
+  LH: left  111 (99n + 12c)  taken 6 (3n + 3c)  skipped 0  final 9n + 9c
+  LL: left  134 (134n + 0c)  taken 6 (6n + 0c)  skipped 3  final 12n + 6c
+      skipped 'corner' (noun, queue position 11): EXTENSION_EXCLUDE
+      skipped 'lie' (noun, queue position 12): EXTENSION_EXCLUDE
+      skipped 'respect' (noun, queue position 16): EXTENSION_EXCLUDE
+Crime
+  HH: left  196 (191n + 5c)  taken 6 (3n + 3c)  skipped 4  final 9n + 9c
+      skipped 'crime scene' (chunk, queue position 8): EXTENSION_EXCLUDE
+      skipped 'drug dealer' (chunk, queue position 10): is a foil of another genre ('Fantasy')
+      skipped 'hiding' (noun, queue position 7): EXTENSION_EXCLUDE
+      skipped 'crook' (noun, queue position 10): is a foil of another genre ('Science Fiction')
+  HL: left  117 (117n + 0c)  taken 6 (6n + 0c)  skipped 8  final 17n + 1c
+      skipped 'father' (noun, queue position 15): overlaps a selected item ('father death')
+      skipped 'sign' (noun, queue position 16): EXTENSION_EXCLUDE
+      skipped 'responsibility' (noun, queue position 17): EXTENSION_EXCLUDE
+      skipped 'stage' (noun, queue position 18): EXTENSION_EXCLUDE
+      skipped 'star' (noun, queue position 21): MANUAL_EXCLUDE
+      skipped 'village' (noun, queue position 22): overlaps a selected item ('small village')
+      skipped 'project' (noun, queue position 23): EXTENSION_EXCLUDE
+      skipped 'base' (noun, queue position 26): EXTENSION_EXCLUDE
+  LH: left  150 (93n + 57c)  taken 6 (3n + 3c)  skipped 2  final 9n + 9c
+      skipped 'violation' (noun, queue position 7): EXTENSION_EXCLUDE
+      skipped 'parlor' (noun, queue position 8): EXTENSION_EXCLUDE
+  LL: left  193 (191n + 2c)  taken 6 (4n + 2c)  skipped 3  final 10n + 8c
+      skipped 'comfort' (noun, queue position 10): EXTENSION_EXCLUDE
+      skipped 'script' (noun, queue position 11): EXTENSION_EXCLUDE
+      skipped 'balance' (noun, queue position 14): EXTENSION_EXCLUDE
+Comedy
+  HH: left  273 (273n + 0c)  taken 6 (6n + 0c)  skipped 2  final 12n + 6c
+      skipped 'bill' (noun, queue position 13): EXTENSION_EXCLUDE
+      skipped 'performance' (noun, queue position 15): MANUAL_EXCLUDE
+  HL: left  361 (351n + 10c)  taken 6 (3n + 3c)  skipped 6  final 9n + 9c
+      skipped 'new life' (chunk, queue position 9): EXTENSION_EXCLUDE
+      skipped 'energy' (noun, queue position 7): EXTENSION_EXCLUDE
+      skipped 'base' (noun, queue position 9): EXTENSION_EXCLUDE
+      skipped 'beauty' (noun, queue position 10): EXTENSION_EXCLUDE
+      skipped 'reality' (noun, queue position 12): MANUAL_EXCLUDE
+      skipped 'danger' (noun, queue position 13): EXTENSION_EXCLUDE
+  LH: left  435 (295n + 140c)  taken 6 (3n + 3c)  skipped 0  final 9n + 9c
+  LL: left  327 (288n + 39c)  taken 6 (3n + 3c)  skipped 2  final 9n + 9c
+      skipped 'violation' (noun, queue position 9): EXTENSION_EXCLUDE
+      skipped 'shaft' (noun, queue position 11): EXTENSION_EXCLUDE
+Fantasy
+  HH: left  101 (101n + 0c)  taken 6 (6n + 0c)  skipped 2  final 17n + 1c
+      skipped 'ball' (noun, queue position 14): EXTENSION_EXCLUDE
+      skipped 'power' (noun, queue position 17): overlaps a selected item ('supernatural power')
+  HL: left   91 (91n + 0c)  taken 6 (6n + 0c)  skipped 0  final 15n + 3c
+  LH: left  105 (105n + 0c)  taken 6 (6n + 0c)  skipped 2  final 13n + 5c
+      skipped 'keeper' (noun, queue position 10): EXTENSION_EXCLUDE
+      skipped 'switch' (noun, queue position 13): EXTENSION_EXCLUDE
+  LL: left  119 (118n + 1c)  taken 6 (5n + 1c)  skipped 2  final 11n + 7c
+      skipped 'price' (noun, queue position 7): EXTENSION_EXCLUDE
+      skipped 'tension' (noun, queue position 11): EXTENSION_EXCLUDE
+cells short of 18: none
+skips by reason: EXTENSION_EXCLUDE: 40, is a foil of another genre: 4, MANUAL_EXCLUDE: 4, overlaps a selected item: 4
+
+4. MEDIAN PREVALENCE AND DISTINCTIVENESS (percent)
+------------------------------------------------------------------------------
+Prevalence = share of the genre's films with the story feature (rel_freq_in_genre).
+Distinctiveness = smoothed share of the story feature's films in the genre (posterior_smoothed).
+genre           cell   P orig   P new   P all   D orig   D new   D all
+Western         HH      5.103   9.985   7.232    27.76   17.20   23.73
+Western         HL     11.087   4.222   7.856     2.05    2.47    2.23
+Western         LH      1.689   1.946   1.762    20.76   25.09   20.76
+Western         LL      1.542   1.762   1.689     2.11    2.07    2.11
+Horror          HH      2.945   2.120   2.544    32.10   25.70   28.48
+Horror          HL      2.544   2.750   2.647     9.62    7.58    8.66
+Horror          LH      0.642   0.596   0.596    35.50   45.63   37.60
+Horror          LL      0.539   0.584   0.550     7.83    7.21    7.83
+Science Fiction HH      3.900   4.131   3.900    25.91   21.90   23.83
+Science Fiction HL      3.610   8.707   4.459     5.57    4.05    4.78
+Science Fiction LH      0.927   1.004   0.965    36.93   25.50   32.33
+Science Fiction LL      0.927   1.004   0.946     5.19    4.52    4.92
+Crime           HH      1.519   1.896   1.689    29.89   28.78   29.42
+Crime           HL      2.579   1.716   2.507     9.88   10.62   10.19
+Crime           LH      0.404   0.422   0.404    27.87   21.31   26.71
+Crime           LL      0.413   0.422   0.413     8.78    9.46    9.08
+Comedy          HH      1.043   0.975   1.026    43.77   45.37   44.17
+Comedy          HL      0.907   0.914   0.907    24.47   23.44   24.38
+Comedy          LH      0.187   0.177   0.183    44.41   54.06   47.58
+Comedy          LL      0.177   0.160   0.170    23.15   24.63   24.33
+Fantasy         HH      3.561   6.793   4.632    24.66   16.45   19.27
+Fantasy         HL      3.726   4.673   3.870     5.10    4.71    5.00
+Fantasy         LH      0.885   1.070   0.967    22.63   13.78   15.89
+Fantasy         LL      1.050   1.029   1.050     4.34    4.78    4.39
+pooled over genres
+all genres      HH      3.185   2.529   3.022    31.60   25.10   28.73
+all genres      HL      3.263   3.601   3.314     6.21    6.28    6.26
+all genres      LH      0.753   0.744   0.753    34.86   26.44   34.39
+all genres      LL      0.769   0.753   0.753     5.87    5.77    5.87
+
+Prevalence match within each prevalence level (pooled medians, percent):
+  HH vs HL, orig : 3.185 vs 3.263 (ratio 0.976)
+  HH vs HL, new  : 2.529 vs 3.601 (ratio 0.702)
+  HH vs HL, all  : 3.022 vs 3.314 (ratio 0.912)
+  HH vs HL: all 18, Mann-Whitney p on prevalence = 0.667
+  LH vs LL, orig : 0.753 vs 0.769 (ratio 0.980)
+  LH vs LL, new  : 0.744 vs 0.753 (ratio 0.988)
+  LH vs LL, all  : 0.753 vs 0.753 (ratio 1.000)
+  LH vs LL: all 18, Mann-Whitney p on prevalence = 0.997
+
+New against original items, pooled over genres (within-genre percentiles and percents):
+  HH prevalence         original    0.801  new    0.827  Mann-Whitney p = 0.881
+  HH distinctiveness    original    0.856  new    0.829  Mann-Whitney p = 0.299
+  HH prevalence %       original    3.185  new    2.529  Mann-Whitney p = 0.825
+  HH distinctiveness %  original   31.602  new   25.103  Mann-Whitney p = 0.142
+  HL prevalence         original    0.834  new    0.840  Mann-Whitney p = 0.802
+  HL distinctiveness    original    0.195  new    0.164  Mann-Whitney p = 0.320
+  HL prevalence %       original    3.263  new    3.601  Mann-Whitney p = 0.674
+  HL distinctiveness %  original    6.205  new    6.278  Mann-Whitney p = 0.762
+  LH prevalence         original    0.179  new    0.211  Mann-Whitney p = 0.455
+  LH distinctiveness    original    0.871  new    0.872  Mann-Whitney p = 0.589
+  LH prevalence %       original    0.753  new    0.744  Mann-Whitney p = 0.742
+  LH distinctiveness %  original   34.856  new   26.437  Mann-Whitney p = 0.705
+  LL prevalence         original    0.178  new    0.150  Mann-Whitney p = 0.987
+  LL distinctiveness    original    0.158  new    0.179  Mann-Whitney p = 0.440
+  LL prevalence %       original    0.769  new    0.753  Mann-Whitney p = 0.997
+  LL distinctiveness %  original    5.871  new    5.770  Mann-Whitney p = 0.935
+
+In plain words:
+  At high prevalence, the median prevalence of HH and HL is 3.02% and 3.31% over all 18 items (ratio 0.91; 0.98 for the original 12, 0.70 for the new 6 alone; Mann-Whitney p = 0.67). The extension keeps the match.
+  At low prevalence, the median prevalence of LH and LL is 0.75% and 0.75% over all 18 items (ratio 1.00; 0.98 for the original 12, 0.99 for the new 6 alone; Mann-Whitney p = 1.00). The extension keeps the match.
+  On within-genre percentiles, no cell shows a significant difference between new and original items on either dimension (8 tests, each at .05): the new items are not systematically less extreme than the originals.
+
+5. FILES
+------------------------------------------------------------------------------
+stimuli_<genre>.json x 6 : 80 items each (56 registered, unchanged and in order, then 24 new);
+                           every registered field kept; in_law_review_study added; k_per_cell 18.
+stimuli_all.js           : window.STIMULI built from the six new JSON files (the experiment copy is rebuilt byte for byte from the registered JSON files).
+extended_items_long.csv  : 480 rows, the columns of stimuli_long.csv plus in_law_review_study and
+                           queue_position (position in its cell-and-type queue; empty for foils).
+review_sheet_new_items.csv: the 144 new items with a flag column for the reviewer.
+
+6. NOTES
+------------------------------------------------------------------------------
+SUBTLEX-US: Lg10CD is filled for 143 of 144 new items (exact head-token
+match from eligible_pool_predictors.csv); Lg10WF for 38 of 144 (copied from the
+registered stimulus table where the same head token occurs). The SUBTLEX-US file was not opened.
+The experiment does not read either value.
+23 of 144 new items in the final list carry a note in the flag column; a note is not a rejection.
+Reviewed on November 19, 2026 by the standards of the law review study's review; 36 strings rejected (EXTENSION_EXCLUDE); see extension_review_log.md.

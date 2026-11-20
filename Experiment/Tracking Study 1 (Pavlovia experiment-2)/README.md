@@ -138,7 +138,7 @@ screen is not: touch drags produce no path (flagged by `pointer: touch` and `lat
 
 | Constant | Now | Note |
 | --- | --- | --- |
-| `SONA_URL_BASE` | the law review study's return link (SONA study 3298) | Set on November 19, 2026, because David said the SONA listing will have the same return link. It must match the completion URL shown on the listing (same `experiment_id` and `credit_token`); a new SONA listing has its own. When it is empty, SONA sessions end on the completion page and give no credit, and the deploy script warns. The public repository's copy keeps it empty. |
+| `SONA_URL_BASE` | the law review study's return link (SONA study 3298) | Set on November 19, 2026. This study runs under the same SONA listing as the law review study (David, November 20), so the return link is the same. When it is empty, SONA sessions end on the completion page and give no credit, and the deploy script warns. The public repository's copy keeps it empty. |
 | `CONSENT_URL` | the law review study's Box link | Confirm it is right for this study. |
 | Box labels (`QUESTIONS.<q>.yes`, `.no`) | Copied / Not copied; Because of the genre / Could be in any film; Stock / Not stock | "Not copied" replaced "Coincidence" on November 19 (David). |
 | `SLOW_MS_CHOICE` | 4000 | Adjust after the investigators' own sessions. |
